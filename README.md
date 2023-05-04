@@ -1,2 +1,3 @@
-# friction2d.github.io
-friction2d.com
+# Friction
+
+2D animation software for Linux.
