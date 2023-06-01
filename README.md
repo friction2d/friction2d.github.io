@@ -2,7 +2,7 @@
 
 ### 2D motion graphics and animation software for Linux.
 
-* Very flexible user interface
+* Flexible user interface
 * Import images, videos and SVG
 * Supports expressions using Javascript
 * Supports vector and raster effects
