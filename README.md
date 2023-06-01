@@ -1,6 +1,6 @@
 ![Screenshot](assets/friction-screenshot-01.jpg)
 
-### 2D motion graphics and animation software for macOS and Linux.
+### 2D motion graphics and animation software for Linux.
 
 * Very flexible user interface
 * Import images, videos and SVG
