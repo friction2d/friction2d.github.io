@@ -1,13 +1,4 @@
-![Screenshot](assets/friction-screenshot-01.jpg)
-
-### 2D motion graphics and animation software for Linux.
-
-* Flexible user interface
-* Import images, videos and SVG
-* Supports expressions using Javascript
-* Supports vector and raster effects
-* Export to web (SVG animation)
-* Export to image(s) and video (through ffmpeg)
+### 2D motion graphics software.
 
 ***This application is beta quality, expect missing and/or broken features.***
 
