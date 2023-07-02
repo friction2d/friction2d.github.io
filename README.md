@@ -1,5 +1,3 @@
-# Friction - Motion Graphics
-
 ### Friction is a fast and flexible open-source 2D motion graphics application.
 
 ![Screenshot](https://friction.graphics/assets/friction-screenshot-01.jpg)
@@ -8,7 +6,9 @@
 
 ## Resources
 
-* **[Project](https://github.com/friction2d/friction)**
+* **[Releases](https://github.com/friction2d/friction/releases)**
 * **[Issue tracker](https://github.com/friction2d/friction/issues)**
 * **[Discussions](https://github.com/friction2d/friction/discussions)**
-* **[Snapshots](https://sourceforge.net/projects/friction/files/snapshots/)**
+
+---
+*Yes, this "website" is not any good, will be fixed sometime this summer.*
