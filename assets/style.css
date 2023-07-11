@@ -1,0 +1,115 @@
+* { font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif; }
+
+body {
+    margin: 0;
+    padding: 0;
+    background-color: rgb(40, 40, 47);
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+}
+
+div#header {
+    position: fixed;
+    width: 100%;
+    height: 80px;
+    padding: .2em;
+    background-color: rgba(0, 0, 0, 0.9);
+    z-index: 99;
+}
+
+div#headerInner {
+    margin: auto;
+    max-width: 1200px;
+    display: flex;
+    height: 80px;
+    justify-content: space-between;
+}
+
+div#hero {
+    padding-top: 100px;
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    background-color: rgb(33, 33, 38);
+    background-image: url("pexels-marek-piwnicki-7430456.jpg");
+    height: 50vh;
+    align-self: center;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    background-attachment: fixed;
+    align-items: center;
+    justify-content: center;
+    border-bottom: 1px solid rgb(33, 33, 38);
+}
+
+div#hero div {
+    text-align: center;
+    color: white;
+    padding: .5em;
+    margin: auto;
+    width: 70%;
+    max-width: 600px;
+    background-color: rgba(0, 0, 0, 0.8);
+    border-radius: .5em;;
+}
+
+div#footer {
+    background-color: rgb(33, 33, 38);
+    color: darkgray;
+}
+
+div#footerInner {
+    max-width: 1200px;
+    margin: auto;
+    padding: 1em;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div#content {
+    margin: 0 auto;
+    padding: 1rem;
+    max-width: 1200px;
+    margin: auto;
+    font-size: large;
+    color: white;
+}
+
+div#content img {
+    width: 100%;
+    border: 1px solid rgb(33, 33, 38);
+    border-radius: .25em;
+}
+
+h1, h2, h3, h4 {
+    font-weight: normal;
+}
+
+blockquote {
+    background-color: rgb(33, 33, 38);
+    padding: .3em;
+    font-family: monospace;
+}
+
+
+.btn {
+    border-radius: .25em;
+    background-color: rgb(177, 16, 20);
+    padding: .6em;
+    color: white;
+    text-decoration: none;
+    vertical-align: middle;
+    text-align: center;
+    text-transform: uppercase;
+}
+
+.btn:hover { border: 1px solid white; }
+
+.btn img {
+    margin-right: .5em;
+    vertical-align: middle;
+}
