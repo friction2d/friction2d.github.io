@@ -40,25 +40,34 @@
     </head>
     <body>
         <div id="header">
-            <div id="headerInner"><img src="{{ site.url }}/assets/logo.svg" /></div>
+            <div id="headerInner">
+                <a href="{{ site.url }}"><img src="{{ site.url }}/assets/logo.svg" width="267px" height="80px" /></a>
+            </div>
         </div>
         {% if page.hero %}
         <div id="hero">
             <div>
-                <h3>Fast and flexible open-source 2D motion graphics application</h3>
+                <h3>Fast and flexible cross-platform motion graphics software</h3>
                 <a class="btn" target="_blank" href="https://github.com/friction2d/friction/releases/latest"><img src="{{ site.url }}/assets/download.svg" height="24" />Download now</a>
-                <p></p>
+                <p>
+                    <img class="distro" src="{{ site.url }}/assets/windows.svg" />
+                    <img class="distro" src="{{ site.url }}/assets/ubuntu.svg" />
+                    <img class="distro" src="{{ site.url }}/assets/redhat.svg" />
+                    <img class="distro" src="{{ site.url }}/assets/fedora.svg" />
+                </p>
                 </div>
         </div>
         {% endif %}
         <div id="content">
-            <h2>{{ page.title }}</h2>
+            {% if page.showTitle %}<h2>{{ page.title }}</h2>{% endif %}
             {{ content }}
         </div>
         <div id="footer">
             <div id="footerInner">
                 <p>Copyright &copy; Friction contributors.</p>
-                <p><a target="_blank" href="https://github.com/friction2d/friction" title="Join us on GitHub"><img src="{{ site.url }}/assets/github-mark-white.svg" height="24" /></a></p>
+                <p>
+                    <a target="_blank" href="https://github.com/friction2d/friction" title="Join us on GitHub"><img src="{{ site.url }}/assets/github-mark-white.svg" height="24" /></a>
+                </p>
             </div>
         </div>
     </body>

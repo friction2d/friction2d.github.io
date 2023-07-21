@@ -1,13 +1,11 @@
----
-title: "Friction"
-layout: default
-permalink: index.html
-hero: true
----
+# www.friction.graphics
 
-Friction is a fast and flexible open-source 2D motion graphics application for Linux and Windows.
 
-![Screenshot1](assets/friction-screenshot-04.jpg)
-![Screenshot2](assets/friction-screenshot-05.jpg)
+```
+source 'https://rubygems.org'
+gem "jekyll"
+```
 
-***This application is beta quality, expect missing and/or broken features.***
+```
+bundle exec jekyll serve
+```
