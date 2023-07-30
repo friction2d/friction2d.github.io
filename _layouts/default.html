@@ -47,8 +47,9 @@
         {% if page.hero %}
         <div id="hero">
             <div>
-                <h3>Fast and flexible cross-platform motion graphics software</h3>
-                <a class="btn" target="_blank" href="https://github.com/friction2d/friction/releases/latest"><img src="{{ site.url }}/assets/download.svg" height="24" />Download now</a>
+                <h1>Welcome to Friction</h1>
+                <h3>Friction is a cross-platform open-source vector-based application for web animations and videos.</h3>
+                <p><a class="btn" target="_blank" href="https://github.com/friction2d/friction/releases/latest"><img src="{{ site.url }}/assets/download.svg" height="24" />Download now</a></p>
                 <p>
                     <!-- <img class="distro" src="{{ site.url }}/assets/windows.svg" />
                     <img class="distro" src="{{ site.url }}/assets/ubuntu.svg" />
@@ -61,6 +62,19 @@
         <div id="content">
             {% if page.showTitle %}<h2>{{ page.title }}</h2>{% endif %}
             {{ content }}
+        </div>
+        <div class="bigTitle"><h1>Friction is powered by</h1></div>
+        <div class="blocks">
+            <div>
+                <img src="{{ site.url }}/assets/ffmpeg-white.svg" />
+                <h2>FFmpeg Multimedia Framework</h2>
+                <p>FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge.</p>
+            </div>
+            <div>
+                <img src="{{ site.url }}/assets/skia-white.svg" />
+                <h2>Skia Graphics Engine</h2>
+                <p>Skia is an open source 2D graphics library which provides common APIs that work across a variety of hardware and software platforms. It serves as the graphics engine for Google Chrome, ChromeOS, Android, Flutter, Mozilla Firefox and many other products.</p>
+            </div>
         </div>
         <div id="footer">
             <div id="footerInner">

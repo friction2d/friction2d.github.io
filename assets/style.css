@@ -32,7 +32,7 @@ div#hero {
     display: flex;
     flex-direction: column;
     background-color: rgb(33, 33, 38);
-    background-image: url("pexels-marek-piwnicki-7430456.jpg");
+    background-image: url("badge.svg");
     height: 50vh;
     align-self: center;
     background-repeat: no-repeat;
@@ -70,7 +70,9 @@ div#footerInner {
     flex-wrap: wrap;
 }
 
-div#content {
+div#content,
+div.blocks,
+div.bigTitle {
     margin: 0 auto;
     padding: 1rem;
     max-width: 1200px;
@@ -85,6 +87,30 @@ div#content img {
     border-radius: .25em;
 }
 
+div.blocks {
+    margin: auto;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+div.blocks img {
+    width: 100%;
+    height: 100px;
+}
+
+div.blocks div {
+    background-color: rgb(33, 33, 38);
+    border-radius: .25em;
+    margin: .5em;
+    padding: 1em;
+}
+
+div.blocks h2,
+div.bigTitle h1 {
+    text-align: center;
+}
+
 h1, h2, h3, h4 {
     font-weight: normal;
 }
@@ -94,7 +120,6 @@ blockquote {
     padding: .3em;
     font-family: monospace;
 }
-
 
 .btn {
     border-radius: .25em;
@@ -121,4 +146,8 @@ img.distro {
 
 @media (min-width: 750px) {
     img.distro { display: inline-block; }
+}
+
+@media (min-width: 650px) {
+    div.blocks { flex-wrap: nowrap; }
 }

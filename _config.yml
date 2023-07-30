@@ -1,7 +1,7 @@
 title: Friction
 domain: "friction.graphics"
 url: "https://friction.graphics"
-description: "Friction is a fast and flexible open-source cross-platform 2D motion graphics application."
+description: "Friction is a cross-platform open-source vector-based application for web animations and videos."
 permalink: /:categories/:title:output_ext
 meta: "https://repository-images.githubusercontent.com/608662117/3c41ecb6-0d5a-48bf-8229-3688b7782d22"
 exclude:
