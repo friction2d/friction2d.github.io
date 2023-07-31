@@ -74,7 +74,7 @@ div#content,
 div.blocks,
 div.bigTitle {
     margin: 0 auto;
-    padding: 1rem;
+    width: 100%;
     max-width: 1200px;
     margin: auto;
     font-size: large;
@@ -100,14 +100,16 @@ div.blocks img {
 }
 
 div.blocks div {
+    width: 100%;
     background-color: rgb(33, 33, 38);
     border-radius: .25em;
-    margin: .5em;
+    margin: 1em;
     padding: 1em;
 }
 
 div.blocks h2,
-div.bigTitle h1 {
+div.bigTitle h1,
+div.bigTitle p {
     text-align: center;
 }
 

@@ -49,7 +49,7 @@
             <div>
                 <h1>Welcome to Friction</h1>
                 <h3>Friction is a cross-platform open-source vector-based application for web animations and videos.</h3>
-                <p><a class="btn" target="_blank" href="https://github.com/friction2d/friction/releases/latest"><img src="{{ site.url }}/assets/download.svg" height="24" />Download now</a></p>
+                <!-- <p><a class="btn" target="_blank" href="https://github.com/friction2d/friction/releases/latest"><img src="{{ site.url }}/assets/download.svg" height="24" />Download now</a></p> -->
                 <p>
                     <!-- <img class="distro" src="{{ site.url }}/assets/windows.svg" />
                     <img class="distro" src="{{ site.url }}/assets/ubuntu.svg" />
@@ -62,6 +62,38 @@
         <div id="content">
             {% if page.showTitle %}<h2>{{ page.title }}</h2>{% endif %}
             {{ content }}
+        </div>
+        <div class="bigTitle"><h1>Download Friction</h1></div>
+        <div class="bigTitle">
+            <p><a class="btn" target="_blank" href="https://github.com/friction2d/friction/releases/latest"><img src="{{ site.url }}/assets/download.svg" height="24" />Download latest release</a></p>
+        </div>
+        <div class="blocks">
+            <div>
+                <h2>Supported platforms</h2>
+                <ul>
+                    <li>Windows 10 / 11</li>
+                    <li>Ubuntu 22.04 LTS</li>
+                    <li>Ubuntu 23.04</li>
+                    <li>Fedora 38</li>
+                    <li>Enterprise Linux 9</li>
+                </ul>
+            </div>
+            <div>
+                <h2>System requirements</h2>
+                <ul>
+                    <li>OpenGL 3.3 compatible graphics card</li>
+                    <ul>
+                        <li>NVIDIA GeForce 8000 series or higher</li>
+                        <li>AMD Radeon HD 2000 series or higher</li>
+                        <li>Intel HD Graphics 4000 or higher</li>
+                    </ul>
+                    <li>AVX compatible CPU</li>
+                    <ul>
+                        <li>Intel Sandy Bridge or higher</li>
+                        <li>AMD Bulldozer or higher</li>
+                    </ul>
+                </ul>
+            </div>
         </div>
         <div class="bigTitle"><h1>Friction is powered by</h1></div>
         <div class="blocks">
