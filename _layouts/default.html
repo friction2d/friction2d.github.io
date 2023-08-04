@@ -20,8 +20,8 @@
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
     <head>
-        <title>Friction</title>
         <meta charset="utf-8" />
+        <title>{{ www_title }}</title>
         <meta name="viewport" content="width=device-width, initial-scale=1.0" />
         <meta property="og:title" content="{{ www_title }}">
         <meta name="twitter:title" content="{{ www_title }}">
@@ -39,73 +39,14 @@
         <link href="{{ site.url }}/assets/style.css" rel="stylesheet" />
     </head>
     <body>
-        <div id="header">
+        <div id="headerDefault">
             <div id="headerInner">
                 <a href="{{ site.url }}"><img src="{{ site.url }}/assets/logo.svg" width="267px" height="80px" /></a>
             </div>
         </div>
-        {% if page.hero %}
-        <div id="hero">
-            <div>
-                <h1>Welcome to Friction</h1>
-                <h3>Friction is a cross-platform open-source vector-based application for web animations and videos.</h3>
-                <!-- <p><a class="btn" target="_blank" href="https://github.com/friction2d/friction/releases/latest"><img src="{{ site.url }}/assets/download.svg" height="24" />Download now</a></p> -->
-                <p>
-                    <!-- <img class="distro" src="{{ site.url }}/assets/windows.svg" />
-                    <img class="distro" src="{{ site.url }}/assets/ubuntu.svg" />
-                    <img class="distro" src="{{ site.url }}/assets/redhat.svg" />
-                    <img class="distro" src="{{ site.url }}/assets/fedora.svg" /> -->
-                </p>
-                </div>
-        </div>
-        {% endif %}
         <div id="content">
-            {% if page.showTitle %}<h2>{{ page.title }}</h2>{% endif %}
-            {{ content }}
-        </div>
-        <div class="bigTitle"><h1>Download Friction</h1></div>
-        <div class="bigTitle">
-            <p><a class="btn" target="_blank" href="https://github.com/friction2d/friction/releases/latest"><img src="{{ site.url }}/assets/download.svg" height="24" />Download latest release</a></p>
-        </div>
-        <div class="blocks">
-            <div>
-                <h2>Supported platforms</h2>
-                <ul>
-                    <li>Windows 10 / 11</li>
-                    <li>Ubuntu 22.04 LTS</li>
-                    <li>Ubuntu 23.04</li>
-                    <li>Fedora 38</li>
-                    <li>Enterprise Linux 9</li>
-                </ul>
-            </div>
-            <div>
-                <h2>System requirements</h2>
-                <ul>
-                    <li>OpenGL 3.3 compatible graphics card</li>
-                    <ul>
-                        <li>NVIDIA GeForce 8000 series or higher</li>
-                        <li>AMD Radeon HD 2000 series or higher</li>
-                        <li>Intel HD Graphics 4000 or higher</li>
-                    </ul>
-                    <li>AVX compatible CPU</li>
-                    <ul>
-                        <li>Intel Sandy Bridge or higher</li>
-                        <li>AMD Bulldozer or higher</li>
-                    </ul>
-                </ul>
-            </div>
-        </div>
-        <div class="bigTitle"><h1>Friction is powered by</h1></div>
-        <div class="blocks">
-            <div>
-                <img src="{{ site.url }}/assets/ffmpeg-white.svg" />
-                <h2>FFmpeg Multimedia Framework</h2>
-                <p>FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge.</p>
-            </div>
-            <div>
-                <img src="{{ site.url }}/assets/skia-white.svg" />
-                <h2>Skia Graphics Engine</h2>
-                <p>Skia is an open source 2D graphics library which provides common APIs that work across a variety of hardware and software platforms. It serves as the graphics engine for Google Chrome, ChromeOS, Android, Flutter, Mozilla Firefox and many other products.</p>
+            <div id="contentInner">
+                {{ content }}
             </div>
         </div>
         <div id="footer">

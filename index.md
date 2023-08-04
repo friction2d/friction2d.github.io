@@ -1,7 +1,5 @@
 ---
 title: "Friction"
-layout: default
+layout: home
 permalink: index.html
-hero: true
-showTitle: false
 ---

@@ -1,0 +1,143 @@
+{% assign www_title = "" %}
+{% assign www_description = "" %}
+{% assign header_image = "" %}
+{% assign meta_image = "" %}
+{% if page.title %}
+{% assign www_title = page.title %}
+{% else %}
+{% assign www_title = site.title %}
+{% endif %}
+{% if page.description %}
+{% assign www_description = page.description %}
+{% else %}
+{% assign www_description = site.description %}
+{% endif %}
+{% if site.meta %}
+{% assign meta_image = site.meta %}
+{% elsif page.meta %}
+{% assign meta_image = page.meta %}
+{% endif %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+        <title>{{ www_title }}</title>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <meta property="og:title" content="{{ www_title }}">
+        <meta name="twitter:title" content="{{ www_title }}">
+        <meta name="description" content="{{ www_description }}">
+        <meta property="og:description" content="{{ www_description }}">
+        <meta name="twitter:description" content="{{ www_description }}">
+        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+        <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+        <meta property="twitter:domain" content="{{ site.domain }}">
+        <meta property="og:type" content="website">
+        <meta name="twitter:card" content="summary_large_image">
+        <meta property="og:image" content="{{ site.url }}/{{ meta_image }}">
+        <meta name="twitter:image" content="{{ site.url }}/{{ meta_image }}">
+        <link href="{{ site.url }}/assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+        <link href="{{ site.url }}/assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="header">
+            <div id="headerInner">
+                <a href="{{ site.url }}"><img src="{{ site.url }}/assets/logo.svg" width="267px" height="80px" /></a>
+            </div>
+        </div>
+        <div id="hero">
+            <div>
+                <h1>Welcome to Friction</h1>
+                <h3>Friction is an open-source, vector-based application designed for creating web animations and videos.</h3>
+                </div>
+        </div>
+        <div class="bigTitle"><h1>Features</h1></div>
+        <div class="blocks">
+            <div class="block">
+                <img src="{{ site.url }}/assets/screenshots/friction-screenshot.jpg" />
+                <h2>High Performance</h2>
+                <p>Friction provides a scalable, high-performance GPU/CPU vector and raster pipeline developed in C++, using Skia and the Qt framework.</p>
+            </div>
+            <div class="block">
+                <img src="{{ site.url }}/assets/screenshots/friction-web-animations.jpg" />
+                <h2>Animations for the Web</h2>
+                <p>Create smooth and responsive animations for the web with Friction! Using Friction, you can create animated scalable vector graphics (SVG) using the synchronized multimedia integration language (SMIL), as recommended by the World Wide Web Consortium (W3C)</p>
+            </div>
+            <div class="block">
+                <img src="{{ site.url }}/assets/screenshots/friction-multiple-scenes.jpg" />
+                <h2>Multiple Scenes and Timelines</h2>
+                <p>Friction gives you the flexibility to work on multiple scenes at once, with multiple viewers, timelines, and graphs. Adjust it to fit your needs and screen real estate.</p>
+            </div>
+            <div class="block">
+                <img src="{{ site.url }}/assets/screenshots/friction-expressions.jpg" />
+                <h2>Powerful Expression Editor</h2>
+                <p>Power users are welcome! Friction provides support for expressions with ECMAScript in parameters and effects. Additionally, it includes a complete code editor with autocompletion, syntax highlighting, custom functions, and more.</p>
+            </div>
+            <div class="block">
+                <img src="{{ site.url }}/assets/screenshots/friction-text-effect.jpg" />
+                <h2>Text and Path Effects</h2>
+                <p>Friction includes a diverse range of effects for enhancing your vector graphics and text. Stay tuned for upcoming releases, as we continue to expand our collection of effects.</p>
+            </div>
+            <div class="block">
+                <img src="{{ site.url }}/assets/screenshots/friction-shader-effects.jpg" />
+                <h2>Raster/Shader Effects</h2>
+                <p>Friction offers support for user-customizable shader effects that can be added while the application is running. It includes a foundational set of core effects, such as motion blur.</p>
+            </div>
+        </div>
+        <div class="bigTitle">
+            <h1>Download Friction</h1>
+            <p><a class="btn" target="_blank" href="https://github.com/friction2d/friction/releases/latest"><img src="{{ site.url }}/assets/download.svg" height="24" />Download latest release</a></p>
+        </div>
+        <div class="blocks">
+            <div class="block">
+                <h2 class="left">System Requirements</h2>
+                <p>Most computers in use today should work just fine with Friction. The only strict requirements are:</p>
+                <ul>
+                    <li>OpenGL 3.3 compatible graphics card</li>
+                    <ul>
+                        <li>NVIDIA GeForce 8000 series or higher</li>
+                        <li>AMD Radeon HD 2000 series or higher</li>
+                        <li>Intel HD Graphics 4000 or higher</li>
+                    </ul>
+                    <li>AVX compatible CPU</li>
+                    <ul>
+                        <li>Intel Sandy Bridge or higher</li>
+                        <li>AMD Bulldozer or higher</li>
+                    </ul>
+                </ul>
+                <p>In general, a dual-core laptop with 4GB of RAM should be usable for small projects. Larger projects and/or the use of raster graphics and effects will require more RAM and CPU/GPU power.</p>
+            </div>
+            <div class="block">
+                <h2 class="left">Supported Platforms</h2>
+                <p>Friction currently supports the following platforms:</p>
+                <ul>
+                    <li>Windows 10 / 11</li>
+                    <li>Ubuntu 22.04 LTS / 23.04</li>
+                    <li>Fedora 38</li>
+                    <li>Enterprise Linux 9</li>
+                </ul>
+                <p>Platform support may undergo changes in future releases without prior notice.</p>
+            </div>
+        </div>
+        <div class="bigTitle"><h1>Friction is powered by</h1></div>
+        <div class="blocks">
+            <div class="block">
+                <img class="svg" src="{{ site.url }}/assets/ffmpeg-white.svg" />
+                <h2>FFmpeg Multimedia Framework</h2>
+                <p>FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge.</p>
+            </div>
+            <div class="block">
+                <img class="svg" src="{{ site.url }}/assets/skia-white.svg" />
+                <h2>Skia Graphics Engine</h2>
+                <p>Skia is an open source 2D graphics library which provides common APIs that work across a variety of hardware and software platforms. It serves as the graphics engine for Google Chrome, ChromeOS, Android, Flutter, Mozilla Firefox and many other products.</p>
+            </div>
+        </div>
+        <div id="footer">
+            <div id="footerInner">
+                <p>Copyright &copy; Friction contributors.</p>
+                <p>
+                    <a target="_blank" href="https://github.com/friction2d/friction" title="Join us on GitHub"><img src="{{ site.url }}/assets/github-mark-white.svg" height="24" /></a>
+                </p>
+            </div>
+        </div>
+    </body>
+</html>
