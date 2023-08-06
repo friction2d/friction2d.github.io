@@ -42,6 +42,15 @@
         <div id="header">
             <div id="headerInner">
                 <a href="{{ site.url }}"><img src="{{ site.url }}/assets/logo.svg" width="267px" height="80px" /></a>
+                <div>
+                    <input id="menu-toggle" type="checkbox" />
+                    <label class='menu-button-container' for="menu-toggle">
+                        <div class='menu-button'></div>
+                    </label>
+                    <ul class="menu">
+                        {% for item in site.nav %}<li><a href="{{ item.url }}" {% if item.ext %}target="_blank"{% endif %}>{{ item.title }}</a></li>{% endfor %}
+                    </ul>
+                </div>
             </div>
         </div>
         <div id="hero">
@@ -83,7 +92,7 @@
                 <p>Friction offers support for user-customizable shader effects that can be added while the application is running. It includes a foundational set of core effects, such as motion blur.</p>
             </div>
         </div>
-        <div class="bigTitle">
+        <div class="bigTitle" id="download">
             <h1>Download Friction</h1>
             <p><a class="btn" target="_blank" href="https://github.com/friction2d/friction/releases/latest"><img src="{{ site.url }}/assets/download.svg" height="24" />Download latest release</a></p>
         </div>

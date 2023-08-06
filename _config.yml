@@ -10,3 +10,13 @@ exclude:
   - CNAME
   - LICENSE
   - .gitignore
+nav:
+  - title: Download
+    url: "/#download"
+    ext: false
+  - title: "Documentation"
+    url: /documentation
+    ext: false
+  - title: "Discussions"
+    url: https://github.com/orgs/friction2d/discussions
+    ext: true

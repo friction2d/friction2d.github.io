@@ -1,9 +1,9 @@
 ---
-title: "Building Friction for Linux"
+title: "Building Friction on Linux"
 layout: default
 ---
 
-# Building Friction for Linux
+# Building Friction on Linux
 
 * Do not remove this line (it will not be displayed)
 {:toc}
@@ -37,7 +37,7 @@ Generic build instructions for Friction on Linux.
     * libswresample
 * libunwind
 
-### Ubuntu 22.04+
+### Ubuntu
 
 ```
 sudo apt install -y \
@@ -167,7 +167,3 @@ cpack -G RPM
 ```
 
 You can now install and maintain Friction with the system package manager.
-
-## Using docker
-
-Lorem ipsum.
