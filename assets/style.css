@@ -193,6 +193,10 @@ img.distro {
     height: 25px;
 }
 
+.center { text-align: center;}
+
+.newsblock a { text-decoration: none; }
+
 @media (min-width: 750px) {
     img.distro { display: inline-block; }
 }
@@ -298,7 +302,7 @@ img.distro {
     transform: rotate(-405deg);
 }
 
-@media (max-width: 700px) {
+@media (max-width: 750px) {
     .menu-button-container { display: flex; }
 
     .menu {

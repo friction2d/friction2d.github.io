@@ -11,6 +11,9 @@ exclude:
   - LICENSE
   - .gitignore
 nav:
+  - title: News
+    url: /news
+    ext: false
   - title: Download
     url: "/#download"
     ext: false
