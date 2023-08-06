@@ -12,5 +12,5 @@ The documentation is currently quite deficient; our primary focus remains on the
 
 We offer documentation for compiling Friction from its source code.
 
-* [Linux](source-linux.html)
-* [Windows](source-windows.html)
+* [Linux](/documentation/source-linux.html)
+* [Windows](/documentation/source-windows.html)
