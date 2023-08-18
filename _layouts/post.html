@@ -1,58 +1,10 @@
-{% assign www_title = "" %}
-{% assign www_description = "" %}
-{% assign header_image = "" %}
-{% assign meta_image = "" %}
-{% if page.title %}
-{% assign www_title = page.title %}
-{% else %}
-{% assign www_title = site.title %}
-{% endif %}
-{% if page.description %}
-{% assign www_description = page.description %}
-{% else %}
-{% assign www_description = site.description %}
-{% endif %}
-{% if site.meta %}
-{% assign meta_image = site.meta %}
-{% elsif page.meta %}
-{% assign meta_image = page.meta %}
-{% endif %}
+{% include assign.html %}
 <!DOCTYPE html>
 <html lang="{{ site.lang | default: "en-US" }}">
-    <head>
-        <meta charset="utf-8" />
-        <title>{{ www_title }}</title>
-        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-        <meta property="og:title" content="{{ www_title }}">
-        <meta name="twitter:title" content="{{ www_title }}">
-        <meta name="description" content="{{ www_description }}">
-        <meta property="og:description" content="{{ www_description }}">
-        <meta name="twitter:description" content="{{ www_description }}">
-        <meta property="og:url" content="{{ site.url }}{{ page.url }}">
-        <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
-        <meta property="twitter:domain" content="{{ site.domain }}">
-        <meta property="og:type" content="website">
-        <meta name="twitter:card" content="summary_large_image">
-        <meta property="og:image" content="{{ site.url }}/{{ meta_image }}">
-        <meta name="twitter:image" content="{{ site.url }}/{{ meta_image }}">
-        <link href="{{ site.url }}/assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
-        <link href="{{ site.url }}/assets/style.css" rel="stylesheet" />
-        <link rel="alternate" type="application/rss+xml" title="Friction News Feed" href="{{ site.url }}/feed.xml">
-    </head>
+    {% include head.html %}
     <body>
         <div id="headerDefault">
-            <div id="headerInner">
-                <a href="{{ site.url }}"><img src="{{ site.url }}/assets/logo.svg" width="267px" height="80px" /></a>
-                <div>
-                    <input id="menu-toggle" type="checkbox" />
-                    <label class='menu-button-container' for="menu-toggle">
-                        <div class='menu-button'></div>
-                    </label>
-                    <ul class="menu">
-                        {% for item in site.nav %}<li><a href="{{ item.url }}" {% if item.ext %}target="_blank"{% endif %}>{{ item.title }}</a></li>{% endfor %}
-                    </ul>
-                </div>
-            </div>
+            {% include header.html %}
         </div>
         <div id="content">
             <div id="contentInner">
@@ -69,14 +21,6 @@
                 {% endif %}
             </div>
         </div>
-        <div id="footer">
-            <div id="footerInner">
-                <p>Copyright &copy; Friction contributors.</p>
-                <p>
-                    <a target="_blank" href="https://github.com/friction2d/friction" title="Join us on GitHub"><img src="{{ site.url }}/assets/github-mark-white.svg" height="24" /></a>
-                    <a href="{{ site.url }}/feed.xml" title="News Feed"><img src="{{ site.url }}/assets/rss.svg" height="24" /></a>
-                </p>
-            </div>
-        </div>
+        {% include footer.html %}
     </body>
 </html>

@@ -1,0 +1,19 @@
+{% assign www_title = "" %}
+{% assign www_description = "" %}
+{% assign header_image = "" %}
+{% assign meta_image = "" %}
+{% if page.title %}
+{% assign www_title = page.title %}
+{% else %}
+{% assign www_title = site.title %}
+{% endif %}
+{% if page.description %}
+{% assign www_description = page.description %}
+{% else %}
+{% assign www_description = site.description %}
+{% endif %}
+{% if site.meta %}
+{% assign meta_image = site.meta %}
+{% elsif page.meta %}
+{% assign meta_image = page.meta %}
+{% endif %}

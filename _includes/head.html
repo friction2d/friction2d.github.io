@@ -1,0 +1,20 @@
+<head>
+    <meta charset="utf-8" />
+    <title>{{ www_title }}</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta property="og:title" content="{{ www_title }}">
+    <meta name="twitter:title" content="{{ www_title }}">
+    <meta name="description" content="{{ www_description }}">
+    <meta property="og:description" content="{{ www_description }}">
+    <meta name="twitter:description" content="{{ www_description }}">
+    <meta property="og:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:url" content="{{ site.url }}{{ page.url }}">
+    <meta property="twitter:domain" content="{{ site.domain }}">
+    <meta property="og:type" content="website">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta property="og:image" content="{{ site.url }}/{{ meta_image }}">
+    <meta name="twitter:image" content="{{ site.url }}/{{ meta_image }}">
+    <link href="{{ site.url }}/assets/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon" />
+    <link href="{{ site.url }}/assets/style.css" rel="stylesheet" />
+    <link rel="alternate" type="application/rss+xml" title="Friction News Feed" href="{{ site.url }}/feed.xml">
+</head>

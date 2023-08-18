@@ -1,0 +1,12 @@
+<div id="headerInner">
+    <a href="{{ site.url }}"><img src="{{ site.url }}/assets/logo.svg" width="267px" height="80px" /></a>
+    <div>
+        <input id="menu-toggle" type="checkbox" />
+        <label class='menu-button-container' for="menu-toggle">
+            <div class='menu-button'></div>
+        </label>
+        <ul class="menu">
+            {% for item in site.nav %}<li><a href="{{ item.url }}" {% if item.ext %}target="_blank"{% endif %}>{{ item.title }}</a></li>{% endfor %}
+        </ul>
+    </div>
+</div>
