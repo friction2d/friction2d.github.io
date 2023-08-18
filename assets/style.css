@@ -201,7 +201,7 @@ img.distro {
     img.distro { display: inline-block; }
 }
 
-@media (min-width: 800px) {
+@media (min-width: 870px) {
     div.block {
         margin: 0;
         margin-bottom: 1em;
@@ -326,7 +326,7 @@ td {
     transform: rotate(-405deg);
 }
 
-@media (max-width: 750px) {
+@media (max-width: 900px) {
     .menu-button-container { display: flex; }
 
     .menu {

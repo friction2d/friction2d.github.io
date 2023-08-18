@@ -22,6 +22,8 @@ nav:
   - title: Download
     url: "/#download"
     ext: false
+  - title: Effects
+    url: /documentation/shaders/
   - title: "Documentation"
     url: /documentation/
     ext: false
