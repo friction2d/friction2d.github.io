@@ -233,6 +233,20 @@ img.distro {
 
 #download { scroll-margin-top: 100px; }
 
+th {
+    background-color: rgb(33, 33, 38);
+    padding: .5em;
+}
+
+td {
+    border: 1px solid rgb(33, 33, 38);
+    background-color: rgb(46, 46, 53);
+    padding: .5em;
+}
+
+#breadcrumbs {
+    padding: .5em;
+}
 /* MENU */
 
 .menu {

@@ -10,6 +10,9 @@ exclude:
   - CNAME
   - LICENSE
   - .gitignore
+  - build
+  - wip
+  - Generate/
 nav:
   - title: News
     url: /news
