@@ -13,6 +13,8 @@ exclude:
   - build
   - wip
   - Generate/
+  - "*.frag"
+  - "*.gre"
 nav:
   - title: News
     url: /news/

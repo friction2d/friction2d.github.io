@@ -1,0 +1,13 @@
+<h2 id="generators">Generators</h2>
+<div class="blocks">
+{% for asset in site.static_files %}
+{% if asset.path contains 'shaders/Generate' %}
+{% if asset.path contains 'screenshot.jpg' %}
+{% assign shader = asset.path | split: "/screenshot.jpg" | first | split: "/" | last %}
+<div class="block">
+<a href="{{ site.url }}/documentation/shaders/{{ shader }}.html"><img src="{{ site.baseurl }}{{ asset.path }}" alt="{{ shader }} screenshot" /></a>
+</div>
+{% endif %}
+{% endif %}
+{% endfor %}
+</div>

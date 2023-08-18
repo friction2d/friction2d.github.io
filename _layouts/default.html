@@ -10,6 +10,9 @@
             {% include breadcrumbs.html %}
             <div id="contentInner">
                 {{ content }}
+                {% if page.permalink == 'documentation/shaders/' %}
+                {% include shaders.html %}
+                {% endif %}
             </div>
         </div>
         {% include footer.html %}
