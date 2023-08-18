@@ -15,13 +15,13 @@ exclude:
   - Generate/
 nav:
   - title: News
-    url: /news
+    url: /news/
     ext: false
   - title: Download
     url: "/#download"
     ext: false
   - title: "Documentation"
-    url: /documentation
+    url: /documentation/
     ext: false
   - title: "Discussions"
     url: https://github.com/orgs/friction2d/discussions

@@ -9,7 +9,7 @@
         <div id="content">
             <div id="contentInner">
                 {{ content }}
-                {% if page.permalink == 'news' %}
+                {% if page.permalink == 'news/' %}
                 <div class="blocks">
                         {% for post in site.posts %}
                         <div class="block newsblock">
@@ -18,6 +18,8 @@
                         </div>
                         {% endfor %}
                 </div>
+                {% else %}
+                <p class="publishedDate">Published {{ page.date | date: "%-d %B %Y" }}.</p>
                 {% endif %}
             </div>
         </div>

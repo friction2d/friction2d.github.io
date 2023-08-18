@@ -1,7 +1,7 @@
 ---
 title: "Friction News"
 layout: post
-permalink: news
+permalink: news/
 ---
 
 # Friction News
