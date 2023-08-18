@@ -1,7 +1,7 @@
 ---
 title: "Documentation"
 layout: default
-permalink: documentation
+permalink: documentation/
 ---
 
 # Documentation
