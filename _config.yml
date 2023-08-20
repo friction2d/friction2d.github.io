@@ -1,3 +1,4 @@
+version: 0.9.3
 title: Friction
 domain: "friction.graphics"
 url: "https://friction.graphics"
@@ -15,6 +16,7 @@ exclude:
   - Generate/
   - "*.frag"
   - "*.gre"
+  - "*.sh"
 nav:
   - title: News
     url: /news/
