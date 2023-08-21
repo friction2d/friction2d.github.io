@@ -88,8 +88,8 @@ ninja-build \
 fontconfig-devel \
 qt5-qtbase-devel \
 qt5-qtdeclarative-devel \
-qt5-qtmultimedia-devel q\
-t5-qtsvg-devel \
+qt5-qtmultimedia-devel \
+qt5-qtsvg-devel \
 zlib-devel
 ```
 
