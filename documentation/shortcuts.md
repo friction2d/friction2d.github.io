@@ -13,6 +13,23 @@ These shortcuts are globally available in Friction. Note that some actions may r
 
 | Action | Shortcut |
 | ------ | -------- |
+| New | Ctrl key modifier and N key
+| Open | Ctrl key modifier and O key
+| Save | Ctrl key modifier and S key
+| Save As | Ctrl and Shift modifier and S key
+
+| Action | Shortcut |
+| ------ | -------- |
+| Link | Ctrl modifier and L key
+| Import | Ctrl modifier and I key
+
+| Action | Shortcut |
+| ------ | -------- |
+| Close | Ctrl modifier and W key
+| Exit | Ctrl modifier and Q key
+
+| Action | Shortcut |
+| ------ | -------- |
 | Paste | Ctrl key modifier and V key
 | Copy | Ctrl key modifier and C key
 | Duplicate | Ctrl key modifier and D key
@@ -63,7 +80,9 @@ Shortcuts for objects are valid on the timeline and in the viewer.
 | | Touchpad scroll up/down
 | | Ctrl key modifier and +/- key
 | | Keypad +/-
-| Zoom Fit | Keypad 0
+| Zoom Fit | Ctrl key modifier and 0 key
+| | Keypad 0
+| Reset Zoom | Ctrl key modifier and 1 key
 
 ### Transform
 
