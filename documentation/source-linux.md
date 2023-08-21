@@ -72,6 +72,53 @@ qtmultimedia5-dev \
 qttools5-dev-tools
 ```
 
+### Fedora/RHEL
+
+```
+sudo dnf -y install \
+clang \
+autoconf \
+automake \
+libtool \
+git \
+cmake \
+python3 \
+yasm \
+ninja-build \
+fontconfig-devel \
+qt5-qtbase-devel \
+qt5-qtdeclarative-devel \
+qt5-qtmultimedia-devel q\
+t5-qtsvg-devel \
+zlib-devel
+```
+
+Note that ffmpeg is neeed and is not included with Fedora/RHEL.
+
+### Arch Linux
+
+```
+pacman -Sy \
+clang \
+git \
+libtool \
+autoconf \
+automake \
+cmake \
+python \
+ninja \
+fontconfig \
+freetype2 \
+ffmpeg \
+qscintilla-qt5 \
+qt5-base \
+qt5-imageformats \
+qt5-multimedia \
+qt5-svg \
+qt5-declarative \
+libunwind
+```
+
 ## Get the source
 
 ```
@@ -119,7 +166,7 @@ mkdir build
 cd build
 ```
 
-Note that if you are not using Ubuntu you will need to set paths for ``qscintilla``:
+Note that if you are not using Ubuntu or Arch you will need to set paths for ``qscintilla``:
 
 ```
 cmake -G Ninja \
