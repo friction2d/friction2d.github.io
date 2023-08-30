@@ -77,6 +77,8 @@ div#footerInner {
     flex-wrap: wrap;
 }
 
+div#footerInner a { color: darkgray; }
+
 div#content,
 div.blocks,
 div.bigTitle {
