@@ -262,6 +262,9 @@ td {
     font-style: italic;
 }
 
+img.platform { max-width: fit-content; }
+ul.platform { list-style-type: none; }
+
 /* MENU */
 
 .menu {
