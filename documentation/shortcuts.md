@@ -26,6 +26,7 @@ These shortcuts are globally available in Friction. Note that some actions may r
 | Action | Shortcut |
 | ------ | -------- |
 | Close | Ctrl modifier and W key
+| Preferences | Ctrl modifier and P key
 | Exit | Ctrl modifier and Q key
 
 | Action | Shortcut |
