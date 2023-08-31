@@ -13,7 +13,7 @@ Introducing Friction 0.9.4. This release includes several fixes and generic impr
 * Fixed fullscreen on Windows
 * Fixed several build warnings
 * Viewer/Canvas now supports panning with `ALT` modifier
-* Improved audio handling
+* Improved audio device handling
   * Better failsafe
   * Restore last used device *(if possible)*
   * Select audio output device *(in settings)*
@@ -24,11 +24,10 @@ Introducing Friction 0.9.4. This release includes several fixes and generic impr
   * Support shaders in application bundle *(not used yet)*
   * Don't allow duplicate shaders
   * Recursively scan for shader plugins
-  * Custom shader path
+  * Optional custom shader path
   * Removed file watcher instances
     * The implementation was flawed and needs a rewrite
     * Changes to shaders now require a program restart
-* Added experimental *(untested)* package for Arch Linux
 * Scene settings dialog fixes
 * Better timeline UX
   * Support timecodes on the timeline
@@ -36,7 +35,6 @@ Introducing Friction 0.9.4. This release includes several fixes and generic impr
   * Scrolling on the timeline now supports modifiers `CTRL` and `SHIFT`
     * `CTRL` + `wheel` will now scale in/out the frame range as if you used the scrollbar
     * `SHIFT` + `wheel` will now pan the frame range as if you used the scrollbar
-    * Without a modifier it works as before, scroll up/down
 * Font widget bugfixes
   * Fixed regressions introduced in earlier releases
 * Removed more legacy code
@@ -51,7 +49,7 @@ Introducing Friction 0.9.4. This release includes several fixes and generic impr
 
 * Windows setup/portable are not signed and will trigger warnings during installation and/or first run
 * Development, testing and usage primarily happens on Windows 10 and Ubuntu 22.04
-  * This means reported issues must be replicable on one of these platforms
+  * Reported issues must be replicable on one of these platforms
 
 Friction is beta quality software, expect issues and missing/broken features.
 
