@@ -48,14 +48,13 @@ Introducing Friction 0.9.4. This release includes several fixes and generic impr
 ## Notes
 
 * Windows setup/portable are not signed and will trigger warnings during installation and/or first run
-* Development, testing and usage primarily happens on Windows 10 and Ubuntu 22.04
-  * Reported issues must be replicable on one of these platforms
 
 Friction is beta quality software, expect issues and missing/broken features.
 
 ## Known Issues
 
-* Adjusting shader effect parameters might trigger a crash in some circumstances
+* HiDPI on Windows does not work
+* Adjusting shader effect parameters might trigger a crash on Linux
 * CSS style sheets are not supported when importing an SVG
   * SVG's from Adobe Illustrator (and others?) may have issues due to this
   * In some circumstances this might result in an invalid undo state after import
