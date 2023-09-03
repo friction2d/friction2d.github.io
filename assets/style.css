@@ -103,6 +103,11 @@ div#content img {
     border-radius: .25em;
 }
 
+div#content p img {
+    width: fit-content;
+    border: 0;
+}
+
 div.blocks {
     margin: auto;
     display: flex;
