@@ -2,6 +2,13 @@
 title: "Friction 0.9.4 released"
 layout: post
 categories: releases
+release: 0.9.4
+windows_setup: "setup-win64.exe"
+windows_portable: "win64.7z"
+ubuntu_jammy: "ubuntu22.04.deb"
+ubuntu_lunar: "ubuntu23.04.deb"
+fc38: "fc38.rpm"
+rhel9: "el9.rpm"
 ---
 
 # Friction 0.9.4
@@ -10,7 +17,7 @@ Introducing Friction 0.9.4. This release includes several fixes and generic impr
 
 ## Generic Changes/Fixes
 
-* Fixed fullscreen on Windows
+* Fixed full screen on Windows
 * Fixed several build warnings
 * Viewer/Canvas now supports panning with `ALT` modifier
 * Easing expressions bugfix
@@ -60,7 +67,7 @@ Introducing Friction 0.9.4. This release includes several fixes and generic impr
 
 ## Notes
 
-* Microsoft Visual C++ Redistributable 2017 or higher is needed on Windows
+* Microsoft Visual C++ Redistributable 2017 or higher is needed on Windows 10
   * In most cases this is already installed, if not you can download it [here](https://aka.ms/vs/17/release/vc_redist.x64.exe)
 * Windows setup/portable are not signed and will trigger warnings during installation and/or first run
 
@@ -68,7 +75,7 @@ Friction is beta quality software, expect issues and missing/broken features.
 
 ## Known Issues
 
-* HiDPI on Windows does not work yet
+* HiDPI *(display scaling)* on Windows does not work yet
 * Adjusting shader effect parameters might trigger a crash on Linux
 * CSS style sheets are not supported when importing an SVG
   * SVG's from Adobe Illustrator (and others?) may have issues due to this
