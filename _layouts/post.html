@@ -40,6 +40,9 @@
                     {% if page.fc38 != nil %}
                     <li><a title="Download package for Fedora 38" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.fc38 }}"><img class="platform" src="https://img.shields.io/badge/Fedora%20Linux%2038-294172?style=for-the-badge&logo=fedora&logoColor=white"></a></li>
                     {% endif %}
+                    {% if page.archlinux != nil %}
+                    <li><a title="Download package for Arch Linux" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.archlinux }}"><img class="platform" src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"></a></li>
+                    {% endif %}
                 </ul>
                 <p>Additional downloads and checksums for this release is available on <a target="_blank" href="{{ site.github_release_url }}v{{ page.release }}">GitHub</a> or <a target="_blank" href="{{ site.sourceforge_download_url }}v{{ page.release }}/">Sourceforge</a>.</p>
                 {% endif %}
