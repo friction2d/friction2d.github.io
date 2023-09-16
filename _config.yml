@@ -13,13 +13,21 @@ exclude:
   - CNAME
   - LICENSE
   - .gitignore
+  - .gitmodules
   - build
   - wip
   - Generate/
   - "*.frag"
   - "*.gre"
   - "*.sh"
+  - pandoc
+  - about.html
+  - privacy.html
+  - "*.qrc"
 nav:
+  - title: About
+    url: /about.html
+    ext: false
   - title: News
     url: /news/
     ext: false

@@ -26,11 +26,6 @@ This privacy statement explains how we handle data within the Friction applicati
 
 2. **Data Encryption:** Any data stored locally is subject to the security measures of your operating system to ensure it remains confidential.
 
-
-### Your Control
-
-**Data Removal:** You have the ability to modify, reset, or clear the stored data, including last used project files and assets paths, from within the Friction application's settings. This gives you full control over the information stored by the application.
-
 ## Website
 
 When you access or use the Website, we do not collect any personally identifiable information (PII) from you. The Website is designed as a static HTML platform and does not use any cookies, tracking mechanisms, analytics tools, or third-party services that could collect your personal information.
@@ -42,7 +37,3 @@ Since we do not collect any personal information or use tracking technologies, w
 ### Third-Party Websites
 
 Our Website may contain links to third-party websites for your convenience. However, we do not have control over these external sites, and this Privacy Statement does not apply to them. We encourage you to review the privacy policies of those websites before providing any personal information.
-
-## Updates to this Privacy Statement
-
-This privacy statement may be updated to reflect changes in our practices or to adhere to legal or regulatory requirements. Please check this statement periodically to remain informed about how we protect your privacy.

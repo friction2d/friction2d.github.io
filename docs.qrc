@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/docs">
+        <file>LICENSE</file>
+        <file>about.html</file>
+        <file>privacy.html</file>
+    </qresource>
+</RCC>
