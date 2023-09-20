@@ -9,88 +9,100 @@ Shortcuts available in Friction.
 
 ## General
 
-These shortcuts are globally available in Friction. Note that some actions may require a selected object and/or an active viewer.
+These shortcuts are globally available in Friction. Note that some actions may require a selected object and/or an active viewer or timeline.
 
 | Action | Shortcut |
 | ------ | -------- |
-| New | Ctrl key modifier and N key
-| Open | Ctrl key modifier and O key
-| Save | Ctrl key modifier and S key
-| Save As | Ctrl and Shift modifier and S key
+| New | `Ctrl` + `N`
+| Open | `Ctrl` + `O`
+| Save | `Ctrl` + `S`
+| Save As | `Ctrl` + `Shift` + `S`
 
 | Action | Shortcut |
 | ------ | -------- |
-| Link | Ctrl modifier and L key
-| Import | Ctrl modifier and I key
+| Link | `Ctrl` + `L`
+| Import | `Ctrl` + `I`
 
 | Action | Shortcut |
 | ------ | -------- |
-| Close | Ctrl modifier and W key
-| Preferences | Ctrl modifier and P key
-| Exit | Ctrl modifier and Q key
+| Close | `Ctrl` + `W`
+| Preferences | `Ctrl` + `P`
+| Exit | `Ctrl` + `Q`
 
 | Action | Shortcut |
 | ------ | -------- |
-| Paste | Ctrl key modifier and V key
-| Copy | Ctrl key modifier and C key
-| Duplicate | Ctrl key modifier and D key
-| Cut | Ctrl key modifier and X key
-| Delete | Delete key
+| Paste | `Ctrl` + `V`
+| Copy | `Ctrl` + `C`
+| Duplicate | `Ctrl` + `D`
+| Cut | `Ctrl` + `X`
+| Delete | `Delete`
 
 ## Objects
 
-Shortcuts for objects are valid on the timeline and in the viewer.
+Shortcuts for objects are valid on active timeline and viewer.
 
 | Action | Shortcut |
 | ------ | -------- |
-| Move Object Up | PageUp key
-| Move Object Down | PageDown key
-| Move Object Top | Home key
-| Move Object Bottom | End key
+| Move Object Up | `PageUp`
+| Move Object Down | `PageDown`
+| Move Object Top | `Home`
+| Move Object Bottom | `End`
 
 | Action | Shortcut |
 | ------ | -------- |
-| Group | Ctrl key modifier and G key
-| UnGroup | Ctrl + Shft key modifier and G key
+| Group | `Ctrl` + `G`
+| UnGroup | `Ctrl` + `Shft` + `G`
 
 | Action | Shortcut |
 | ------ | -------- |
-| Select All | A key
-| DeSelect All | Shift key modifier and A key
-| Invert Selection | I key
+| Select All | `A`
+| DeSelect All | `Shift` + `A`
+| Invert Selection | `I`
 
 ## Timeline
 
+Shortcuts are valid on active timeline.
+
 | Action | Shortcut |
 | ------ | -------- |
-||
+| Rewind *(first frame)* | `Shift` + `Left`
+| Fast Forward *(last frame)* | `Shift` + `Right`
+| Previous Frame | `Left`
+| Next Frame | `Right`
+| Previous Keyframe | `Down`
+| Next Keyframe | `Up`
+| Play/Pause | `Space`
+| Play from first frame | `Shift` + `Space`
+| Stop | `Esc`
 
-## Viewer
+## Viewer/Canvas
+
+Shortcuts are valid on active viewer.
 
 ### Pan and Zoom
 
 | Action | Shortcut |
 | ------ | -------- |
-| Pan | Middle mouse button and move mouse/touchpad
-| | Left mouse button and move mouse/touchpad
-| | Alt key modifier and move mouse/touchpad
+| Pan | `Middle` mouse button and move mouse/touchpad
+| | `Left` mouse button and move mouse/touchpad
+| | `Alt` + move mouse/touchpad
 
 | Action | Shortcut |
 | ------ | -------- |
-| Zoom +/- | Mouse wheel up/down
-| | Touchpad scroll up/down
-| | Ctrl key modifier and +/- key
-| | Keypad +/-
-| Zoom Fit | Ctrl key modifier and 0 key
-| | Keypad 0
-| Reset Zoom | Ctrl key modifier and 1 key
+| Zoom +/- | `Wheel`  up/down
+| | `Scroll` up/down
+| | `Ctrl` + `+`/`-`
+| | `Numpad` `+`/`-`
+| Zoom Fit | `Ctrl` + `0`
+| | `Numpad`  `0`
+| Reset Zoom | `Ctrl` + `1`
 
 ### Transform
 
 | Action | Shortcut |
 | ------ | -------- |
-| Reset Translation | Alt key modifier and G key
-| Reset Scale | Alt key modifier and S key
-| Reset Rotation | Alt key modifier and R key
-| Rotate | R key and move mouse/touchpad
-| Scale | S key and move mouse/touchpad
+| Reset Translation | `Alt` + `G`
+| Reset Scale | `Alt` + `S`
+| Reset Rotation | `Alt` + `R`
+| Rotate | `R` and move mouse/touchpad
+| Scale | `S` and move mouse/touchpad
