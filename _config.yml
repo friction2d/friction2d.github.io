@@ -24,6 +24,7 @@ exclude:
   - about.html
   - privacy.html
   - "*.qrc"
+  - 3rdparty
 nav:
   - title: About
     url: /about.html

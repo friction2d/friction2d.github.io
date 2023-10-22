@@ -1,0 +1,985 @@
+<!-- AUTO GENERATED DO NOT EDIT -->
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+  </head>
+  <body>
+<h1 id="skia">Skia</h1>
+<p>Skia is a complete 2D graphic library for drawing Text, Geometries,
+and Images.</p>
+<p>See full details, and build instructions, at https://skia.org.</p>
+<p>Copyright (c) 2011 Google Inc. All rights reserved.</p>
+<p>Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:</p>
+<ul>
+<li><p>Redistributions of source code must retain the above copyright
+notice, this list of conditions and the following disclaimer.</p></li>
+<li><p>Redistributions in binary form must reproduce the above copyright
+notice, this list of conditions and the following disclaimer in the
+documentation and/or other materials provided with the
+distribution.</p></li>
+<li><p>Neither the name of the copyright holder nor the names of its
+contributors may be used to endorse or promote products derived from
+this software without specific prior written permission.</p></li>
+</ul>
+<pre><code>THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</code></pre>
+<h2 id="icu">ICU</h2>
+<pre><code>COPYRIGHT AND PERMISSION NOTICE (ICU 58 and later)
+
+Copyright © 1991-2020 Unicode, Inc. All rights reserved.
+Distributed under the Terms of Use in https://www.unicode.org/copyright.html.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of the Unicode data files and any associated documentation
+(the &quot;Data Files&quot;) or Unicode software and any associated documentation
+(the &quot;Software&quot;) to deal in the Data Files or Software
+without restriction, including without limitation the rights to use,
+copy, modify, merge, publish, distribute, and/or sell copies of
+the Data Files or Software, and to permit persons to whom the Data Files
+or Software are furnished to do so, provided that either
+(a) this copyright and permission notice appear with all copies
+of the Data Files or Software, or
+(b) this copyright and permission notice appear in associated
+Documentation.
+
+THE DATA FILES AND SOFTWARE ARE PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF
+ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE
+WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND
+NONINFRINGEMENT OF THIRD PARTY RIGHTS.
+IN NO EVENT SHALL THE COPYRIGHT HOLDER OR HOLDERS INCLUDED IN THIS
+NOTICE BE LIABLE FOR ANY CLAIM, OR ANY SPECIAL INDIRECT OR CONSEQUENTIAL
+DAMAGES, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE,
+DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER
+TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR
+PERFORMANCE OF THE DATA FILES OR SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder
+shall not be used in advertising or otherwise to promote the sale,
+use or other dealings in these Data Files or Software without prior
+written authorization of the copyright holder.
+
+---------------------
+
+Third-Party Software Licenses
+
+This section contains third-party software notices and/or additional
+terms for licensed third-party software components included within ICU
+libraries.
+
+1. ICU License - ICU 1.8.1 to ICU 57.1
+
+COPYRIGHT AND PERMISSION NOTICE
+
+Copyright (c) 1995-2016 International Business Machines Corporation and others
+All rights reserved.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+&quot;Software&quot;), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, and/or sell copies of the Software, and to permit persons
+to whom the Software is furnished to do so, provided that the above
+copyright notice(s) and this permission notice appear in all copies of
+the Software and that both the above copyright notice(s) and this
+permission notice appear in supporting documentation.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT
+OF THIRD PARTY RIGHTS. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR
+HOLDERS INCLUDED IN THIS NOTICE BE LIABLE FOR ANY CLAIM, OR ANY
+SPECIAL INDIRECT OR CONSEQUENTIAL DAMAGES, OR ANY DAMAGES WHATSOEVER
+RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF
+CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN
+CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
+
+Except as contained in this notice, the name of a copyright holder
+shall not be used in advertising or otherwise to promote the sale, use
+or other dealings in this Software without prior written authorization
+of the copyright holder.
+
+All trademarks and registered trademarks mentioned herein are the
+property of their respective owners.
+
+2. Chinese/Japanese Word Break Dictionary Data (cjdict.txt)
+
+ #     The Google Chrome software developed by Google is licensed under
+ # the BSD license. Other software included in this distribution is
+ # provided under other licenses, as set forth below.
+ #
+ #  The BSD License
+ #  http://opensource.org/licenses/bsd-license.php
+ #  Copyright (C) 2006-2008, Google Inc.
+ #
+ #  All rights reserved.
+ #
+ #  Redistribution and use in source and binary forms, with or without
+ # modification, are permitted provided that the following conditions are met:
+ #
+ #  Redistributions of source code must retain the above copyright notice,
+ # this list of conditions and the following disclaimer.
+ #  Redistributions in binary form must reproduce the above
+ # copyright notice, this list of conditions and the following
+ # disclaimer in the documentation and/or other materials provided with
+ # the distribution.
+ #  Neither the name of  Google Inc. nor the names of its
+ # contributors may be used to endorse or promote products derived from
+ # this software without specific prior written permission.
+ #
+ #
+ #  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+ # CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ # INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ # MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ # DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT OWNER OR CONTRIBUTORS BE
+ # LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+ # CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+ # SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR
+ # BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF
+ # LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING
+ # NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE OF THIS
+ # SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+ #
+ #
+ #  The word list in cjdict.txt are generated by combining three word lists
+ # listed below with further processing for compound word breaking. The
+ # frequency is generated with an iterative training against Google web
+ # corpora.
+ #
+ #  * Libtabe (Chinese)
+ #    - https://sourceforge.net/project/?group_id=1519
+ #    - Its license terms and conditions are shown below.
+ #
+ #  * IPADIC (Japanese)
+ #    - http://chasen.aist-nara.ac.jp/chasen/distribution.html
+ #    - Its license terms and conditions are shown below.
+ #
+ #  ---------COPYING.libtabe ---- BEGIN--------------------
+ #
+ #  /*
+ #   * Copyright (c) 1999 TaBE Project.
+ #   * Copyright (c) 1999 Pai-Hsiang Hsiao.
+ #   * All rights reserved.
+ #   *
+ #   * Redistribution and use in source and binary forms, with or without
+ #   * modification, are permitted provided that the following conditions
+ #   * are met:
+ #   *
+ #   * . Redistributions of source code must retain the above copyright
+ #   *   notice, this list of conditions and the following disclaimer.
+ #   * . Redistributions in binary form must reproduce the above copyright
+ #   *   notice, this list of conditions and the following disclaimer in
+ #   *   the documentation and/or other materials provided with the
+ #   *   distribution.
+ #   * . Neither the name of the TaBE Project nor the names of its
+ #   *   contributors may be used to endorse or promote products derived
+ #   *   from this software without specific prior written permission.
+ #   *
+ #   * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ #   * &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ #   * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ #   * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ #   * REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ #   * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ #   * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ #   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ #   * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ #   * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ #   * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ #   * OF THE POSSIBILITY OF SUCH DAMAGE.
+ #   */
+ #
+ #  /*
+ #   * Copyright (c) 1999 Computer Systems and Communication Lab,
+ #   *                    Institute of Information Science, Academia
+ #       *                    Sinica. All rights reserved.
+ #   *
+ #   * Redistribution and use in source and binary forms, with or without
+ #   * modification, are permitted provided that the following conditions
+ #   * are met:
+ #   *
+ #   * . Redistributions of source code must retain the above copyright
+ #   *   notice, this list of conditions and the following disclaimer.
+ #   * . Redistributions in binary form must reproduce the above copyright
+ #   *   notice, this list of conditions and the following disclaimer in
+ #   *   the documentation and/or other materials provided with the
+ #   *   distribution.
+ #   * . Neither the name of the Computer Systems and Communication Lab
+ #   *   nor the names of its contributors may be used to endorse or
+ #   *   promote products derived from this software without specific
+ #   *   prior written permission.
+ #   *
+ #   * THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ #   * &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ #   * LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ #   * FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ #   * REGENTS OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT,
+ #   * INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ #   * (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ #   * SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ #   * HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ #   * STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ #   * ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ #   * OF THE POSSIBILITY OF SUCH DAMAGE.
+ #   */
+ #
+ #  Copyright 1996 Chih-Hao Tsai @ Beckman Institute,
+ #      University of Illinois
+ #  c-tsai4@uiuc.edu  http://casper.beckman.uiuc.edu/~c-tsai4
+ #
+ #  ---------------COPYING.libtabe-----END--------------------------------
+ #
+ #
+ #  ---------------COPYING.ipadic-----BEGIN-------------------------------
+ #
+ #  Copyright 2000, 2001, 2002, 2003 Nara Institute of Science
+ #  and Technology.  All Rights Reserved.
+ #
+ #  Use, reproduction, and distribution of this software is permitted.
+ #  Any copy of this software, whether in its original form or modified,
+ #  must include both the above copyright notice and the following
+ #  paragraphs.
+ #
+ #  Nara Institute of Science and Technology (NAIST),
+ #  the copyright holders, disclaims all warranties with regard to this
+ #  software, including all implied warranties of merchantability and
+ #  fitness, in no event shall NAIST be liable for
+ #  any special, indirect or consequential damages or any damages
+ #  whatsoever resulting from loss of use, data or profits, whether in an
+ #  action of contract, negligence or other tortuous action, arising out
+ #  of or in connection with the use or performance of this software.
+ #
+ #  A large portion of the dictionary entries
+ #  originate from ICOT Free Software.  The following conditions for ICOT
+ #  Free Software applies to the current dictionary as well.
+ #
+ #  Each User may also freely distribute the Program, whether in its
+ #  original form or modified, to any third party or parties, PROVIDED
+ #  that the provisions of Section 3 (&quot;NO WARRANTY&quot;) will ALWAYS appear
+ #  on, or be attached to, the Program, which is distributed substantially
+ #  in the same form as set out herein and that such intended
+ #  distribution, if actually made, will neither violate or otherwise
+ #  contravene any of the laws and regulations of the countries having
+ #  jurisdiction over the User or the intended distribution itself.
+ #
+ #  NO WARRANTY
+ #
+ #  The program was produced on an experimental basis in the course of the
+ #  research and development conducted during the project and is provided
+ #  to users as so produced on an experimental basis.  Accordingly, the
+ #  program is provided without any warranty whatsoever, whether express,
+ #  implied, statutory or otherwise.  The term &quot;warranty&quot; used herein
+ #  includes, but is not limited to, any warranty of the quality,
+ #  performance, merchantability and fitness for a particular purpose of
+ #  the program and the nonexistence of any infringement or violation of
+ #  any right of any third party.
+ #
+ #  Each user of the program will agree and understand, and be deemed to
+ #  have agreed and understood, that there is no warranty whatsoever for
+ #  the program and, accordingly, the entire risk arising from or
+ #  otherwise connected with the program is assumed by the user.
+ #
+ #  Therefore, neither ICOT, the copyright holder, or any other
+ #  organization that participated in or was otherwise related to the
+ #  development of the program and their respective officials, directors,
+ #  officers and other employees shall be held liable for any and all
+ #  damages, including, without limitation, general, special, incidental
+ #  and consequential damages, arising out of or otherwise in connection
+ #  with the use or inability to use the program or any product, material
+ #  or result produced or otherwise obtained by using the program,
+ #  regardless of whether they have been advised of, or otherwise had
+ #  knowledge of, the possibility of such damages at any time during the
+ #  project or thereafter.  Each user will be deemed to have agreed to the
+ #  foregoing by his or her commencement of use of the program.  The term
+ #  &quot;use&quot; as used herein includes, but is not limited to, the use,
+ #  modification, copying and distribution of the program and the
+ #  production of secondary products from the program.
+ #
+ #  In the case where the program, whether in its original form or
+ #  modified, was distributed or delivered to or received by a user from
+ #  any person, organization or entity other than ICOT, unless it makes or
+ #  grants independently of ICOT any specific warranty to the user in
+ #  writing, such person, organization or entity, will also be exempted
+ #  from and not be held liable to the user for any such damages as noted
+ #  above as far as the program is concerned.
+ #
+ #  ---------------COPYING.ipadic-----END----------------------------------
+
+3. Lao Word Break Dictionary Data (laodict.txt)
+
+ #  Copyright (c) 2013 International Business Machines Corporation
+ #  and others. All Rights Reserved.
+ #
+ # Project: https://github.com/veer66/lao-dictionary
+ # Dictionary: https://github.com/veer66/lao-dictionary/blob/master/Lao-Dictionary.txt
+ # License: https://github.com/veer66/lao-dictionary/blob/master/Lao-Dictionary-LICENSE.txt
+ #              (copied below)
+ #
+ #  This file is derived from the above dictionary, with slight
+ #  modifications.
+ #  ----------------------------------------------------------------------
+ #  Copyright (C) 2013 Brian Eugene Wilson, Robert Martin Campbell.
+ #  All rights reserved.
+ #
+ #  Redistribution and use in source and binary forms, with or without
+ #  modification,
+ #  are permitted provided that the following conditions are met:
+ #
+ #
+ # Redistributions of source code must retain the above copyright notice, this
+ #  list of conditions and the following disclaimer. Redistributions in
+ #  binary form must reproduce the above copyright notice, this list of
+ #  conditions and the following disclaimer in the documentation and/or
+ #  other materials provided with the distribution.
+ #
+ #
+ # THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+ # &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+ # LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS
+ # FOR A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE
+ # COPYRIGHT HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT,
+ # INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES
+ # (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR
+ # SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS INTERRUPTION)
+ # HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN CONTRACT,
+ # STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ # ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED
+ # OF THE POSSIBILITY OF SUCH DAMAGE.
+ #  --------------------------------------------------------------------------
+
+4. Burmese Word Break Dictionary Data (burmesedict.txt)
+
+ #  Copyright (c) 2014 International Business Machines Corporation
+ #  and others. All Rights Reserved.
+ #
+ #  This list is part of a project hosted at:
+ #    github.com/kanyawtech/myanmar-karen-word-lists
+ #
+ #  --------------------------------------------------------------------------
+ #  Copyright (c) 2013, LeRoy Benjamin Sharon
+ #  All rights reserved.
+ #
+ #  Redistribution and use in source and binary forms, with or without
+ #  modification, are permitted provided that the following conditions
+ #  are met: Redistributions of source code must retain the above
+ #  copyright notice, this list of conditions and the following
+ #  disclaimer.  Redistributions in binary form must reproduce the
+ #  above copyright notice, this list of conditions and the following
+ #  disclaimer in the documentation and/or other materials provided
+ #  with the distribution.
+ #
+ #    Neither the name Myanmar Karen Word Lists, nor the names of its
+ #    contributors may be used to endorse or promote products derived
+ #    from this software without specific prior written permission.
+ #
+ #  THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND
+ #  CONTRIBUTORS &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES,
+ #  INCLUDING, BUT NOT LIMITED TO, THE IMPLIED WARRANTIES OF
+ #  MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE ARE
+ #  DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT HOLDER OR CONTRIBUTORS
+ #  BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+ #  EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED
+ #  TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+ #  DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON
+ #  ANY THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR
+ #  TORT (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF
+ #  THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF
+ #  SUCH DAMAGE.
+ #  --------------------------------------------------------------------------
+
+5. Time Zone Database
+
+  ICU uses the public domain data and code derived from Time Zone
+Database for its time zone support. The ownership of the TZ database
+is explained in BCP 175: Procedure for Maintaining the Time Zone
+Database section 7.
+
+ # 7.  Database Ownership
+ #
+ #    The TZ database itself is not an IETF Contribution or an IETF
+ #    document.  Rather it is a pre-existing and regularly updated work
+ #    that is in the public domain, and is intended to remain in the
+ #    public domain.  Therefore, BCPs 78 [RFC5378] and 79 [RFC3979] do
+ #    not apply to the TZ Database or contributions that individuals make
+ #    to it.  Should any claims be made and substantiated against the TZ
+ #    Database, the organization that is providing the IANA
+ #    Considerations defined in this RFC, under the memorandum of
+ #    understanding with the IETF, currently ICANN, may act in accordance
+ #    with all competent court orders.  No ownership claims will be made
+ #    by ICANN or the IETF Trust on the database or the code.  Any person
+ #    making a contribution to the database or code waives all rights to
+ #    future claims in that contribution or in the TZ Database.
+
+6. Google double-conversion
+
+Copyright 2006-2011, the V8 project authors. All rights reserved.
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+    * Redistributions of source code must retain the above copyright
+      notice, this list of conditions and the following disclaimer.
+    * Redistributions in binary form must reproduce the above
+      copyright notice, this list of conditions and the following
+      disclaimer in the documentation and/or other materials provided
+      with the distribution.
+    * Neither the name of Google Inc. nor the names of its
+      contributors may be used to endorse or promote products derived
+      from this software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+</code></pre>
+<h2 id="expat">expat</h2>
+<pre><code>Copyright (c) 1998, 1999, 2000 Thai Open Source Software Center Ltd
+                               and Clark Cooper
+Copyright (c) 2001, 2002, 2003, 2004, 2005, 2006 Expat maintainers.
+
+Permission is hereby granted, free of charge, to any person obtaining
+a copy of this software and associated documentation files (the
+&quot;Software&quot;), to deal in the Software without restriction, including
+without limitation the rights to use, copy, modify, merge, publish,
+distribute, sublicense, and/or sell copies of the Software, and to
+permit persons to whom the Software is furnished to do so, subject to
+the following conditions:
+
+The above copyright notice and this permission notice shall be included
+in all copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED &quot;AS IS&quot;, WITHOUT WARRANTY OF ANY KIND,
+EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF
+MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT.
+IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY
+CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT,
+TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE
+SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</code></pre>
+<h2 id="freetype">freetype</h2>
+<pre><code>The  FreeType 2  font  engine is  copyrighted  work and  cannot be  used
+legally  without a  software license.   In  order to  make this  project
+usable  to a vast  majority of  developers, we  distribute it  under two
+mutually exclusive open-source licenses.
+
+This means  that *you* must choose  *one* of the  two licenses described
+below, then obey  all its terms and conditions when  using FreeType 2 in
+any of your projects or products.
+
+  - The FreeType License, found in  the file `FTL.TXT&#39;, which is similar
+    to the original BSD license *with* an advertising clause that forces
+    you  to  explicitly cite  the  FreeType  project  in your  product&#39;s
+    documentation.  All  details are in the license  file.  This license
+    is  suited  to products  which  don&#39;t  use  the GNU  General  Public
+    License.
+
+    Note that  this license  is  compatible  to the  GNU General  Public
+    License version 3, but not version 2.
+
+  - The GNU General Public License version 2, found in  `GPLv2.TXT&#39; (any
+    later version can be used  also), for programs which already use the
+    GPL.  Note  that the  FTL is  incompatible  with  GPLv2 due  to  its
+    advertisement clause.
+
+The contributed BDF and PCF drivers  come with a license similar to that
+of the X Window System.  It is compatible to the above two licenses (see
+file src/bdf/README and  src/pcf/README).  The same holds  for the files
+`fthash.c&#39; and  `fthash.h&#39;; their  code was  part of  the BDF  driver in
+earlier FreeType versions.
+
+The gzip module uses the zlib license (see src/gzip/zlib.h) which too is
+compatible to the above two licenses.
+
+The MD5 checksum support (only used for debugging in development builds)
+is in the public domain.</code></pre>
+<h2 id="libgifcodec">libgifcodec</h2>
+<pre><code>MPL-1.1 / GPL-2.0 / LGPL-2.1
+============================
+
+SkGifImageReader.cpp and SkGifImageReader.h:
+
+    ***** BEGIN LICENSE BLOCK *****
+    Version: MPL 1.1/GPL 2.0/LGPL 2.1
+
+    The contents of this file are subject to the Mozilla Public License Version
+    1.1 (the &quot;License&quot;); you may not use this file except in compliance with
+    the License. You may obtain a copy of the License at
+    http://www.mozilla.org/MPL/
+
+    Software distributed under the License is distributed on an &quot;AS IS&quot; basis,
+    WITHOUT WARRANTY OF ANY KIND, either express or implied. See the License
+    for the specific language governing rights and limitations under the
+    License.
+
+    The Original Code is mozilla.org code.
+
+    The Initial Developer of the Original Code is
+    Netscape Communications Corporation.
+    Portions created by the Initial Developer are Copyright (C) 1998
+    the Initial Developer. All Rights Reserved.
+
+    Contributor(s):
+      Chris Saari &lt;saari@netscape.com&gt;
+      Apple Computer
+
+    Alternatively, the contents of this file may be used under the terms of
+    either the GNU General Public License Version 2 or later (the &quot;GPL&quot;), or
+    the GNU Lesser General Public License Version 2.1 or later (the &quot;LGPL&quot;),
+    in which case the provisions of the GPL or the LGPL are applicable instead
+    of those above. If you wish to allow use of your version of this file only
+    under the terms of either the GPL or the LGPL, and not to allow others to
+    use your version of this file under the terms of the MPL, indicate your
+    decision by deleting the provisions above and replace them with the notice
+    and other provisions required by the GPL or the LGPL. If you do not delete
+    the provisions above, a recipient may use your version of this file under
+    the terms of any one of the MPL, the GPL or the LGPL.
+
+    ***** END LICENSE BLOCK ***** */
+
+
+BSD-3-Clause
+============
+
+libgifcodec.gni, SkGifCodec.h, SkLibGifCodec.cpp, SkLibGifCodec.h:
+
+    Copyright 2019 Google LLC. All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions are
+    met:
+
+      * Redistributions of source code must retain the above copyright
+        notice, this list of conditions and the following disclaimer.
+
+      * Redistributions in binary form must reproduce the above
+        copyright notice, this list of conditions and the following
+        disclaimer in the documentation and/or other materials provided
+        with the distribution.
+
+      * Neither the name of the copyright holder nor the names of its
+        contributors may be used to endorse or promote products derived
+        from this software without specific prior written permission.
+
+    THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+    &quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+    LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+    A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+    OWNER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+    SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+    LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+    DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+    THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.
+
+
+BSD-2-Clause
+============
+
+SkLibGifCodec.cpp:
+
+    Copyright (C) 2006 Apple Computer, Inc.  All rights reserved.
+
+    Redistribution and use in source and binary forms, with or without
+    modification, are permitted provided that the following conditions
+    are met:
+
+    1. Redistributions of source code must retain the above copyright
+       notice, this list of conditions and the following disclaimer.
+
+    2. Redistributions in binary form must reproduce the above copyright
+       notice, this list of conditions and the following disclaimer in the
+       documentation and/or other materials provided with the distribution.
+
+    THIS SOFTWARE IS PROVIDED BY APPLE COMPUTER, INC. ``AS IS&#39;&#39; AND ANY
+    EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+    IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR
+    PURPOSE ARE DISCLAIMED.  IN NO EVENT SHALL APPLE COMPUTER, INC. OR
+    CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL,
+    EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO,
+    PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR
+    PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY
+    OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+    (INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+    OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</code></pre>
+<h2 id="libjpeg-turbo">libjpeg-turbo</h2>
+<pre><code>libjpeg-turbo Licenses
+======================
+
+libjpeg-turbo is covered by three compatible BSD-style open source licenses:
+
+- The IJG (Independent JPEG Group) License, which is listed in
+  [README.ijg](README.ijg)
+
+  This license applies to the libjpeg API library and associated programs
+  (any code inherited from libjpeg, and any modifications to that code.)
+
+- The Modified (3-clause) BSD License, which is listed below
+
+  This license covers the TurboJPEG API library and associated programs, as
+  well as the build system.
+
+- The zlib License, which is listed below
+
+  This license is a subset of the other two, and it covers the libjpeg-turbo
+  SIMD extensions.
+
+
+Complying with the libjpeg-turbo Licenses
+=========================================
+
+This section provides a roll-up of the libjpeg-turbo licensing terms, to the
+best of our understanding.
+
+1.  If you are distributing a modified version of the libjpeg-turbo source,
+    then:
+
+    1.  You cannot alter or remove any existing copyright or license notices
+        from the source.
+
+        **Origin**
+        - Clause 1 of the IJG License
+        - Clause 1 of the Modified BSD License
+        - Clauses 1 and 3 of the zlib License
+
+    2.  You must add your own copyright notice to the header of each source
+        file you modified, so others can tell that you modified that file (if
+        there is not an existing copyright header in that file, then you can
+        simply add a notice stating that you modified the file.)
+
+        **Origin**
+        - Clause 1 of the IJG License
+        - Clause 2 of the zlib License
+
+    3.  You must include the IJG README file, and you must not alter any of the
+        copyright or license text in that file.
+
+        **Origin**
+        - Clause 1 of the IJG License
+
+2.  If you are distributing only libjpeg-turbo binaries without the source, or
+    if you are distributing an application that statically links with
+    libjpeg-turbo, then:
+
+    1.  Your product documentation must include a message stating:
+
+        This software is based in part on the work of the Independent JPEG
+        Group.
+
+        **Origin**
+        - Clause 2 of the IJG license
+
+    2.  If your binary distribution includes or uses the TurboJPEG API, then
+        your product documentation must include the text of the Modified BSD
+        License.
+
+        **Origin**
+        - Clause 2 of the Modified BSD License
+
+3.  You cannot use the name of the IJG or The libjpeg-turbo Project or the
+    contributors thereof in advertising, publicity, etc.
+
+    **Origin**
+    - IJG License
+    - Clause 3 of the Modified BSD License
+
+4.  The IJG and The libjpeg-turbo Project do not warrant libjpeg-turbo to be
+    free of defects, nor do we accept any liability for undesirable
+    consequences resulting from your use of the software.
+
+    **Origin**
+    - IJG License
+    - Modified BSD License
+    - zlib License
+
+
+The Modified (3-clause) BSD License
+===================================
+
+Copyright (C)\&lt;YEAR\&gt; \&lt;AUTHOR\&gt;.  All Rights Reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are met:
+
+- Redistributions of source code must retain the above copyright notice,
+  this list of conditions and the following disclaimer.
+- Redistributions in binary form must reproduce the above copyright notice,
+  this list of conditions and the following disclaimer in the documentation
+  and/or other materials provided with the distribution.
+- Neither the name of the libjpeg-turbo Project nor the names of its
+  contributors may be used to endorse or promote products derived from this
+  software without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS &quot;AS IS&quot;,
+AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT LIMITED TO, THE
+IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR A PARTICULAR PURPOSE
+ARE DISCLAIMED.  IN NO EVENT SHALL THE COPYRIGHT HOLDERS OR CONTRIBUTORS BE
+LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL, SPECIAL, EXEMPLARY, OR
+CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT LIMITED TO, PROCUREMENT OF
+SUBSTITUTE GOODS OR SERVICES; LOSS OF USE, DATA, OR PROFITS; OR BUSINESS
+INTERRUPTION) HOWEVER CAUSED AND ON ANY THEORY OF LIABILITY, WHETHER IN
+CONTRACT, STRICT LIABILITY, OR TORT (INCLUDING NEGLIGENCE OR OTHERWISE)
+ARISING IN ANY WAY OUT OF THE USE OF THIS SOFTWARE, EVEN IF ADVISED OF THE
+POSSIBILITY OF SUCH DAMAGE.
+
+
+The zlib License
+================
+
+Copyright (C) \&lt;YEAR\&gt;, \&lt;AUTHOR\&gt;.
+
+This software is provided &#39;as-is&#39;, without any express or implied
+warranty.  In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.
+
+
+Why Three Licenses?
+===================
+
+The zlib License could have been used instead of the Modified (3-clause) BSD
+License, and since the IJG License effectively subsumes the distribution
+conditions of the zlib License, this would have effectively placed
+libjpeg-turbo binary distributions under the IJG License.  However, the IJG
+License specifically refers to the Independent JPEG Group and does not extend
+attribution and endorsement protections to other entities.  Thus, it was
+desirable to choose a license that granted us the same protections for new code
+that were granted to the IJG for code derived from their software.</code></pre>
+<h2 id="libpng">libpng</h2>
+<pre><code>COPYRIGHT NOTICE, DISCLAIMER, and LICENSE
+=========================================
+
+PNG Reference Library License version 2
+---------------------------------------
+
+ * Copyright (c) 1995-2019 The PNG Reference Library Authors.
+ * Copyright (c) 2018-2019 Cosmin Truta.
+ * Copyright (c) 2000-2002, 2004, 2006-2018 Glenn Randers-Pehrson.
+ * Copyright (c) 1996-1997 Andreas Dilger.
+ * Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+
+The software is supplied &quot;as is&quot;, without warranty of any kind,
+express or implied, including, without limitation, the warranties
+of merchantability, fitness for a particular purpose, title, and
+non-infringement.  In no event shall the Copyright owners, or
+anyone distributing the software, be liable for any damages or
+other liability, whether in contract, tort or otherwise, arising
+from, out of, or in connection with the software, or the use or
+other dealings in the software, even if advised of the possibility
+of such damage.
+
+Permission is hereby granted to use, copy, modify, and distribute
+this software, or portions hereof, for any purpose, without fee,
+subject to the following restrictions:
+
+ 1. The origin of this software must not be misrepresented; you
+    must not claim that you wrote the original software.  If you
+    use this software in a product, an acknowledgment in the product
+    documentation would be appreciated, but is not required.
+
+ 2. Altered source versions must be plainly marked as such, and must
+    not be misrepresented as being the original software.
+
+ 3. This Copyright notice may not be removed or altered from any
+    source or altered source distribution.
+
+
+PNG Reference Library License version 1 (for libpng 0.5 through 1.6.35)
+-----------------------------------------------------------------------
+
+libpng versions 1.0.7, July 1, 2000, through 1.6.35, July 15, 2018 are
+Copyright (c) 2000-2002, 2004, 2006-2018 Glenn Randers-Pehrson, are
+derived from libpng-1.0.6, and are distributed according to the same
+disclaimer and license as libpng-1.0.6 with the following individuals
+added to the list of Contributing Authors:
+
+    Simon-Pierre Cadieux
+    Eric S. Raymond
+    Mans Rullgard
+    Cosmin Truta
+    Gilles Vollant
+    James Yu
+    Mandar Sahastrabuddhe
+    Google Inc.
+    Vadim Barkov
+
+and with the following additions to the disclaimer:
+
+    There is no warranty against interference with your enjoyment of
+    the library or against infringement.  There is no warranty that our
+    efforts or the library will fulfill any of your particular purposes
+    or needs.  This library is provided with all faults, and the entire
+    risk of satisfactory quality, performance, accuracy, and effort is
+    with the user.
+
+Some files in the &quot;contrib&quot; directory and some configure-generated
+files that are distributed with libpng have other copyright owners, and
+are released under other open source licenses.
+
+libpng versions 0.97, January 1998, through 1.0.6, March 20, 2000, are
+Copyright (c) 1998-2000 Glenn Randers-Pehrson, are derived from
+libpng-0.96, and are distributed according to the same disclaimer and
+license as libpng-0.96, with the following individuals added to the
+list of Contributing Authors:
+
+    Tom Lane
+    Glenn Randers-Pehrson
+    Willem van Schaik
+
+libpng versions 0.89, June 1996, through 0.96, May 1997, are
+Copyright (c) 1996-1997 Andreas Dilger, are derived from libpng-0.88,
+and are distributed according to the same disclaimer and license as
+libpng-0.88, with the following individuals added to the list of
+Contributing Authors:
+
+    John Bowler
+    Kevin Bracey
+    Sam Bushell
+    Magnus Holmgren
+    Greg Roelofs
+    Tom Tanner
+
+Some files in the &quot;scripts&quot; directory have other copyright owners,
+but are released under this license.
+
+libpng versions 0.5, May 1995, through 0.88, January 1996, are
+Copyright (c) 1995-1996 Guy Eric Schalnat, Group 42, Inc.
+
+For the purposes of this copyright and license, &quot;Contributing Authors&quot;
+is defined as the following set of individuals:
+
+    Andreas Dilger
+    Dave Martindale
+    Guy Eric Schalnat
+    Paul Schmidt
+    Tim Wegner
+
+The PNG Reference Library is supplied &quot;AS IS&quot;.  The Contributing
+Authors and Group 42, Inc. disclaim all warranties, expressed or
+implied, including, without limitation, the warranties of
+merchantability and of fitness for any purpose.  The Contributing
+Authors and Group 42, Inc. assume no liability for direct, indirect,
+incidental, special, exemplary, or consequential damages, which may
+result from the use of the PNG Reference Library, even if advised of
+the possibility of such damage.
+
+Permission is hereby granted to use, copy, modify, and distribute this
+source code, or portions hereof, for any purpose, without fee, subject
+to the following restrictions:
+
+ 1. The origin of this source code must not be misrepresented.
+
+ 2. Altered versions must be plainly marked as such and must not
+    be misrepresented as being the original source.
+
+ 3. This Copyright notice may not be removed or altered from any
+    source or altered source distribution.
+
+The Contributing Authors and Group 42, Inc. specifically permit,
+without fee, and encourage the use of this source code as a component
+to supporting the PNG file format in commercial products.  If you use
+this source code in a product, acknowledgment is not required but would
+be appreciated.</code></pre>
+<h2 id="libwebp">libwebp</h2>
+<pre><code>Copyright (c) 2010, Google Inc. All rights reserved.
+
+Redistribution and use in source and binary forms, with or without
+modification, are permitted provided that the following conditions are
+met:
+
+  * Redistributions of source code must retain the above copyright
+    notice, this list of conditions and the following disclaimer.
+
+  * Redistributions in binary form must reproduce the above copyright
+    notice, this list of conditions and the following disclaimer in
+    the documentation and/or other materials provided with the
+    distribution.
+
+  * Neither the name of Google nor the names of its contributors may
+    be used to endorse or promote products derived from this software
+    without specific prior written permission.
+
+THIS SOFTWARE IS PROVIDED BY THE COPYRIGHT HOLDERS AND CONTRIBUTORS
+&quot;AS IS&quot; AND ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, BUT NOT
+LIMITED TO, THE IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS FOR
+A PARTICULAR PURPOSE ARE DISCLAIMED. IN NO EVENT SHALL THE COPYRIGHT
+HOLDER OR CONTRIBUTORS BE LIABLE FOR ANY DIRECT, INDIRECT, INCIDENTAL,
+SPECIAL, EXEMPLARY, OR CONSEQUENTIAL DAMAGES (INCLUDING, BUT NOT
+LIMITED TO, PROCUREMENT OF SUBSTITUTE GOODS OR SERVICES; LOSS OF USE,
+DATA, OR PROFITS; OR BUSINESS INTERRUPTION) HOWEVER CAUSED AND ON ANY
+THEORY OF LIABILITY, WHETHER IN CONTRACT, STRICT LIABILITY, OR TORT
+(INCLUDING NEGLIGENCE OR OTHERWISE) ARISING IN ANY WAY OUT OF THE USE
+OF THIS SOFTWARE, EVEN IF ADVISED OF THE POSSIBILITY OF SUCH DAMAGE.</code></pre>
+<pre><code>Additional IP Rights Grant (Patents)
+------------------------------------
+
+&quot;These implementations&quot; means the copyrightable works that implement the WebM
+codecs distributed by Google as part of the WebM Project.
+
+Google hereby grants to you a perpetual, worldwide, non-exclusive, no-charge,
+royalty-free, irrevocable (except as stated in this section) patent license to
+make, have made, use, offer to sell, sell, import, transfer, and otherwise
+run, modify and propagate the contents of these implementations of WebM, where
+such license applies only to those patent claims, both currently owned by
+Google and acquired in the future, licensable by Google that are necessarily
+infringed by these implementations of WebM. This grant does not include claims
+that would be infringed only as a consequence of further modification of these
+implementations. If you or your agent or exclusive licensee institute or order
+or agree to the institution of patent litigation or any other patent
+enforcement activity against any entity (including a cross-claim or
+counterclaim in a lawsuit) alleging that any of these implementations of WebM
+or any code incorporated within any of these implementations of WebM
+constitute direct or contributory patent infringement, or inducement of
+patent infringement, then any patent rights granted to you under this License
+for these implementations of WebM shall terminate as of the date such
+litigation is filed.</code></pre>
+<h2 id="zlib">zlib</h2>
+<pre><code>Copyright (C) 1995-2017 Jean-loup Gailly and Mark Adler
+
+This software is provided &#39;as-is&#39;, without any express or implied
+warranty.  In no event will the authors be held liable for any damages
+arising from the use of this software.
+
+Permission is granted to anyone to use this software for any purpose,
+including commercial applications, and to alter it and redistribute it
+freely, subject to the following restrictions:
+
+1. The origin of this software must not be misrepresented; you must not
+   claim that you wrote the original software. If you use this software
+   in a product, an acknowledgment in the product documentation would be
+   appreciated but is not required.
+2. Altered source versions must be plainly marked as such, and must not be
+   misrepresented as being the original software.
+3. This notice may not be removed or altered from any source distribution.</code></pre>
+  </body>
+</html>
