@@ -10,6 +10,10 @@ privacy
 3rdparty/gperftools
 3rdparty/qscintilla
 3rdparty/qt
+3rdparty/ffmpeg
+3rdparty/ffmpeg_win
+3rdparty/unwind
+3rdparty/xkbcommon
 "
 
 for md in ${FILES}; do
