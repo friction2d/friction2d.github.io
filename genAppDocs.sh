@@ -16,7 +16,11 @@ privacy
 3rdparty/xkbcommon
 "
 
+if [ ! -f "${PANDOC}" ]; then
+    echo "Missing: ${PANDOC}"
+    exit 1
+fi
+
 for md in ${FILES}; do
     ${PANDOC} --standalone --template ${CWD}/pandoc/template.html ${md}.md -o ${md}.html
 done
-

@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/docs">
+        <file>LICENSE</file>
+        <file>about.html</file>
+        <file>privacy.html</file>
+        <file>3rdparty/gperftools.html</file>
+        <file>3rdparty/qscintilla.html</file>
+        <file>3rdparty/qt.html</file>
+        <file>3rdparty/skia_bundle.html</file>
+        <file>3rdparty/ffmpeg.html</file>
+        <file>3rdparty/unwind.html</file>
+        <file>3rdparty/xkbcommon.html</file>
+    </qresource>
+</RCC>

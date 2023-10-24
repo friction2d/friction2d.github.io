@@ -4,7 +4,7 @@ layout: default
 permalink: privacy.html
 ---
 
-# Privacy Statement for Friction
+# Privacy Statement
 
 ## Application
 

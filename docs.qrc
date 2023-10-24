@@ -4,9 +4,6 @@
         <file>about.html</file>
         <file>privacy.html</file>
         <file>3rdparty/gperftools.html</file>
-        <file>3rdparty/qscintilla.html</file>
-        <file>3rdparty/qt.html</file>
         <file>3rdparty/skia.html</file>
-        <file>3rdparty/skia_bundle.html</file>
     </qresource>
 </RCC>
