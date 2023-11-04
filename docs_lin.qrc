@@ -10,5 +10,6 @@
         <file>3rdparty/ffmpeg.html</file>
         <file>3rdparty/unwind.html</file>
         <file>3rdparty/xkbcommon.html</file>
+        <file>documentation/shortcuts.html</file>
     </qresource>
 </RCC>

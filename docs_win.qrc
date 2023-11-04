@@ -7,5 +7,6 @@
         <file>3rdparty/qt.html</file>
         <file>3rdparty/skia_bundle.html</file>
         <file>3rdparty/ffmpeg_win.html</file>
+        <file>documentation/shortcuts.html</file>
     </qresource>
 </RCC>

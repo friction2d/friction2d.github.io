@@ -14,6 +14,7 @@ privacy
 3rdparty/ffmpeg_win
 3rdparty/unwind
 3rdparty/xkbcommon
+documentation/shortcuts
 "
 
 if [ ! -f "${PANDOC}" ]; then

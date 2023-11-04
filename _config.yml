@@ -25,6 +25,7 @@ exclude:
   - privacy.html
   - "*.qrc"
   - 3rdparty
+  - documentation/shortcuts.html
 nav:
   - title: About
     url: /about.html
