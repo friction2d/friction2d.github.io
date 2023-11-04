@@ -17,25 +17,16 @@ These shortcuts are globally available in Friction. Note that some actions may r
 | Open | `Ctrl` + `O`
 | Save | `Ctrl` + `S`
 | Save As | `Ctrl` + `Shift` + `S`
-
-| Action | Shortcut |
-| ------ | -------- |
 | Link | `Ctrl` + `L`
 | Import | `Ctrl` + `I`
-
-| Action | Shortcut |
-| ------ | -------- |
-| Close | `Ctrl` + `W`
-| Preferences | `Ctrl` + `P`
-| Exit | `Ctrl` + `Q`
-
-| Action | Shortcut |
-| ------ | -------- |
 | Paste | `Ctrl` + `V`
 | Copy | `Ctrl` + `C`
 | Duplicate | `Ctrl` + `D`
 | Cut | `Ctrl` + `X`
 | Delete | `Delete`
+| Close | `Ctrl` + `W`
+| Preferences | `Ctrl` + `P`
+| Exit | `Ctrl` + `Q`
 
 ## Objects
 
@@ -47,14 +38,8 @@ Shortcuts for objects are valid on active timeline and viewer.
 | Move Object Down | `PageDown`
 | Move Object Top | `Home`
 | Move Object Bottom | `End`
-
-| Action | Shortcut |
-| ------ | -------- |
 | Group | `Ctrl` + `G`
 | UnGroup | `Ctrl` + `Shft` + `G`
-
-| Action | Shortcut |
-| ------ | -------- |
 | Select All | `A`
 | DeSelect All | `Shift` + `A`
 | Invert Selection | `I`
@@ -86,9 +71,6 @@ Shortcuts are valid on active viewer.
 | Pan | `Middle` mouse button and move mouse/touchpad
 | | `Left` mouse button and move mouse/touchpad
 | | `Alt` + move mouse/touchpad
-
-| Action | Shortcut |
-| ------ | -------- |
 | Zoom +/- | `Wheel`  up/down
 | | `Scroll` up/down
 | | `Ctrl` + `+`/`-`
