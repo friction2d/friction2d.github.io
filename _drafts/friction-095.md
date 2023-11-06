@@ -14,7 +14,7 @@ ubuntu_lunar: "ubuntu23.04.deb"
 ubuntu_mantic: "ubuntu23.10.deb"
 ---
 
-# Friction 0.9.5 (DRAFT)
+# Friction 0.9.5 (DRAFT, ETA 20231111)
 
 Introducing Friction 0.9.5. This release includes several fixes and some new features.
 
@@ -34,8 +34,8 @@ Introducing Friction 0.9.5. This release includes several fixes and some new fea
 * New about dialog
   * Includes licenses for bundled software and some additional docs
 * Updated build infrastructure/scripts
-* New universal binaries for Linux (vfxplatform compatible)
-* AppImage support (re-package of the universal binaries)
+* New universal binaries for Linux (vfxplatform CY2019+ compatible)
+* AppImage support (re-package of the universal Linux binaries)
 * Queue: added play button
 * Timeline: added new shortcut for "play from first frame" (SHIFT+SPACE)
 * Render widget UI fixes
@@ -44,17 +44,20 @@ Introducing Friction 0.9.5. This release includes several fixes and some new fea
 * Queue: added clear button
 * Updated some icons
 * Added render button in toolbar
-  * Will open queue tab and add a new job if none exists
+  * Will open queue and add a new job if none exists
 * Timeline: added prev/next keyframe buttons
+  * Only works on selected object(s)
 * Convert shaders if needed, fixes Intel GPU issues on Windows
 * Skia can now be built against system libraries on Linux
+  * Add `-DUSE_SKIA_SYSTEM_LIBS=ON`
+  * Requires expat, freetype2, libjpeg, libpng, libwebpmux, libwebpdemux, zlib, icu-i18n, harfbuzz
 * Scene dialog: support resolution and fps presets
   * Friction include a small set of default resolutions and fps
   * Friction will remember new resolutions and fps for easy access later
   * The presets can be configured in preferences
 * Timeline: improved handle and ticks (UI)
 * Bundle expressions presets in-app
-* Initial multi-monitor support
+* Initial multi-window support
   * The timeline can run in it's own window
 * Friction can be installed through winget (Windows Package Manager)
 * Added Ubuntu 23.10 binaries
@@ -65,6 +68,9 @@ Introducing Friction 0.9.5. This release includes several fixes and some new fea
 
 * Microsoft Visual C++ Redistributable 2017 or higher is needed on Windows 10
   * In most cases this is already installed, if not you can download it [here](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+* X11/GLX is required on Linux
+* AVX compatible CPU is needed
+* OpenGL 3.3 compatible GPU and driver is required
 
 Friction is beta quality software, expect issues and missing/broken features.
 
