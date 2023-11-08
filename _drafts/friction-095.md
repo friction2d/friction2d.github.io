@@ -35,18 +35,23 @@ Introducing Friction 0.9.5. This release includes several fixes and some new fea
   * Includes licenses for bundled software and some additional docs
 * Updated build infrastructure/scripts
 * New universal binaries for Linux (vfxplatform CY2019+ compatible)
-* AppImage support (re-package of the universal Linux binaries)
-* Queue: added play button
-* Timeline: added new shortcut for "play from first frame" (SHIFT+SPACE)
-* Render widget UI fixes
+  1. Portable tarball
+  2. RPM package
+  3. AppImage
+* Render queue
+  * UI fixes
+  * Added play button
+  * Added clear button
+  * Added new button
+  * Instance state bugfix
+* Timeline
+  * Improved handle and ticks
+  * Added new shortcut for "play from first frame" (SHIFT+SPACE)
+  * Added prev/next keyframe buttons (for selected objects)
 * Force static library on Linux (no more libfrictioncore.so)
-* Render instance state bugfix
-* Queue: added clear button
 * Updated some icons
 * Added render button in toolbar
   * Will open queue and add a new job if none exists
-* Timeline: added prev/next keyframe buttons
-  * Only works on selected object(s)
 * Convert shaders if needed, fixes Intel GPU issues on Windows
 * Skia can now be built against system libraries on Linux
   * Add `-DUSE_SKIA_SYSTEM_LIBS=ON`
@@ -55,13 +60,12 @@ Introducing Friction 0.9.5. This release includes several fixes and some new fea
   * Friction include a small set of default resolutions and fps
   * Friction will remember new resolutions and fps for easy access later
   * The presets can be configured in preferences
-* Timeline: improved handle and ticks (UI)
-* Bundle expressions presets in-app
+* Bundle expression presets in-app
 * Initial multi-window support
   * The timeline can run in it's own window (View=>Timeline Window)
   * The render queue can run in it's own window (View=>Queue Window)
 * Friction can be installed through winget (Windows Package Manager)
-* Added Ubuntu 23.10 binaries
+* Added Ubuntu 23.10 package
 * Skia: fix for CVE-2023-4863
 * Various minor UI tweaks
 
