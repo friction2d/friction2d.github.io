@@ -58,9 +58,12 @@ Introducing Friction 0.9.5. This release includes several fixes and some new fea
 * Timeline: improved handle and ticks (UI)
 * Bundle expressions presets in-app
 * Initial multi-window support
-  * The timeline can run in it's own window
+  * The timeline can run in it's own window (View=>Timeline Window)
+  * The render queue can run in it's own window (View=>Queue Window)
 * Friction can be installed through winget (Windows Package Manager)
 * Added Ubuntu 23.10 binaries
+* Skia: fix for CVE-2023-4863
+* Various minor UI tweaks
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.4...v0.9.5).
 
