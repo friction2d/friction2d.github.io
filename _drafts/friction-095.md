@@ -24,7 +24,7 @@ Introducing Friction 0.9.5. This release includes several fixes and some new fea
 
 * Preferences: added raster effects CPU/GPU option
   * Select if included raster effects should prefer CPU or GPU
-* Fixed several HiDPI on Windows
+* Fixed several HiDPI issues on Windows
 * Fixed "fit to canvas" UI update
 * Support backup on save (see general in preferences)
   * On each save create a backup file in folder
