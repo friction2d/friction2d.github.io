@@ -14,7 +14,7 @@ ubuntu_lunar: "ubuntu23.04.deb"
 ubuntu_mantic: "ubuntu23.10.deb"
 ---
 
-# Friction 0.9.5 (DRAFT, ETA 20231111)
+# Friction 0.9.5
 
 Introducing Friction 0.9.5. This release includes several fixes and some new features.
 
@@ -24,7 +24,7 @@ Introducing Friction 0.9.5. This release includes several fixes and some new fea
 
 * Preferences: added raster effects CPU/GPU option
   * Select if included raster effects should prefer CPU or GPU
-* Fixed HiDPI on Windows
+* Fixed several HiDPI on Windows
 * Fixed "fit to canvas" UI update
 * Support backup on save (see general in preferences)
   * On each save create a backup file in folder
@@ -87,6 +87,7 @@ Friction is beta quality software, expect issues and missing/broken features.
   * SVG's from Adobe Illustrator (and others?) may have issues due to this
   * In some circumstances this might result in an invalid undo state after import
 * SVG gradients may not import correctly
+* There might still be some UI issues with HiDPI
 
 And more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
 
