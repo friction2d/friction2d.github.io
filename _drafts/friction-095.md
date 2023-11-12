@@ -22,22 +22,14 @@ Introducing Friction 0.9.5. This release includes several fixes and some new fea
 
 ## Changes
 
-* Preferences: added raster effects CPU/GPU option
-  * Select if included raster effects should prefer CPU or GPU
-* Fixed several HiDPI issues on Windows
-* Fixed "fit to canvas" UI update
-* Support backup on save (see general in preferences)
-  * On each save create a backup file in folder
-* Added auto save option (see general in preferences)
-  * Will auto save project after X time, should be combined with backup on save
-  * Note that some actions/changes in Friction will not trigger document changed, this will be worked on for the next release
+Changes since 0.9.4.
+
+### UI
+
+* Fixed several HiDPI issues
+* Fixed "Fit to canvas" UI update
 * New about dialog
   * Includes licenses for bundled software and some additional docs
-* Updated build infrastructure/scripts
-* New universal binaries for Linux (vfxplatform CY2019+ compatible)
-  1. Portable tarball
-  2. RPM package
-  3. AppImage
 * Render queue
   * UI fixes
   * Added play button
@@ -45,29 +37,66 @@ Introducing Friction 0.9.5. This release includes several fixes and some new fea
   * Added new button
   * Instance state bugfix
 * Timeline
+  * UI fixes
   * Improved handle and ticks
   * Added new shortcut for "play from first frame" (SHIFT+SPACE)
   * Added prev/next keyframe buttons (for selected objects)
-* Force static library on Linux (no more libfrictioncore.so)
-* Updated some icons
 * Added render button in toolbar
   * Will open queue and add a new job if none exists
-* Convert shaders if needed, fixes Intel GPU issues on Windows
-* Skia can now be built against system libraries on Linux
+* Various minor UI tweaks
+* Updated some icons
+
+### Auto save/backup
+
+Friction now features auto save and backup of projects.
+
+* Support backup on save (see general in preferences)
+  * On each save create a backup file in folder
+* Added auto save option (see general in preferences)
+  * Will auto save project after X time, should be combined with backup on save
+  * Note that some actions/changes in Friction will not trigger document changed, this will be worked on for the next release
+
+### Scene dialog
+
+The scene dialog now support resolution and frame rate presets.
+
+* Friction include a small set of default resolutions and fps
+* Friction will remember new resolutions and fps for easy access later
+* The presets can be configured in preferences
+
+### Multi-window mode
+
+Friction now features initial multi-window support.
+
+* The timeline can run in it's own window (View => Timeline Window)
+* The render queue can run in it's own window (View => Queue Window)
+
+### Linux
+
+* New universal binaries for Linux (vfxplatform CY2019+ compatible)
+  1. Portable tarball
+  2. RPM package
+  3. AppImage
+* Force static library on Linux (no more libfrictioncore.so)
+* Skia can now be built against system libraries on Linux (recommended)
   * Add `-DUSE_SKIA_SYSTEM_LIBS=ON`
   * Requires expat, freetype2, libjpeg, libpng, libwebpmux, libwebpdemux, zlib, icu-i18n, harfbuzz
-* Scene dialog: support resolution and fps presets
-  * Friction include a small set of default resolutions and fps
-  * Friction will remember new resolutions and fps for easy access later
-  * The presets can be configured in preferences
-* Bundle expression presets in-app
-* Initial multi-window support
-  * The timeline can run in it's own window (View=>Timeline Window)
-  * The render queue can run in it's own window (View=>Queue Window)
-* Friction can be installed through winget (Windows Package Manager)
 * Added Ubuntu 23.10 package
+
+### Windows
+
+* Friction can be installed through winget (Windows Package Manager)
+* Convert shaders if needed, fixes Intel GPU issues on Windows
+
+### Security
+
 * Skia: fix for CVE-2023-4863
-* Various minor UI tweaks
+
+### Other
+
+* Bundle expression presets in-app
+* Preferences: added raster effects CPU/GPU option
+  * Select if included raster effects should prefer CPU or GPU
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.4...v0.9.5).
 
@@ -87,7 +116,7 @@ Friction is beta quality software, expect issues and missing/broken features.
   * SVG's from Adobe Illustrator (and others?) may have issues due to this
   * In some circumstances this might result in an invalid undo state after import
 * SVG gradients may not import correctly
-* There might still be some UI issues with HiDPI
+* There might still be some minor issues with HiDPI on Linux
 
 And more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
 
