@@ -12,6 +12,7 @@ vfxplatform: "1.x86_64.rpm"
 ubuntu_jammy: "ubuntu22.04.deb"
 ubuntu_lunar: "ubuntu23.04.deb"
 ubuntu_mantic: "ubuntu23.10.deb"
+download_notes: true
 ---
 
 # Friction 0.9.5
@@ -100,18 +101,9 @@ Friction now features initial multi-window support.
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.4...v0.9.5).
 
-## Notes
-
-* Microsoft Visual C++ Redistributable 2017 or higher is needed on Windows 10
-  * In most cases this is already installed, if not you can download it [here](https://aka.ms/vs/17/release/vc_redist.x64.exe)
-* X11/GLX is required on Linux
-* AVX compatible CPU is needed
-* OpenGL 3.3 compatible GPU and driver is required
-
-Friction is beta quality software, expect issues and missing/broken features.
-
 ## Known Issues
 
+* Friction is beta quality software, expect issues and missing/broken features
 * CSS style sheets are not supported when importing an SVG
   * SVG's from Adobe Illustrator (and others?) may have issues due to this
   * In some circumstances this might result in an invalid undo state after import
@@ -126,3 +118,23 @@ And more, see our [issue tracker](https://github.com/friction2d/friction/issues)
 * For general discussion, feature requests etc use our [forum](https://github.com/orgs/friction2d/discussions) *(requires a GitHub account)*.
 
 For other inquiries use support at friction dot graphics.
+
+## System Requirements
+
+### Hardware
+
+* Minimum 4GB RAM (16GB+ recommended)
+* Minimum AVX compatible dual core CPU (Modern quad core or better recommended)
+* OpenGL 3.3 compatible GPU and driver (Intel UHD Graphics 620 or better recommended)
+* Working audio device
+
+### Software
+
+* Windows 10/11 x64
+  * Microsoft Visual C++ Redistributable 2017 or higher is needed on Windows 10
+    * In most cases this is already installed, if not you can download it [here](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+* Ubuntu 22.04/23.04/23.10 (X11 x86_64)
+* Linux X11 x86_64 (vfxplatform CY2019+)
+  * glibc 2.17+
+  * libgcc 4.8.5+
+  * pulseaudio

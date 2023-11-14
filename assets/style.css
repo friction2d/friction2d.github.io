@@ -256,6 +256,12 @@ td {
 
 .td { width: unset; }
 
+hr {
+    border-color: rgb(33, 33, 38);
+    margin-top: 2em;
+    margin-bottom: 2em;
+}
+
 #breadcrumbs {
     padding: .5em;
 }

@@ -28,9 +28,6 @@
                     {% if page.windows_portable != nil %}
                     <li><a title="Download portable for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.windows_portable }}"><img class="platform" src="https://img.shields.io/badge/Windows%2010%2F11%20Portable-0078D6?style=for-the-badge&logo=windows&logoColor=white"></a></li>
                     {% endif %}
-                    {% if page.windows_winget != nil %}
-                    <li><a title="Install using winget for Windows 10/11 x64" target="_blank" href="https://winstall.app/apps/{{ page.windows_winget }}"><img class="platform" src="https://img.shields.io/badge/Windows%20Package%20Manager-0078D6?style=for-the-badge&logo=windows&logoColor=white"></a></li>
-                    {% endif %}
                     {% if page.linux_portable != nil %}
                     <li><a title="Download portable for Linux universal X11/x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_portable }}"><img class="platform" src="https://img.shields.io/badge/Linux%20Portable-FCC624?style=for-the-badge&logo=linux&logoColor=black"></a></li>
                     {% endif %}
@@ -59,6 +56,14 @@
                     <li><a title="Download package for Arch Linux" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.archlinux }}"><img class="platform" src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"></a></li>
                     {% endif %}
                 </ul>
+                {% if page.download_notes %}
+                {% if page.windows_winget != nil %}
+                <hr>
+                <p>To install Friction with winget (Windows Package Manager), use the following command:</p>
+                <code class="language-plaintext highlighter-rouge">winget install --id={{ page.windows_winget }} -e</code>
+                {% endif%}
+                <hr>
+                {% endif %}
                 <p>Additional downloads and checksums for this release is available on <a target="_blank" href="{{ site.github_release_url }}v{{ page.release }}">GitHub</a> or <a target="_blank" href="{{ site.sourceforge_download_url }}v{{ page.release }}/">Sourceforge</a>.</p>
                 {% endif %}
                 
