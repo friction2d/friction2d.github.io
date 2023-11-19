@@ -27,7 +27,7 @@ Changes since 0.9.4.
 
 ### UI
 
-* Fixed several HiDPI issues
+* Fixed several HiDPI (scaling) issues
 * Fixed "Fit to canvas" UI update
 * New about dialog
   * Includes licenses for bundled software and some additional docs
@@ -96,6 +96,7 @@ Friction now features initial multi-window support.
 ### Other
 
 * Bundle expression presets in-app
+* Preferences: added interface scaling options
 * Preferences: added raster effects CPU/GPU option
   * Select if included raster effects should prefer CPU or GPU
 
@@ -108,7 +109,6 @@ Friction now features initial multi-window support.
   * SVG's from Adobe Illustrator (and others?) may have issues due to this
   * In some circumstances this might result in an invalid undo state after import
 * SVG gradients may not import correctly
-* There might still be some minor issues with HiDPI on Linux
 
 And more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
 
