@@ -42,6 +42,7 @@ Changes since 0.9.4.
   * Improved handle and ticks
   * Added new shortcut for "play from first frame" (SHIFT+SPACE)
   * Added prev/next keyframe buttons (for selected objects)
+  * Restore display timecode/frames state
 * Added render button in toolbar
   * Will open queue and add a new job if none exists
 * Various minor UI tweaks
@@ -67,7 +68,7 @@ The scene dialog now support resolution and frame rate presets.
 
 ### Multi-window mode
 
-Friction now features initial multi-window support.
+Friction now features initial (basic) multi-window support.
 
 * The timeline can run in it's own window (View => Timeline Window)
 * The render queue can run in it's own window (View => Queue Window)
@@ -83,6 +84,8 @@ Friction now features initial multi-window support.
   * Add `-DUSE_SKIA_SYSTEM_LIBS=ON`
   * Requires expat, freetype2, libjpeg, libpng, libwebpmux, libwebpdemux, zlib, icu-i18n, harfbuzz
 * Added Ubuntu 23.10 package
+* Added Flatpak support
+* Freedesktop fixes
 
 ### Windows
 
@@ -95,6 +98,7 @@ Friction now features initial multi-window support.
 
 ### Other
 
+* Stop playback if document changes during preview
 * Bundle expression presets in-app
 * Preferences: added interface scaling options
 * Preferences: added raster effects CPU/GPU option
@@ -109,6 +113,8 @@ Friction now features initial multi-window support.
   * SVG's from Adobe Illustrator (and others?) may have issues due to this
   * In some circumstances this might result in an invalid undo state after import
 * SVG gradients may not import correctly
+* There are still some minor issues with HiDPI
+* Wayland is currently not supported on Linux
 
 And more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
 
@@ -121,20 +127,25 @@ For other inquiries use support at friction dot graphics.
 
 ## System Requirements
 
-### Hardware
+### Minimum hardware
 
-* Minimum 4GB RAM (16GB+ recommended)
-* Minimum AVX compatible dual core CPU (Modern quad core or better recommended)
-* OpenGL 3.3 compatible GPU and driver (Intel UHD Graphics 620 or better recommended)
-* Working audio device
+* 4GB RAM available
+* AVX compatible dual core CPU
+  * Intel Sandy Bridge Core i3/i5/i7
+  * AMD Bulldozer
+* OpenGL 3.3 compatible GPU and driver
+  * NVIDIA GeForce 8 series (G8x/Tesla)
+  * AMD Radeon HD 2000 series (R600/TeraScale 1)
+  * Intel HD Graphics 4000 (Ivy Bridge)
+* Audio device supporting WASAPI on Windows and PulseAudio on Linux
 
-### Software
+### Supported systems
 
-* Windows 10/11 x64
-  * Microsoft Visual C++ Redistributable 2017 or higher is needed on Windows 10
-    * In most cases this is already installed, if not you can download it [here](https://aka.ms/vs/17/release/vc_redist.x64.exe)
+* Microsoft Windows 10/11 x64
+  * [Visual C++ Redistributable 2017](https://aka.ms/vs/17/release/vc_redist.x64.exe) or higher is needed on Windows 10
 * Ubuntu 22.04/23.04/23.10 (X11 x86_64)
-* Linux X11 x86_64 (vfxplatform CY2019+)
-  * glibc 2.17+
-  * libgcc 4.8.5+
-  * pulseaudio
+* Enterprise Linux 7/8/9 (X11 x86_64)
+* Generic Linux (X11 x86_64 glibc 2.17+ libgcc 4.8.5+)
+  * Portable (tarball)
+  * AppImage
+  * Flatpak
