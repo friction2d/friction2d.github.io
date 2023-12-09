@@ -114,7 +114,6 @@ Friction now features initial (basic) multi-window support.
   * In some circumstances this might result in an invalid undo state after import
 * SVG gradients may not import correctly
 * There are still some minor issues with HiDPI
-* Wayland is currently not supported on Linux
 
 And more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
 
@@ -130,7 +129,7 @@ For other inquiries use support at friction dot graphics.
 ### Minimum hardware
 
 * 4GB RAM available
-* AVX compatible dual core CPU
+* AVX x86_64 compatible dual core CPU
   * Intel Sandy Bridge Core i3/i5/i7
   * AMD Bulldozer
 * OpenGL 3.3 compatible GPU and driver
@@ -141,11 +140,20 @@ For other inquiries use support at friction dot graphics.
 
 ### Supported systems
 
-* Microsoft Windows 10/11 x64
+* Microsoft Windows 10/11
   * [Visual C++ Redistributable 2017](https://aka.ms/vs/17/release/vc_redist.x64.exe) or higher is needed on Windows 10
-* Ubuntu 22.04/23.04/23.10 (X11 x86_64)
-* Enterprise Linux 7/8/9 (X11 x86_64)
-* Generic Linux (X11 x86_64 glibc 2.17+ libgcc 4.8.5+)
-  * Portable (tarball)
-  * AppImage
-  * Flatpak
+* Ubuntu 22.04/23.04/23.10 and compatible
+* Red Hat Enterprise Linux 7.9/8.x/9.x and compatible
+* Generic Linux (glibc 2.17+/libgcc 4.8.5+)
+
+#### Linux notes
+
+We have a universal Linux build recommended for most users. It's provided as a portable tarball, RPM, AppImage and Flatpak.
+
+* They are all identical, only the package format differs
+* Flatpak is sandboxed with limited access to the file system.
+* Third-party dependencies are kept in sync with the Windows build, only the compilers differ
+
+Ubuntu packages are built against system dependencies and differs from our universal build.
+
+Native Wayland is currently not supported.

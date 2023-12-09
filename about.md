@@ -4,13 +4,11 @@ layout: default
 permalink: about.html
 ---
 
-### Friction is an open-source, vector-based application designed for creating web animations and videos.
+**Friction is a powerful and versatile free and open-source motion graphics application that allows you to create stunning vector and raster animations for web and video platforms with ease.**
 
 You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
-
-Friction includes several [icons](https://github.com/Shrinks99/blender-icons) from Blender. These icons are released under a [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
 
 ### Contributors
 

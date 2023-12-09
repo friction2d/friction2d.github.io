@@ -11,7 +11,6 @@ The documentation is currently quite deficient; our primary focus remains on the
 
 ## Users
 
-* [Shader Effects](/documentation/shaders/) *(DRAFT)*
 * [Shortcuts](/documentation/shortcuts.html) *(DRAFT)*
 
 ## Developers
