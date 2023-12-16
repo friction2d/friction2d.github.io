@@ -26,10 +26,8 @@ exclude:
   - "*.qrc"
   - 3rdparty
   - documentation/shortcuts.html
+  - about.md
 nav:
-  - title: About
-    url: /about.html
-    ext: false
   - title: News
     url: /news/
     ext: false
@@ -39,6 +37,6 @@ nav:
   - title: "Documentation"
     url: /documentation/
     ext: false
-  - title: "Discussions"
+  - title: "Community"
     url: https://github.com/orgs/friction2d/discussions
     ext: true
