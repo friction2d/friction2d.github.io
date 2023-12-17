@@ -19,7 +19,7 @@ download_notes: true
 
 Introducing Friction 0.9.5. This release includes several fixes and some new features.
 
-<img style="width: 100%;" src="/assets/screenshots/friction-095-timeline-window.jpg" alt="Screenshot">
+<img style="width: 100%; border-radius: .25em;" src="/assets/hero-poster.jpg" alt="Screenshot">
 
 ## Changes
 

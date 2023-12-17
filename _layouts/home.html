@@ -3,46 +3,49 @@
 <html lang="{{ site.lang | default: "en-US" }}">
     {% include head.html %}
     <body>
+        <video id="heroVideo" poster="{{ site.url }}/assets/hero-poster.jpg" autoplay loop muted>
+            <source src="{{ site.url }}/assets/hero-h264.mp4" type="video/mp4">
+            <source src="{{ site.url }}/assets/hero-vp9.webm" type="video/webm">
+        </video>
         <div id="header">
             {% include header.html %}
         </div>
         <div id="hero">
-            <div>
-                <h1>Welcome to Friction</h1>
+            <div class="blurry">
                 <h3>{{ site.description }}</h3>
-                </div>
+            </div>
         </div>
         <div class="bigTitle"><h1>Features</h1></div>
         <div class="blocks">
-            <div class="block">
+            <div class="block darkAlpha blurry">
                 <img src="{{ site.url }}/assets/screenshots/friction-screenshot.jpg" />
                 <h2>High Performance</h2>
                 <p>Friction provides a scalable, high-performance GPU/CPU vector and raster pipeline developed in C++, using Skia and the Qt framework.</p>
             </div>
-            <div class="block">
+            <div class="block darkAlpha blurry">
                 <img src="{{ site.url }}/assets/screenshots/friction-web-animations.jpg" />
                 <h2>Animations for the Web</h2>
                 <p>Create smooth and responsive animations for the web with Friction! Using Friction, you can create animated scalable vector graphics (SVG) using the synchronized multimedia integration language (SMIL), as recommended by the World Wide Web Consortium (W3C).</p>
             </div>
-            <div class="block">
+            <div class="block darkAlpha blurry">
                 <img src="{{ site.url }}/assets/screenshots/friction-multiple-scenes.jpg" />
                 <h2>Multiple Scenes and Timelines</h2>
                 <p>Friction gives you the flexibility to work on multiple scenes at once, with multiple viewers, timelines, and graphs. Adjust it to fit your needs and screen real estate.</p>
             </div>
-            <div class="block">
+            <div class="block darkAlpha blurry">
                 <img src="{{ site.url }}/assets/screenshots/friction-expressions.jpg" />
                 <h2>Powerful Expression Editor</h2>
                 <p>Power users are welcome! Friction provides support for expressions with ECMAScript in parameters and effects. Additionally, it includes a complete code editor with autocompletion, syntax highlighting, custom functions, and more.</p>
             </div>
-            <div class="block">
+            <div class="block darkAlpha blurry">
                 <img src="{{ site.url }}/assets/screenshots/friction-text-effect.jpg" />
                 <h2>Text and Path Effects</h2>
                 <p>Friction includes a diverse range of effects for enhancing your vector graphics and text. Stay tuned for upcoming releases, as we continue to expand our collection of effects.</p>
             </div>
-            <div class="block">
+            <div class="block darkAlpha blurry">
                 <a href="/documentation/shaders"><img src="{{ site.url }}/assets/screenshots/friction-shader-effects.jpg" /></a>
                 <h2>Raster/Shader Effects</h2>
-                <p>Friction offers support for user-customizable shader effects. It also includes a foundational set of <a href="/documentation/shaders">core effects</a> for various needs.</p>
+                <p>Friction offers experimental support for user-customizable shader effects. A limited set of effects are included.</p>
             </div>
         </div>
         <div class="bigTitle" id="download">
@@ -50,7 +53,7 @@
             <p><a class="btn" href="{{ site.url }}/releases/friction-{{ site.latest_version | remove: '.' }}.html"><img src="{{ site.url }}/assets/download.svg" height="24" />Download latest release</a></p>
         </div>
         <div class="blocks">
-            <div class="block">
+            <div class="block darkAlpha blurry">
                 <h2 class="left">System Requirements</h2>
                 <p>Most computers in use today should work just fine with Friction. The only strict requirements are:</p>
                 <ul>
@@ -62,37 +65,39 @@
                     </ul>
                     <li>AVX compatible CPU</li>
                     <ul>
-                        <li>Intel Sandy Bridge Core i3/i5/i7 or better</li>
-                        <li>AMD Bulldozer or better</li>
+                        <li>Intel Sandy Bridge Core i3/i5/i7 or newer</li>
+                        <li>AMD Bulldozer or newer</li>
                     </ul>
                 </ul>
                 <p>In general, a dual-core laptop with 4GB of RAM should be usable for small projects. Larger projects and/or the use of raster graphics and effects will require more RAM and CPU/GPU power.</p>
             </div>
-            <div class="block">
+            <div class="block darkAlpha blurry">
                 <h2 class="left">Supported Platforms</h2>
                 <p>Friction currently supports the following platforms:</p>
                 <ul>
                     <li>Microsoft Windows 10/11</li>
                     <li>Ubuntu 22.04/23.04/23.10 and compatible</li>
                     <li>Red Hat Enterprise Linux 7/8/9 and compatible</li>
-                    <li>Generic Linux (vfxplatform CY2019+)</li>
+                    <li>Generic Linux</li>
                 </ul>
                 <p>Platform support may undergo changes in future releases without prior notice.</p>
             </div>
         </div>
         <div class="bigTitle"><h1>Friction is powered by</h1></div>
         <div class="blocks">
-            <div class="block">
+            <div class="block darkAlpha blurry">
                 <img class="svg" src="{{ site.url }}/assets/ffmpeg-white.svg" />
                 <h2>FFmpeg Multimedia Framework</h2>
                 <p>FFmpeg is the leading multimedia framework, able to decode, encode, transcode, mux, demux, stream, filter and play pretty much anything that humans and machines have created. It supports the most obscure ancient formats up to the cutting edge.</p>
             </div>
-            <div class="block">
+            <div class="block darkAlpha blurry">
                 <img class="svg" src="{{ site.url }}/assets/skia-white.svg" />
                 <h2>Skia Graphics Engine</h2>
                 <p>Skia is an open source 2D graphics library which provides common APIs that work across a variety of hardware and software platforms. It serves as the graphics engine for Google Chrome, ChromeOS, Android, Flutter, Mozilla Firefox and many other products.</p>
             </div>
         </div>
-        {% include footer.html %}
+        <div id="footer" class="darkAlpha blurry">
+            {% include footer.html %}
+        </div>
     </body>
 </html>
