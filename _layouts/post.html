@@ -32,7 +32,10 @@
                     <li><a title="Download portable for Linux universal X11/x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_portable }}"><img class="platform" src="https://img.shields.io/badge/Linux%20Portable-FCC624?style=for-the-badge&logo=linux&logoColor=black"></a></li>
                     {% endif %}
                     {% if page.linux_appimage != nil %}
-                    <li><a title="Download AppImage for Linux universal X11/x86_64" href="{{ site.github_download_url }}v{{ page.release }}/Friction-{{ page.release }}-{{ page.linux_appimage }}"><img class="platform" src="https://img.shields.io/badge/Linux%20AppImage-FCC624?style=for-the-badge&logo=linux&logoColor=black"></a></li>
+                    <li><a title="Download AppImage for Linux universal X11/x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_appimage }}"><img class="platform" src="https://img.shields.io/badge/Linux%20AppImage-FCC624?style=for-the-badge&logo=linux&logoColor=black"></a></li>
+                    {% endif %}
+                    {% if page.linux_flatpak != nil %}
+                    <li><a title="Download Flatpak for Linux universal X11/x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_flatpak }}"><img class="platform" src="https://img.shields.io/badge/Linux%20Flatpak-4A90D9?style=for-the-badge&logo=flatpak&logoColor=fff"></a></li>
                     {% endif %}
                     {% if page.vfxplatform != nil %}
                     <li><a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.vfxplatform }}"><img class="platform" src="https://img.shields.io/badge/Enterprise%20Linux%207%2F8%2F9-EE0000?style=for-the-badge&logo=redhat&logoColor=white"></a></li>

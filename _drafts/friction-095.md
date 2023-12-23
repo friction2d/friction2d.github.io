@@ -4,10 +4,11 @@ layout: post
 categories: releases
 release: 0.9.5
 windows_setup: "setup-win64.exe"
-windows_portable: "win64.7z"
+windows_portable: "portable-win64.7z"
 windows_winget: "Friction.Friction"
-linux_portable: "linux-x86_64.tar.xz"
-linux_appimage: "x86_64.AppImage"
+linux_portable: "linux-X11-x86_64.tar.xz"
+linux_appimage: "X11-x86_64.AppImage"
+linux_flatpak: "X11-x86_64.flatpak"
 vfxplatform: "1.x86_64.rpm"
 ubuntu_jammy: "ubuntu22.04.deb"
 ubuntu_lunar: "ubuntu23.04.deb"
@@ -58,6 +59,11 @@ Friction now features auto save and backup of projects.
   * Will auto save project after X time, should be combined with backup on save
   * Note that some actions/changes in Friction will not trigger document changed, this will be worked on for the next release
 
+#### Notes
+
+ * Auto save without auto backup is not recommended, you might end up with corrupted project files
+ * Project files with gradients might trigger modified project on load
+
 ### Scene dialog
 
 The scene dialog now support resolution and frame rate presets.
@@ -79,12 +85,12 @@ Friction now features initial (basic) multi-window support.
   1. Portable tarball
   2. RPM package
   3. AppImage
+  4. Flatpak
 * Force static library on Linux (no more libfrictioncore.so)
 * Skia can now be built against system libraries on Linux (recommended)
   * Add `-DUSE_SKIA_SYSTEM_LIBS=ON`
   * Requires expat, freetype2, libjpeg, libpng, libwebpmux, libwebpdemux, zlib, icu-i18n, harfbuzz
 * Added Ubuntu 23.10 package
-* Added Flatpak support
 * Freedesktop fixes
 
 ### Windows
@@ -113,7 +119,10 @@ Friction now features initial (basic) multi-window support.
   * SVG's from Adobe Illustrator (and others?) may have issues due to this
   * In some circumstances this might result in an invalid undo state after import
 * SVG gradients may not import correctly
+  * In general gradients needs some work
 * There are still some minor issues with HiDPI
+* Shader effects are still experimental and may introduce issues
+
 
 And more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
 
@@ -151,7 +160,7 @@ For other inquiries use support at friction dot graphics.
 We have a universal Linux build recommended for most users. It's provided as a portable tarball, RPM, AppImage and Flatpak.
 
 * They are all identical, only the package format differs
-* Flatpak is sandboxed with limited access to the file system.
+* Flatpak is sandboxed with limited access to the file system
 * Third-party dependencies are kept in sync with the Windows build, only the compilers differ
 
 Ubuntu packages are built against system dependencies and differs from our universal build.
