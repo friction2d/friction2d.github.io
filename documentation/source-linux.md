@@ -10,13 +10,11 @@ Generic build instructions for Friction on Linux.
 ## Requirements
 
 * pkg-config
-* automake
-* autoconf
-* python3
+* python3 *(needed to configure skia build)*
 * ninja
-* cmake
-* clang
-* Qt5 *(5.12+)*
+* cmake *(3.9+)*
+* clang *(7+)*
+* Qt5 *(5.12.12 or 5.15.3+)*
     * Gui
     * Concurrent
     * Widgets
@@ -50,12 +48,8 @@ sudo apt install -y \
 build-essential \
 clang \
 git \
-libtool \
-autoconf \
-automake \
 cmake \
 python3 \
-python-is-python3 \
 ninja-build \
 libfontconfig1-dev \
 libfreetype-dev \
@@ -89,15 +83,6 @@ libharfbuzz-dev
 
 ```
 git clone --recurse-submodules https://github.com/friction2d/friction
-```
-
-## Build libtcmalloc
-
-```
-cd friction/src/gperftools
-./autogen.sh
-CC=clang CXX=clang++ ./configure --disable-shared
-make -j4
 ```
 
 ## Build skia
