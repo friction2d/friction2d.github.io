@@ -7,16 +7,16 @@ layout: default
 
 Generic build instructions for Friction on Linux.
 
+*Instructions are for the `main` git branch.*
+
 ## Requirements
 
 * pkg-config
-* python3 *(needed to configure skia build)*
 * ninja
 * cmake *(3.9+)*
 * clang *(7+)*
 * Qt5 *(5.12.12 or 5.15.3+)*
     * Gui
-    * Concurrent
     * Widgets
     * OpenGL
     * Multimedia
@@ -49,7 +49,6 @@ build-essential \
 clang \
 git \
 cmake \
-python3 \
 ninja-build \
 libfontconfig1-dev \
 libfreetype-dev \
@@ -79,22 +78,13 @@ libicu-dev \
 libharfbuzz-dev
 ```
 
-## Get the source
+## Source
 
 ```
 git clone --recurse-submodules https://github.com/friction2d/friction
 ```
 
-## Build skia
-
-```
-cd friction/src/skia
-python3 fetch-gn
-bin/gn gen out/build --args='is_official_build=true is_debug=false cc="clang" cxx="clang++" extra_cflags=["-Wno-error"] target_os="linux" target_cpu="x64" skia_use_system_expat=true skia_use_system_freetype2=true skia_use_system_libjpeg_turbo=true skia_use_system_libpng=true skia_use_system_libwebp=true skia_use_system_zlib=true skia_use_system_icu=true skia_use_system_harfbuzz=true skia_use_dng_sdk=false'
-ninja -C out/build -j4 skia
-```
-
-## Build Friction
+## Build
 
 ```
 cd friction
@@ -110,7 +100,6 @@ cmake -G Ninja \
 -DCMAKE_INSTALL_PREFIX=/usr \
 -DCMAKE_CXX_COMPILER=clang++ \
 -DCMAKE_C_COMPILER=clang \
--DUSE_SKIA_SYSTEM_LIBS=ON \
 -DQSCINTILLA_INCLUDE_DIRS=<PATH_TO_QSCINTILLA_INCLUDE_DIR> \
 -DQSCINTILLA_LIBRARIES_DIRS=<PATH_TO_LIBS> \
 -DQSCINTILLA_LIBRARIES=<QSCINTILLA_LIBRARY_NAME> \
@@ -124,8 +113,7 @@ cmake -G Ninja \
 -DCMAKE_BUILD_TYPE=Release \
 -DCMAKE_INSTALL_PREFIX=/usr \
 -DCMAKE_CXX_COMPILER=clang++ \
--DCMAKE_C_COMPILER=clang \
--DUSE_SKIA_SYSTEM_LIBS=ON \
+-DCMAKE_C_COMPILER=clang
 ..
 ```
 
@@ -133,4 +121,10 @@ Now build:
 
 ```
 cmake --build .
+```
+
+Package with:
+
+```
+cpack -G DEB (or RPM)
 ```
