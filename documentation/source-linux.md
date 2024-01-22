@@ -14,7 +14,7 @@ Generic build instructions for Friction on Linux.
 * pkg-config
 * ninja
 * python3
-* cmake *(3.9+)*
+* cmake *(3.12+)*
 * clang *(7+)*
 * Qt5 *(5.12.12 or 5.15.3+)*
     * Gui
@@ -51,7 +51,6 @@ clang \
 git \
 cmake \
 python3 \
-python-is-python3 \
 ninja-build \
 libfontconfig1-dev \
 libfreetype-dev \
