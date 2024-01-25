@@ -5,9 +5,9 @@ categories: releases
 release: 0.9.6
 ---
 
-# Friction 0.9.6 draft
+# Friction 0.9.6 *(ETA 2024-03-03)*
 
-Draft for Friction 0.9.6 feature release.
+Draft for Friction 0.9.6 *"1 year anniversary edition"* release.
 
 <img style="width: 100%; border-radius: .25em;" src="/assets/hero-poster.jpg" alt="Screenshot">
 
@@ -20,7 +20,7 @@ Changes since 0.9.5.
 * Render queue state fixes
 * Various minor tweaks
 * Updated some icons
-* New UI layout handler
+* New UI layout handler *(not enabled yet, will be default in beta 2)*
 
 ### Linux
 
@@ -28,8 +28,8 @@ Changes since 0.9.5.
 
 ### Other
 
-* Improved build process
-* Upgraded from Qt 5.12.12 (custom) to Qt 5.15.12
+* Major improvements to the build process
+* Upgraded from Qt 5.12.12f to Qt 5.15.12
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.5...main).
 
