@@ -36,6 +36,7 @@ Lorem ipsum.
 ![Screenshot](/assets/screenshots/096/friction-uilayout-example-02.jpg)
 ![Screenshot](/assets/screenshots/096/friction-uilayout-example-03.jpg)
 ![Screenshot](/assets/screenshots/096/friction-uilayout-example-04.jpg)
+![Screenshot](/assets/screenshots/096/friction-uilayout-example-05.jpg)
 
 ## Changes
 
@@ -54,13 +55,13 @@ Changes since 0.9.5.
 
 ### Linux
 
-* Removed Ubuntu Lunar native package (use portable/AppImage/Flatpak)
+* Removed Ubuntu Lunar (23.04) native package
 * Added Ubuntu Noble (24.04) native package
 
 ### Other
 
 * Major improvements to the build process
-* Upgraded from Qt 5.12.12f to Qt 5.15.12
+* Upgraded from Qt 5.12 to Qt 5.15
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.5...main).
 
@@ -102,7 +103,7 @@ For other inquiries use support at friction dot graphics.
 
 * Microsoft Windows 10/11
   * [Visual C++ Redistributable 2017](https://aka.ms/vs/17/release/vc_redist.x64.exe) or higher is needed on Windows 10
-* Ubuntu 22.04/23.10 and compatible
+* Ubuntu 22.04/23.10/24.04 and compatible
 * Red Hat Enterprise Linux 7.9/8.x/9.x and compatible
 * Generic Linux (glibc 2.17+/libgcc 4.8.5+)
 
