@@ -5,11 +5,37 @@ categories: releases
 release: 0.9.6
 ---
 
-# Friction 0.9.6 *(ETA 2024-03-03)*
+# Friction 0.9.6 *(ETA 2024-03-XX)*
 
-Draft for Friction 0.9.6 *"1 year anniversary edition"* release.
+Draft for Friction 0.9.6 release.
 
 <img style="width: 100%; border-radius: .25em;" src="/assets/hero-poster.jpg" alt="Screenshot">
+
+
+## New UI layout
+
+Lorem ipsum.
+
+### Default
+
+Lorem ipsum.
+
+![Screenshot](/assets/screenshots/096/friction-096-common.jpg)
+
+### Containers
+
+Lorem ipsum.
+
+![Screenshot](/assets/screenshots/096/friction-uilayout-containers.jpg)
+
+### Examples
+
+Lorem ipsum.
+
+![Screenshot](/assets/screenshots/096/friction-uilayout-example-01.jpg)
+![Screenshot](/assets/screenshots/096/friction-uilayout-example-02.jpg)
+![Screenshot](/assets/screenshots/096/friction-uilayout-example-03.jpg)
+![Screenshot](/assets/screenshots/096/friction-uilayout-example-04.jpg)
 
 ## Changes
 
@@ -17,14 +43,19 @@ Changes since 0.9.5.
 
 ### UI
 
+* New UI layout handler
+* Render Queue: Fix missing labels (-none-) on project load
+* Added bookmark color shortcut (B)
+* Added shortcut for Pivot local/global (P)
+* Don't allow group link to be dropped on it's target
 * Render queue state fixes
 * Various minor tweaks
 * Updated some icons
-* New UI layout handler *(not enabled yet, will be default in beta 2)*
 
 ### Linux
 
 * Removed Ubuntu Lunar native package (use portable/AppImage/Flatpak)
+* Added Ubuntu Noble (24.04) native package
 
 ### Other
 
