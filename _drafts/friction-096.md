@@ -36,7 +36,6 @@ Lorem ipsum.
 ![Screenshot](/assets/screenshots/096/friction-uilayout-example-02.jpg)
 ![Screenshot](/assets/screenshots/096/friction-uilayout-example-03.jpg)
 ![Screenshot](/assets/screenshots/096/friction-uilayout-example-04.jpg)
-![Screenshot](/assets/screenshots/096/friction-uilayout-example-05.jpg)
 
 ## Changes
 
@@ -46,7 +45,7 @@ Changes since 0.9.5.
 
 * New UI layout handler
 * Render Queue: Fix missing labels (-none-) on project load
-* Added bookmark color shortcut (B)
+* Added shortcut for bookmark color (B)
 * Added shortcut for Pivot local/global (P)
 * Don't allow group link to be dropped on it's target
 * Render queue state fixes
@@ -57,10 +56,15 @@ Changes since 0.9.5.
 
 * Removed Ubuntu Lunar (23.04) native package
 * Added Ubuntu Noble (24.04) native package
+* Removed Flatpak package, will submit to flathub after release
+* Fixed broken RPM package
 
 ### Other
 
-* Major improvements to the build process
+* Major improvements to the build process (skia is now part of Friction)
+* Started moving GUI code to frictionui library
+* Moved more code to the frictioncore library
+* Removed a lot of unused code
 * Upgraded from Qt 5.12 to Qt 5.15
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.5...main).
