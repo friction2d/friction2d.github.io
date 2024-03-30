@@ -5,7 +5,7 @@ categories: releases
 release: 0.9.6
 ---
 
-# Friction 0.9.6 *(ETA 2024-03-XX)*
+# Friction 0.9.6 *(ETA 2024-04-XX)*
 
 Draft for Friction 0.9.6 release.
 
@@ -52,6 +52,19 @@ Changes since 0.9.5.
 * Various minor tweaks
 * Updated some icons
 
+### Renderer
+
+Added support for profiles on selected codecs.
+
+![Screenshot](/assets/screenshots/096/friction-video-codec-profile.jpg)
+
+* H264 *(baseline/main/high)*
+* ProRes *(proxy/lt/standard/hq/4444/xq)*
+* AV1 *(main/high/professional)*
+* VP9 *(0/1/2/3)*
+* MPEG4 *(simple/core/main)*
+* VC1 *(simple/main/complex/advanced)*
+
 ### Linux
 
 * Removed Ubuntu Lunar (23.04) native package
@@ -66,6 +79,7 @@ Changes since 0.9.5.
 * Moved more code to the frictioncore library
 * Removed a lot of unused code
 * Upgraded from Qt 5.12 to Qt 5.15
+  * Should fix several UI issues on Windows
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.5...main).
 
