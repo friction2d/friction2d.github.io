@@ -130,6 +130,17 @@ For other inquiries use support at friction dot graphics.
   * Intel HD Graphics 4000 (Ivy Bridge)
 * Audio device supporting WASAPI on Windows and PulseAudio on Linux
 
+### Recommended hardware
+
+* 32GB+ RAM
+* CPU
+  * Intel Coffee Lake Core i5/i7 or newer
+  * AMD Ryzen/Threadripper 1000 series or newer
+* GPU
+  * NVIDIA GeForce GTX 1050 or newer
+  * AMD Radeon RX 560 or newer
+  * Intel UHD Graphics 620 or newer
+
 ### Supported systems
 
 * Microsoft Windows 10/11
