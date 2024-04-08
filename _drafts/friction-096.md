@@ -11,38 +11,9 @@ Draft for Friction 0.9.6 release.
 
 <img style="width: 100%; border-radius: .25em;" src="/assets/hero-poster.jpg" alt="Screenshot">
 
+## UI/UX
 
-## New UI layout
-
-Lorem ipsum.
-
-### Default
-
-Lorem ipsum.
-
-![Screenshot](/assets/screenshots/096/friction-096-common.jpg)
-
-### Containers
-
-Lorem ipsum.
-
-![Screenshot](/assets/screenshots/096/friction-uilayout-containers.jpg)
-
-### Examples
-
-Lorem ipsum.
-
-![Screenshot](/assets/screenshots/096/friction-uilayout-example-01.jpg)
-![Screenshot](/assets/screenshots/096/friction-uilayout-example-02.jpg)
-![Screenshot](/assets/screenshots/096/friction-uilayout-example-03.jpg)
-![Screenshot](/assets/screenshots/096/friction-uilayout-example-04.jpg)
-
-## Changes
-
-Changes since 0.9.5.
-
-### UI
-
+* Improved "Fill and Stroke" widgets
 * New UI layout handler
 * Render Queue: Fix missing labels (-none-) on project load
 * Added shortcut for bookmark color (B)
@@ -52,11 +23,53 @@ Changes since 0.9.5.
 * Various minor tweaks
 * Updated some icons
 
-### Renderer
+## New UI layout
+
+This version includes a new layout handler. This makes the UI a bit more flexible for different workflows.
+
+<div class="blocks">
+<div class="block">
+<img src="/assets/screenshots/096/friction-096-common.jpg" alt="Screenshot">
+<p>The default layout is still the same, the only difference compared to 0.9.5 is the arrow buttons above some of the widgets.</p>
+</div>
+<div class="block">
+<img src="/assets/screenshots/096/friction-uilayout-containers.jpg" alt="Screenshot">
+<p>The layout has four containers where you can freely move widgets (using the arrows on top of the widget). If the widget is in the RIGHT container and you press the left arrow the widget will move to the TOP container, if you instead press the right arrow while the widget is in the RIGHT container your widget will move to the LEFT container etc etc. </p>
+</div>
+<div class="block">
+<img src="/assets/screenshots/096/friction-uilayout-example-01.jpg" alt="Screenshot">
+<p>Example layout #1</p>
+</div>
+<div class="block">
+<img src="/assets/screenshots/096/friction-uilayout-example-02.jpg" alt="Screenshot">
+<p>Example layout #2</p>
+</div>
+<div class="block">
+<img src="/assets/screenshots/096/friction-uilayout-example-03.jpg" alt="Screenshot">
+<p>Example layout #2</p>
+</div>
+<div class="block">
+<img src="/assets/screenshots/096/friction-uilayout-example-04.jpg" alt="Screenshot">
+<p>Example layout #4</p>
+</div>
+</div>
+
+## Fill and Stroke
+
+The color widgets has some minor UI cleanup. Most of the changes was in the backend, cleaning up the code etc.
+
+<div class="blocks">
+<div class="block"><img src="/assets/screenshots/096/friction-fillstroke-01.jpg" alt="Screenshot"></div>
+<div class="block"><img src="/assets/screenshots/096/friction-fillstroke-02.jpg" alt="Screenshot"></div>
+</div>
+
+## Renderer
 
 Added support for profiles on selected codecs.
 
-![Screenshot](/assets/screenshots/096/friction-video-codec-profile.jpg)
+<div class="blocks">
+<div class="block"><img src="/assets/screenshots/096/friction-video-codec-profile.jpg" alt="Screenshot"></div>
+</div>
 
 * H264 *(baseline/main/high)*
 * ProRes *(proxy/lt/standard/hq/4444/xq)*
@@ -65,14 +78,14 @@ Added support for profiles on selected codecs.
 * MPEG4 *(simple/core/main)*
 * VC1 *(simple/main/complex/advanced)*
 
-### Linux
+## Linux
 
 * Removed Ubuntu Lunar (23.04) native package
 * Added Ubuntu Noble (24.04) native package
 * Removed Flatpak package, will submit to flathub after release
 * Fixed broken RPM package
 
-### Other
+## Other
 
 * Major improvements to the build process (skia is now part of Friction)
 * Started moving GUI code to frictionui library
