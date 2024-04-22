@@ -1,18 +1,22 @@
 ---
-title: "Friction 0.9.6 draft"
+title: "Friction 0.9.6"
 layout: post
 categories: releases
 release: 0.9.6
 ---
 
-# Friction 0.9.6 *(ETA 2024-04-XX)*
+# Friction 0.9.6
 
 Draft for Friction 0.9.6 release.
 
 <img style="width: 100%; border-radius: .25em;" src="/assets/hero-poster.jpg" alt="Screenshot">
 
+**[ui has changed since this screenshot, update!]**
+
 ## UI/UX
 
+* Improved viewer and timeline UI
+* Don't wrap item labels
 * Improved "Fill and Stroke" widgets
 * New UI layout handler
 * Render Queue: Fix missing labels (-none-) on project load
@@ -26,6 +30,8 @@ Draft for Friction 0.9.6 release.
 ## New UI layout
 
 This version includes a new layout handler. This makes the UI a bit more flexible for different workflows.
+
+**[ui has changed since this screenshot(s), update!]**
 
 <div class="blocks">
 <div class="block">
@@ -54,6 +60,10 @@ This version includes a new layout handler. This makes the UI a bit more flexibl
 </div>
 </div>
 
+## Viewer and Timeline
+
+Improved viewer and timeline UI. **[add more info and screenshot]**
+
 ## Fill and Stroke
 
 The color widgets has some minor UI cleanup. Most of the changes was in the backend, cleaning up the code etc.
@@ -78,23 +88,33 @@ Added support for profiles on selected codecs.
 * MPEG4 *(simple/core/main)*
 * VC1 *(simple/main/complex/advanced)*
 
+## Effects
+
+* Effects can now be renamed
+
+## Windows
+
+* Support window title bar dark/light theme
+* Support for Windows N
+* Remove dependency on Windows Media Foundation
+
 ## Linux
 
 * Removed Ubuntu Lunar (23.04) native package
 * Added Ubuntu Noble (24.04) native package
-* Removed Flatpak package, will submit to flathub after release
+* Removed Flatpak package, will submit to flathub at some point
 * Fixed broken RPM package
 
 ## Other
 
-* Major improvements to the build process (skia is now part of Friction)
+* Major improvements to the build process
 * Started moving GUI code to frictionui library
 * Moved more code to the frictioncore library
 * Removed a lot of unused code
-* Upgraded from Qt 5.12 to Qt 5.15
+* Upgraded from Qt 5.12.12 to Qt 5.15.13
   * Should fix several UI issues on Windows
 
-[**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.5...main).
+[**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.5...main). **[update url before release]**
 
 ## Known Issues
 
@@ -132,9 +152,9 @@ For other inquiries use support at friction dot graphics.
 
 ### Recommended hardware
 
-* 32GB+ RAM
+* 32GB RAM
 * CPU
-  * Intel Coffee Lake Core i5/i7 or newer
+  * Intel Kaby Lake Core i5/i7 or newer
   * AMD Ryzen/Threadripper 1000 series or newer
 * GPU
   * NVIDIA GeForce GTX 1050 or newer
@@ -143,18 +163,17 @@ For other inquiries use support at friction dot graphics.
 
 ### Supported systems
 
-* Microsoft Windows 10/11
-  * [Visual C++ Redistributable 2017](https://aka.ms/vs/17/release/vc_redist.x64.exe) or higher is needed on Windows 10
+* Microsoft Windows (N) 10/11
+  * Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed on Windows 10
 * Ubuntu 22.04/23.10/24.04 and compatible
 * Red Hat Enterprise Linux 7.9/8.x/9.x and compatible
 * Generic Linux (glibc 2.17+/libgcc 4.8.5+)
 
 #### Linux notes
 
-We have a universal Linux build recommended for most users. It's provided as a portable tarball, RPM, AppImage and Flatpak.
+We have a universal Linux build recommended for most users. It's provided as a portable tarball, RPM and AppImage.
 
 * They are all identical, only the package format differs
-* Flatpak is sandboxed with limited access to the file system
 * Third-party dependencies are kept in sync with the Windows build, only the compilers differ
 
 Ubuntu packages are built against system dependencies and differs from our universal build.
