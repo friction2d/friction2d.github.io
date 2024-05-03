@@ -15,6 +15,7 @@ privacy
 3rdparty/unwind
 3rdparty/xkbcommon
 3rdparty/blender
+3rdparty/xcb
 documentation/shortcuts
 "
 
