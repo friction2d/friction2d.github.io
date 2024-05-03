@@ -43,6 +43,7 @@ Shortcuts for objects are valid on active timeline and viewer.
 | Select All | `A`
 | DeSelect All | `Shift` + `A`
 | Invert Selection | `I`
+| Pivot local/global | `P`
 
 ## Timeline
 
@@ -88,3 +89,11 @@ Shortcuts are valid on active viewer.
 | Reset Rotation | `Alt` + `R`
 | Rotate | `R` and move mouse/touchpad
 | Scale | `S` and move mouse/touchpad
+
+## Other
+
+Other shortcuts.
+
+| Action | Shortcut |
+| ------ | -------- |
+| Bookmark current color | `B`
