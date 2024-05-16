@@ -190,13 +190,15 @@ a:hover {
 .btn {
     border-radius: .25em;
     background-color: rgb(177, 16, 20);
+    border: 1px solid transparent;
     padding: .6em;
     color: white;
     text-decoration: none;
-    vertical-align: middle;
     text-align: center;
     text-transform: uppercase;
     box-shadow: 0 3px 10px rgb(0 0 0 / 0.2);
+    white-space: nowrap;
+    display: block;
 }
 
 .btn:hover {
@@ -205,6 +207,8 @@ a:hover {
 }
 
 .btn img {
+    width: 24px;
+    height: 24px;
     margin-right: .5em;
     vertical-align: middle;
 }
@@ -420,4 +424,22 @@ ul.platform { list-style-type: none; }
 .blurry {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
+}
+
+.noDeco,
+.noDeco a { text-decoration: none; }
+.noDeco a:hover {
+    color: white;
+    text-decoration: underline;
+}
+
+.downloads {
+    display: flex;
+    gap: 1em;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+.shadow {
+    text-shadow: #000 1px 0 10px;
 }

@@ -50,7 +50,11 @@
         </div>
         <div class="bigTitle" id="download">
             <h1>Download Friction</h1>
-            <p><a class="btn" href="{{ site.url }}/releases/friction-{{ site.latest_version | remove: '.' }}.html"><img src="{{ site.url }}/assets/download.svg" height="24" />Download latest release</a></p>
+            <div class="downloads">
+                <a class="btn" href="{{ site.latest_setup }}"><img src="{{ site.url }}/assets/download.svg" width="24" height="24" />Windows Download</a>
+                <a class="btn" href="{{ site.latest_appimage }}"><img src="{{ site.url }}/assets/download.svg" width=24" height="24" />Linux Download</a>
+            </div>
+            <p class="shadow noDeco"><a href="{{ site.url }}/releases/friction-{{ site.latest_version | remove: '.' }}.html">Release notes and alternative downloads</a></p>
         </div>
         <div class="blocks">
             <div class="block darkAlpha blurry">
