@@ -95,8 +95,7 @@ Added support for profiles on selected codecs.
 ## Windows
 
 * Support window title bar dark/light theme
-* Support for Windows N
-* Remove dependency on Windows Media Foundation
+* Remove dependency on Windows Media Foundation (Support for Windows N)
 
 ## Linux
 

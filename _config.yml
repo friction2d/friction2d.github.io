@@ -5,7 +5,7 @@ sourceforge_download_url: "https://sourceforge.net/projects/friction/files/"
 title: Friction
 domain: "friction.graphics"
 url: "https://friction.graphics"
-description: "Friction is a powerful and versatile free and open-source motion graphics application that allows you to create stunning vector and raster animations for web and video platforms with ease."
+description: "Friction is a powerful and versatile motion graphics application that allows you to create stunning vector and raster animations for web and video platforms with ease."
 permalink: /:categories/:title:output_ext
 exclude:
   - README.md
@@ -25,7 +25,7 @@ exclude:
   - privacy.html
   - "*.qrc"
   - 3rdparty
-  - documentation/shortcuts.html
+  - documentation/
   - about.md
 nav:
   - title: News
@@ -33,9 +33,6 @@ nav:
     ext: false
   - title: Download
     url: "/#download"
-    ext: false
-  - title: "Documentation"
-    url: /documentation/
     ext: false
   - title: "Community"
     url: https://github.com/orgs/friction2d/discussions

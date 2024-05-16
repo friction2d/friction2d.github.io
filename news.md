@@ -1,7 +1,7 @@
 ---
-title: "Friction News"
+title: "Friction News and Releases"
 layout: post
 permalink: news/
 ---
 
-# Friction News
+# News and Releases
