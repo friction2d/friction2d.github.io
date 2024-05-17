@@ -24,8 +24,13 @@ Draft for Friction 0.9.6 release.
 * Added shortcut for Pivot local/global (P)
 * Don't allow group link to be dropped on it's target
 * Render queue state fixes
-* Various minor tweaks
-* Updated some icons
+* Various minor tweaks/fixes
+* Updated icon theme
+* Removed legacy icon code
+* Icon fixes for HiDPI
+* Check that recent file exists before adding to menu
+* Added "Clear Recent Files" in edit menu
+* Timeline settings menu renamed to "filters"
 
 ## New UI layout
 
@@ -99,10 +104,11 @@ Added support for profiles on selected codecs.
 
 ## Linux
 
-* Removed Ubuntu Lunar (23.04) native package
-* Added Ubuntu Noble (24.04) native package
-* Removed Flatpak package, will submit to flathub at some point
+* Removed Ubuntu native packages
+  * We won't ship distro specific packages anymore, see universal build
+* Removed Flatpak package
 * Fixed broken RPM package
+* Bundle xcb libraries for better compatibility
 
 ## Other
 
@@ -112,6 +118,9 @@ Added support for profiles on selected codecs.
 * Removed a lot of unused code
 * Upgraded from Qt 5.12.12 to Qt 5.15.13
   * Should fix several UI issues on Windows
+  * Might also introduce new issues
+* Downgraded to known good (for us) FFmpeg version
+* QtSvg and image formats is not needed anymore, we only need PNG (included in qtbase)
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.5...main). **[update url before release]**
 
@@ -162,19 +171,7 @@ For other inquiries use support at friction dot graphics.
 
 ### Supported systems
 
-* Microsoft Windows (N) 10/11
+* Microsoft Windows (N) 10/11 x64
   * Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed on Windows 10
-* Ubuntu 22.04/23.10/24.04 and compatible
-* Red Hat Enterprise Linux 7.9/8.x/9.x and compatible
-* Generic Linux (glibc 2.17+/libgcc 4.8.5+)
-
-#### Linux notes
-
-We have a universal Linux build recommended for most users. It's provided as a portable tarball, RPM and AppImage.
-
-* They are all identical, only the package format differs
-* Third-party dependencies are kept in sync with the Windows build, only the compilers differ
-
-Ubuntu packages are built against system dependencies and differs from our universal build.
-
-Native Wayland is currently not supported.
+* Red Hat Enterprise Linux 7.9/8.x/9.x x86_64 and compatible
+  * Generic Linux with X11 and glibc 2.17+ should work
