@@ -1,3 +1,0 @@
-[submodule "documentation/shaders"]
-	path = documentation/shaders
-	url = https://github.com/friction2d/friction-shader-plugins
