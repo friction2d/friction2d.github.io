@@ -4,9 +4,7 @@ layout: default
 permalink: about.html
 ---
 
-**Friction is a powerful and versatile free and open-source motion graphics application that allows you to create stunning vector and raster animations for web and video platforms with ease.**
-
-You can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version.
+**Friction is a powerful and versatile motion graphics application that allows you to create stunning vector and raster animations for web and video platforms with ease.**
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
