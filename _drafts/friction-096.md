@@ -1,5 +1,5 @@
 ---
-title: "Friction 0.9.6"
+title: "Friction 0.9.6 released"
 layout: post
 categories: releases
 release: 0.9.6
@@ -7,18 +7,18 @@ release: 0.9.6
 
 # Friction 0.9.6
 
-Draft for Friction 0.9.6 release.
+First stable release for 2024 is now done. This release includes several new features and fixes compared to 0.9.5.
 
-<img style="width: 100%; border-radius: .25em;" src="/assets/hero-poster.jpg" alt="Screenshot">
-
-**[ui has changed since this screenshot, update!]**
+<img style="width: 100%; border-radius: .25em;" src="/assets/screenshots/096/friction-096-screenshot.jpg" alt="Screenshot of 0.9.6">
 
 ## UI/UX
+
+This release includes several UI/UX changes.
 
 * Improved viewer and timeline UI
 * Don't wrap item labels
 * Improved "Fill and Stroke" widgets
-* New UI layout handler
+* New UI layout handler (more flexible)
 * Render Queue: Fix missing labels (-none-) on project load
 * Added shortcut for bookmark color (B)
 * Added shortcut for Pivot local/global (P)
@@ -32,59 +32,9 @@ Draft for Friction 0.9.6 release.
 * Added "Clear Recent Files" in edit menu
 * Timeline settings menu renamed to "filters"
 
-## New UI layout
-
-This version includes a new layout handler. This makes the UI a bit more flexible for different workflows.
-
-**[ui has changed since this screenshot(s), update!]**
-
-<div class="blocks">
-<div class="block">
-<img src="/assets/screenshots/096/friction-096-common.jpg" alt="Screenshot">
-<p>The default layout is still the same, the only difference compared to 0.9.5 is the arrow buttons above some of the widgets.</p>
-</div>
-<div class="block">
-<img src="/assets/screenshots/096/friction-uilayout-containers.jpg" alt="Screenshot">
-<p>The layout has four containers where you can freely move widgets (using the arrows on top of the widget). If the widget is in the RIGHT container and you press the left arrow the widget will move to the TOP container, if you instead press the right arrow while the widget is in the RIGHT container your widget will move to the LEFT container etc etc. </p>
-</div>
-<div class="block">
-<img src="/assets/screenshots/096/friction-uilayout-example-01.jpg" alt="Screenshot">
-<p>Example layout #1</p>
-</div>
-<div class="block">
-<img src="/assets/screenshots/096/friction-uilayout-example-02.jpg" alt="Screenshot">
-<p>Example layout #2</p>
-</div>
-<div class="block">
-<img src="/assets/screenshots/096/friction-uilayout-example-03.jpg" alt="Screenshot">
-<p>Example layout #2</p>
-</div>
-<div class="block">
-<img src="/assets/screenshots/096/friction-uilayout-example-04.jpg" alt="Screenshot">
-<p>Example layout #4</p>
-</div>
-</div>
-
-## Viewer and Timeline
-
-Improved viewer and timeline UI. **[add more info and screenshot]**
-
-## Fill and Stroke
-
-The color widgets has some minor UI cleanup. Most of the changes was in the backend, cleaning up the code etc.
-
-<div class="blocks">
-<div class="block"><img src="/assets/screenshots/096/friction-fillstroke-01.jpg" alt="Screenshot"></div>
-<div class="block"><img src="/assets/screenshots/096/friction-fillstroke-02.jpg" alt="Screenshot"></div>
-</div>
-
 ## Renderer
 
-Added support for profiles on selected codecs.
-
-<div class="blocks">
-<div class="block"><img src="/assets/screenshots/096/friction-video-codec-profile.jpg" alt="Screenshot"></div>
-</div>
+The renderer now supports profiles on selected codecs.
 
 * H264 *(baseline/main/high)*
 * ProRes *(proxy/lt/standard/hq/4444/xq)*
@@ -122,7 +72,7 @@ Added support for profiles on selected codecs.
 * Downgraded to known good (for us) FFmpeg version
 * QtSvg and image formats is not needed anymore, we only need PNG (included in qtbase)
 
-[**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.5...main). **[update url before release]**
+[**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.5...v0.9.6).
 
 ## Known Issues
 
