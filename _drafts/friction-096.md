@@ -31,6 +31,9 @@ This release includes several UI/UX changes.
 * Check that recent file exists before adding to menu
 * Added "Clear Recent Files" in edit menu
 * Timeline settings menu renamed to "filters"
+* Fixed menu state on project load
+* Fixed path keyTimes when exporting SVG
+* Allow modifications on the timeline/graph during playback
 
 ## Renderer
 
@@ -66,7 +69,7 @@ The renderer now supports profiles on selected codecs.
 * Started moving GUI code to frictionui library
 * Moved more code to the frictioncore library
 * Removed a lot of unused code
-* Upgraded from Qt 5.12.12 to Qt 5.15.13
+* Upgraded from Qt 5.12.12 to Qt 5.15.14
   * Should fix several UI issues on Windows
   * Might also introduce new issues
 * Downgraded to known good (for us) FFmpeg version
