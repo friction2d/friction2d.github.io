@@ -14,6 +14,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 * [Maurycy Liebner](https://github.com/MaurycyLiebner)
 * [sanjuchopracool](https://github.com/sanjuchopracool)
 * [Alex Kiryanov](https://github.com/AlexKiryanov)
+* [Adam Belis](https://www.adambelis.com)
 * [Poren Chiang](https://github.com/rschiang)
 * [goyalyashpal](https://github.com/goyalyashpal)
 * [eszlari](https://github.com/eszlari)
