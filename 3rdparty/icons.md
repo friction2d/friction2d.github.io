@@ -1,6 +1,17 @@
-# Blender Icons
+# Friction Icon Theme
 
-Friction includes several [icons](https://github.com/Shrinks99/blender-icons) from Blender. These icons are released under a [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/) license.
+Freedesktop.org compatible icon theme for Friction.
+
+# Credits
+
+* [Enve](https://github.com/MaurycyLiebner/enve) icons contributors
+* Friction icon is a modification of an icon made by sixsixfive
+* [Andrzej Ambroż](https://devtalk.blender.org/u/jendrzych)
+* [Adam Belis](https://www.adambelis.com)
+
+# License
+
+Icons are licensed under [CC BY-SA 4.0](https://creativecommons.org/licenses/by-sa/4.0/).
 
 ```
 Attribution-ShareAlike 4.0 International

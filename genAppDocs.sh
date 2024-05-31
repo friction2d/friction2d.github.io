@@ -14,7 +14,7 @@ privacy
 3rdparty/ffmpeg_win
 3rdparty/unwind
 3rdparty/xkbcommon
-3rdparty/blender
+3rdparty/icons
 3rdparty/xcb
 documentation/shortcuts
 "
