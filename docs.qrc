@@ -5,7 +5,7 @@
         <file>privacy.html</file>
         <file>3rdparty/gperftools.html</file>
         <file>3rdparty/skia.html</file>
-        <file>3rdparty/blender.html</file>
+        <file>3rdparty/icons.html</file>
         <file>documentation/shortcuts.html</file>
     </qresource>
 </RCC>
