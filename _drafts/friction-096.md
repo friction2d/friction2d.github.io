@@ -34,6 +34,7 @@ This release includes several UI/UX changes.
 * Fixed menu state on project load
 * Fixed path keyTimes when exporting SVG
 * Allow modifications on the timeline/graph during playback
+* Improved export SVG dialog
 
 ## Renderer
 
@@ -65,6 +66,7 @@ The renderer now supports profiles on selected codecs.
 
 ## Other
 
+* Several crash fixes
 * Major improvements to the build process
 * Started moving GUI code to frictionui library
 * Moved more code to the frictioncore library
