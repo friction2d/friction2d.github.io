@@ -28,6 +28,22 @@ These shortcuts are globally available in Friction. Note that some actions may r
 | Preferences | `Ctrl` + `P`
 | Exit | `Ctrl` + `Q`
 
+## Tools
+
+Shortcuts for the main tools.
+
+| Action | Shortcut |
+| ------ | -------- |
+| Transform | `F1`
+| Path Edit | `F2`
+| Path Create | `F3`
+| Path Draw | `F4`
+| Circle | `F5`
+| Rectangle | `F6`
+| Text | `F7`
+| Null | `F8`
+| Pick | `F9`
+
 ## Objects
 
 Shortcuts for objects are valid on active timeline and viewer.
