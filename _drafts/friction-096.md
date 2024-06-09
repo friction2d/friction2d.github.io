@@ -7,7 +7,9 @@ release: 0.9.6
 
 # Friction 0.9.6
 
-First stable release for 2024 is now done. This release includes several new features and fixes compared to 0.9.5.
+The first stable release for 2024 is now done. This release includes several improvements, new features, and critical fixes.
+
+This will likely be the last feature release for the 0.9 series. Focus is now on the 1.0 series.
 
 <img style="width: 100%; border-radius: .25em;" src="/assets/screenshots/096/friction-096-screenshot.jpg" alt="Screenshot of 0.9.6">
 
@@ -50,6 +52,7 @@ The renderer now supports profiles on selected codecs.
 ## Effects
 
 * Effects can now be renamed
+* Several crash fixes for shader effects
 
 ## Windows
 
@@ -58,37 +61,38 @@ The renderer now supports profiles on selected codecs.
 
 ## Linux
 
-* Removed Ubuntu native packages
-  * We won't ship distro specific packages anymore, see universal build
-* Removed Flatpak package
 * Fixed broken RPM package
 * Bundle xcb libraries for better compatibility
 
 ## Other
 
-* Several crash fixes
+* Several bug/crash fixes
 * Major improvements to the build process
-* Started moving GUI code to frictionui library
-* Moved more code to the frictioncore library
-* Removed a lot of unused code
+* More modular code
+* Removed/Refactored a lot of legacy code
 * Upgraded from Qt 5.12.12 to Qt 5.15.14
-  * Should fix several UI issues on Windows
-  * Might also introduce new issues
-* Downgraded to known good (for us) FFmpeg version
+  * Fixes several UI issues
+  * Qt 5.15.14 is now a requirement
+* Warning during startup if using unsupported FFmpeg version
+  * We only support the version we ship with our binaries
 * QtSvg and image formats is not needed anymore, we only need PNG (included in qtbase)
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.5...v0.9.6).
 
 ## Known Issues
 
-* Friction is beta quality software, expect issues and missing/broken features
+* Friction is in early development, expect issues and missing features
 * CSS style sheets are not supported when importing an SVG
   * SVG's from Adobe Illustrator (and others?) may have issues due to this
   * In some circumstances this might result in an invalid undo state after import
 * SVG gradients may not import correctly
   * In general gradients needs some work
 * There are still some minor issues with HiDPI
-* Shader effects are still experimental and may introduce issues
+* Shader effects are still experimental
+* GPU accelerated path support may not be supported on Radeon cards (no AA)
+  * Can be disabled in settings
+* Flickering on some projects (GPUs) during playback/video export
+  * Disable GPU in settings/effects
 
 And more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
 
@@ -129,4 +133,4 @@ For other inquiries use support at friction dot graphics.
 * Microsoft Windows (N) 10/11 x64
   * Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed on Windows 10
 * Red Hat Enterprise Linux 7.9/8.x/9.x x86_64 and compatible
-  * Generic Linux with X11 and glibc 2.17+ should work
+  * Generic Linux with X11, pulseaudio and glibc 2.17+ should work
