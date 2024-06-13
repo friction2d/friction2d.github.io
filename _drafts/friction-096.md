@@ -34,9 +34,13 @@ This release includes several UI/UX changes.
 * Added "Clear Recent Files" in edit menu
 * Timeline settings menu renamed to "filters"
 * Fixed menu state on project load
-* Fixed path keyTimes when exporting SVG
 * Allow modifications on the timeline/graph during playback
+
+## SVG
+
+* Fixed path `keyTimes` when exporting SVG
 * Improved export SVG dialog
+* Added `line` support in SVG importer
 
 ## Renderer
 
@@ -52,7 +56,7 @@ The renderer now supports profiles on selected codecs.
 ## Effects
 
 * Effects can now be renamed
-* Several crash fixes for shader effects
+* Improved shader effects stability
 
 ## Windows
 
@@ -72,7 +76,7 @@ The renderer now supports profiles on selected codecs.
 * Removed/Refactored a lot of legacy code
 * Upgraded from Qt 5.12.12 to Qt 5.15.14
   * Fixes several UI issues
-  * Qt 5.15.14 is now a requirement
+  * Qt 5.15.3+ is now a requirement
 * Warning during startup if using unsupported FFmpeg version
   * We only support the version we ship with our binaries
 * QtSvg and image formats is not needed anymore, we only need PNG (included in qtbase)

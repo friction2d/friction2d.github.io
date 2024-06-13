@@ -13,6 +13,7 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 * [Ole-André Rodlie](https://github.com/rodlie)
 * [Maurycy Liebner](https://github.com/MaurycyLiebner)
 * [sanjuchopracool](https://github.com/sanjuchopracool)
+* [Prashant Nagar](https://github.com/vestineo)
 * [Alex Kiryanov](https://github.com/AlexKiryanov)
 * [Adam Belis](https://www.adambelis.com)
 * [Poren Chiang](https://github.com/rschiang)
