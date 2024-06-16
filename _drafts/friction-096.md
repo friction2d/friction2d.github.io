@@ -3,15 +3,21 @@ title: "Friction 0.9.6 released"
 layout: post
 categories: releases
 release: 0.9.6
+windows_setup: "setup-win64.exe"
+windows_portable: "portable-windows-x64.7z"
+linux_portable: "portable-linux-x86_64.tar.bz2"
+linux_appimage: "x86_64.AppImage"
+linux_rpm: "1.x86_64.rpm"
+download_active: true
 ---
 
 # Friction 0.9.6
 
 The first stable release for 2024 is now done. This release includes several improvements, new features, and critical fixes.
 
-This will likely be the last feature release for the 0.9 series. Focus is now on the 1.0 series.
-
 <img style="width: 100%; border-radius: .25em;" src="/assets/screenshots/096/friction-096-screenshot.jpg" alt="Screenshot of 0.9.6">
+
+This will likely be the last feature release for the 0.9 series. Focus is now on the 1.0 series.
 
 ## UI/UX
 
@@ -38,8 +44,11 @@ This release includes several UI/UX changes.
 
 ## SVG
 
+* Added quick preview
+  * Available from the toolbar and file menu
 * Fixed path `keyTimes` when exporting SVG
 * Improved export SVG dialog
+* Export SVG will now scan the project and give a informational warning/notice if something is not compatible
 * Added `line` support in SVG importer
 
 ## Renderer
