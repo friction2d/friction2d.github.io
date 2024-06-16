@@ -3,7 +3,7 @@ title: "Shortcuts"
 layout: default
 ---
 
-# Shortcuts *(DRAFT)*
+# Shortcuts
 
 Shortcuts available in Friction.
 
@@ -27,6 +27,16 @@ These shortcuts are globally available in Friction. Note that some actions may r
 | Close | `Ctrl` + `W`
 | Preferences | `Ctrl` + `P`
 | Exit | `Ctrl` + `Q`
+
+## Export/Render
+
+Shortcuts for exporting video and SVG animation.
+
+| Action | Shortcut |
+| ------ | -------- |
+| Add to render queue | `F12`
+| Export SVG | `Shift+F12`
+| Preview SVG | `Ctrl+F12`
 
 ## Tools
 
@@ -113,3 +123,4 @@ Other shortcuts.
 | Action | Shortcut |
 | ------ | -------- |
 | Bookmark current color | `B`
+| Fullscreen | `F11`
