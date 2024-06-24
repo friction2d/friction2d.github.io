@@ -449,3 +449,18 @@ ul.platform { list-style-type: none; }
     border-radius: .2em;
     box-shadow: #000 0 0 5px;
 }
+
+.comments img {
+    width: 32px !important;
+    height: 32px !important;
+    border: unset !important;
+    border-radius: unset !important;
+    vertical-align: middle;
+    margin-right: .2em;
+}
+.comments {
+    font-weight: bold;;
+}
+.comments a {
+    text-decoration: none;
+}

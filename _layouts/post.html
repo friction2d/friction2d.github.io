@@ -44,6 +44,9 @@
                 
                 <p class="publishedDate">Published {{ page.date | date: "%-d %B %Y" }}.</p>
                 {% endif %}
+                {% if page.comments != nil %}
+                <div class="comments"><a href="{{ page.comments }}"><img src="{{ site.url }}/assets/comments.svg">Discuss this release.</a></div>
+                {% endif %}
             </div>
         </div>
         <div id="footer">
