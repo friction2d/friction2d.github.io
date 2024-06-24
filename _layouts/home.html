@@ -49,12 +49,15 @@
             </div>
         </div>
         <div class="bigTitle" id="download">
-            <h1>Download Friction</h1>
+            <h1>Download Friction {{ site.latest_version }}</h1>
             <div class="downloads">
-                <a class="btn" href="{{ site.latest_setup }}"><img src="{{ site.url }}/assets/download.svg" width="24" height="24" />Windows Download</a>
-                <a class="btn" href="{{ site.latest_appimage }}"><img src="{{ site.url }}/assets/download.svg" width=24" height="24" />Linux Download</a>
+                <a title="Download setup for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_windows_setup }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-setup.svg"></a>
+                <a title="Download portable for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_windows_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-portable.svg"></a>
+                <a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a>
+                <a title="Download AppImage for Linux x86_64" href="{{ site.github_download_url }}v{{ site.latest_version }}/Friction-{{ site.latest_version }}-{{ site.github_release_suffix_linux_appimage }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-appimage.svg"></a>
+                <a title="Download portable tarball for Linux x86_64" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_linux_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-portable.svg"></a>
             </div>
-            <p class="shadow noDeco"><a href="{{ site.url }}/releases/friction-{{ site.latest_version | remove: '.' }}.html">Release notes and alternative downloads</a></p>
+            <p class="shadow noDeco"><a href="{{ site.url }}/releases/friction-{{ site.latest_version | remove: '.' }}.html">Release notes for Friction {{ site.latest_version }}.</a></p>
         </div>
         <div class="blocks">
             <div class="block darkAlpha blurry">
@@ -81,7 +84,7 @@
                 <ul>
                     <li>Microsoft Windows (N) 10/11 x64</li>
                     <li>Red Hat Enterprise Linux 7.9/8.x/9.x and compatible</li>
-                    <li>Generic Linux with glibc 2.17+</li>
+                    <li>Generic Linux with X11/XWayland, pulseaudio and glibc 2.17+</li>
                 </ul>
             </div>
         </div>

@@ -1,6 +1,9 @@
-latest_version: 0.9.5
-latest_setup: "https://github.com/friction2d/friction/releases/download/v0.9.5/friction-0.9.5-setup-win64.exe"
-latest_appimage: "https://github.com/friction2d/friction/releases/download/v0.9.5/friction-0.9.5-X11-x86_64.AppImage"
+latest_version: 0.9.6
+github_release_suffix_windows_setup: "setup-win64.exe"
+github_release_suffix_windows_portable: "portable-windows-x64.7z"
+github_release_suffix_linux_portable: "portable-linux-x86_64.tar.bz2"
+github_release_suffix_linux_appimage: "x86_64.AppImage"
+github_release_suffix_linux_rpm: "1.x86_64.rpm"
 github_release_url: "https://github.com/friction2d/friction/releases/tag/"
 github_download_url: "https://github.com/friction2d/friction/releases/download/"
 sourceforge_download_url: "https://sourceforge.net/projects/friction/files/"

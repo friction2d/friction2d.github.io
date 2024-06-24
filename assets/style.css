@@ -443,3 +443,9 @@ ul.platform { list-style-type: none; }
 .shadow {
     text-shadow: #000 1px 0 10px;
 }
+
+.platform {
+    border: 2px solid white;
+    border-radius: .2em;
+    box-shadow: #000 0 0 5px;
+}

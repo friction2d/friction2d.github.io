@@ -21,53 +21,25 @@
                 {% else %}
                 {% if page.categories contains "releases" and page.release != nil %}
                 <h2>Downloads</h2>
-                <ul class="platform">
-                    {% if page.windows_setup != nil %}
-                    <li><a title="Download setup for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.windows_setup }}"><img class="platform" src="https://img.shields.io/badge/Windows%2010%2F11%20Setup-0078D6?style=for-the-badge&logo=windows&logoColor=white"></a></li>
-                    {% endif %}
-                    {% if page.windows_portable != nil %}
-                    <li><a title="Download portable for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.windows_portable }}"><img class="platform" src="https://img.shields.io/badge/Windows%2010%2F11%20Portable-0078D6?style=for-the-badge&logo=windows&logoColor=white"></a></li>
-                    {% endif %}
-                    {% if page.linux_portable != nil %}
-                    <li><a title="Download portable for Linux universal X11/x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_portable }}"><img class="platform" src="https://img.shields.io/badge/Linux%20Portable-FCC624?style=for-the-badge&logo=linux&logoColor=black"></a></li>
-                    {% endif %}
-                    {% if page.linux_appimage != nil %}
-                    <li><a title="Download AppImage for Linux universal X11/x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_appimage }}"><img class="platform" src="https://img.shields.io/badge/Linux%20AppImage-FCC624?style=for-the-badge&logo=linux&logoColor=black"></a></li>
-                    {% endif %}
-                    {% if page.linux_flatpak != nil %}
-                    <li><a title="Download Flatpak for Linux universal X11/x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_flatpak }}"><img class="platform" src="https://img.shields.io/badge/Linux%20Flatpak-4A90D9?style=for-the-badge&logo=flatpak&logoColor=fff"></a></li>
-                    {% endif %}
-                    {% if page.vfxplatform != nil %}
-                    <li><a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.vfxplatform }}"><img class="platform" src="https://img.shields.io/badge/Enterprise%20Linux%207%2F8%2F9-EE0000?style=for-the-badge&logo=redhat&logoColor=white"></a></li>
-                    {% endif %}
-                    {% if page.ubuntu_jammy != nil %}
-                    <li><a title="Download package for Ubuntu Jammy" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.ubuntu_jammy }}"><img class="platform" src="https://img.shields.io/badge/Ubuntu%2022.04%20Jammy-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a></li>
-                    {% endif %}
-                    {% if page.ubuntu_lunar != nil %}
-                    <li><a title="Download package for Ubuntu Lunar" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.ubuntu_lunar }}"><img class="platform" src="https://img.shields.io/badge/Ubuntu%2023.04%20Lunar-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a></li>
-                    {% endif %}
-                    {% if page.ubuntu_mantic != nil %}
-                    <li><a title="Download package for Ubuntu Mantic" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.ubuntu_mantic }}"><img class="platform" src="https://img.shields.io/badge/Ubuntu%2023.10%20Mantic-E95420?style=for-the-badge&logo=ubuntu&logoColor=white"></a></li>
-                    {% endif %}
-                    {% if page.rhel9 != nil %}
-                    <li><a title="Download package for Enterprise Linux 9" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.rhel9 }}"><img class="platform" src="https://img.shields.io/badge/Enterprise%20Linux%209-EE0000?style=for-the-badge&logo=redhat&logoColor=white"></a></li>
-                    {% endif %}
-                    {% if page.fc38 != nil %}
-                    <li><a title="Download package for Fedora 38" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.fc38 }}"><img class="platform" src="https://img.shields.io/badge/Fedora%20Linux%2038-294172?style=for-the-badge&logo=fedora&logoColor=white"></a></li>
-                    {% endif %}
-                    {% if page.archlinux != nil %}
-                    <li><a title="Download package for Arch Linux" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.archlinux }}"><img class="platform" src="https://img.shields.io/badge/Arch_Linux-1793D1?style=for-the-badge&logo=arch-linux&logoColor=white"></a></li>
-                    {% endif %}
-                </ul>
-                {% if page.download_notes %}
-                {% if page.windows_winget != nil %}
-                <hr>
-                <p>To install Friction with winget (Windows Package Manager), use the following command:</p>
-                <code class="language-plaintext highlighter-rouge">winget install --id={{ page.windows_winget }}</code>
-                {% endif%}
-                <hr>
+                {% if page.download_active %}
+                {% if page.windows_setup != nil %}
+                <a title="Download setup for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.windows_setup }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-setup.svg"></a>
                 {% endif %}
-                <p>Additional downloads and checksums for this release is available on <a target="_blank" href="{{ site.github_release_url }}v{{ page.release }}">GitHub</a> or <a target="_blank" href="{{ site.sourceforge_download_url }}v{{ page.release }}/">Sourceforge</a>.</p>
+                {% if page.windows_portable != nil %}
+                <a title="Download portable for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.windows_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-portable.svg"></a>
+                {% endif %}
+                {% if page.linux_rpm != nil %}
+                <a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a>
+                {% endif %}
+                {% if page.linux_appimage != nil %}
+                <a title="Download AppImage for Linux x86_64" href="{{ site.github_download_url }}v{{ page.release }}/Friction-{{ page.release }}-{{ page.linux_appimage }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-appimage.svg"></a>
+                {% endif %}
+                {% if page.linux_portable != nil %}
+                <a title="Download portable tarball for Linux x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-portable.svg"></a>
+                {% endif %}
+                {% else %}
+                <p>Old releases are still available on <a target="_blank" href="{{ site.github_release_url }}v{{ page.release }}">GitHub</a> or <a target="_blank" href="{{ site.sourceforge_download_url }}v{{ page.release }}/">Sourceforge</a>.</p>
+                {% endif %}
                 {% endif %}
                 
                 <p class="publishedDate">Published {{ page.date | date: "%-d %B %Y" }}.</p>
