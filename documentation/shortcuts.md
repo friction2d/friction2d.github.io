@@ -68,7 +68,7 @@ Shortcuts for objects are valid on active timeline and viewer.
 | UnGroup | `Ctrl` + `Shft` + `G`
 | Select All | `A`
 | DeSelect All | `Shift` + `A`
-| Invert Selection | `I`
+| Invert Selection | `Alt` + `A`
 | Pivot local/global | `P`
 
 ## Timeline
@@ -86,6 +86,9 @@ Shortcuts are valid on active timeline.
 | Play/Pause | `Space`
 | Play from first frame | `Shift` + `Space`
 | Stop | `Esc`
+| Frame In | `I`
+| Frame Out | `O`
+| Marker | `k`
 
 ## Viewer/Canvas
 
