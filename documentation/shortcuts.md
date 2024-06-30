@@ -67,8 +67,8 @@ Shortcuts for objects are valid on active timeline and viewer.
 | Group | `Ctrl` + `G`
 | UnGroup | `Ctrl` + `Shft` + `G`
 | Select All | `A`
-| DeSelect All | `Shift` + `A`
-| Invert Selection | `Alt` + `A`
+| DeSelect All | `Alt` + `A`
+| Invert Selection | `Shift` + `A`
 | Pivot local/global | `P`
 
 ## Timeline

@@ -16,6 +16,7 @@ Draft for Friction 1.0.0 Alpha 1.
 * Support for Frame Out (`O`)
 * Support for Markers (`K`)
 * Changed shortcut for 'Invert Selection' (`Alt+A`)
+* SVG import: Fix linejoin and linecap support
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6...v1.0.0-alpha1).
 
