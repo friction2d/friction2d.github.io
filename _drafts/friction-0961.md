@@ -12,32 +12,32 @@ download_active: true
 comments: ""
 ---
 
-# Friction 0.9.6.1 *(DRAFT!)*
+# Friction 0.9.6.1
 
-The first patch release for 0.9.6 is now done.
+The first patch release for 0.9.6 is now available.
 
 <img style="width: 100%; border-radius: .25em;" src="/assets/screenshots/096/friction-096-screenshot.jpg" alt="Screenshot of 0.9.6">
 
-## SVG
+## Fixes
 
-* Fix linejoin and linecap support on import
+* **SVG Import**: Set default values for stroke and fill
+* **SVG Import**: Fixed linejoin and linecap support
+* **SVG Export**: Add `fill-rule` if path is `even-odd`
+* **Gui**: Fixed several issues with dockable windows
+* **Gui**: Added scene actions to main menu
+* **Core**: Fixed broken undo state after import *(on Windows)*
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6...v0.9.6.1).
 
 ## Known Issues
 
-* Friction is in early development, expect issues and missing features
-* CSS style sheets are not supported when importing an SVG
-  * SVG's from Adobe Illustrator (and others?) may have issues due to this
-  * In some circumstances this might result in an invalid undo state after import
+Friction is in early development, expect issues and missing features
+
 * SVG gradients may not import correctly
-  * In general gradients needs some work
 * There are still some minor issues with HiDPI
 * Shader effects are still experimental
-* GPU accelerated path support may not be supported on Radeon cards (no AA)
-  * Can be disabled in settings
+* GPU accelerated path support may not be supported on Radeon GPU's
 * Flickering on some projects (GPUs) during playback/video export
-  * Disable GPU in settings/effects
 
 And more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
 
@@ -52,7 +52,7 @@ For other inquiries use support at friction dot graphics.
 
 ### Minimum hardware
 
-* 4GB RAM available
+* 4GB RAM
 * AVX x86_64 compatible dual core CPU
   * Intel Sandy Bridge Core i3/i5/i7
   * AMD Bulldozer
@@ -67,7 +67,7 @@ For other inquiries use support at friction dot graphics.
 * 32GB RAM
 * CPU
   * Intel Kaby Lake Core i5/i7 or newer
-  * AMD Ryzen/Threadripper 1000 series or newer
+  * AMD Ryzen 1000 series or newer
 * GPU
   * NVIDIA GeForce GTX 1050 or newer
   * AMD Radeon RX 560 or newer
@@ -76,6 +76,6 @@ For other inquiries use support at friction dot graphics.
 ### Supported systems
 
 * Microsoft Windows (N) 10/11 x64
-  * Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed on Windows 10
+  * *Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed on Windows 10*
 * Red Hat Enterprise Linux 7.9/8.x/9.x x86_64 and compatible
-  * Generic Linux with X11, pulseaudio and glibc 2.17+ should work
+  * *Generic Linux with X11/XWayland, PulseAudio and glibc 2.17+ should work*
