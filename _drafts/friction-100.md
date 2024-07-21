@@ -1,24 +1,39 @@
 ---
-title: "Friction 1.0.0 Alpha 1"
+title: "Friction 1.0.0 Beta 1"
 layout: post
 categories: releases
 ---
 
-# Friction 1.0.0 Alpha 1
+# Friction 1.0.0 Beta 1
 
-Draft for Friction 1.0.0 Alpha 1.
+Draft for Friction 1.0.0 Beta 1.
 
 ## Changes
 
 * Proper support for timecodes
-* New application theme *(work-in-progress)*
+* New Theme *(work-in-progress)*
 * Support for Frame In (`I`)
 * Support for Frame Out (`O`)
-* Support for Markers (`K`)
-* Support for Split Clip (`SHIFT+K`)
+* Support for Markers (`M`)
+* Support for Split Clip (`K`)
 * Changed shortcut for 'Invert Selection' (`Alt+A`)
 
-[**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6.1...v1.0.0-alpha1).
+[**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6.1...v1.0.0-beta1).
+
+### Split Clip
+
+Friction now supports split clip. The action is available through the shortcut `K` on the timeline.
+
+<video controls src="../assets/videos/100/friction-split-clip.mp4" title="Split action in use"></video>
+
+Or through the context menu on the clip.
+
+![Clip context menu](../assets/screenshots/100/friction-clip-context-menu.jpg)
+
+Or through the context menu in the frame scroll bar.
+
+![Frame scroll bar context menu](../assets/screenshots/100/friction-framescrollbar-context-menu.jpg)
+
 
 ## Known Issues
 
