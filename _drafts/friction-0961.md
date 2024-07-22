@@ -25,6 +25,7 @@ The first patch release for 0.9.6 is now available.
 * **SVG Export**: Add `fill-rule` if path is `even-odd`
 * **Gui**: Fixed several issues with dockable windows
 * **Gui**: Added scene actions to main menu
+* **Gui**: Fixed min/max ranges in spinbox widgets
 * **Core**: Fixed broken undo state after import *(on Windows)*
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6...v0.9.6.1).

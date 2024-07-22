@@ -1,14 +1,14 @@
 ---
-title: "Friction 1.0.0 Beta 1"
+title: "Friction 1.0.0 Beta 1 released"
 layout: post
 categories: releases
 ---
 
 # Friction 1.0.0 Beta 1
 
-Draft for Friction 1.0.0 Beta 1.
+Introducing the first beta release for Friction 1.0.0. This versions includes several new features, please test and give us feedback (and issues).
 
-## Changes
+## The "shiny" stuff
 
 * Proper support for timecodes
 * New Theme *(work-in-progress)*
@@ -16,21 +16,22 @@ Draft for Friction 1.0.0 Beta 1.
 * Support for Markers (`M`)
 * Support for Frame In (`I`)
 * Support for Frame Out (`O`)
+* Adjust scene to first clip added
+
+## The "boring" stuff
+
 * Changed shortcut for 'Invert Selection' (`Alt+A`)
+* Remember last import directory
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6.1...v1.0.0-beta1).
 
 ### Split Clip
 
-Friction now supports split clip. This action is available through the shortcut `K` on the timeline.
+Friction now supports split clip. This action is available through the shortcut `K` on the timeline or through the context menu on the clip or the timeline scrollbar.
 
-<video controls src="/assets/videos/100/friction-split-clip.mp4" title="Split action in use"></video>
+<video width="100%" controls src="/assets/videos/100/friction-split-clip.mp4" title="Split action in use"></video>
 
-Or through the context menu on the clip or the timeline scrollbar.
-
-| Clip Context Menu | Timeline Scrollbar Context Menu |
-| ------ | -------- |
-| ![Clip context menu](/assets/screenshots/100/friction-clip-context-menu.jpg) | ![Frame scroll bar context menu](/assets/screenshots/100/friction-framescrollbar-context-menu.jpg)
+*Only video clips are supported, this can be expanded to support other clips in a future release.*
 
 ### Markers
 
@@ -38,7 +39,7 @@ Friction now has initial support for markers on the timeline. This action is ava
 
 *Note: If a marker already exists it will be removed. Clear all markers is available in the timeline scrollbar context menu.*
 
-<video controls src="/assets/videos/100/friction-markers.mp4" title="Markers in use"></video>
+<video width="100%" controls src="/assets/videos/100/friction-markers.mp4" title="Markers in use"></video>
 
 ### Frame In/Out
 
@@ -46,7 +47,15 @@ Friction now has initial support for frame in/out on the timeline. This action i
 
 *Note: If a in/out already exists it will be removed. Clear in/out is available in the timeline scrollbar context menu.*
 
-<video controls src="/assets/videos/100/friction-frame-inout.mp4" title="Frame in/out in use"></video>
+<video width="100%" controls src="/assets/videos/100/friction-frame-inout.mp4" title="Frame in/out in use"></video>
+
+### Adjust scene to first clip
+
+Friction now support adjusting the scene properties to the first clip added.
+
+A question dialog will open on the first clip added if it differs from the project and ask what to do. You can configure it to never, always and ask.
+
+<video width="100%" controls src="/assets/videos/100/friction-adjust-to-first-clip.mp4" title="Adjust scene to first clip in use"></video>
 
 ## Known Issues
 
