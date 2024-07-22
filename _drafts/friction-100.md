@@ -6,7 +6,9 @@ categories: releases
 
 # Friction 1.0.0 Beta 1
 
-Introducing the first beta release for Friction 1.0.0. This versions includes several new features, please test and give us feedback (and issues).
+Introducing the first beta release for Friction 1.0.0. This versions includes several new features, please test and give us feedback.
+
+<img style="width: 100%; border-radius: .25em;" src="/assets/screenshots/100/friction-100b1-screenshot.jpg" alt="Screenshot of 1.0.0 Beta 1">
 
 ## The "shiny" stuff
 
