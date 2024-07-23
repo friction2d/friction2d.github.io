@@ -10,6 +10,8 @@ Introducing the first beta release for Friction 1.0.0. This versions includes se
 
 <img style="width: 100%; border-radius: .25em;" src="/assets/screenshots/100/friction-100b1-screenshot.jpg" alt="Screenshot of 1.0.0 Beta 1">
 
+**Warning!** *This version has several changes to the file format and project files are not compatible with older versions. Beta versions may change the file format at any time, backup your work before usage and don't use in production.*
+
 ## The "shiny" stuff
 
 * Proper support for timecodes
@@ -19,6 +21,7 @@ Introducing the first beta release for Friction 1.0.0. This versions includes se
 * Support for Frame In (`I`)
 * Support for Frame Out (`O`)
 * Adjust scene to first clip added
+* Support for interactive SVG export
 
 ## The "boring" stuff
 
@@ -58,6 +61,18 @@ Friction now support adjusting the scene properties to the first clip added.
 A question dialog will open on the first clip added if it differs from the project and ask what to do. You can configure it to never, always and ask.
 
 <video width="100%" controls src="/assets/videos/100/friction-adjust-to-first-clip.mp4" title="Adjust scene to first clip in use"></video>
+
+### Interactive SVG
+
+Friction can now export interactive SVG's. Start and stop transforms based on user input.
+
+Can be enabled on transforms with the new `SVG Properties`, the properties include `begin event` and `end event`.
+
+| Tutorial | Result |
+| -------- | ------ |
+| <video width="100%" controls src="/assets/videos/100/friction-interactive-svg.mp4" title="How to make an interactive SVG"></video> | <svg style="width: 100%; border-radius: .25em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><g transform="translate(960.4 532.724)"><g transform="translate(0 0)"><g transform="rotate(0)"><g><animateTransform keySplines="0 0 1 1;0 0 1 1;0 0 1 1" dur="1s" attributeName="transform" keyTimes="0;0;0.5;1" repeatCount="indefinite" begin="mouseenter" calcMode="spline" end="mouseleave" values="1 1;1 1;1.2 1;1 1" type="scale"/><g><animateTransform keySplines="0 0 1 1;0 0 1 1;0 0 1 1" dur="1s" attributeName="transform" keyTimes="0;0;0.5;1" repeatCount="indefinite" begin="mouseenter" calcMode="spline" end="mouseleave" values="1 1;1 1;1 1.2;1 1" type="scale"/><g opacity="1" transform="skewX(0) skewY(0) translate(-960.4 -532.724)"><rect rx="0" width="2221.29" stroke="none" y="0" height="1264.15" ry="0" x="0" fill="rgba(0, 0, 58, 1)" stroke-width="10" opacity="1" transform="translate(5 5) translate(-150.246 -99.3508) rotate(0) scale(1 1) skewX(0) skewY(0) translate(-5 -5)"/><ellipse rx="83.0312" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="83.0312" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(222.979 222.706) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="181.219" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="181.219" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(235.019 719.337) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="181.219" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="181.219" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(752.718 857.791) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="121.779" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="121.779" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(701.55 123.38) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="172.511" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="172.511" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(1288.48 171.538) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="79.4631" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="79.4631" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(1255.37 598.941) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="232.229" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="232.229" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(1631.6 863.811) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/></g></g></g></g></g></g><g transform="translate(0 0)"><g transform="translate(960 540)"><g transform="rotate(0)"><g><animateTransform keySplines="0 0 1 1;0 0 1 1;0 0 1 1" dur="1s" attributeName="transform" keyTimes="0;0;0.5;1" repeatCount="indefinite" begin="mouseenter" calcMode="spline" end="mouseleave" values="1 1;1 1;2 1;1 1" type="scale"/><g><animateTransform keySplines="0 0 1 1;0 0 1 1;0 0 1 1" dur="1s" attributeName="transform" keyTimes="0;0;0.5;1" repeatCount="indefinite" begin="mouseenter" calcMode="spline" end="mouseleave" values="1 1;1 1;1 2;1 1" type="scale"/><ellipse rx="247.47" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="247.47" fill="rgba(0, 0, 0, 1)" stroke-width="10" opacity="1" transform="skewX(0) skewY(0) translate(0 0)"/></g></g></g></g></g></svg>
+
+**Note:** *Events only work for inline SVG's.*
 
 ## Known Issues
 
