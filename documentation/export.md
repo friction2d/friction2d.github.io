@@ -32,6 +32,37 @@ Preview files are stored in the system temp folder.
 
 ...
 
+
+### Post export
+
+SVG's exported from Friction is not optimized and may include unused defines and redundant groups.
+
+It's recommended to use [SVGO](https://svgo.dev/) as a final step to optimize the SVG before deployment.
+
+#### SVGO usage
+
+The recommended configuration for Friction is:
+
+```
+export default {
+  plugins: [
+    'collapseGroups',
+    'removeUselessDefs',
+    'removeEmptyContainers',
+  ],
+};
+```
+
+Save this to a file *(`friction.mjs`)*.
+
+Then optimize your SVG with the following command:
+
+```
+svgo --config friction.mjs -i INPUT -o OUTPUT
+```
+
+Also checkout the website [SVGOM](https://svgomg.net/).
+
 ## Video
 
 Friction can export projects to the most common video formats.
