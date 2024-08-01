@@ -1,6 +1,8 @@
 ---
-title: "Friction 0.9.6.1 released"
+title: "Friction 0.9.6.1"
 layout: post
+lead: "The first patch release for 0.9.6 is now available."
+image: "/assets/screenshots/096/friction-096-screenshot.jpg"
 categories: releases
 release: 0.9.6.1
 windows_setup: "setup-win64.exe"
@@ -12,12 +14,6 @@ download_active: true
 comments: ""
 ---
 
-# Friction 0.9.6.1
-
-The first patch release for 0.9.6 is now available.
-
-<img style="width: 100%; border-radius: .25em;" src="/assets/screenshots/096/friction-096-screenshot.jpg" alt="Screenshot of 0.9.6">
-
 ## Fixes
 
 * **SVG Import**: Set default values for stroke and fill
@@ -26,7 +22,10 @@ The first patch release for 0.9.6 is now available.
 * **Gui**: Fixed several issues with dockable windows
 * **Gui**: Added scene actions to main menu
 * **Gui**: Fixed min/max ranges in spinbox widgets
+* **Gui**: Fixed timecode calculation
 * **Core**: Fixed broken undo state after import *(on Windows)*
+* **Renderer**: Fixed render queue issues with multiple different scenes
+* **Renderer**: Disable timeline while rendering
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6...v0.9.6.1).
 
