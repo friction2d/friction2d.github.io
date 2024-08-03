@@ -1,7 +1,7 @@
 ---
 title: "Friction 1.0.0 Beta 1"
 layout: post
-lead: "Introducing the first beta release for Friction 1.0.0. This version includes several new features, please test and give us feedback."
+lead: "Introducing the first beta release for Friction v1.0. This version includes several new features and UI/UX improvements."
 image: "/assets/screenshots/100/friction-100b1-screenshot.jpg"
 categories: releases
 ---
@@ -11,9 +11,9 @@ categories: releases
 
 ## Changes
 
-The focus for this beta release was to get as many new features as possible added, this should give them time to mature (and adapt to user feedback) before the final release.
+First batch of features for v1.0 are now ready for testing and feedback.
 
-**Note:** *Some features are the initial implementation and may need further development.*
+**Note:** *Some features may need further development before final release.*
 
 **Warning!** *Project files saved in this version are not compatible with older versions of Friction. Beta versions may change the file format at any time, backup your work and don't use in production.*
 
@@ -27,8 +27,11 @@ The focus for this beta release was to get as many new features as possible adde
 * [Support for optimized SVG on export](#optimize-svg)
 * [Support adjust scene to first clip added](#adjust-scene-to-first-clip)
 * Proper support for timecodes in timeline
+* Added global action 'Add Key(s)' with shortcut (`Insert`)
+* Effects are now available from the main toolbar
 * Support enable/disable actions in the main toolbar
 * Remember last import directory
+  * This changes the behavior from previous versions, as they always used the project file directory as import directory. Old behavior can be enabled in preferences
 * Changed shortcut for 'Invert Selection' (`Alt+A`)
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6.1...v1.0.0-beta1).
@@ -51,6 +54,7 @@ Friction now has initial support for markers on the timeline. This action is ava
 
 *Note: If a marker already exists it will be removed. Clear all markers is available in the timeline scrollbar context menu.*
 
+**New video required due to changes in UI:**
 <video width="100%" controls src="/assets/videos/100/friction-markers.mp4" title="Markers in use"></video>
 
 ### Frame In/Out
@@ -59,6 +63,7 @@ Friction now has initial support for frame in/out on the timeline. This action i
 
 *Note: If a in/out already exists it will be removed. Clear in/out is available in the timeline scrollbar context menu.*
 
+**New video required due to changes in UI:**
 <video width="100%" controls src="/assets/videos/100/friction-frame-inout.mp4" title="Frame in/out in use"></video>
 
 
@@ -109,9 +114,9 @@ A question dialog will open on the first clip added if it differs from the proje
 Friction is in early development, expect issues and missing features.
 
 * SVG gradients may not import correctly
-* There are still some minor issues with HiDPI
+* There are still some issues with HiDPI
 * Shader effects are still experimental
-* GPU accelerated path support may not be supported on Radeon GPU's
+* GPU accelerated path support may not be properly supported on Radeon GPU's
 * Flickering on some projects (GPUs) during playback/video export
 
 And more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
