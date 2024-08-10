@@ -28,7 +28,7 @@ This privacy statement explains how we handle data within the Friction applicati
 
 ## Website
 
-When you access or use the Website, we do not collect any personally identifiable information (PII) from you. The Website is designed as a static HTML platform and does not use any cookies, tracking mechanisms, analytics tools, or third-party services that could collect your personal information.
+When you access or use the Website, we do not collect any personally identifiable information (PII) from you. The Website is designed as a static HTML platform and does not use any scripts, cookies, tracking mechanisms, analytics tools, or third-party services that could collect your personal information.
 
 ### Use of Information
 
