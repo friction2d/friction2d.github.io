@@ -1,8 +1,8 @@
 ---
-title: "Friction 1.0.0 Beta 1"
+title: "Friction 1.0.0-beta1"
 layout: post
 lead: "Introducing the first beta release for Friction v1.0. This version includes several new features and UI/UX improvements."
-image: "/assets/screenshots/100/friction-100b1-screenshot.jpg"
+image: "/assets/screenshots/100/friction-100b1-screenshot.png"
 categories: releases
 ---
 
