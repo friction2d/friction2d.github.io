@@ -17,8 +17,8 @@ First batch of features for v1.0 are now ready for testing and feedback.
 
 * [New Theme](#new-theme)
   * New color palette and style
-  * HiDPI (Interface Scaling) fixes for Windows and Linux
   * Improved UX
+* [HiDPI (Display Scaling) fixes](#hidpi-display-scaling)
 * [Support for Split Clip](#split-clip) (`K`)
 * [Support for Markers](#markers) (`M`)
 * [Support for Frame In/Out](#frame-inout) (`I`/`O`)
@@ -39,6 +39,15 @@ First batch of features for v1.0 are now ready for testing and feedback.
 ### New Theme
 
 ...
+
+### HiDPI (Display Scaling)
+
+Friction now has proper HiDPI *(Display Scaling)* support and should be usable on with any display scaling.
+
+Linux support is considered complete. Some icons on Windows may have a small offset when scaling, this will be resolved at some point *(could also be a theme issue)*.
+
+* **Note** *that these changes are for the UI, the viewer overlay still needs fixes for HiDPI*
+* **Note** *that Interface Scaling in preferences has now been disabled. Friction will adapt to the desktop as much as possible and will in any case be better than the previous user override that only worked on some parts of the UI*
 
 ### Split Clip
 
