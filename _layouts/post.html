@@ -8,44 +8,53 @@
         </div>
         <div id="content">
             <div id="contentInner">
+                {% if page.title != nil %}
+                    <h1>{{ page.title }}</h1>
+                {% endif %}
+                {% if page.lead != nil %}
+                <p class="lead">{{ page.lead }}</p>
+                {% endif %}
+                {% if page.image != nil %}
+                    <img class="mainImage" src="{{ site.url}}/{{ page.image }}" alt="Screenshot">
+                {% endif %}
+                {% if page.categories contains "releases" and page.release != nil %}
+                    {% if page.download_active %}
+                        <p class="downloadsContainer">
+                        {% if page.windows_setup != nil %}
+                            <a title="Download setup for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.windows_setup }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-setup.svg"></a>
+                        {% endif %}
+                        {% if page.windows_portable != nil %}
+                            <a title="Download portable for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.windows_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-portable.svg"></a>
+                        {% endif %}
+                        {% if page.linux_rpm != nil %}
+                            <a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a>
+                        {% endif %}
+                        {% if page.linux_appimage != nil %}
+                            <a title="Download AppImage for Linux x86_64" href="{{ site.github_download_url }}v{{ page.release }}/Friction-{{ page.release }}-{{ page.linux_appimage }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-appimage.svg"></a>
+                        {% endif %}
+                        {% if page.linux_portable != nil %}
+                            <a title="Download portable tarball for Linux x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-portable.svg"></a>
+                        {% endif %}
+                        </p>
+                    {% else %}
+                        <p class="warning">This is an old and unsupported release, please <a href="{{ site.url }}/#download">update</a>. Binaries are still available on <a target="_blank" href="{{ site.github_release_url }}v{{ page.release }}">GitHub</a> or <a target="_blank" href="{{ site.sourceforge_download_url }}v{{ page.release }}/">Sourceforge</a>.</p>
+                    {% endif %}
+                {% endif %}
                 {{ content }}
                 {% if page.permalink == 'news/' %}
                 <div class="blocks">
-                        {% for post in site.posts %}
+                    {% for post in site.posts %}
                         <div class="block newsblock">
                             <a href="{{ post.url }}"><h2>{{ post.title }}</h2></a>
                             <p class="center">{{ post.date | date: "%-d %B %Y" }}</p>
                         </div>
-                        {% endfor %}
+                    {% endfor %}
                 </div>
                 {% else %}
-                {% if page.categories contains "releases" and page.release != nil %}
-                <h2>Downloads</h2>
-                {% if page.download_active %}
-                {% if page.windows_setup != nil %}
-                <a title="Download setup for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.windows_setup }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-setup.svg"></a>
-                {% endif %}
-                {% if page.windows_portable != nil %}
-                <a title="Download portable for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.windows_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-portable.svg"></a>
-                {% endif %}
-                {% if page.linux_rpm != nil %}
-                <a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a>
-                {% endif %}
-                {% if page.linux_appimage != nil %}
-                <a title="Download AppImage for Linux x86_64" href="{{ site.github_download_url }}v{{ page.release }}/Friction-{{ page.release }}-{{ page.linux_appimage }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-appimage.svg"></a>
-                {% endif %}
-                {% if page.linux_portable != nil %}
-                <a title="Download portable tarball for Linux x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-portable.svg"></a>
-                {% endif %}
-                {% else %}
-                <p>Old releases are still available on <a target="_blank" href="{{ site.github_release_url }}v{{ page.release }}">GitHub</a> or <a target="_blank" href="{{ site.sourceforge_download_url }}v{{ page.release }}/">Sourceforge</a>.</p>
-                {% endif %}
-                {% endif %}
-                
                 <p class="publishedDate">Published {{ page.date | date: "%-d %B %Y" }}.</p>
                 {% endif %}
                 {% if page.comments != nil %}
-                <div class="comments"><a href="{{ page.comments }}"><img src="{{ site.url }}/assets/comments.svg">Discuss this release.</a></div>
+                    <div class="comments"><a href="{{ page.comments }}"><img src="{{ site.url }}/assets/comments.svg">Discuss this release.</a></div>
                 {% endif %}
             </div>
         </div>

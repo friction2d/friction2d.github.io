@@ -1,7 +1,5 @@
 ---
-title: "Friction News and Releases"
+title: "News and Releases"
 layout: post
 permalink: news/
 ---
-
-# News and Releases

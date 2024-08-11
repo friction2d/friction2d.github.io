@@ -248,7 +248,7 @@ img.distro {
     padding: 1em;
     padding-left: 2em;
     list-style: decimal;
-    float: right;
+    /*float: right;*/
 }
 
 #markdown-toc a,
@@ -445,7 +445,6 @@ ul.platform { list-style-type: none; }
 }
 
 .platform {
-    border: 2px solid white;
     border-radius: .2em;
     box-shadow: #000 0 0 5px;
 }
@@ -463,4 +462,33 @@ ul.platform { list-style-type: none; }
 }
 .comments a {
     text-decoration: none;
+}
+
+.warning {
+    padding: 1em;
+    background-color: #151414;
+    border: 2px dashed #fff;
+    border-radius: .25em;
+}
+
+.mainImage {
+    width: 100%;
+    border-radius: .25em;
+    border: 0;
+}
+
+.downloadsContainer {
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center;
+    gap: 1em;
+}
+
+.lead {
+    font-size: 1.3rem;
+}
+
+.round {
+    border-radius: .25em;
 }
