@@ -27,6 +27,7 @@ These shortcuts are globally available in Friction. Note that some actions may r
 | Close | `Ctrl` + `W`
 | Preferences | `Ctrl` + `P`
 | Exit | `Ctrl` + `Q`
+| Command Palette | `Ctrl` + `Space`
 
 ## Export/Render
 
@@ -68,7 +69,7 @@ Shortcuts for objects are valid on active timeline and viewer.
 | UnGroup | `Ctrl` + `Shft` + `G`
 | Select All | `A`
 | DeSelect All | `Alt` + `A`
-| Invert Selection | `Shift` + `A`
+| Invert Selection | `Alt` + `A`
 | Pivot local/global | `P`
 
 ## Timeline
@@ -89,6 +90,7 @@ Shortcuts are valid on active timeline.
 | Frame In | `I`
 | Frame Out | `O`
 | Marker | `k`
+| Add Key(s) | `Insert`
 
 ## Viewer/Canvas
 

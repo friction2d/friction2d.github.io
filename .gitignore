@@ -1,3 +1,4 @@
 _site
 Gemfile*
 pandoc/bin
+pandoc/pandoc*
