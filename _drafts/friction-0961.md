@@ -31,6 +31,7 @@ comments: ""
 * **Renderer**
   * Fixed render queue issues with multiple different scenes
   * Fixed image sequence file extension *(suffix will now match codec)*
+  * Show output format in queue label
 
 ## Features
 
