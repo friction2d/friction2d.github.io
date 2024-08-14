@@ -27,7 +27,6 @@ First batch of features for v1.0 are now ready for testing and feedback.
 * [Support for optimized SVG on export](#optimize-svg)
 * [Support adjust scene to first clip added](#adjust-scene-to-first-clip)
 * Proper support for timecodes in timeline
-* Added global action 'Add Key(s)' with shortcut (`Insert`)
 * Effects are now available from the main toolbar
 * Support enable/disable actions in the main toolbar
 * Remember last import directory

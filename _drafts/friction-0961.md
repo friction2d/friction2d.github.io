@@ -17,8 +17,8 @@ comments: ""
 ## Fixes
 
 * **SVG**
-  * **Import:** Set default values for stroke and fill
-  * **Export:** Add `fill-rule` if path is `even-odd`
+  * Set default values for stroke and fill in import
+  * Add `fill-rule` if path is `even-odd` on export
 * **Gui**
   * Fixed several issues with dockable windows
   * Added scene actions to main menu
@@ -26,8 +26,11 @@ comments: ""
   * Fixed timecode calculation
   * Disable timeline while rendering
   * Fixed double-click on text box *(will now open correct widget)*
+  * Added action 'Add Key(s)' with shortcut (`Insert`)
+  * Show vertical scrollbar in timeline if needed
 * **Core**
   * Fixed broken undo state after import *(on Windows)*
+  * Block auto timer during shutdown
 * **Renderer**
   * Fixed render queue issues with multiple different scenes
   * Fixed image sequence file extension *(suffix will now match codec)*
@@ -35,8 +38,8 @@ comments: ""
 
 ## Features
 
-* **SVG Import**
-  * Added linejoin and linecap support
+* **SVG**
+  * Added linejoin and linecap support on import
 * **Renderer**
   * Install a default set of render presets
     * MP4 Video
