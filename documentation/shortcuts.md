@@ -86,6 +86,7 @@ Shortcuts are valid on active timeline.
 | Play/Pause | `Space`
 | Play from first frame | `Shift` + `Space`
 | Stop | `Esc`
+| Add Key(s) | `Insert`
 
 ## Viewer/Canvas
 
