@@ -16,24 +16,28 @@ comments: ""
 
 ## Fixes
 
-* **SVG Import**: Set default values for stroke and fill
-* **SVG Import**: Fixed linejoin and linecap support
-* **SVG Export**: Add `fill-rule` if path is `even-odd`
-* **Gui**: Fixed several issues with dockable windows
-* **Gui**: Added scene actions to main menu
-* **Gui**: Fixed min/max ranges in spinbox widgets
-* **Gui**: Fixed timecode calculation
-* **Gui**: Disable timeline while rendering
-* **Gui**: Fixed double-click on text box *(will now open correct widget)*
-* **Core**: Fixed broken undo state after import *(on Windows)*
-* **Renderer**: Fixed render queue issues with multiple different scenes
-* **Renderer**: Fixed image sequence file extension *(suffix will match codec)*
+* **SVG**
+  * **Import:** Set default values for stroke and fill
+  * **Import:** Fixed linejoin and linecap support
+  * **Export:** Add `fill-rule` if path is `even-odd`
+* **Gui**
+  * Fixed several issues with dockable windows
+  * Added scene actions to main menu
+  * Fixed min/max ranges in spinbox widgets
+  * Fixed timecode calculation
+  * Disable timeline while rendering
+  * Fixed double-click on text box *(will now open correct widget)*
+* **Core**
+  * Fixed broken undo state after import *(on Windows)*
+* **Renderer**
+  * Fixed render queue issues with multiple different scenes
+  * Fixed image sequence file extension *(suffix will now match codec)*
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6...v0.9.6.1).
 
 ## Known Issues
 
-Friction is in early development, expect issues and missing features
+Friction is in early development, expect issues and missing features.
 
 * SVG gradients may not import correctly
 * There are still some minor issues with HiDPI
