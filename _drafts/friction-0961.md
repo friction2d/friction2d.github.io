@@ -1,7 +1,7 @@
 ---
 title: "Friction 0.9.6.1"
 layout: post
-lead: "The first patch release for 0.9.6 is now available."
+lead: "The first maintenance release for 0.9.6 is now available."
 image: "/assets/screenshots/096/friction-096-screenshot.jpg"
 categories: releases
 release: 0.9.6.1
@@ -18,7 +18,6 @@ comments: ""
 
 * **SVG**
   * **Import:** Set default values for stroke and fill
-  * **Import:** Fixed linejoin and linecap support
   * **Export:** Add `fill-rule` if path is `even-odd`
 * **Gui**
   * Fixed several issues with dockable windows
@@ -32,6 +31,20 @@ comments: ""
 * **Renderer**
   * Fixed render queue issues with multiple different scenes
   * Fixed image sequence file extension *(suffix will now match codec)*
+
+## Features
+
+* **SVG Import**
+  * Added linejoin and linecap support
+* **Renderer**
+  * Install a default set of render presets
+    * MP4 Video
+    * MP4 Video + Audio
+    * ProRes Video
+    * ProRes Video + Audio
+    * PNG Image(s)
+    * TIFF Image(s)
+
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6...v0.9.6.1).
 
