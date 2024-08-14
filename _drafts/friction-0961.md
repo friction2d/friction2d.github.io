@@ -14,10 +14,11 @@ download_active: true
 comments: ""
 ---
 
-## Fixes
+## Changes
 
 * **SVG**
-  * Set default values for stroke and fill in import
+  * Set default values for stroke and fill on import
+  * Added linejoin and linecap support on import
   * Add `fill-rule` if path is `even-odd` on export
 * **Gui**
   * Fixed several issues with dockable windows
@@ -35,20 +36,13 @@ comments: ""
   * Fixed render queue issues with multiple different scenes
   * Fixed image sequence file extension *(suffix will now match codec)*
   * Show output format in queue label
-
-## Features
-
-* **SVG**
-  * Added linejoin and linecap support on import
-* **Renderer**
-  * Install a default set of render presets
+  * Bundle a default set of render presets
     * MP4 Video
     * MP4 Video + Audio
     * ProRes Video
     * ProRes Video + Audio
     * PNG Image(s)
     * TIFF Image(s)
-
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6...v0.9.6.1).
 
