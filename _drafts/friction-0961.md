@@ -24,8 +24,10 @@ comments: ""
 * **Gui**: Fixed min/max ranges in spinbox widgets
 * **Gui**: Fixed timecode calculation
 * **Gui**: Disable timeline while rendering
+* **Gui**: Fixed double-click on text box *(will now open correct widget)*
 * **Core**: Fixed broken undo state after import *(on Windows)*
 * **Renderer**: Fixed render queue issues with multiple different scenes
+* **Renderer**: Fixed image sequence file extension *(suffix will match codec)*
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6...v0.9.6.1).
 
