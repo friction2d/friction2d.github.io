@@ -6,8 +6,8 @@ image: "/assets/screenshots/096/friction-096-screenshot.jpg"
 categories: releases
 release: 0.9.6.1
 windows_setup: "setup-win64.exe"
-windows_portable: "portable-windows-x64.7z"
-linux_portable: "portable-linux-x86_64.tar.bz2"
+windows_portable: "windows-x64.7z"
+linux_portable: "linux-x86_64.tar.xz"
 linux_appimage: "x86_64.AppImage"
 linux_rpm: "1.x86_64.rpm"
 download_active: true
@@ -16,7 +16,14 @@ comments: ""
 
 ## Changes
 
+Version 0.9.6 marked the end of feature releases for the 0.9 series. The `v0.9` branch is now in maintenance mode.
+
+If critical fixes are added to the `main` branch during development of 1.0 they will be backported if needed.
+
+This release includes the following fixes and various changes backported from the `main` branch:
+
 * **SVG**
+  * Fixed `skew` `X`+`Y` animation on export
   * Set default values for stroke and fill on import
   * Added linejoin and linecap support on import
   * Add `fill-rule` if path is `even-odd` on export
@@ -32,11 +39,13 @@ comments: ""
 * **Core**
   * Fixed broken undo state after import *(on Windows)*
   * Block auto timer during shutdown
+  * Check project format version on load *(and warn if not compatible)*
+  * Check read/write access to user config directory on startup *(and warn if issues)*
 * **Renderer**
   * Fixed render queue issues with multiple different scenes
   * Fixed image sequence file extension *(suffix will now match codec)*
   * Show output format in queue label
-  * Bundle a default set of render presets
+  * Will install a default set of render presets *(to user config directory)*
     * MP4 Video
     * MP4 Video + Audio
     * ProRes Video
