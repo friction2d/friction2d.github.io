@@ -14,16 +14,16 @@ download_active: true
 comments: ""
 ---
 
+Friction 0.9.6.1 marks the end of development for the 0.9 series. The 0.9 series is now in maintenance mode, receiving only bug fixes until the upcoming 1.0 release later this year.
+
 ## Changes
 
-Friction version 0.9.6 marked the end of the 0.9 series. The `v0.9` branch is now in maintenance mode, only critical fixes will be added moving forward while we wait for the next major release.
-
-This release includes the following fixes and various changes backported from the `main` branch:
+This release incorporates several fixes and backported changes from the main branch.
 
 * **SVG**
   * Fixed `skew` `X`+`Y` animation on export
-  * Set default values for stroke and fill on import
-  * Added linejoin and linecap support on import
+  * Set default values for `stroke` and `fill` on import
+  * Added `linejoin` and `linecap` support on import
   * Add `fill-rule` if path is `even-odd` on export
 * **Gui**
   * Fixed several issues with dockable windows
@@ -34,6 +34,7 @@ This release includes the following fixes and various changes backported from th
   * Fixed double-click on text box *(will now open correct widget)*
   * Added action 'Add Key(s)' with shortcut (`Insert`)
   * Show vertical scrollbar in timeline if needed
+  * Minor UI changes to render queue widgets
 * **Core**
   * Fixed broken undo state after import *(on Windows)*
   * Block auto timer during shutdown
@@ -43,7 +44,7 @@ This release includes the following fixes and various changes backported from th
   * Fixed render queue issues with multiple different scenes
   * Fixed image sequence file extension *(suffix will now match codec)*
   * Show output format in queue label
-  * Will install a default set of render presets *(to user config directory)*
+  * Will install a default set of render profiles *(to user config directory)*
     * MP4 Video
     * MP4 Video + Audio
     * ProRes Video
