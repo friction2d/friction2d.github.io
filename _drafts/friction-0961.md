@@ -16,9 +16,7 @@ comments: ""
 
 ## Changes
 
-Version 0.9.6 marked the end of feature releases for the 0.9 series. The `v0.9` branch is now in maintenance mode.
-
-If critical fixes are added to the `main` branch during development of 1.0 they will be backported if needed.
+Friction version 0.9.6 marked the end of the 0.9 series. The `v0.9` branch is now in maintenance mode, only critical fixes will be added moving forward while we wait for the next major release.
 
 This release includes the following fixes and various changes backported from the `main` branch:
 
@@ -60,12 +58,12 @@ This release includes the following fixes and various changes backported from th
 Friction is in early development, expect issues and missing features.
 
 * SVG gradients may not import correctly
-* There are still some minor issues with HiDPI
+* There are some issues with HiDPI, most will be resolved in version 1.0
 * Shader effects are still experimental
-* GPU accelerated path support may not be supported on Radeon GPU's
-* Flickering on some projects (GPUs) during playback/video export
+* GPU accelerated path support may not work properly when using Radeon GPU's
+* Flickering on some projects (GPUs) during playback/video export, related to opacity
 
-And more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
+And many more, see our [issue tracker](https://github.com/friction2d/friction/issues) for more information.
 
 ## Support
 
