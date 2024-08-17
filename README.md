@@ -1,11 +1,3 @@
-# www.friction.graphics
+# Friction website and documentation
 
-
-```
-source 'https://rubygems.org'
-gem "jekyll"
-```
-
-```
-bundle exec jekyll serve --drafts
-```
+Website is managed using Jekyll, the docs are in markdown and converted using pandoc.

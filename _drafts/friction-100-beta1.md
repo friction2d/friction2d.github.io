@@ -26,6 +26,7 @@ First batch of features for v1.0 are now ready for testing and feedback.
 * [Support for interactive SVG transforms on export](#interactive-svg-transforms)
 * [Support for optimized SVG on export](#optimize-svg)
 * [Support adjust scene to first clip added](#adjust-scene-to-first-clip)
+* [True Portable Mode](#portable-mode)
 * Proper support for timecodes in timeline
 * Effects are now available from the main toolbar
 * Support enable/disable actions in the main toolbar
@@ -120,6 +121,10 @@ A question dialog will open on the first clip added if it differs from the proje
 
 **New video required due to changes in UI:**
 <video width="100%" controls src="/assets/videos/100/friction-adjust-to-first-clip.mp4" title="Adjust scene to first clip in use"></video>
+
+### Portable Mode
+
+...
 
 ## Known Issues
 
