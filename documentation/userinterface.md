@@ -1,4 +1,13 @@
+---
+title: "User Interface"
+layout: default
+permalink: documentation/userinterface.html
+---
+
 # User Interface
+
+* table of contents
+{:toc}
 
 ## Menu
 

@@ -1,3 +1,9 @@
+---
+title: "Export"
+layout: default
+permalink: documentation/export.html
+---
+
 # Export
 
 Friction can export to various media formats.

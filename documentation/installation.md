@@ -1,3 +1,9 @@
+---
+title: "Installation"
+layout: default
+permalink: documentation/installation.html
+---
+
 # Installation
 
 Friction can be installed on Windows 10/11 and most Linux distributions available.

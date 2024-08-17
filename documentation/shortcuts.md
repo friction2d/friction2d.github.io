@@ -1,6 +1,7 @@
 ---
 title: "Shortcuts"
 layout: default
+permalink: documentation/shortcuts.html
 ---
 
 # Shortcuts
