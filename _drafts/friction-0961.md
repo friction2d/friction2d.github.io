@@ -21,17 +21,17 @@ Friction 0.9.6.1 marks the end of development for the 0.9 series. The 0.9 series
 This release incorporates several fixes and backported changes from the main branch.
 
 * **SVG**
-  * Fixed `skew` `X`+`Y` animation on export
-  * Set default values for `stroke` and `fill` on import
-  * Added `linejoin` and `linecap` support on import
-  * Add `fill-rule` if path is `even-odd` on export
+  * Fixed `skewX` + `skewY` animation on export
+  * Fixed default values for `stroke` and `fill` on import
+  * Fixed `stroke-linecap` and `stroke-linejoin` on import/export
+  * Fixed path `fill-rule` on export
 * **Gui**
   * Fixed several issues with dockable windows
-  * Added scene actions to main menu
   * Fixed min/max ranges in spinbox widgets
   * Fixed timecode calculation
-  * Disable timeline while rendering
   * Fixed double-click on text box *(will now open correct widget)*
+  * Added scene actions to main menu
+  * Disable timeline while rendering
   * Added action 'Add Key(s)' with shortcut (`Insert`)
   * Show vertical scrollbar in timeline if needed
   * Minor UI changes to render queue widgets
