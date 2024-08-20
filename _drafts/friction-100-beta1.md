@@ -9,11 +9,15 @@ categories: releases
 * table of contents
 {:toc}
 
+After over a year of development, Friction has reached a significant milestone: version 1.0.
+
+Through multiple 0.9 series releases, we've significantly enhanced stability. With this version, we've achieved a solid foundation, delivering the basic features expected from an animation/motion graphics application.
+
 ## Changes
 
-Most of the major features for 1.0 are now ready for testing and feedback.
+The majority of key features planned for version 1.0 are now available for testing.
 
-**Warning!** *Project files saved in this version are not compatible with older versions of Friction. Beta versions may change the file format at any time, backup your work and don't use in production.*
+**Warning!** *Project files created in this beta version cannot be opened in older versions of Friction. File formats may change unexpectedly. Always back up your work and avoid using beta versions for production projects.*
 
 * [Easing support on timeline and graph](#easing-support)
 * [New Theme](#new-theme)
@@ -49,25 +53,23 @@ Easing has been traditionally restricted to the expression editor *(includes a d
 
 ### HiDPI (Display Scaling)
 
-Friction now has proper HiDPI *(Display Scaling)* support.
+Friction now has improved HiDPI *(Display Scaling)* support on Windows.
 
-Linux support is considered more or less complete. Some icons on Windows may have a small offset when scaling, this will be resolved at some point *(could also be a theme issue)*.
+Linux support is considered more or less complete. Some icons on Windows may have a small offset when scaling, this will be resolved at some point before final release.
 
 * **Note** *that these changes are for the UI, the viewer overlay may still need fixes for HiDPI*
 * **Note** *that Interface Scaling in preferences has now been disabled. Friction will adapt to the desktop as much as possible and will in any case be better than the previous user override that only worked on some parts of the UI*
 
 ### Split Clip
 
-Friction now supports split clip. This action is available through the shortcut `K` on the timeline or through the context menu on the clip or the timeline scrollbar.
+Friction now offers split clip functionality. Quickly split clips using the shortcut `K` on the timeline or by right-clicking on a clip or the timeline scrollbar.
 
 **New video required due to changes in UI:**
 <video width="100%" controls src="/assets/videos/100/friction-split-clip.mp4" title="Split action in use"></video>
 
-*Only video clips are supported, this can be expanded to support other clips in a future release.*
-
 ### Markers
 
-Friction now has initial support for markers on the timeline. This action is available through the shortcut `M` on the timline and through the timeline scrollbar context menu.
+Friction now includes basic marker support for the timeline. Quickly add markers using the shortcut `M` or by right-clicking on the timeline scrollbar.
 
 *Note: If a marker already exists it will be removed. Clear all markers is available in the timeline scrollbar context menu.*
 
@@ -76,7 +78,7 @@ Friction now has initial support for markers on the timeline. This action is ava
 
 ### Frame In/Out
 
-Friction now has initial support for frame in/out on the timeline. This action is available through the shortcut `I` for in and shortcut `O` for out. The actions are also available through the timeline scrollbar context menu.
+Friction now supports setting frame in and out points on the timeline. Use the shortcuts `I` for in and `O` for out, or access these options through the timeline scrollbar context menu.
 
 *Note: If a in/out already exists it will be removed. Clear in/out is available in the timeline scrollbar context menu.*
 
@@ -106,13 +108,9 @@ Supported events:
 * `mouseover`
 * `mouseup`
 
-**New video required due to changes in UI:**
-
-| Tutorial | Result |
-| -------- | ------ |
-| <video width="100%" controls src="/assets/videos/100/friction-interactive-svg.mp4" title="How to make an interactive SVG"></video> | <svg style="width: 100%; border-radius: .25em;" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080"><g transform="translate(960.4 532.724)"><g transform="translate(0 0)"><g transform="rotate(0)"><g><animateTransform keySplines="0 0 1 1;0 0 1 1;0 0 1 1" dur="1s" attributeName="transform" keyTimes="0;0;0.5;1" repeatCount="indefinite" begin="mouseenter" calcMode="spline" end="mouseleave" values="1 1;1 1;1.2 1;1 1" type="scale"/><g><animateTransform keySplines="0 0 1 1;0 0 1 1;0 0 1 1" dur="1s" attributeName="transform" keyTimes="0;0;0.5;1" repeatCount="indefinite" begin="mouseenter" calcMode="spline" end="mouseleave" values="1 1;1 1;1 1.2;1 1" type="scale"/><g opacity="1" transform="skewX(0) skewY(0) translate(-960.4 -532.724)"><rect rx="0" width="2221.29" stroke="none" y="0" height="1264.15" ry="0" x="0" fill="rgba(0, 0, 58, 1)" stroke-width="10" opacity="1" transform="translate(5 5) translate(-150.246 -99.3508) rotate(0) scale(1 1) skewX(0) skewY(0) translate(-5 -5)"/><ellipse rx="83.0312" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="83.0312" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(222.979 222.706) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="181.219" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="181.219" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(235.019 719.337) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="181.219" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="181.219" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(752.718 857.791) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="121.779" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="121.779" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(701.55 123.38) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="172.511" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="172.511" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(1288.48 171.538) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="79.4631" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="79.4631" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(1255.37 598.941) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/><ellipse rx="232.229" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="232.229" fill="none" stroke-width="10" opacity="1" transform="translate(0 0) translate(1631.6 863.811) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)"/></g></g></g></g></g></g><g transform="translate(0 0)"><g transform="translate(960 540)"><g transform="rotate(0)"><g><animateTransform keySplines="0 0 1 1;0 0 1 1;0 0 1 1" dur="1s" attributeName="transform" keyTimes="0;0;0.5;1" repeatCount="indefinite" begin="mouseenter" calcMode="spline" end="mouseleave" values="1 1;1 1;2 1;1 1" type="scale"/><g><animateTransform keySplines="0 0 1 1;0 0 1 1;0 0 1 1" dur="1s" attributeName="transform" keyTimes="0;0;0.5;1" repeatCount="indefinite" begin="mouseenter" calcMode="spline" end="mouseleave" values="1 1;1 1;1 2;1 1" type="scale"/><ellipse rx="247.47" cy="0" stroke="rgba(0, 102, 255, 1)" cx="0" ry="247.47" fill="rgba(0, 0, 0, 1)" stroke-width="10" opacity="1" transform="skewX(0) skewY(0) translate(0 0)"/></g></g></g></g></g></svg>
-
 **Note:** *Events only work for inline SVG's.*
+
+**New video required due to changes in UI:**
 
 ### Optimize SVG
 
