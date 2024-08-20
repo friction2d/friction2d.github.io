@@ -1,7 +1,7 @@
 ---
 title: "Friction 1.0.0-beta1"
 layout: post
-lead: "Introducing the first beta release for Friction v1.0. This version includes several new features and UI/UX improvements."
+lead: "Introducing the first beta release for Friction 1.0. This version includes several new features and UI/UX improvements."
 image: "/assets/screenshots/100/friction-100b1-screenshot.png"
 categories: releases
 ---
@@ -11,10 +11,11 @@ categories: releases
 
 ## Changes
 
-First batch of features for v1.0 are now ready for testing and feedback.
+Most of the major features for 1.0 are now ready for testing and feedback.
 
 **Warning!** *Project files saved in this version are not compatible with older versions of Friction. Beta versions may change the file format at any time, backup your work and don't use in production.*
 
+* [Easing support on timeline and graph](#easing-support)
 * [New Theme](#new-theme)
   * New color palette and style
   * Improved UX
@@ -35,6 +36,12 @@ First batch of features for v1.0 are now ready for testing and feedback.
 * Changed shortcut for 'Invert Selection' (`Alt+A`)
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6.1...v1.0.0-beta1).
+
+### Easing support
+
+Easing has been traditionally restricted to the expression editor *(includes a dedicated easing tab)*, requiring advanced user knowledge. We've simplified this by introducing user-friendly easing options in the timeline and graph. Simply select your keyframes and choose the desired easing option.
+
+...
 
 ### New Theme
 
