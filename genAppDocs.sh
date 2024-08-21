@@ -16,6 +16,7 @@ privacy
 3rdparty/xkbcommon
 3rdparty/icons
 3rdparty/xcb
+3rdparty/easing
 documentation/shortcuts
 "
 

@@ -8,6 +8,7 @@
         <file>3rdparty/skia_bundle.html</file>
         <file>3rdparty/ffmpeg_win.html</file>
         <file>3rdparty/icons.html</file>
+        <file>3rdparty/easing.html</file>
         <file>documentation/shortcuts.html</file>
     </qresource>
 </RCC>
