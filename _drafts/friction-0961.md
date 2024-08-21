@@ -14,7 +14,7 @@ download_active: true
 comments: ""
 ---
 
-Friction version 0.9.6.1 marks the end of development for the 0.9 series. The 0.9 series is now in maintenance mode, receiving only bug fixes until the upcoming 1.0 release later this year.
+This release marks the end of development for the 0.9 series. The 0.9 series is now in maintenance mode, receiving only important bug fixes until the upcoming 1.0 release later this year.
 
 ## Changes
 
@@ -45,7 +45,7 @@ This release incorporates several fixes and changes backported from the main bra
   * Fixed render queue issues with multiple different scenes
   * Fixed image sequence file extension *(suffix will now match codec)*
   * Show output format in queue label
-  * [Includes a set of default render profiles](#default-render-profiles)
+  * [Pre-configured render profiles](#render-profiles)
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6...v0.9.6.1).
 
@@ -60,16 +60,21 @@ Friction now supports the `mask` feature in SVG.
 2. **Convert Group to Layer:** Promote the group to a layer for easier manipulation. **This step is essential for SVG export.**
 3. **Apply Blend Mode:** Set the blend mode of the element you want to use as a mask to `DstIn`.
 
-### Default Render Profiles
+### Render Profiles
 
-Friction will now install a common set of render profiles for easy export.
+Friction will now streamline the export process by offering pre-configured render profiles. These profiles will cover common formats and settings, making it easier to create videos and images for various purposes. Available profiles include:
 
-* MP4 Video
-* MP4 Video + Audio
-* ProRes Video
-* ProRes Video + Audio
-* PNG Image(s)
-* TIFF Image(s)
+* **MP4 Video**
+* **MP4 Video + Audio**
+  * A versatile format suitable for web, mobile, and social media sharing.
+* **ProRes Video**
+* **ProRes Video + Audio**
+  * A high-quality format commonly used in professional video editing workflows, supporting alpha channels for transparent elements.
+* **TIFF Image(s)**
+  * A preferred lossless format for high-resolution images and archiving, supporting alpha channels for transparent elements.
+* **PNG Image(s)**
+  * Another lossless format, suitable for graphics and illustrations with transparent backgrounds, though TIFF is often preferred for its wider range of color depths, associated alpha and support for more advanced features.
+
 
 ## Known Issues
 
