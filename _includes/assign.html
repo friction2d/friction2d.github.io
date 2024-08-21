@@ -7,8 +7,13 @@
 {% else %}
 {% assign www_title = site.title %}
 {% endif %}
-{% if page.description %}
-{% assign www_description = page.description %}
+{% if page.image %}
+{% assign meta_image = page.image %}
+{% else %}
+{% assign meta_image = "/assets/opengraph.png" %}
+{% endif %}
+{% if page.lead %}
+{% assign www_description = page.lead %}
 {% else %}
 {% assign www_description = site.description %}
 {% endif %}
