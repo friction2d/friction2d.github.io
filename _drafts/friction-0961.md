@@ -14,17 +14,18 @@ download_active: true
 comments: ""
 ---
 
-Friction 0.9.6.1 marks the end of development for the 0.9 series. The 0.9 series is now in maintenance mode, receiving only bug fixes until the upcoming 1.0 release later this year.
+Friction version 0.9.6.1 marks the end of development for the 0.9 series. The 0.9 series is now in maintenance mode, receiving only bug fixes until the upcoming 1.0 release later this year.
 
 ## Changes
 
-This release incorporates several fixes and backported changes from the main branch.
+This release incorporates several fixes and changes backported from the main branch.
 
 * **SVG**
   * Fixed `skewX` + `skewY` animation on export
   * Fixed default values for `stroke` and `fill` on import
   * Fixed `stroke-linecap` and `stroke-linejoin` on import/export
   * Fixed path `fill-rule` on export
+  * [Added support](#svg-mask-support) for `mask` on export
 * **Gui**
   * Fixed several issues with dockable windows
   * Fixed min/max ranges in spinbox widgets
@@ -44,15 +45,31 @@ This release incorporates several fixes and backported changes from the main bra
   * Fixed render queue issues with multiple different scenes
   * Fixed image sequence file extension *(suffix will now match codec)*
   * Show output format in queue label
-  * Will install a default set of render profiles *(to user config directory)*
-    * MP4 Video
-    * MP4 Video + Audio
-    * ProRes Video
-    * ProRes Video + Audio
-    * PNG Image(s)
-    * TIFF Image(s)
+  * [Includes a set of default render profiles](#default-render-profiles)
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6...v0.9.6.1).
+
+### SVG Mask Support
+
+Friction now supports the `mask` feature in SVG.
+
+![Example Project in SVG](https://friction.graphics/assets/tutorials/tutorial-masking.svg)
+**[Download Example Project](https://friction.graphics/assets/tutorials/tutorial-masking.friction)**
+
+1. **Group Desired Elements:** Combine the objects you want to mask into a single group.
+2. **Convert Group to Layer:** Promote the group to a layer for easier manipulation. **This step is essential for SVG export.**
+3. **Apply Blend Mode:** Set the blend mode of the element you want to use as a mask to `DstIn`.
+
+### Default Render Profiles
+
+Friction will now install a common set of render profiles for easy export.
+
+* MP4 Video
+* MP4 Video + Audio
+* ProRes Video
+* ProRes Video + Audio
+* PNG Image(s)
+* TIFF Image(s)
 
 ## Known Issues
 
