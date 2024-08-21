@@ -7,6 +7,7 @@ github_release_suffix_linux_rpm: "1.x86_64.rpm"
 github_release_url: "https://github.com/friction2d/friction/releases/tag/"
 github_download_url: "https://github.com/friction2d/friction/releases/download/"
 sourceforge_download_url: "https://sourceforge.net/projects/friction/files/"
+future: true
 title: Friction
 domain: "friction.graphics"
 url: "https://friction.graphics"
