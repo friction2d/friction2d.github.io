@@ -1,7 +1,7 @@
-latest_version: 0.9.6
+latest_version: 0.9.6.1
 github_release_suffix_windows_setup: "setup-win64.exe"
-github_release_suffix_windows_portable: "portable-windows-x64.7z"
-github_release_suffix_linux_portable: "portable-linux-x86_64.tar.bz2"
+github_release_suffix_windows_portable: "windows-x64.7z"
+github_release_suffix_linux_portable: "linux-x86_64.tar.xz"
 github_release_suffix_linux_appimage: "x86_64.AppImage"
 github_release_suffix_linux_rpm: "1.x86_64.rpm"
 github_release_url: "https://github.com/friction2d/friction/releases/tag/"
