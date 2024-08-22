@@ -4,79 +4,63 @@ layout: default
 permalink: documentation/installation.html
 ---
 
+**DRAFT FOR V1.0**
+
 # Installation
 
-Friction can be installed on Windows 10/11 and most Linux distributions available.
+Friction can be installed on Windows (N) 10/11 and most Linux distributions available.
 
-Latest stable release can be downloaded from https://friction.graphics/#download
-
-## Requirements
-
-### Minimum hardware
-
-* 4GB RAM
-* AVX x86_64 compatible dual core CPU
-  * Intel Sandy Bridge Core i3/i5/i7
-  * AMD Bulldozer
-* OpenGL 3.3 compatible GPU and driver
-  * NVIDIA GeForce 8 series (G8x/Tesla)
-  * AMD Radeon HD 2000 series (R600/TeraScale 1)
-  * Intel HD Graphics 4000 (Ivy Bridge)
-* Audio device supporting WASAPI on Windows and PulseAudio on Linux
-
-### Recommended hardware
-
-* 32GB RAM
-* CPU
-  * Intel Kaby Lake Core i5/i7 or newer
-  * AMD Ryzen/Threadripper 1000 series or newer
-* GPU
-  * NVIDIA GeForce GTX 1050 or newer
-  * AMD Radeon RX 560 or newer
-  * Intel UHD Graphics 620 or newer
-
-### Supported systems
-
-* Microsoft Windows (N) 10/11 x64
-  * Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed on Windows 10
-* Red Hat Enterprise Linux 7.9/8.x/9.x x86_64 and compatible
-  * Generic Linux with X11/XWayland, pulseaudio and glibc 2.17+ should work
+Latest release can be downloaded [here](https://friction.graphics/#download).
 
 ## Windows
 
-Friction is available as an installer *(.exe)* or portable archive *(.7z)*.
+**Installer:**
 
-### Installer
+1. **Download:** Download the Friction installer `friction-VERSION-setup-win64.exe` file.
+2. **Run:** Double-click the installer to start the installation process. If you're using Windows 11, you might need to right-click and select "Run as administrator."
+3. **Follow Instructions:** Follow the on-screen prompts to complete the installation.
+4. **Launch:** After installation, Friction will be added to your start menu. You can also create a desktop shortcut for quick access.
 
-Double-click and follow the instructions. On Windows 11 you might need to right-click and launch as administrator.
+**Portable:**
 
-A start menu entry will be added and project files *(.friction)* will be linked to Friction.
+1. **Download:** Download the Friction portable archive `friction-VERSION-windows-x64.7z` file.
+2. **Extract:** Extract the contents of the archive to a desired location.
+3. **Launch:** Double-click the `friction.exe` file to start Friction.
 
-Launch Friction from the start menu or the optional desktop shortcut.
+**Note:**
 
-*Note: The installer and application is not signed and may trigger warnings when launched, this is normal.*
-
-### Portable
-
-This is a plain 7-Zip archive, extract and launch `friction.exe`.
-
-* *Note: on Windows 10 you need 7-Zip installed.*
-* *Note: The application is not signed and may trigger warnings when launched, this is normal.*
+* Both the installer and the portable version of Friction are unsigned, which may trigger security warnings. This is normal and does not indicate a security threat.
+* If you're using Windows 10 and you've chosen the portable version, you'll need to have 7-Zip (or compatible software) installed to extract the archive.
+* **Portable Settings:** The portable version of Friction stores its settings in the same folder as the `friction.exe` file. If you want to prevent Friction from saving your settings in the same folder, simply delete the `portable.txt` file.
 
 ## Linux
 
-Friction is available as an AppImage, RPM and portable archive *(tar.bz2)*. Only the package format differ, the binaries are identical.
+Friction is available as an AppImage, RPM and portable/universal archive.
 
 ### AppImage
 
-Make executable and run the file.
+1. **Download:** Download the Friction AppImage `Friction-VERSION.AppImage` file.
+2. **Make Executable:** Right-click on the downloaded file, go to "Properties," and select the "Permissions" tab. Check the "Allow executing file as program" option.
+3. **Run:** Double-click the AppImage file to launch Friction.
+
+**Note:**
+
+* The Friction AppImage is enhanced for portability and flexibility. It supports storing settings beside the AppImage file.
+* Friction will try to use a folder named `Friction-VERSION.AppImage.config` to store settings. Make the AppImage read-only to prevent this behavior.
+* On the first run, Friction will prompt you to integrate it with your desktop environment. This will add Friction to your application launcher and associate supported file types with it.
 
 ### RPM
 
-Can be installed on any distribution that uses RPM.
+1. **Download:** Download the Friction RPM package `friction-VERSION.rpm` file.
+2. **Install:** Use your package manager to install the RPM package.
 
 ### Portable
 
-This is a plain tarball compressed with bzip2. Extract and run `friction`.
+1. **Download:** Download the Friction portable archive `friction-VERSION-linux-x86_64.tar.xz` file.
+2. **Extract:** Extract the contents of the archive to a desired location.
+3. **Run:** Double-click the `friction` file to launch Friction.
 
-*Note: The `desktop_integration.sh` script will integrate Friction with your desktop (launcher and mimetypes).*
+**Note:**
+
+* The portable version of Friction stores its settings in the same folder as the `friction` file. If you want to prevent Friction from saving your settings in the same folder, simply delete the `portable.txt` file.
+* On the first run, Friction will prompt you to integrate it with your desktop environment. This will add Friction to your application launcher and associate supported file types with it.
