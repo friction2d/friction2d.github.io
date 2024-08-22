@@ -1,4 +1,4 @@
-# Friction Documentation
+# Documentation
 
 ## Tutorials
 
