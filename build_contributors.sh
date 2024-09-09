@@ -108,28 +108,3 @@ cat enve.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
 echo >> ${DOC}
 
 cat ${DOC}
-
-#
-# André <
-# 68183694
-# liebner@proton
-# maurycyliebner
-
-#FORMAT="### %s%n* **Commit:** %H%d%n* **Author:** %an%n* **Date:** %ad%n%n%b"
-
-#FROM_TAG=${FROM_TAG:-""}
-#TO_TAG=${TO_TAG:-""}
-
-#if [ "${FROM_TAG}" != "" ] && [ "${TO_TAG}" != "" ]; then
-#    echo "# ChangeLog for ${TO_TAG}" > ${LOG}-${TO_TAG}.md
-#    echo "" >> ${LOG}-${TO_TAG}.md
-#    git log --pretty=format:"${FORMAT}" --no-merges ${FROM_TAG}...${TO_TAG} >> ${LOG}-${TO_TAG}.md
-#elif [ "${TO_TAG}" != "" ]; then
-#    echo "# ChangeLog for ${TO_TAG}" > ${LOG}-${TO_TAG}.md
-#    echo "" >> ${LOG}-${TO_TAG}.md
-#    git log --pretty=format:"${FORMAT}" --after="${AFTER}" ${TO_TAG} --no-merges >> ${LOG}-${TO_TAG}.md
-#else
-#    echo "# ChangeLog" > ${LOG}
-#    echo "" >> ${LOG}
-#    git log --pretty=format:"${FORMAT}" --after="${AFTER}" --no-merges >> ${LOG}.md
-#fi
