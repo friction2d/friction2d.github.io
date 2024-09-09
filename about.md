@@ -8,7 +8,7 @@ permalink: about.html
 
 This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.
 
-## Contributors
+### Contributors
 
 - Ole-André Rodlie 
 - Sanjay 
@@ -16,27 +16,27 @@ This program is distributed in the hope that it will be useful, but WITHOUT ANY 
 - irwanto 
 - luzpaz 
 
-## Theme and UX
+### Theme and UX
 
 - Ole-André Rodlie 
 - Adam Belis 
 
-## Web and Documentation
+### Web and Documentation
 
 - Ole-André Rodlie 
 
-## Plugins (Effects)
+### Plugins (Effects)
 
 - axiomgraph 
 - Ole-André Rodlie 
 
-## Testers
+### Testers
 
 - eFe Muñoz
 - Adam Belis
 - Alex Kiryanov
 
-## enve
+### enve
 
 Friction is based on the code base from the enve project.
 

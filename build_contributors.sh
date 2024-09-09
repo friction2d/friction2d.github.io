@@ -73,34 +73,34 @@ echo >> ${DOC}
 echo "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE." >> ${DOC}
 echo >> ${DOC}
 
-echo "## Contributors" >> ${DOC}
+echo "### Contributors" >> ${DOC}
 echo >> ${DOC}
 cat friction.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
 echo >> ${DOC}
 
-echo "## Theme and UX" >> ${DOC}
+echo "### Theme and UX" >> ${DOC}
 echo >> ${DOC}
 cat friction-theme.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
 echo >> ${DOC}
 
-echo "## Web and Documentation" >> ${DOC}
+echo "### Web and Documentation" >> ${DOC}
 echo >> ${DOC}
 cat friction-web-docs.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
 echo >> ${DOC}
 
-echo "## Plugins (Effects)" >> ${DOC}
+echo "### Plugins (Effects)" >> ${DOC}
 echo >> ${DOC}
 cat friction-shaders.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
 echo >> ${DOC}
 
-echo "## Testers" >> ${DOC}
+echo "### Testers" >> ${DOC}
 echo >> ${DOC}
 echo "- eFe Muñoz" >> ${DOC}
 echo "- Adam Belis" >> ${DOC}
 echo "- Alex Kiryanov" >> ${DOC}
 echo >> ${DOC}
 
-echo "## enve" >> ${DOC}
+echo "### enve" >> ${DOC}
 echo >> ${DOC}
 echo "Friction is based on the code base from the enve project." >> ${DOC}
 echo >> ${DOC}
