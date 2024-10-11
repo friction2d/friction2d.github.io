@@ -2,7 +2,7 @@
 #
 # Friction - https://friction.graphics
 #
-# Copyright (c) Friction contributors
+# Copyright (c) Ole-André Rodlie and contributors
 #
 # This program is free software: you can redistribute it and/or modify
 # it under the terms of the GNU General Public License as published by
@@ -68,9 +68,14 @@ echo "layout: default" >> ${DOC}
 echo "permalink: about.html" >> ${DOC}
 echo "---" >> ${DOC}
 echo >> ${DOC}
-echo "**Friction is a powerful and versatile motion graphics application that allows you to create vector and raster animations for web and video with ease.**" >> ${DOC}
+
+echo "Friction is copyright &copy; Ole-André Rodlie and contributors." >> ${DOC}
 echo >> ${DOC}
-echo "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE." >> ${DOC}
+echo "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version." >> ${DOC}
+echo >> ${DOC}
+echo "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details." >> ${DOC}
+echo >> ${DOC}
+echo "You should have received a copy of the GNU General Public License along with this program.  If not, see <http://www.gnu.org/licenses/>." >> ${DOC}
 echo >> ${DOC}
 
 echo "### Contributors" >> ${DOC}
@@ -102,7 +107,7 @@ echo >> ${DOC}
 
 echo "### enve" >> ${DOC}
 echo >> ${DOC}
-echo "Friction is based on the code base from the enve project." >> ${DOC}
+echo "Friction is based on enve - Copyright &copy; Maurycy Liebner and contributors." >> ${DOC}
 echo >> ${DOC}
 cat enve.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
 echo >> ${DOC}
