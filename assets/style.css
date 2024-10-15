@@ -474,7 +474,7 @@ ul.platform { list-style-type: none; }
 .mainImage {
     width: 100%;
     border-radius: .25em;
-    border: 0;
+    border: 0px !important;
 }
 
 .downloadsContainer {
