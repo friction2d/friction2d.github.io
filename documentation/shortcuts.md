@@ -54,7 +54,6 @@ Shortcuts for the main tools.
 | Rectangle | `F6`
 | Text | `F7`
 | Null | `F8`
-| Pick | `F9`
 
 ## Objects
 
@@ -130,3 +129,5 @@ Other shortcuts.
 | ------ | -------- |
 | Bookmark current color | `B`
 | Fullscreen | `F11`
+| Show/Hide Timeline | `T`
+| Show/Hide Fill and Stroke | `F`
