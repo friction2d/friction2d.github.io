@@ -47,8 +47,6 @@ Easing has been traditionally restricted to the expression editor *(includes a d
 
 ![Screenshot of graph with easing options](/assets/screenshots/100/friction-100b1-graph-easing.jpg)
 
-<blockquote class="mastodon-embed" data-embed-url="https://floss.social/@friction/112995482618146670/embed" style="background: #FCF8FF; border-radius: 8px; border: 1px solid #C9C4DA; margin: 0; max-width: 540px; min-width: 270px; overflow: hidden; padding: 0;"> <a href="https://floss.social/@friction/112995482618146670" target="_blank" style="align-items: center; color: #1C1A25; display: flex; flex-direction: column; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Roboto, sans-serif; font-size: 14px; justify-content: center; letter-spacing: 0.25px; line-height: 20px; padding: 24px; text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 79 75"><path d="M74.7135 16.6043C73.6199 8.54587 66.5351 2.19527 58.1366 0.964691C56.7196 0.756754 51.351 0 38.9148 0H38.822C26.3824 0 23.7135 0.756754 22.2966 0.964691C14.1319 2.16118 6.67571 7.86752 4.86669 16.0214C3.99657 20.0369 3.90371 24.4888 4.06535 28.5726C4.29578 34.4289 4.34049 40.275 4.877 46.1075C5.24791 49.9817 5.89495 53.8251 6.81328 57.6088C8.53288 64.5968 15.4938 70.4122 22.3138 72.7848C29.6155 75.259 37.468 75.6697 44.9919 73.971C45.8196 73.7801 46.6381 73.5586 47.4475 73.3063C49.2737 72.7302 51.4164 72.086 52.9915 70.9542C53.0131 70.9384 53.0308 70.9178 53.0433 70.8942C53.0558 70.8706 53.0628 70.8445 53.0637 70.8179V65.1661C53.0634 65.1412 53.0574 65.1167 53.0462 65.0944C53.035 65.0721 53.0189 65.0525 52.9992 65.0371C52.9794 65.0218 52.9564 65.011 52.9318 65.0056C52.9073 65.0002 52.8819 65.0003 52.8574 65.0059C48.0369 66.1472 43.0971 66.7193 38.141 66.7103C29.6118 66.7103 27.3178 62.6981 26.6609 61.0278C26.1329 59.5842 25.7976 58.0784 25.6636 56.5486C25.6622 56.5229 25.667 56.4973 25.6775 56.4738C25.688 56.4502 25.7039 56.4295 25.724 56.4132C25.7441 56.397 25.7678 56.3856 25.7931 56.3801C25.8185 56.3746 25.8448 56.3751 25.8699 56.3816C30.6101 57.5151 35.4693 58.0873 40.3455 58.086C41.5183 58.086 42.6876 58.086 43.8604 58.0553C48.7647 57.919 53.9339 57.6701 58.7591 56.7361C58.8794 56.7123 58.9998 56.6918 59.103 56.6611C66.7139 55.2124 73.9569 50.665 74.6929 39.1501C74.7204 38.6967 74.7892 34.4016 74.7892 33.9312C74.7926 32.3325 75.3085 22.5901 74.7135 16.6043ZM62.9996 45.3371H54.9966V25.9069C54.9966 21.8163 53.277 19.7302 49.7793 19.7302C45.9343 19.7302 44.0083 22.1981 44.0083 27.0727V37.7082H36.0534V27.0727C36.0534 22.1981 34.124 19.7302 30.279 19.7302C26.8019 19.7302 25.0651 21.8163 25.0617 25.9069V45.3371H17.0656V25.3172C17.0656 21.2266 18.1191 17.9769 20.2262 15.568C22.3998 13.1648 25.2509 11.9308 28.7898 11.9308C32.8859 11.9308 35.9812 13.492 38.0447 16.6111L40.036 19.9245L42.0308 16.6111C44.0943 13.492 47.1896 11.9308 51.2788 11.9308C54.8143 11.9308 57.6654 13.1648 59.8459 15.568C61.9529 17.9746 63.0065 21.2243 63.0065 25.3172L62.9996 45.3371Z" fill="currentColor"/></svg> <div style="color: #787588; margin-top: 16px;">Post by @friction@floss.social</div> <div style="font-weight: 500;">View on Mastodon</div> </a> </blockquote> <script data-allowed-prefixes="https://floss.social/" async src="https://floss.social/embed.js"></script>
-
 ## New Theme/Style (UI/UX)
 
 A lot of work has gone into the UI/UX in this version, still some tweaks pending. More information will be added before final release.
@@ -83,17 +81,58 @@ Note: If a in/out already exists it will be removed. Clear in/out is available i
 
 ## Command Palette
 
-The command palette (`Ctrl+Space`) is a new major feature, improving the UX. It works similar to other applications, giving you easy access to the most common functions in Friction.
+![Command Palette Screenshot](/assets/screenshots/100/friction-100b1-cmd-01.png)
 
-More information will be added before final release.
+The command palette (`Ctrl+Space`) is a new UX feature. It works similar to other applications, giving you quick access to most actions.
 
-<blockquote class="mastodon-embed" data-embed-url="https://floss.social/@friction/112882394509949110/embed" style="background: #FCF8FF; border-radius: 8px; border: 1px solid #C9C4DA; margin: 0; max-width: 540px; min-width: 270px; overflow: hidden; padding: 0;"> <a href="https://floss.social/@friction/112882394509949110" target="_blank" style="align-items: center; color: #1C1A25; display: flex; flex-direction: column; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Roboto, sans-serif; font-size: 14px; justify-content: center; letter-spacing: 0.25px; line-height: 20px; padding: 24px; text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 79 75"><path d="M74.7135 16.6043C73.6199 8.54587 66.5351 2.19527 58.1366 0.964691C56.7196 0.756754 51.351 0 38.9148 0H38.822C26.3824 0 23.7135 0.756754 22.2966 0.964691C14.1319 2.16118 6.67571 7.86752 4.86669 16.0214C3.99657 20.0369 3.90371 24.4888 4.06535 28.5726C4.29578 34.4289 4.34049 40.275 4.877 46.1075C5.24791 49.9817 5.89495 53.8251 6.81328 57.6088C8.53288 64.5968 15.4938 70.4122 22.3138 72.7848C29.6155 75.259 37.468 75.6697 44.9919 73.971C45.8196 73.7801 46.6381 73.5586 47.4475 73.3063C49.2737 72.7302 51.4164 72.086 52.9915 70.9542C53.0131 70.9384 53.0308 70.9178 53.0433 70.8942C53.0558 70.8706 53.0628 70.8445 53.0637 70.8179V65.1661C53.0634 65.1412 53.0574 65.1167 53.0462 65.0944C53.035 65.0721 53.0189 65.0525 52.9992 65.0371C52.9794 65.0218 52.9564 65.011 52.9318 65.0056C52.9073 65.0002 52.8819 65.0003 52.8574 65.0059C48.0369 66.1472 43.0971 66.7193 38.141 66.7103C29.6118 66.7103 27.3178 62.6981 26.6609 61.0278C26.1329 59.5842 25.7976 58.0784 25.6636 56.5486C25.6622 56.5229 25.667 56.4973 25.6775 56.4738C25.688 56.4502 25.7039 56.4295 25.724 56.4132C25.7441 56.397 25.7678 56.3856 25.7931 56.3801C25.8185 56.3746 25.8448 56.3751 25.8699 56.3816C30.6101 57.5151 35.4693 58.0873 40.3455 58.086C41.5183 58.086 42.6876 58.086 43.8604 58.0553C48.7647 57.919 53.9339 57.6701 58.7591 56.7361C58.8794 56.7123 58.9998 56.6918 59.103 56.6611C66.7139 55.2124 73.9569 50.665 74.6929 39.1501C74.7204 38.6967 74.7892 34.4016 74.7892 33.9312C74.7926 32.3325 75.3085 22.5901 74.7135 16.6043ZM62.9996 45.3371H54.9966V25.9069C54.9966 21.8163 53.277 19.7302 49.7793 19.7302C45.9343 19.7302 44.0083 22.1981 44.0083 27.0727V37.7082H36.0534V27.0727C36.0534 22.1981 34.124 19.7302 30.279 19.7302C26.8019 19.7302 25.0651 21.8163 25.0617 25.9069V45.3371H17.0656V25.3172C17.0656 21.2266 18.1191 17.9769 20.2262 15.568C22.3998 13.1648 25.2509 11.9308 28.7898 11.9308C32.8859 11.9308 35.9812 13.492 38.0447 16.6111L40.036 19.9245L42.0308 16.6111C44.0943 13.492 47.1896 11.9308 51.2788 11.9308C54.8143 11.9308 57.6654 13.1648 59.8459 15.568C61.9529 17.9746 63.0065 21.2243 63.0065 25.3172L62.9996 45.3371Z" fill="currentColor"/></svg> <div style="color: #787588; margin-top: 16px;">Post by @friction@floss.social</div> <div style="font-weight: 500;">View on Mastodon</div> </a> </blockquote> <script data-allowed-prefixes="https://floss.social/" async src="https://floss.social/embed.js"></script>
+* `?` - List all actions.
+* Press `Up` to access history
+
+![Command Palette Screenshot](/assets/screenshots/100/friction-100b1-cmd-02.png)
+
+### Special commands
+
+![Command Palette Screenshot](/assets/screenshots/100/friction-100b1-cmd-03.png)
+
+* `:TIME` - Move to `TIME` (`X`/`Xs`/`Xm`)
+  * `:10` - Move to frame 10
+  * `:10s` - Move to frame at 10 sec
+  * `:10m` - Move to frame at 10 min
+* `+/-TIME` - Move +/- `TIME` (`X`/`Xs`/`Xm`)
+  * `-10` - Move to current frame - 10
+  * `+10` - Move to current frame + 10
+  * `+10s` - Move to current frame + 10 sec
+  * `+10m` - Move to current frame + 10 min
+* `rotate:` - Rotate selected by `double`
+* `scale:` - Scale selected by `double`
+* `move:` - Move selected by `X` x `Y`
+* `marker:` - Add marker(s) at `TIME` (`X`/`Xs`/`Xm`) and optional `TITLE`
+  * `marker:5` - Add marker at frame 5
+  * `marker:10 foo bar` - Add marker at frame 10 with title "foo bar"
+  * `marker:20,30,40,50` - Add marker at frame 20, 30, 40, 50
+  * `marker:60,30s Foo,1m Bar` - Add marker at frame 60, at 30 sec with title "Foo", at 1 min with title "Bar"
+* `in:` - Set frame In to `TIME` (`X`/`Xs`/`Xm`)
+  * `in:10` - Set frame In at frame 10
+  * `in:30s` - Set frame In at 30 sec
+  * `in:1m` - Set frame In at 1 min
+* `out:` - Set frame Out to `TIME` (`X`/`Xs`/`Xm`)
+  * `out:10` - Set frame Out at frame 10
+  * `out:30s` - Set frame Out at 30 sec
+  * `out:1m` - Set frame Out at 1 min
+
+Special commands can be batched with `&&`:
+
+```
+:10 && rotate:45 && +100 && rotate:0
+```
 
 ## Interactive SVG transforms
 
 Friction can now export SVG transforms with `begin` and `end` events, this makes it possible to start and/or stop transforms based on user input.
 
 Can be enabled on transforms with the new `SVG Properties`, the properties include `begin event` and `end event`.
+
+![Screenshot SVG properties](/assets/screenshots/100/friction-100b1-svg-events.jpg)
 
 Supported events:
 
@@ -107,11 +146,11 @@ Supported events:
 * `mouseover`
 * `mouseup`
 
-Note: Events only work for inline SVG's.
+Note: Events only work for inline SVG's. *This is an experimental feature.*
 
-*This is an experimental feature.*
+### Example
 
-<blockquote class="mastodon-embed" data-embed-url="https://mastodon.social/@rodlie/112837433291713812/embed" style="background: #FCF8FF; border-radius: 8px; border: 1px solid #C9C4DA; margin: 0; max-width: 540px; min-width: 270px; overflow: hidden; padding: 0;"> <a href="https://mastodon.social/@rodlie/112837433291713812" target="_blank" style="align-items: center; color: #1C1A25; display: flex; flex-direction: column; font-family: system-ui, -apple-system, BlinkMacSystemFont, 'Segoe UI', Oxygen, Ubuntu, Cantarell, 'Fira Sans', 'Droid Sans', 'Helvetica Neue', Roboto, sans-serif; font-size: 14px; justify-content: center; letter-spacing: 0.25px; line-height: 20px; padding: 24px; text-decoration: none;"> <svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="32" height="32" viewBox="0 0 79 75"><path d="M74.7135 16.6043C73.6199 8.54587 66.5351 2.19527 58.1366 0.964691C56.7196 0.756754 51.351 0 38.9148 0H38.822C26.3824 0 23.7135 0.756754 22.2966 0.964691C14.1319 2.16118 6.67571 7.86752 4.86669 16.0214C3.99657 20.0369 3.90371 24.4888 4.06535 28.5726C4.29578 34.4289 4.34049 40.275 4.877 46.1075C5.24791 49.9817 5.89495 53.8251 6.81328 57.6088C8.53288 64.5968 15.4938 70.4122 22.3138 72.7848C29.6155 75.259 37.468 75.6697 44.9919 73.971C45.8196 73.7801 46.6381 73.5586 47.4475 73.3063C49.2737 72.7302 51.4164 72.086 52.9915 70.9542C53.0131 70.9384 53.0308 70.9178 53.0433 70.8942C53.0558 70.8706 53.0628 70.8445 53.0637 70.8179V65.1661C53.0634 65.1412 53.0574 65.1167 53.0462 65.0944C53.035 65.0721 53.0189 65.0525 52.9992 65.0371C52.9794 65.0218 52.9564 65.011 52.9318 65.0056C52.9073 65.0002 52.8819 65.0003 52.8574 65.0059C48.0369 66.1472 43.0971 66.7193 38.141 66.7103C29.6118 66.7103 27.3178 62.6981 26.6609 61.0278C26.1329 59.5842 25.7976 58.0784 25.6636 56.5486C25.6622 56.5229 25.667 56.4973 25.6775 56.4738C25.688 56.4502 25.7039 56.4295 25.724 56.4132C25.7441 56.397 25.7678 56.3856 25.7931 56.3801C25.8185 56.3746 25.8448 56.3751 25.8699 56.3816C30.6101 57.5151 35.4693 58.0873 40.3455 58.086C41.5183 58.086 42.6876 58.086 43.8604 58.0553C48.7647 57.919 53.9339 57.6701 58.7591 56.7361C58.8794 56.7123 58.9998 56.6918 59.103 56.6611C66.7139 55.2124 73.9569 50.665 74.6929 39.1501C74.7204 38.6967 74.7892 34.4016 74.7892 33.9312C74.7926 32.3325 75.3085 22.5901 74.7135 16.6043ZM62.9996 45.3371H54.9966V25.9069C54.9966 21.8163 53.277 19.7302 49.7793 19.7302C45.9343 19.7302 44.0083 22.1981 44.0083 27.0727V37.7082H36.0534V27.0727C36.0534 22.1981 34.124 19.7302 30.279 19.7302C26.8019 19.7302 25.0651 21.8163 25.0617 25.9069V45.3371H17.0656V25.3172C17.0656 21.2266 18.1191 17.9769 20.2262 15.568C22.3998 13.1648 25.2509 11.9308 28.7898 11.9308C32.8859 11.9308 35.9812 13.492 38.0447 16.6111L40.036 19.9245L42.0308 16.6111C44.0943 13.492 47.1896 11.9308 51.2788 11.9308C54.8143 11.9308 57.6654 13.1648 59.8459 15.568C61.9529 17.9746 63.0065 21.2243 63.0065 25.3172L62.9996 45.3371Z" fill="currentColor"/></svg> <div style="color: #787588; margin-top: 16px;">Post by @rodlie@mastodon.social</div> <div style="font-weight: 500;">View on Mastodon</div> </a> </blockquote> <script data-allowed-prefixes="https://mastodon.social/" async src="https://mastodon.social/embed.js"></script>
+<svg viewBox="0 0 1920 1080" xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg"><g transform="translate(194.17 194.17)"><g transform="translate(1108.03 345.83)"><g><animateTransform attributeName="transform" begin="dblclick" type="rotate" keySplines="0 0 1 1;0 0 1 1" values="0;0;360" calcMode="spline" keyTimes="0;0;1" end="click" dur="2s" repeatCount="indefinite"/><rect width="388.34" stroke-linejoin="round" stroke-width="10" ry="0" height="388.34" fill="rgba(0, 38, 97, 0.818006)" rx="0" y="0" stroke="rgba(0, 102, 255, 1)" x="0" stroke-linecap="round" transform="scale(1 1) skewX(0) skewY(0) translate(-194.17 -194.17)" opacity="1"/></g></g></g><g transform="translate(0 0)"><g transform="translate(612.617 540)"><g transform="rotate(0)"><g><animateTransform attributeName="transform" begin="mouseenter" type="scale" keySplines="0 0 1 1;0.666667 0.0546957 0.25 0.285709;0.333333 0 0.666667 1;0.333333 0 0.666667 0.211658;0.281402 0.57395 0.639446 1;0.360182 3.03091e-14 0.723109 0.269192;0.370823 0.289841 0.633918 1;0.329803 0 0.66305 0.326897;0.186275 0.0223295 1 1;0.121212 0.380689 0.911422 0.977671;0.336559 0.673103 0.669812 1;0.35961 0 0.629257 0.710159;0.371953 0.730808 0.683869 1;0.31191 0 0.627617 0.42605;0.333333 0.788342 0.666667 1;0.333333 8.05543e-15 0.666667 1;0.333333 0.714291 0.555556 0.945304" values="1 1;1 1;1.00781 1;0.997499 1;1.038 1;1.0558 1;1.01723 1;0.845559 1;0.813541 1;1.5 1;0.813541 1;0.813541 1;1.01723 1;1.06109 1;1.038 1;0.998015 1;1.00781 1;1 1" calcMode="spline" keyTimes="0;0;0.1;0.183231;0.25;0.281806;0.316667;0.364689;0.366667;0.5;0.683333;0.684628;0.716667;0.733977;0.75;0.794513;0.85;1" end="mouseleave" dur="2s" repeatCount="indefinite"/><g><animateTransform attributeName="transform" begin="mouseenter" type="scale" keySplines="0 0 1 1;0.333333 0.333333 0.666667 0.666667;0.333333 0 0.666667 1;0.333333 9.48262e-14 0.666667 0.256799;0.333333 0.110035 0.666667 1;0.333333 0 0.666667 0.327322;0.299805 0.0286682 0.700195 0.214723;0.333333 0.27422 0.666666 1;0.333333 0 0.666667 0.328574;0.333333 0.0341904 0.666667 0.599705;0.333333 0.317243 0.666667 1;0.333333 0 0.666667 0.329291;0.333334 0.0280941 0.666667 0.719516;0.333333 0.410723 0.666667 0.690746;0.333333 0.434318 0.666667 0.723465;0.333333 0.343812 0.666667 1;0.333333 0 0.666667 0.317957;0.333334 0.0797045 0.666666 0.958044;0.333333 0.685014 0.666667 1;0.333333 0 0.666667 1;0.333333 0.333333 0.666667 0.666667;0.333333 0.801564 0.666667 1;0.333333 6.54388e-12 0.666667 0.618255" values="1 1;1 1;1 1;1 0.99104;1 0.998015;1 1.05656;1 1.06109;1 1.01723;1 0.849881;1 0.813541;1 1.3003;1 1.42707;1 1.5;1 1.37845;1 1.29544;1 0.940808;1 0.826868;1 0.813541;1 1.06109;1 1.06109;1 1.00773;1 0.99647;1 1.00061;1 1" calcMode="spline" keyTimes="0;0;0.00333974;0.139244;0.2;0.280956;0.283333;0.316667;0.365362;0.366667;0.466667;0.499219;0.5;0.516667;0.533333;0.633333;0.678859;0.683333;0.733333;0.738629;0.799238;0.8;0.919195;1" end="mouseleave" dur="2s" repeatCount="indefinite"/><ellipse stroke-linejoin="round" stroke-width="10" ry="191.166" fill="rgba(0, 38, 97, 0.818006)" cx="0" rx="191.166" cy="0" stroke="rgba(0, 102, 255, 1)" stroke-linecap="round" transform="skewX(0) skewY(0) translate(0 0)" opacity="1"/></g></g></g></g></g><text letter-spacing="0em" word-spacing="0em" font-family="Arial" text-anchor="middle" stroke-linejoin="round" stroke-width="10" fill="rgba(255, 255, 255, 1)" font-size="52.400002" stroke="none" stroke-linecap="round" transform="translate(0 0) translate(610.32 179.937) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)" opacity="1"><tspan x="0">begin: mouseenter</tspan><tspan dy="1.2em" x="0">end: mouseleave</tspan></text><text letter-spacing="0em" word-spacing="0em" font-family="Arial" text-anchor="middle" stroke-linejoin="round" stroke-width="10" fill="rgba(255, 255, 255, 1)" font-size="52.400002" stroke="none" stroke-linecap="round" transform="translate(0 0) translate(1300.49 179.937) rotate(0) scale(1 1) skewX(0) skewY(0) translate(0 0)" opacity="1"><tspan x="0">begin: dblclick</tspan><tspan dy="1.2em" x="0">end: click</tspan></text></svg>
 
 ## Optimize SVG
 
