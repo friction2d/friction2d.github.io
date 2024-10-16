@@ -111,8 +111,7 @@ div#contentInner {
 }
 
 div#content img {
-    width: 100%;
-    border: 1px solid rgb(33, 33, 38);
+    max-width: 100%;
     border-radius: .25em;
 }
 
@@ -474,7 +473,6 @@ ul.platform { list-style-type: none; }
 .mainImage {
     width: 100%;
     border-radius: .25em;
-    border: 0px !important;
 }
 
 .downloadsContainer {
@@ -490,5 +488,10 @@ ul.platform { list-style-type: none; }
 }
 
 .round {
+    border-radius: .25em;
+}
+
+div#content video {
+    width: 100%;
     border-radius: .25em;
 }
