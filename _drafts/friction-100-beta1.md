@@ -15,7 +15,9 @@ download_active: true
 
 After over a year of development, Friction has reached a significant milestone: version 1.0 🥳
 
-All features planned for version 1.0 are now considered usable. Please test and give us feedback before the final release.
+All features planned for version 1.0 are now considered usable, no new features will be added until after version 1.0.0. UI/UX changes might still happen until release candidate.
+
+Please test and give us feedback before the final release.
 
 **Warning!** Project files created/saved in this version cannot be opened in older versions of Friction. Always back up your work and avoid using beta versions for production projects.
 
@@ -35,6 +37,8 @@ All features planned for version 1.0 are now considered usable. Please test and 
 
 [**Full Changelog**](https://github.com/friction2d/friction/compare/v0.9.6.1...v1.0.0-beta.1).
 
+**Note:** Release notes and changes are still considered draft until release candidate or release.
+
 ## Color Toolbar
 
 Friction now has a new color toolbar with easy access to fill, stroke and background color properties.
@@ -49,7 +53,7 @@ Easing has been traditionally restricted to the expression editor *(includes a d
 
 ## New Theme/Style (UI/UX)
 
-A lot of work has gone into the UI/UX in this version, still some tweaks pending. More information will be added before final release.
+A lot of work has gone into the UI/UX in this version, some changes might not be complete in this beta release. More information will be added before final release.
 
 ## HiDPI (Display Scaling)
 
