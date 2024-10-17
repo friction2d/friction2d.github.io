@@ -33,12 +33,9 @@ div#headerInner {
 }
 
 div#hero {
-    /*padding-top: 200px;*/
     width: 100%;
     display: flex;
     flex-direction: column;
-    /*background-color: rgb(33, 33, 38);
-    background-image: url("badge.svg");*/
     height: 100vh;
     align-self: center;
     background-repeat: no-repeat;
@@ -47,7 +44,6 @@ div#hero {
     background-attachment: fixed;
     align-items: center;
     justify-content: center;
-    /*border-bottom: 1px solid rgb(33, 33, 38);*/
 }
 
 #heroVideo {
@@ -115,11 +111,6 @@ div#content img {
     border-radius: .25em;
 }
 
-/*div#content p img {
-    width: fit-content;
-    border: 0;
-}*/
-
 div.blocks {
     margin: auto;
     display: flex;
@@ -160,7 +151,6 @@ pre {
 
 code.highlighter-rouge {
     background-color: rgb(33, 33, 38);
-    padding: .2em;
     font-weight: bold;
 }
 
@@ -247,11 +237,10 @@ img.distro {
     padding: 1em;
     padding-left: 2em;
     list-style: decimal;
-    /*float: right;*/
 }
 
 #markdown-toc a,
-#mardown-toc a:visited {
+#markdown-toc a:visited {
     text-decoration: none;
 }
 
