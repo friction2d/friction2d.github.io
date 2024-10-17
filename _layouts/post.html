@@ -33,7 +33,7 @@
                             <a title="Download portable tarball for Linux x86_64" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-portable.svg"></a>
                         {% endif %}
                         {% if page.linux_rpm != nil %}
-                            <a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a>
+                            <a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release | replace: '-beta', '.beta' }}-{{ page.linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a>
                         {% endif %}
                         </p>
                     {% else %}
