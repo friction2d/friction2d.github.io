@@ -80,33 +80,12 @@ echo >> ${DOC}
 
 echo "### Contributors" >> ${DOC}
 echo >> ${DOC}
-cat friction.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
-echo >> ${DOC}
 
-echo "### Theme and UX" >> ${DOC}
-echo >> ${DOC}
-cat friction-theme.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
-echo >> ${DOC}
-
-echo "### Web and Documentation" >> ${DOC}
-echo >> ${DOC}
-cat friction-web-docs.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
-echo >> ${DOC}
-
-echo "### Plugins (Effects)" >> ${DOC}
-echo >> ${DOC}
-cat friction-shaders.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
-echo >> ${DOC}
-
-echo "### Testers" >> ${DOC}
-echo >> ${DOC}
+cat friction.txt friction-theme.txt friction-web-docs.txt friction-shaders.txt | awk '{$1=""; print $0}' | awk '!seen[$0]++' | awk {'print "-"$0'} | sed 's/^ //g;s/<.*//' >> ${DOC}
 echo "- eFe Muñoz" >> ${DOC}
-echo "- Adam Belis" >> ${DOC}
 echo "- Alex Kiryanov" >> ${DOC}
 echo >> ${DOC}
 
-echo "### enve" >> ${DOC}
-echo >> ${DOC}
 echo "Friction is based on enve - Copyright &copy; Maurycy Liebner and contributors." >> ${DOC}
 echo >> ${DOC}
 cat enve.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
