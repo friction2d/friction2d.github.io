@@ -136,6 +136,7 @@ div.block {
 
 div.blocks h2,
 div.bigTitle h1,
+div.bigTitle h2,
 div.bigTitle p {
     text-align: center;
 }
