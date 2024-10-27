@@ -19,28 +19,11 @@ You should have received a copy of the GNU General Public License along with thi
 - vestineo 
 - irwanto 
 - luzpaz 
-
-### Theme and UX
-
-- Ole-André Rodlie 
+- Pablo Gil 
 - Adam Belis 
-
-### Web and Documentation
-
-- Ole-André Rodlie 
-
-### Plugins (Effects)
-
 - axiomgraph 
-- Ole-André Rodlie 
-
-### Testers
-
 - eFe Muñoz
-- Adam Belis
 - Alex Kiryanov
-
-### enve
 
 Friction is based on enve - Copyright &copy; Maurycy Liebner and contributors.
 
