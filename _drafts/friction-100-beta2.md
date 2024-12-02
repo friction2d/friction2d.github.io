@@ -17,34 +17,33 @@ download_active: true
 
 ### Changes since Beta 1
 
-* **SVG export:** Support for `animateMotion` (follow path)
+* **SVG export:** Support for `animateMotion` (follow path) [#349](https://github.com/friction2d/friction/pull/349) [#173](https://github.com/friction2d/friction/issues/173) [#332](https://github.com/friction2d/friction/pull/332)
   * The 'follow path' effect can now be used for SVG animations
 * **SVG Import:** Support Inkscape labels
 * **SVG Import:** Fixed SVG color import regression from beta 1
 * **UI:** Use Qt mouse cursors as default, fixes HiDPI issues
-* **UX:** Fix font widget focus
+* **UX:** Fixed font widget focus
 * **Canvas:** Fix nodes overlay on HiDPI
 * **UX:** Do not collapse docks if they have widgets
-* **UX:** New Color Pick Mode (refactored)
+* **UX:** New Color Pick Mode (refactored) [#284](https://github.com/friction2d/friction/pull/284)
 * **UI:** Icon updates
 * **Core:** Various Undo/Redo fixes
 * **UI:** Add "Fit to Canvas Width" action (Ctrl+9)
-* **UI:** Refactored toolbars
+* **UI:** Refactored toolbars [#312](https://github.com/friction2d/friction/pull/312)
   * They are movable
   * Some actions can be added/removed
   * See context menu for each toolbar for various options
 * **UX:** Scene settings dialog can now convert to/from frames/time
 * **Renderer:** Support In/Out range
-* **Graph:** Fix inconsistent zoom behavior
+* **Graph:** Fixed inconsistent zoom behavior
 * **Timeline:** Do not apply easing on smart paths
 * **Scene Menu:** Add in/out/marker actions
 * **Timeline:** Support status bar message
 * **UI:** Several fixes/improvements to the marker editor
-* **Timeline:** Support interactive markers
-* **Timeline:** Support interactive In/Out
-* **Effects:** Add offset parameter to sub-path effect
-* **Audio:** Fix audio mute state on project load
-* **Audio/Video:** Fix audio/video stretch
+* **Timeline:** Support interactive markers/in/out [#328](https://github.com/friction2d/friction/pull/323)
+* **Effects:** Add offset parameter to sub-path effect [#335](https://github.com/friction2d/friction/pull/335) [#338](https://github.com/friction2d/friction/pull/338)
+* **Audio:** Fixed audio mute state on project load
+* **Audio/Video:** Fixed audio/video stretch
   * Now works properly for both audio and video
   * Stretch state is saved and loaded in projects
 * **Null Object:** New 'crosshair' type
@@ -63,6 +62,24 @@ This release (re)introduces experimental macOS support.
 * Audio workarounds
 
 Since this port is experimental we do not offer any binaries yet.
+
+---
+
+## SVG: Animate Motion
+
+![Animate Motion](/assets/screenshots/100/friction-follow-path.svg)
+
+## Sub-path effect with new offset
+
+<video width="100%" controls src="/assets/screenshots/100/friction-subpath-offset.mp4" title="Sub Path effect with Offset"></video>
+
+## Interactive Markers/In/Out
+
+<video width="100%" controls src="/assets/screenshots/100/friction-interactive-markers.mp4" title="Interactive Markers"></video>
+
+## Improved UX for toolbars
+
+<video width="100%" controls src="/assets/screenshots/100/friction-toolbar-ux.mp4" title="Improved UX for toolbars "></video>
 
 ---
 

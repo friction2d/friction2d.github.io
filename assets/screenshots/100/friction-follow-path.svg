@@ -1,0 +1,118 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Friction - https://friction.graphics -->
+
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 400">
+ <g transform="translate(200 200)">
+  <g transform="translate(0 0)">
+   <g>
+    <animateTransform repeatCount="indefinite" type="rotate" keySplines="0 0 1 1;0 0 1 1" attributeName="transform" values="0;0;360" dur="3s" keyTimes="0;0;1" calcMode="spline"/>
+    <g transform="scale(1 1)">
+     <g transform="skewX(0) skewY(0)">
+      <g opacity="1" transform="translate(-200 -200)">
+       <g id="Group">
+        <g transform="translate(0 0)">
+         <g transform="translate(200 200)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g opacity="1" transform="translate(0 0)">
+              <path fill="none" stroke-width="10" stroke="rgba(0, 102, 255, 1)" stroke-linejoin="round" d="M-142.207 0C-142.207 -78.4864 -129.933 -149.067 -51.4469 -149.067C27.0394 -149.067 -24.9952 -79.3438 107.909 -9.43194C240.814 60.4799 78.4864 142.207 0 142.207" stroke-linecap="round" id="Path"/>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(0 0)">
+         <g transform="translate(200 200)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g opacity="1" transform="translate(0 0)">
+              <g transform="translate(0 0)">
+               <g transform="translate(0 0)">
+                <g transform="rotate(0)">
+                 <g transform="scale(1 1)">
+                  <g transform="skewX(0) skewY(0)">
+                   <g opacity="1" transform="translate(0 0)">
+                    <rect fill="none" x="-27.4392" rx="0" stroke-width="10" ry="0" stroke="rgba(90, 255, 0, 1)" width="55.7342" stroke-linejoin="round" y="-16.29" stroke-linecap="round" height="32.5831" id="RectangleBox">
+                     <animateMotion repeatCount="indefinite" keyPoints="0;0;0.55;0.1;1;0" keySplines="0 0 1 1;0 0 1 1;0 0 1 1;0 0 1 1;0 0 1 1" values="0;0;0.55;0.1;1;0" dur="3s" rotate="auto" keyTimes="0;0;0.222222;0.444444;0.666667;1" calcMode="spline">
+                      <mpath href="#Path"/>
+                     </animateMotion>
+                    </rect>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(0 0)">
+         <g transform="translate(200 200)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g opacity="1" transform="translate(0 0)">
+              <g transform="translate(0 0)">
+               <g transform="translate(0 0)">
+                <g transform="rotate(0)">
+                 <g transform="scale(1 1)">
+                  <g transform="skewX(0) skewY(0)">
+                   <g opacity="1" transform="translate(0 0)">
+                    <g id="arrow_group">
+                     <g transform="translate(0 0)">
+                      <g transform="translate(-41.1576 6.00579)">
+                       <g transform="rotate(0)">
+                        <g transform="scale(1 1)">
+                         <g transform="skewX(0) skewY(0)">
+                          <g opacity="1" transform="translate(0 0)">
+                           <path fill="rgba(192, 0, 0, 1)" stroke-width="10" stroke="none" stroke-linejoin="round" d="M23.561 -32.774C23.561 -32.774 96.0975 -5.41956 96.0975 -5.41956C96.0975 -5.41956 26.3441 22.416 26.3441 22.416C26.3441 22.416 40.5927 -5.59183 40.5927 -5.59183C40.5927 -5.59183 23.561 -32.774 23.561 -32.774Z" stroke-linecap="round" id="arrow2"/>
+                          </g>
+                         </g>
+                        </g>
+                       </g>
+                      </g>
+                     </g>
+                     <g transform="translate(0 0)">
+                      <g transform="translate(0 0)">
+                       <g transform="rotate(0)">
+                        <g transform="scale(1 1)">
+                         <g transform="skewX(0) skewY(0)">
+                          <g opacity="1" transform="translate(0 0)">
+                           <path fill="rgba(192, 0, 0, 1)" stroke-width="10" stroke="none" stroke-linejoin="round" d="M-40.828 -27.6278C-40.828 -27.6278 -25.6591 -27.4356 -25.6591 -27.4356C-25.6591 -27.4356 -8.6833 0.172126 -8.6833 0.172126C-8.6833 0.172126 -23.9064 29.1446 -23.9064 29.1446C-23.9064 29.1446 -40.6527 29.2024 -40.6527 29.2024C-40.6527 29.2024 -24.4708 -0.204977 -24.4708 -0.204977C-24.4708 -0.204977 -40.828 -27.6278 -40.828 -27.6278Z" stroke-linecap="round" id="arrow1"/>
+                          </g>
+                         </g>
+                        </g>
+                       </g>
+                      </g>
+                     </g>
+                     <animateMotion repeatCount="indefinite" keyPoints="0;0;1;0" keySplines="0 0 1 1;0 0 1 1;0 0 1 1" values="0;0;1;0" dur="3s" rotate="auto" keyTimes="0;0;0.5;1" calcMode="spline">
+                      <mpath href="#Path"/>
+                     </animateMotion>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs/>
+</svg>
