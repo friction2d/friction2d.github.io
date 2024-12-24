@@ -1,0 +1,4 @@
+---
+layout: none
+---
+<friction><stable>{{ site.latest_version }}</stable><devel>{{ site.unstable_version }}</devel></friction>
