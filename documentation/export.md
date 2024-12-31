@@ -10,7 +10,7 @@ Friction can export to various media formats.
 
 ## SVG Animation
 
-Friction can export projects to [SVG+SMIL](https://en.wikipedia.org/wiki/Synchronized_Multimedia_Integration_Language#SMIL+SVG).
+Friction can export to SVG animation for use on the web.
 
 Note that what you see in the viewer is not necessarily what you get when exporting an SVG. Only a subset of the features in Friction are supported by the SVG exporter.
 
@@ -25,6 +25,7 @@ Note that what you see in the viewer is not necessarily what you get when export
 * Raster assets (images/videos)
 * Blur effect
 * Shadow effect
+* Blend Mode `DstIn`
 
 ### Quick preview
 

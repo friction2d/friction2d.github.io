@@ -26,5 +26,9 @@ if [ ! -f "${PANDOC}" ]; then
 fi
 
 for md in ${FILES}; do
-    ${PANDOC} --standalone --template ${CWD}/pandoc/template.html ${md}.md -o ${md}.html
+    if [ "${md}" = "documentation/shortcuts" ]; then
+        ${PANDOC} --standalone --template ${CWD}/pandoc/template.html ${md}.md -o ${CWD}/shortcuts.html
+    else
+        ${PANDOC} --standalone --template ${CWD}/pandoc/template.html ${md}.md -o ${md}.html
+    fi
 done

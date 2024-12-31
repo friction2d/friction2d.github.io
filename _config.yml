@@ -30,9 +30,9 @@ exclude:
   - pandoc
   - about.html
   - privacy.html
+  - shortcuts.html
   - "*.qrc"
   - 3rdparty
-  - documentation/
   - about.md
 nav:
   - title: News
@@ -41,6 +41,9 @@ nav:
   - title: Download
     url: "/#download"
     ext: false
-  - title: "Community"
+  - title: Documentation
+    url: /documentation/
+    ext: false
+  - title: Community
     url: https://github.com/orgs/friction2d/discussions
     ext: true

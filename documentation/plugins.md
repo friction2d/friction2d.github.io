@@ -6,4 +6,8 @@ permalink: documentation/plugins.html
 
 # Plug-ins
 
-## Shaders
+...
+
+## Shaders Effects
+
+...
