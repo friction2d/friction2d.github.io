@@ -11,7 +11,7 @@
         <file>3rdparty/unwind.html</file>
         <file>3rdparty/xkbcommon.html</file>
         <file>3rdparty/icons.html</file>
-        <file>documentation/shortcuts.html</file>
+        <file>shortcuts.html</file>
         <file>3rdparty/xcb.html</file>
         <file>3rdparty/easing.html</file>
     </qresource>

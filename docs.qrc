@@ -7,6 +7,6 @@
         <file>3rdparty/skia.html</file>
         <file>3rdparty/icons.html</file>
         <file>3rdparty/easing.html</file>
-        <file>documentation/shortcuts.html</file>
+        <file>shortcuts.html</file>
     </qresource>
 </RCC>
