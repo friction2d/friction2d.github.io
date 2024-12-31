@@ -42,5 +42,5 @@ nav:
     url: "/#download"
     ext: false
   - title: Community
-    url: https://github.com/orgs/friction2d/discussions
-    ext: true
+    url: /community.html
+    ext: false
