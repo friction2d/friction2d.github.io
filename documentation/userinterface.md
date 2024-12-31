@@ -27,6 +27,4 @@ permalink: documentation/userinterface.html
 
 ## Fill and Stroke
 
-## Text and Font
-
 ## Preferences

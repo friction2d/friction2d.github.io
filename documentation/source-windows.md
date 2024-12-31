@@ -35,9 +35,7 @@ git clone --recurse-submodules https://github.com/friction2d/friction
 
 The Friction SDK is required to build from source.
 
-* https://github.com/friction2d/friction-sdk/releases/download/v1.0.0/friction-sdk-1.0.0-windows-x64.7z
-
-Download and extract, move the extracted `sdk` folder to the Friction source folder.
+[Download](https://github.com/friction2d/friction-sdk/releases/download/v1.0.0/friction-sdk-1.0.0-windows-x64.7z) and extract, move the extracted `sdk` folder to the Friction source folder.
 
 ## Build
 
