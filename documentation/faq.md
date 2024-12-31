@@ -4,4 +4,4 @@ layout: default
 permalink: documentation/faq.html
 ---
 
-# Frequently asked questions
+# FAQ
