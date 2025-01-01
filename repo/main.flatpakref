@@ -1,7 +1,7 @@
 [Flatpak Ref]
 Name=graphics.friction.Friction
-Branch=main
-Title=Friction (Main)
+Branch=master
+Title=Friction (early access)
 Url=https://sourceforge.net/projects/friction/files/flatpak/main
 RuntimeRepo=https://friction.graphics/repo/main.flatpakrepo
 IsRuntime=false
