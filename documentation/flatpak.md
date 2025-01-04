@@ -51,3 +51,15 @@ Flathub is required *(probably already on your system)*.
 ```
 flatpak remote-add --if-not-exists flathub https://flathub.org/repo/flathub.flatpakrepo
 ```
+
+## Known issues/limitations
+
+Friction needs special access to `xdg-documents` and `xdg-pictures`.
+
+Why?
+
+SVG previews *(html files)* needs to be accessible by web browser. We use `xdg-documents`/`friction-temp`/ for this purpose.
+
+Plug-ins should also be located somewhere in `xdg-documents`.
+
+Image sequences can't use XDG Desktop Portal, so all image sequences must be located/saved somewhere in `xdg-documents` or `xdg-pictures`.
