@@ -23,9 +23,11 @@ The Timeline can be splitted horizontally or vertically to allow better paramete
 
 
 ## 1. Menu
+
 The *"Quick"* Menu provides a fast access to the most used commands related to creating/saving projects and importing and exporting assets into the active project.
 
 ## 2. Toolbar
+
 It could also be called a *"Color"* toolbar as it provides fast access to edit colors, types (none, flat or gradient) and other parameters of selected shapes or the scene background:
 
 - **Fill**: Allows users to set the interior color, gradient or "no color" of selected shapes. Users can choose between solid colors (flat), linear or radial gradients.
@@ -35,11 +37,21 @@ It could also be called a *"Color"* toolbar as it provides fast access to edit c
 - **Background**: Sets the background color of the canvas or scene. This option ensures consistency in visual presentation across the workspace.
 
 ## 3. Viewer
+
 The Viewer is the central workspace where users can visualize and interact with their projects, it can also be called **Canvas**. It displays the active composition or animation and allows for real-time previews and adjustments.
 
 The Canvas can be zoomed in and out or fitted in some ways or even reset to default size. Check `Menu > View > Zoom` for a full list of options.
 
+On Windows and Linux the mouse wheel can zoom in/out, on macOS add the `option` key when using the mouse wheel. Gestures for pan, zoom and smart zoom is supported on macOS.
+
+- `Shift + Ctrl/Cmd` + `+` = Zoom in (We should change this to not include shift!)
+- `Shift + Ctrl/Cmd` + `-` = Zoom Out (We should change this to not include shift!)
+- `Ctrl/Cmd` + `1` = Reset zoom
+- `Ctrl/Cmd` + `0` = Fit to canvas
+- `Ctrl/Cmd` + `9` = Fit to canvas width
+
 ## 4. Tools
+
 The Toolbar contains a set of tools to create shapes, helpers and some others to edit already created objects.
 
 - **Object selection mode**: Allows users to select and manipulate entire objects on the canvas. This mode is essential for positioning, scaling, and rotating objects.
@@ -63,11 +75,13 @@ The Toolbar contains a set of tools to create shapes, helpers and some others to
 - **Global/Local Pivot Toggle**: Switches between global and local pivot points, allowing more precise control over transformations and rotations.
 
 ## 5. Timeline
+
 The Timeline is where animations and keyframes are managed. Users can control timing, easing, curves of every object parameter. All the hierarchy of shapes, layers, groups, helpers, etc. are displayed using the "layer concept", that is, objects on top of the list lay in the canvas on top of other objects that lay below.
 
 There is an option to filter the hierarchy to edit the objects that are listed.
 
 ## 6. Properties
+
 By default the Properties panel displays the attributes of just the selected object, layer, group, etc. 
 
 In the case of selecting a Text object, then a panel with text parameters are shown.
@@ -75,6 +89,7 @@ In the case of selecting a Text object, then a panel with text parameters are sh
 At the bottom of the Properties panel there are a few options to easily align objects in the canvas relative to the canvas itself or other shapes.
 
 ## 7. Assets
+
 The Assets panel manages **linked** files, images, audio, and other resources used in the project. By clicking the secondary mouse button in an asset it is possible to:
 
 - **Reload**: reads the file again from source.
@@ -84,10 +99,13 @@ The Assets panel manages **linked** files, images, audio, and other resources us
 - **Remove**: it completely removes the object from the project.
 
 ## 8. Queue
+
 The Queue section manages rendering tasks and export jobs. Users can monitor the progress of ongoing processes and manage output settings.
 
 ## 9. Fill and Stroke
+
 The Fill and Stroke panel allows users to control the color, gradient, and outline properties of objects. It provides precise control over visual styles.
 
 ## 10. Preferences
+
 The Preferences menu contains settings for customizing scenes, preview resolution and layouts.
