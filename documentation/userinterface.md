@@ -22,19 +22,30 @@ The Timeline can be splitted horizontally or vertically to allow better paramete
 ![Rearrangement buttons](/assets/documentation/ui/ui_timeline-splitting-panel.png)
 
 
-## 1. Menu
+## 1. Main Toolbar
 
-The *"Quick"* Menu provides a fast access to the most used commands related to creating/saving projects and importing and exporting assets into the active project.
+The main toolbar provides fast access to the most used commands related to creating/saving projects and importing and exporting assets into the active project.
 
-## 2. Toolbar
+... expand on the right-click menu ...
 
-It could also be called a *"Color"* toolbar as it provides fast access to edit colors, types (none, flat or gradient) and other parameters of selected shapes or the scene background:
+## 2. Color Toolbar
+
+The color toolbar provides fast access to edit colors, types (none, flat or gradient) and other parameters of selected shapes or the scene background:
 
 - **Fill**: Allows users to set the interior color, gradient or "no color" of selected shapes. Users can choose between solid colors (flat), linear or radial gradients.
 
 - **Stroke**: Controls the outline of shapes, including its color, width, and style. Users can define other parameters such as width, join and cap styles.
 
 - **Background**: Sets the background color of the canvas or scene. This option ensures consistency in visual presentation across the workspace.
+
+Mouse actions on hover is supported:
+
+- `scroll` = change hue
+- `scroll` + `shift` = change value
+- `scroll` + `ctrl/cmd` = change saturation
+- `click` = open fill/stroke widget
+
+... expand on the right-click menu ...
 
 ## 3. Viewer
 
@@ -74,6 +85,8 @@ The Toolbar contains a set of tools to create shapes, helpers and some others to
 
 - **Global/Local Pivot Toggle**: Switches between global and local pivot points, allowing more precise control over transformations and rotations.
 
+... expand on the right-click menu ...
+
 ## 5. Timeline
 
 The Timeline is where animations and keyframes are managed. Users can control timing, easing, curves of every object parameter. All the hierarchy of shapes, layers, groups, helpers, etc. are displayed using the "layer concept", that is, objects on top of the list lay in the canvas on top of other objects that lay below.
@@ -105,6 +118,18 @@ The Queue section manages rendering tasks and export jobs. Users can monitor the
 ## 9. Fill and Stroke
 
 The Fill and Stroke panel allows users to control the color, gradient, and outline properties of objects. It provides precise control over visual styles.
+
+### Fill
+
+...
+
+### Stroke
+
+...
+
+### Gradient(s)
+
+...
 
 ## 10. Preferences
 
