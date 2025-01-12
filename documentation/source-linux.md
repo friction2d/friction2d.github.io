@@ -23,7 +23,7 @@ Generic instructions for building Friction on a Linux system.
     * Qml
     * Xml
 * qscintilla
-* ffmpeg 4.2.10 recommended, [will not build on 7.x+](https://github.com/friction2d/friction/issues/135)
+* ffmpeg 4.2 recommended, [will not build on 7+](https://github.com/friction2d/friction/issues/135)
     * libavformat
     * libavcodec
     * libavutil
@@ -64,8 +64,6 @@ cmake -G Ninja \
 -DCMAKE_C_COMPILER=clang \
 ..
 ```
-
-Enable EGL/wayland support with `-DUSE_EGL=ON`.
 
 Note that on some configurations you will need to specify `qscintilla` paths:
 ```
