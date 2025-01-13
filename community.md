@@ -6,7 +6,15 @@ permalink: community.html
 
 # Join our community!
 
-* [GitHub Discussions](https://github.com/orgs/friction2d/discussions)
-* [GitHub Issues](https://github.com/friction2d/friction/issues)
+Official channels:
 
-See the footer for social media.
+* [Mastodon](https://floss.social/@friction)
+* [Bluesky](https://bsky.app/profile/friction.graphics)
+* [GitHub Discussions](https://github.com/orgs/friction2d/discussions)
+* [GitHub Issue Tracker](https://github.com/friction2d/friction/issues)
+* [Codeberg Issue Tracker](https://codeberg.org/friction/friction/issues)
+
+Community maintained:
+
+* [Reddit](https://www.reddit.com/r/frictiongraphics)
+* [Discord](https://discord.gg/FkjnM2r2JD)
