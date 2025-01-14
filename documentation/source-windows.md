@@ -49,7 +49,7 @@ Open the Visual Studio Build Tools Command Prompt.
 
 cd to the Friction source folder.
 
-```
+```shell
 set SDK_DIR=%cd%\sdk
 set PATH=%ProgramFiles%\CMake\bin;%SDK_DIR%\bin;%PATH%
 

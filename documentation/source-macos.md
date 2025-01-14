@@ -71,7 +71,7 @@ cd build
 
 Configure:
 
-```
+```shell
 cmake -G Ninja \
 -DCMAKE_BUILD_TYPE=Release \
 -DQSCINTILLA_INCLUDE_DIRS=/opt/local/libexec/qt5/include \

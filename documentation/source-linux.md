@@ -60,7 +60,7 @@ git pull && git submodule update -i --recursive
 
 ## Build
 
-```
+```shell
 mkdir build
 cd build
 cmake -G Ninja \
@@ -72,7 +72,8 @@ cmake -G Ninja \
 ```
 
 Note that on some configurations you will need to specify `qscintilla` paths:
-```
+
+```shell
 -DQSCINTILLA_INCLUDE_DIRS=<PATH_TO_QSCINTILLA_INCLUDE_DIR> \
 -DQSCINTILLA_LIBRARIES_DIRS=<PATH_TO_LIBS> \
 -DQSCINTILLA_LIBRARIES=<QSCINTILLA_LIBRARY_NAME> \
