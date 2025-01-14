@@ -10,12 +10,6 @@ permalink: documentation/
 
 Friction is a powerful and versatile motion graphics application that allows you to create vector and raster animations for web and video.
 
-* **Vector and Raster Support:** Friction seamlessly integrates both scalable vector graphics and raster images and video within the animation workflow.
-
-* **Animation Tools:** Friction provides an extensive array of tools for creating dynamic and engaging animations. These tools include keyframing, easing curves, expressions, advanced effects and more.
-
-* **Web and Video Optimization:** Friction is specifically designed to optimize animations for web delivery, ensuring smooth and scalable playback on any platform. Friction also supports various video export formats, making it suitable for video production workflows.
-
 Motion graphics has a wide variety of uses, including:
 
 * **Television and film:** Title sequences, commercials, and visual effects
