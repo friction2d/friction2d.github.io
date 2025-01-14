@@ -65,7 +65,7 @@ Under **Options** it is possible to set:
 
 * **Notify when done**: if checked a popup warns the user that the export has been done.
 
-* **Fixed Size**: 
+* **Fixed Size**: adds `width` and `height` to `viewBox`.
 
 * **Optimize for web**: if available, it lets the user apply some optimization to reduce the `.svg` file size using [SVGO](https://github.com/svg/svgo).
 
@@ -74,7 +74,7 @@ Under **Options** it is possible to set:
 Friction can export projects to the most common video formats such as:
 
 * MP4 (H264)
-* QuickTime (MOV)
+* ProRes (MOV)
 * MPEG-4
 * AVI
 * WebM
@@ -85,7 +85,10 @@ Friction can export projects to the most common video formats such as:
 * Audio IFF
 * and many more thanks to integrated [FFMEG](https://www.ffmpeg.org/)
 
-Note that **GIF** is not included in the list as the following workflow is way better than integrating it into Friction: export as MP4 and then use [GIFTuna](https://giftuna.io/) to export it to GIF.
+Note that **GIF** is not included in the list as other applictions does a much better job.
+
+* Export as MP4 and then use [GIFTuna](https://giftuna.io/) to convert it to GIF
+* Export as PNG image sequence and then use [Gifski](https://github.com/sindresorhus/Gifski) to convert it to a GIF.
 
 ### Render dialog
 
@@ -94,6 +97,7 @@ Note that **GIF** is not included in the list as the following workflow is way b
 Once the **"Add to queue"** button is pressed, the active scene is loaded into the panel. The user can then configure exporting parameters to fine-tune the final output.
 
 ### Scene Properties
+
 This section lets the user to set key details about the scene rendering:
 - Scene Name
 - Frame Range
@@ -101,15 +105,19 @@ This section lets the user to set key details about the scene rendering:
 - FPS (Frames Per Second)
 
 ### Profiles
+
 The **Profiles** button allows users to select or create predefined rendering profiles. These profiles may include common settings such as resolution, codec, and bitrate, saving time when rendering multiple scenes with similar configurations.
 
 ### Format
+
 It lets users choose the export format for the video. Common options include `.mp4`, `.mov`, `.avi`, and others, depending on the supported formats in **Friction**.
 
 ### Destination
+
 It specifies where the rendered video will be saved. Users can browse their file system to select a folder or enter a path manually.
 
 ### Render
+
 Finally, clicking the **"Render"** button will start the rendering process for all queued scenes. During rendering:
 - A progress bar may appear to indicate the status of the rendering process.
 - Users can monitor the estimated time remaining and potential errors.
@@ -120,4 +128,4 @@ If necessary, there is also a **"Cancel"** button available to stop the renderin
 
 Friction can export projects to image sequences (TIFF/PNG/JPEG).
 
-By default there is not an "Image Sequence" profile but it can be easily created by creating a new one and editing the "Format" parameters.
+Use the default profiles for `PNG` or `TIFF`, or make your own profile. Friction uses `%05d` for image sequences, that means it will prefix `00001` etc to the rendered image files.
