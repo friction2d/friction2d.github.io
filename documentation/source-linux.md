@@ -52,6 +52,12 @@ sudo apt install clang cmake python3 ninja-build libfontconfig1-dev libfreetype-
 git clone --recurse-submodules https://github.com/friction2d/friction
 ```
 
+Keep the source updated with:
+
+```
+git pull && git submodule update -i --recursive
+```
+
 ## Build
 
 ```
