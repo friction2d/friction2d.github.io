@@ -85,9 +85,9 @@ Friction can export projects to the most common video formats such as:
 * Audio IFF
 * and many more thanks to integrated [FFMEG](https://www.ffmpeg.org/)
 
-Note that **GIF** is not included in the list as other applictions does a much better job.
+Note that **GIF** is not included in the list as other applications does a much better job.
 
-* Export as MP4 and then use [GIFTuna](https://giftuna.io/) to convert it to GIF
+* Export as MP4 and then use [GIFTuna](https://giftuna.io/) to convert it to a GIF
 * Export as PNG image sequence and then use [Gifski](https://github.com/sindresorhus/Gifski) to convert it to a GIF.
 
 ### Render dialog
