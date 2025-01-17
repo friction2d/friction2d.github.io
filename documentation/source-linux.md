@@ -43,7 +43,7 @@ Generic instructions for building Friction on a Linux system.
 Example for Debian/Ubuntu compatible systems:
 
 ```
-sudo apt install clang cmake python3 ninja-build libfontconfig1-dev libfreetype-dev libavcodec-dev libavformat-dev libavutil-dev libqscintilla2-qt5-dev libqt5opengl5-dev libswresample-dev libswscale-dev libunwind-dev qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev libexpat1-dev libfreetype-dev libjpeg-turbo8-dev libpng-dev libwebp-dev zlib1g-dev libicu-dev libharfbuzz-dev libqt5multimedia5-plugins
+sudo apt install clang cmake python3 ninja-build libfontconfig1-dev libfreetype-dev libavcodec-dev libavformat-dev libavutil-dev libqscintilla2-qt5-dev libqt5opengl5-dev libswresample-dev libswscale-dev libunwind-dev qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev libexpat1-dev libfreetype-dev libjpeg-turbo8-dev libpng-dev libwebp-dev zlib1g-dev libicu-dev libharfbuzz-dev libqt5multimedia5-plugins libgl1-mesa-dev libegl1-mesa-dev libgles2-mesa-dev
 ```
 
 ## Get Source
