@@ -1,3 +1,9 @@
+---
+title: "Animation techniques"
+layout: default
+permalink: documentation/animation_techniques.html
+---
+
 # Animation techniques
 
 ## Loops
