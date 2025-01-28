@@ -19,16 +19,20 @@ Some panels are rearrangable by pressing their left-right-up-down buttons:
 
 The Timeline can be splitted horizontally or vertically to allow better parameter keyframe editing:
 
-![Rearrangement buttons](/assets/documentation/ui/ui_timeline-splitting-panel.png)
+![Splitting buttons](/assets/documentation/ui/ui_timeline-splitting-panel.png)
 
 
 ## 1. Main Toolbar
+
+![Main Toolbar](/assets/documentation/ui/ui_panel1.png)
 
 The main toolbar provides fast access to the most used commands related to creating/saving projects and importing and exporting assets into the active project.
 
 ... expand on the right-click menu ...
 
 ## 2. Color Toolbar
+
+![Color Toolbar](/assets/documentation/ui/ui_panel2.png)
 
 The color toolbar provides fast access to edit colors, types (none, flat or gradient) and other parameters of selected shapes or the scene background:
 
@@ -49,6 +53,8 @@ Mouse actions on hover is supported:
 
 ## 3. Viewer
 
+![Viewer](/assets/documentation/ui/ui_panel3.png)
+
 The Viewer is the central workspace where users can visualize and interact with their projects, it can also be called **Canvas**. It displays the active composition or animation and allows for real-time previews and adjustments.
 
 The Canvas can be zoomed in and out or fitted in some ways or even reset to default size. Check `Menu > View > Zoom` for a full list of options.
@@ -62,6 +68,8 @@ On Windows and Linux the mouse wheel can zoom in/out, on macOS add the `option` 
 - `Ctrl/Cmd` + `9` = Fit to canvas width
 
 ## 4. Tools
+
+![Tools](/assets/documentation/ui/ui_panel4.png)
 
 The Toolbar contains a set of tools to create shapes, helpers and some others to edit already created objects.
 
@@ -89,11 +97,15 @@ The Toolbar contains a set of tools to create shapes, helpers and some others to
 
 ## 5. Timeline
 
+![Timeline](/assets/documentation/ui/ui_panel5.png)
+
 The Timeline is where animations and keyframes are managed. Users can control timing, easing, curves of every object parameter. All the hierarchy of shapes, layers, groups, helpers, etc. are displayed using the "layer concept", that is, objects on top of the list lay in the canvas on top of other objects that lay below.
 
 There is an option to filter the hierarchy to edit the objects that are listed.
 
 ## 6. Properties
+
+![Properties](/assets/documentation/ui/ui_panel6.png)
 
 By default the Properties panel displays the attributes of just the selected object, layer, group, etc. 
 
@@ -102,6 +114,8 @@ In the case of selecting a Text object, then a panel with text parameters are sh
 At the bottom of the Properties panel there are a few options to easily align objects in the canvas relative to the canvas itself or other shapes.
 
 ## 7. Assets
+
+![Assets](/assets/documentation/ui/ui_panel7.png)
 
 The Assets panel manages **linked** files, images, audio, and other resources used in the project. By clicking the secondary mouse button in an asset it is possible to:
 
@@ -113,24 +127,33 @@ The Assets panel manages **linked** files, images, audio, and other resources us
 
 ## 8. Queue
 
+![Queue](/assets/documentation/ui/ui_panel8.png)
+
 The Queue section manages rendering tasks and export jobs. Users can monitor the progress of ongoing processes and manage output settings.
 
 ## 9. Fill and Stroke
 
-The Fill and Stroke panel allows users to control the color, gradient, and outline properties of objects. It provides precise control over visual styles.
+![Fill and Stroke](/assets/documentation/ui/ui_panel9.png)
 
-### Fill
+The Fill and Stroke panel allows users to control the color, gradient, and outline (stroke) properties of objects. It provides precise control over visual styles.
 
-...
+Every shape has 2 parts:
+* **Fill**: the area contained in the drawn shape
+* **Stroke**: the outline drawn along the shape
 
-### Stroke
+![Fill and Stroke](/assets/documentation/ui/ui_fill-stroke.png)
 
-...
+Fills and Strokes have 3 options to be drawn:
+* **None**: the element disables or turns invisible
+* **Flat**: the element is colored with a flat or constant color
+* **None**: the element is colored using a gradient which is a transition of 2 or more colors. It can be linear or radial.
 
-### Gradient(s)
+![Fill and Stroke](/assets/documentation/ui/ui_none-flat-gradients.png)
 
-...
+In the previous image the `fill` changes from left to right: none, flat, linear gradient and radial gradient.
 
 ## 10. Preferences
+
+![Preferences](/assets/documentation/ui/ui_panel10.png)
 
 The Preferences menu contains settings for customizing scenes, preview resolution and layouts.
