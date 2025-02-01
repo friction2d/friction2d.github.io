@@ -99,6 +99,14 @@ The Linux port got several new enchancements (future-proofing) in this version.
 We upgraded to Qt 5.15.16 and latest KDE patches for this version.
 
 
+## Documentation
+
+Work has begun on basic documentation, should be done before final v1.0.0 release.
+
+See https://friction.graphics/documentation for work-in-progress.
+
+
+
 ---
 
 * See Beta 2 [release notes](https://friction.graphics/releases/friction-100-beta2.html) for more information regarding changes in v1.0.
