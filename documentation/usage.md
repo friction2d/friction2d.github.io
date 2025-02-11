@@ -67,9 +67,21 @@ In **`View > Zoom`** there are additional ways of navigating the canvas such as 
 
 ## 2. Creating assets
 
-Creating
+It's possible to create basic shapes using Friction **[Tools panel](userinterface.html#4-tools)**. If it's the first time try creating a rectangle (`shift` + drag to create a square) or an ellipse (`shift` + drag to create a circle) by clicking and dragging the mouse pointer while in the canvas. Release to finish the creation of the shape.
 
-modifying colors/parameters
+These shapes are vector graphics so they can be edited afterwards so change to the `Object selection tool` and then select the shape. Now:
+
+- in the **[Properties panel](userinterface.html#6-properties)**: and expanding the item it is possible to browse and change all the parameters that define the shape.
+- in the **[Fill and Stroke panel](userinterface.html#9-fill-and-stroke)**: it is possible to edit the fill type, color and some parameters related with the Fill and Stroke of the shape.
+- in the **[Timeline panel](userinterface.html#5-timeline)**: it is possible to browse and change all the parameters that define the shape in a similar way than in the **[Properties panel](userinterface.html#6-properties)** but here with the timeline to the right so that those parameters can be animated in time and more.
+
+For instance, go to the **[Properties panel](userinterface.html#6-properties)** expand the shape to `Shape > transform > tran   slation > x` and change the values so that the shape moves near the right side of the canvas.
+
+![Change parameter value](/assets/documentation/usage/usage_edit_parameter.png)
+
+Now, go to the **[Fill and Stroke panel](userinterface.html#9-fill-and-stroke)** and under `Fill` change the type from `none` to `fill` and move the color channel sliders to select a nice color.
+
+![Change color value](/assets/documentation/usage/usage_edit_color.png)
 
 ## 3. Importing and linking
 
