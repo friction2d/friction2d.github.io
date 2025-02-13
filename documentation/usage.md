@@ -131,7 +131,7 @@ In this panel, it is possible to `copy`, `paste` and even `duplicate` keyframes 
 
 ### Graph view
 
-The interpolation between keyframes is linear by default, but this can be changed with the `Graph view` as it adds the possibility to edit the "speed" and evolution of the value animation from one keyframe to the other in a graphical way.
+The interpolation between keyframes **is linear by default**, but this can be changed with the `Graph view` as it adds the possibility to edit the "speed" and evolution of the value animation from one keyframe to the other in a graphical way.
 
 In order to activate it, it is needed to select at least one parameter (if more than one just add more to the selection using the `Shift` modifier, a color between the "activate animation" button and the parameter label will show the color of the graph curves) in the **[Timeline](userinterface.html#5-timeline)** panel (it doesn't work in the Properties panel as there is no timeline in that panel) and press the `Graph view` icon:
 
@@ -146,13 +146,13 @@ It possible to select the keyframes (or nodes now as the curves are **Bezier cur
 ![Graph view button](/assets/documentation/usage/usage_graph_view_3.png)
 
 From left to right:
-- Easing modes: some presets to easily animate the movement between two keyframes.
-- line segment: default "curve" between keyframes.
-- curved segment: make the nodes (or keyframes) handles appear
-- symmetric handles: make left and right handles symmetric
-- smooth node: turn from corner to smooth handles, in this mode left and right node handles share the same tangency angle.
-- corner nodes: turn from smooth to corner handles, in this mode left and right node handles have independent tangency angles.
-- vertical fit view: fits all the keyframes (or nodes) in the view
+- **Easing modes**: some presets to easily animate the movement between two keyframes.
+- **line segment**: default "curve" between keyframes.
+- **curved segment**: make the nodes (or keyframes) handles appear
+- **symmetric handles**: make left and right handles symmetric
+- **smooth node**: turn from corner to smooth handles, in this mode left and right node handles share the same tangency angle.
+- **corner nodes**: turn from smooth to corner handles, in this mode left and right node handles have independent tangency angles.
+- **vertical fit view**: fits all the keyframes (or nodes) in the view
 
 Example of keyframes with smooth handles:
 
