@@ -168,23 +168,51 @@ There are some ways to preview the scene animation within Friction:
 - **in editor Preview**: if `View > Preview Cache` menu checkbox is disabled, then the animation will be played without caching it, that is faster to play but it may be not in realtime as it will be dependent of your hardware (in case your computer is not capable of rendering all the frames at the scene FPS) so, it is possible that this preview is not played at realtime. The benefit of this mode is that selected objects will show their bounding boxes, pivots points, etc. and that may be interesting for the animator to check how the animation is performed.
 - **SVG Preview**: in case the animation is designed inside all the features of SVG animation, it is possible to run the `Preview SVG` button in the **[Main toolbar](userinterface.html#1-main-toolbar)** and preview it in the default SVG player of the computer (probably an Internet browser).
 
-## 6. Effects, shaders, ...
+## 6. Saving the project
 
 ## 7. Export
 SVG
 or rendering
 More in depth: [Export chapter](export.html)
 
-## 8. Saving the project
+## 8. Advanced
 
-## 9. Advanced
+### Effects and shaders
 
-### tools
-### alignment
-### layouts
+Using the previously commented features will let animators create pretty rich and complex animations but with the following features the animation process can be simplified in some cases and/or it will be possible to create new animations that could not be done with "traditional" animation. As considered as medium to advanced features, they are hidden by default, the way to show them all or one by one is by opening the contextual menu with the secondary mouse button and activating the needed ones. Once activated, new sections will appear in the object hierarchy, and listed in the natural place:
 
-## 10. Other learning resources
+![Effects hierarchy](/assets/documentation/usage/usage_effects.png)
 
-- tutorials
-- video tutorials
-- other
+Following the previous picture, from top to bottom:
+
+- **Custom Properties**: ...
+- **Blend effects**: ...
+- **interactive SVG Properties**: ...
+- **Transform effects**: ...
+- **Path base effects**: ...
+- **Fill effects**: ...
+- **Outline base effects**: ...
+- **Outline effects**: ...
+
+More on this subject in separate sections called **[Effects](effects.html)** and **[Shaders](shaders.html)**.
+
+### Tools
+...
+
+### Alignment
+...
+
+### Layouts
+...
+
+
+## 9. Other learning resources
+
+### Tutorials
+...
+
+### Video tutorials
+...
+
+### Other
+...
