@@ -85,8 +85,20 @@ Now, go to the **[Fill and Stroke panel](userinterface.html#9-fill-and-stroke)**
 
 ## 3. Importing and linking
 
-import
-link
+As commented previously, Friction is not a vector graphics design software but an animation one so is highly suggested that assets are created externally.
+
+There are two ways of importing assets:
+
+- **Import**: if the asset is `SVG` when using this option the shapes will be imported inside the project. It will be able to modify colors, shapes, etc. within Friction.
+
+- **Link**: if the asset is a bitmap graphics one (`JPEG`, `PNG`,...) or even `SVG` vector, if using this option, they will be linked or externally referenced. A transform parameter will be added but the assets won't be able to be edited within Friction. The great advantage of using this method is that they can be modified externally and the results will be automatically updated in Friction.
+Each linked asset will be registered in the **[Assets Panel](userinterface.html#7-assets)** and from there it will be able to `reload`, `replace` or `remove` the asset.
+
+Both options can be found in the **[Main toolbar](userinterface.html#1-main-toolbar)** or under `File` menu.
+
+Bitmap graphics will always be **linked**, even if they are added with the **Import** option as there are no tools for editing pixel base images within Friction.
+
+Assets can be added by "drag & drop" from any file explorer to Friction canvas and they will be imported if possible (`SVG`) and linked if not (`JPEG`, `PNG`,...)
 
 ## 4. Basic animation
 
@@ -99,6 +111,8 @@ graph view
 Inside Friction
 
 cache...
+
+non cache...
 
 ## 6. Effects, shaders, ...
 
