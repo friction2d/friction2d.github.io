@@ -102,9 +102,61 @@ Assets can be added by "drag & drop" from any file explorer to Friction canvas a
 
 ## 4. Basic animation
 
-keyframes
+### Keyframes
 
-graph view
+Any object, shape or in general, any parameter of them could be animated using the [keyframes technique](https://en.wikipedia.org/wiki/Key_frame). There is no need to animate each frame but the important positions or values they will take over time, **frames in the middle will be interpolated automatically**.
+
+For instance, select a shape, object, image, etc. already in the canvas, expand it properties to see `Object > Transform > Translate > x`. If the value is changed the position of all the frames of the scene will be updated unless the "animate value" button is activated:
+
+![Animate value button](/assets/documentation/usage/usage_animate_value.png)
+
+Once pressed the "dot icon" will turn from white to red color which means that value is animated. An alternative way of activating it is by selecting the parameter, opening the contextual menu with the secondary mouse button and selection the `Add Key(s)` option.
+At the same moment the animation is activated, a keyframe icon (circle) will appear at the timeline right at the frame the `time line` is placed.
+
+Following the example, if a keyframe for `Object > Transform > Translate > x` parameter is created at, for instance "frame 0", then move the time line to another frame, for instance "frame 30", and there change the value of the parameter, it can be done in different ways:
+- changing the parameter value with the numerical field
+- moving the object to a different place in the canvas, that is, a place in the canvas with different `x` value.
+- if the time line is in a frame with no keyframe but the user wants to add a keyframe with the same value that is taking in that exact frame, open the contextual menu with the secondary mouse button and selection the `Add Key(s)` option
+- finally, the user can use the `Insert` keyboard button
+
+Individual keyframes can be removed by pressing `Delete` or using the contextual menu.
+
+If the  user wants to completely delete all the keyframes of the parameter, just press the red icon again and it will turn back to white meaning the parameter is no longer animated and it will take a single value along time. Note that the value it will "choose" to have will be the one taking and the frame where the time line is placed at the time the red button is pressed.
+
+### Timeline
+
+The **[Timeline](userinterface.html#5-timeline)** panel will be so helpful to see where the keyframes are placed along time and easy to remap their position in time as it is possible to click and drag them and move them to another time.
+
+In this panel, it is possible to `copy`, `paste` and even `duplicate` keyframes to new frames just by placing the time line in the desired frame and running the command.
+
+### Graph view
+
+The interpolation between keyframes is linear by default, but this can be changed with the `Graph view` as it adds the possibility to edit the "speed" and evolution of the value animation from one keyframe to the other in a graphical way.
+
+In order to activate it, it is needed to select at least one parameter (if more than one just add more to the selection using the `Shift` modifier, a color between the "activate animation" button and the parameter label will show the color of the graph curves) in the **[Timeline](userinterface.html#5-timeline)** panel (it doesn't work in the Properties panel as there is no timeline in that panel) and press the `Graph view` icon:
+
+![Graph view button](/assets/documentation/usage/usage_graph_view_1.png)
+
+Once the Graph view is activated this is what it would look like:
+
+![Graph view button](/assets/documentation/usage/usage_graph_view_2.png)
+
+It possible to select the keyframes (or nodes now as the curves are **Bezier curves**), turn on their tangent handles and some more by using the following buttons placed on the right-bottom of the graph view:
+
+![Graph view button](/assets/documentation/usage/usage_graph_view_3.png)
+
+From left to right:
+- Easing modes: some presets to easily animate the movement between two keyframes.
+- line segment: default "curve" between keyframes.
+- curved segment: make the nodes (or keyframes) handles appear
+- symmetric handles: make left and right handles symmetric
+- smooth node: turn from corner to smooth handles, in this mode left and right node handles share the same tangency angle.
+- corner nodes: turn from smooth to corner handles, in this mode left and right node handles have independent tangency angles.
+- vertical fit view: fits all the keyframes (or nodes) in the view
+
+Example of keyframes with smooth handles:
+
+![Graph view button](/assets/documentation/usage/usage_graph_view_4.png)
 
 ## 5. Preview
 
