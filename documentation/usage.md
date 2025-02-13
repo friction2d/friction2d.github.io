@@ -160,11 +160,13 @@ Example of keyframes with smooth handles:
 
 ## 5. Preview
 
-Inside Friction
+![Play button](/assets/documentation/usage/usage_preview_play.png)
 
-cache...
-
-non cache...
+There are some ways to preview the scene animation within Friction:
+- **Manual scrubbing** the "time line" by dragging it left or right, this is not really a "mode" but it is very commonly done by animators.
+- **Preview Cache**: playing the animation pressing the "Play" button on top of the time line. By default this preview will be rendered into a temporal cache and then played at realtime.
+- **in editor Preview**: if `View > Preview Cache` menu checkbox is disabled, then the animation will be played without caching it, that is faster to play but it may be not in realtime as it will be dependent of your hardware (in case your computer is not capable of rendering all the frames at the scene FPS) so, it is possible that this preview is not played at realtime. The benefit of this mode is that selected objects will show their bounding boxes, pivots points, etc. and that may be interesting for the animator to check how the animation is performed.
+- **SVG Preview**: in case the animation is designed inside all the features of SVG animation, it is possible to run the `Preview SVG` button in the **[Main toolbar](userinterface.html#1-main-toolbar)** and preview it in the default SVG player of the computer (probably an Internet browser).
 
 ## 6. Effects, shaders, ...
 
