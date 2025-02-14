@@ -200,14 +200,27 @@ Following the previous picture, from top to bottom:
 More on this subject in separate sections called **[Effects](effects.html)** and **[Shaders](shaders.html)**.
 
 ### Tools
-...
+- **Null objects**: Adds an invisible reference object that can be used to group or control other elements by applying `Transform Effects` in the composition.
 
 ### Alignment
-...
+
+In the **[Properties panel](userinterface.html#6-properties)** there is a group of dropdown and buttons that allow users to align one or several objects to the chosen reference.
+
+![Alignment tools](/assets/documentation/usage/usage_alignment_panel.png)
+
+The options allow aligning `Geometry`, `Geometry by its pivot` and just the `Pivot` and keeping the geometry in place.
+
+The destination of the alignment is called "reference" and can be `Scene`, `Bounding box`, `Last selected` object or `Last selected pivot` which references to the last selected object pivot.
+
+The buttons let users apply the alignment to just a side `Left`, `Horizontal center`, `Right`, `Top`, `Vertical center` and `Bottom`.
 
 ### Layouts
-...
 
+![Layouts](/assets/documentation/usage/usage_layout.png)
+
+This feature lets users create and save different `Canvas` and/or `Timeline`divisions under a name and switch from one to another. It doesn't save panels position or visibility state (shown or hidden) but the size, number and scene applied to the `Canvas` and `Timeline` divisions:
+
+![Division splitter](/assets/documentation/ui/ui_timeline-splitting-panel.png)
 
 ## 9. Other learning resources
 
