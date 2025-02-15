@@ -60,6 +60,7 @@ The align tool got some new options in this version.
 ### Expressions
 
 Several changes to the expression engine was introduced in this version. We got scene bindings and support for external JS functions/add-ons.
+Expression Presets have been added to speed up workflows. It allows to load, save, rename, import and export presets which bundling the code written in Bindings, Scripts (Calculate) and Definitions.
 
 * Editor: removed easing tab
 * UI/Font fixes in editor
@@ -72,6 +73,17 @@ Several changes to the expression engine was introduced in this version. We got 
   * `$scene.rangeMin`
   * `$scene.rangeMax`
 * Fixed crash on apply expression/export to SVG when using `$value` and `$frame`.
+* Editor: Added Presets
+* Editor: Added example Presets
+  * Clamp
+  * Wave
+  * Copy x
+  * Copy y
+  * Wiggle
+
+### Non cached Preview
+
+A new way of previewing scene animations have been added. instead of rendering into cache it just plays the canvas view, that's it, showing gizmos, selections, pivots, etc.
 
 ### macOS
 
@@ -97,7 +109,6 @@ The Linux port got several new enchancements (future-proofing) in this version.
 ### SDK
 
 We upgraded to Qt 5.15.16 and latest KDE patches for this version.
-
 
 ## Documentation
 
