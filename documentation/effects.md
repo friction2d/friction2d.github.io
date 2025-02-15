@@ -15,13 +15,19 @@ To apply them it is needed to open  the contextual menu (secondary mouse button)
 
 ## Raster Effects
 
-Raster effects are applicable to shapes and images and the effect applied is rendered as bitmap, that is pixel based or raster.
+Raster effects are applicable to shapes and images and the effect applied or rendered as bitmap, that is, pixel based or raster.
 
 Friction comes with the following effects installed:
 
 ![Raster Effects](/assets/documentation/effects/effects_01.png)
 
 Users can **install their own shaders** or start by installing [this bundle](https://github.com/friction2d/friction-shader-plugins) with lots of them. The installation that can be checked in `Preferences > Shaders` or changed to any custom one. More information about custom shaders can be found under **[Shaders](shaders.html)** section.
+
+Next to an applied raster effect label, there is an icon that lets users choose who renders it if the `CPU` or the `GPU`:
+
+![Rendered by CPU or GPU](/assets/documentation/effects/effects_cg.png)
+
+In `Preferences > Hardware > Raster Effects` it is possible to set the default rendering one.
 
 ## Path Effects
 
