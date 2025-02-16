@@ -18,13 +18,15 @@ Sure it can create some basic vector based shapes such as rectangles, squares, e
 Some suggested tools for designing assets could be the following:
 
 - **Vector graphics design**
-    - **Inkscape** (open source): [https://inkscape.org/](https://inkscape.org/)
-    - any proprietary, paid or free software capable of exporting to SVG vector graphics file.
+    - **[Inkscape]((https://inkscape.org/))**
+    - **[Affinity Designer](https://affinity.serif.com/en-us/designer/)**
+    - any software capable of exporting to SVG vector graphics file.
 
 - **Bitmap graphic design**
-    - **Krita** (open source): [https://krita.org/](https://krita.org/)
-    - **Gimp** (open source): [https://www.gimp.org/](https://www.gimp.org/)
-    - any proprietary, paid or free software capable of exporting to JPEG or PNG image file.
+    - **[Krita]((https://krita.org/))**
+    - **[Gimp]((https://www.gimp.org/))**
+    - **[Affinity Photo](https://affinity.serif.com/en-us/photo/)**
+    - any software capable of exporting to JPEG, PNG or WEBP image files.
 
 ## 1. Project and first scene creation
 
@@ -63,6 +65,8 @@ As in other 2D graphical software the canvas can be navigated with two types of 
 
 - **Zoom**: use the mouse wheel or using two fingers on your trackpad "pinch in" to zoom in or "pinch out" to zoom out.
 
+**Note:** Gestures are only supported on macOS at the moment.
+
 In **`View > Zoom`** there are additional ways of navigating the canvas such as `Fit to canvas` or `Reset Zoom` and them all can also be triggered using [Keyboard Shortcuts](shortcuts.html).
 
 ## 2. Creating assets
@@ -75,7 +79,7 @@ These shapes are vector graphics so they can be edited afterwards so change to t
 - in the **[Fill and Stroke panel](userinterface.html#9-fill-and-stroke)**: it is possible to edit the fill type, color and some parameters related with the Fill and Stroke of the shape.
 - in the **[Timeline panel](userinterface.html#5-timeline)**: it is possible to browse and change all the parameters that define the shape in a similar way than in the **[Properties panel](userinterface.html#6-properties)** but here with the timeline to the right so that those parameters can be animated in time and more.
 
-For instance, go to the **[Properties panel](userinterface.html#6-properties)** expand the shape to `Shape > transform > tran   slation > x` and change the values so that the shape moves near the right side of the canvas.
+For instance, go to the **[Properties panel](userinterface.html#6-properties)** expand the shape to `Shape > transform > translation > x` and change the values so that the shape moves near the right side of the canvas.
 
 ![Change parameter value](/assets/documentation/usage/usage_edit_parameter.png)
 
