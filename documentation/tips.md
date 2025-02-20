@@ -87,10 +87,13 @@ Keyframes can be also duplicated when working in the Timeline, select a keyframe
 – `Shift + D` duplicate and move frame
 – `Ctrl + D` copy and paste in actual frame
 
-## Blend modes
+## Layer blending modes
+
+*(Not to be confused with `Blend Effects` explained **[here](animation_tecniques.hmtl#blend-modes)**)*
 
 ![Timeline navigation](/assets/documentation/usage/usage_12.png)
-Each object can be drawn on its parent **layer** using different compositing modes. You can select the composition mode in the combo box next to the object name.
+
+Objects, shapes and layers can blend with others (not groups, so don't forget to promote a group into a layer if blending is desired). Each object can be drawn on its parent **layer** using different compositing modes. You can select the composition mode in the combo box next to the object name.
 
 **Remember that objects are drawn on their first source layer, which means that layer groups do not influence the way objects are drawn**
 
@@ -139,3 +142,31 @@ Some tools may need the user to select two nodes to work as it will affect the "
 It is possible to preview more than one parameter at the time by pressing `shift` in the keyboard and clicking the desired parameter with the left mouse button.
 
 ![Timeline navigation](/assets/documentation/usage/usage_22.png)
+
+## Copy node information
+Moving a node of an object while holding `shift` to another node of another object **copies** its exact location and the angle and length of both handles.
+
+![Copy node information](/assets/documentation/tips/tips_copying_nodes.svg)
+
+Check the following video for more information:
+**[Copy node information](https://www.youtube.com/watch?v=4Yg6RtBcjso)**
+*(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
+
+
+## Dynamic path operations
+
+It is possible to create dynamic booleans operations with some paths inside an unique shape.
+
+![Dynamic path operations](/assets/documentation/tips/tips_dynamic_paths.png)
+
+Check the following video for more information:
+**[Dynamic path operations](https://www.youtube.com/watch?v=cuJ_LM1twms&t=5s)**
+*(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
+
+## Dissolve nodes
+
+When animating the nodes of a shape, if you delete some nodes, it will interpolate the nodes from the keyframe with more nodes to the others with less or to the contrary.
+
+Check the following video for more information:
+**[Dissolve nodes](https://www.youtube.com/watch?v=TyeN1OXodcU&list=PLb3wVIJ8v7fGVzg1hon2aH5xgMLBll8-l&index=3)**
+*(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
