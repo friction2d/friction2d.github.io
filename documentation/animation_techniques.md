@@ -25,7 +25,7 @@ It is possible to create **infinite loops** by mixing some Friction features:
 ```return frame%30```
 where "30" is just an example as it is the length of the loop, that is, if your loop is within frame number 0 and frame number 30 then set that number in **Calculate** field.
 
-## Trim path (subpath)
+## Reveal (Trim path or sub-path)
 It is a technique used to animate the "draw a path", that is, the stroke reveals or gets drawn. It works with open or closed paths but they **must be paths**, it doesn't work with circle or rectangle objects; in that case, please, convert them to paths with `Path > Object to path`.
 
 Select the path in the **Canvas**, **Properties panel** or **Timeline hierarchy**, click with the secondary button to open the contextual menu and select `Path Effects > Sub-Path`. Expand it's parameters and play with them.
@@ -49,32 +49,59 @@ So, apart from the object it will be needed to draw a vector path where the obje
 ![Playing with offset](/assets/documentation/animation_techniques/anim_techniques_follow-path.svg)
 
 ## Masking
-...
+
+It’s a very used technique to fade or control the opacity of an object based on another. This way, the masking object can have any shape and even grey scale gradient to have extra control on the masking.
 
 ![Playing with offset](/assets/documentation/animation_techniques/anim_techniques_mask.svg)
 
-## Copy node
-Moving a node of an object while holding `shift` to another node of another object **copies** it exact location and the angle and length of both handles.
+If **Friction** it works as follows:
+1. The objects, shapes, etc. to be masked are going to lay at the bottom.
+2. On top of them all and at the same level, the masking shape. Its color must be pure white.
+3. Group them all
+4. Now promote the group into a layer
+5. Finally, set the blending mode of the masking object to `DstIn`
+So the hierarchy would have to look like the following:
 
-## Dynamic path operations
-<!-- https://www.youtube.com/watch?v=cuJ_LM1twms&t=5s -->
-...
+![Hierarchy example](/assets/documentation/animation_techniques/anim_techniques_mask_layers.png)
 
-## Disolve nodes
-<!-- https://www.youtube.com/watch?v=TyeN1OXodcU&list=PLb3wVIJ8v7fGVzg1hon2aH5xgMLBll8-l&index=3 -->
-When animating the nodes of a shape, you delete some nodes, it will interpolate the nodes from the keyframe with more nodes to the others with less
+In the case of masking for an **animated SVG**, it is possible to use shades of grey in the masking object. White will be considered opaque, black will be transparent and shades of grey a transparency ramp.
 
 ## Blend modes
-<!-- https://www.youtube.com/watch?v=xvDTJrKWmiE&list=PLb3wVIJ8v7fEx7qs_1lVBu2fsnaz31Iof&index=7 -->
-...
+
+Please, don't confuse them with "Layer blending modes" as the name could be similar but the feature is totally different: **Friction** includes a smart way of handling **layer stacking** that simplifies the animation of objects that "change" their layer position with time. It is something that could be done with simpler animation techniques but `Blend modes` really simplifies it.
+
+Check the following video for more information: 
+**[Blend modes](https://www.youtube.com/watch?v=xvDTJrKWmiE&list=PLb3wVIJ8v7fEx7qs_1lVBu2fsnaz31Iof&index=7)**
+*(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
 
 ## Expression based transformations
-...
 
-### Rotation around circle
-...
+This technique allow users to create dynamic animations by using code (scripts) to control object properties. Instead of relying on manual keyframes, the user can use expressions to automate behaviors, connect parameters, and add randomness or complexity. There is a whole section about **[Expressions](expressions.html)**.
 
-### Looking at
-...
+## Orbit
+
+With a smart use of **[Expressions](expressions.html)** and Custom Properties, it is possible to archive circular movements with just `x` and `y` translations. It may be useful in several scenarios.
+
+Check the following video for more information: 
+**[Orbit and custom properties](https://www.youtube.com/watch?v=-m-LoWDy8BE)**
+*(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
+
+## Parenting
+
+**Friction** lacks of and advanced rigging system (bones) but there is a `Transform Effect` called `Parent Effect` that helps in this regard. Additionally, using **[Expressions](expressions.html)** with simple `Clamp` functions that limit the movements, makes parenting even more capable.
+
+## Tracking
+
+There is a `Transform Effect` called `Track Effect` that makes an object "look at a target", that is, if the target object moves along the canvas, the rotation of the object with the `Track effect` will animate to follow that target.
+
+In some scenarios the target is no a visible object, in those cases it is a good idea to use a `Null object`, they can be created selecting the `Null object tool` at the **[Tools panel](userinterface.html#4-tools)**.
+
+![Tracking example](/assets/documentation/animation_techniques/anim_techniques_tracking.svg)
 
 ## Text effects
+
+Text can be animated per character and in so many other ways.
+
+Check the following video for more information:
+**[Text effects](https://www.youtube.com/watch?v=pOzta1KkXB0)**
+*(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
