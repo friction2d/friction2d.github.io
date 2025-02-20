@@ -8,7 +8,7 @@ permalink: documentation/
 
 ![Default interface](/assets/screenshots/100/friction-100b2-screenshot.png)
 
-Friction is a powerful and versatile motion graphics application that allows you to create vector and raster animations for web and video.
+**Friction** is a powerful and versatile motion graphics application that allows you to create vector and raster animations for web and video.
 
 Motion graphics has a wide variety of uses, including:
 
@@ -17,7 +17,7 @@ Motion graphics has a wide variety of uses, including:
 * **Social media:** Animated posts and stories
 * **Presentations:** Animated infographics and slideshows
 
-## Resources *(DRAFT!)*
+## Resources
 
 * [User Interface](userinterface.html)
 * [Usage basics](usage.html)
@@ -31,6 +31,6 @@ Motion graphics has a wide variety of uses, including:
 
 ## Developers
 
-* [Build on Linux](source-linux.html)
-* [Build on Windows](source-windows.html)
-* [Build on macOS](source-macos.html)
+* [How to build on Linux](source-linux.html)
+* [How to build on Windows](source-windows.html)
+* [How to build on macOS](source-macos.html)
