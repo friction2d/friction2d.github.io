@@ -6,6 +6,9 @@ permalink: documentation/expressions.html
 
 # Expressions
 
+* table of contents
+{:toc}
+
 ![Expressions screenshot](/assets/documentation/expressions/expressions_screenshot.png)
 
 Expressions in **Friction** allow users to create dynamic animations by using code to control object properties. Instead of relying on manual keyframes, the user can use expressions to automate behaviors, connect parameters, and add randomness or complexity.

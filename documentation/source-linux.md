@@ -6,6 +6,9 @@ permalink: documentation/source-linux.html
 
 # Build on Linux
 
+* table of contents
+{:toc}
+
 Generic instructions for building Friction on a Linux system.
 
 ## Requirements

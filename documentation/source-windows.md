@@ -6,6 +6,9 @@ permalink: documentation/source-windows.html
 
 # Build on Windows
 
+* table of contents
+{:toc}
+
 Instructions for building Friction on Windows 10/11.
 
 ## Requirements

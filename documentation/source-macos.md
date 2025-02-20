@@ -6,6 +6,9 @@ permalink: documentation/source-macos.html
 
 # Build on macOS
 
+* table of contents
+{:toc}
+
 Generic instructions for building Friction on macOS.
 
 macOS Monterey (12) or newer recommended, will also build on macOS 10.15 and 11.
