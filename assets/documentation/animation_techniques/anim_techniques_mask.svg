@@ -1,0 +1,214 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Friction - https://friction.graphics -->
+
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(984.108 560.058)">
+  <g transform="translate(0 0)">
+   <g transform="rotate(0)">
+    <g transform="scale(1 1)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(-984.108 -560.058)" opacity="1">
+       <g id="Layer" mask="url(#maskMask)">
+        <g transform="translate(24 22.5)">
+         <g transform="translate(936 517.5)">
+          <g transform="rotate(0)">
+           <g transform="scale(20 20)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-24 -22.5)" opacity="1">
+              <g id="frictionlogo">
+               <g transform="translate(24 22.5)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-24 -22.5)" opacity="1">
+                     <rect x="3" height="42" id="rect2653" stroke-linejoin="miter" stroke-width="1" stroke-linecap="butt" width="42" y="1.5" stroke="none" rx="6" ry="6" fill="rgba(46, 52, 54, 1)"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(24 22.5)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-24 -22.5)" opacity="1">
+                     <path id="path2659" stroke-linejoin="miter" d="M9 2.5938C6.2609 2.5938 4.0938 4.7609 4.0938 7.5L4.0938 37.5C4.0938 40.2391 6.2609 42.4062 9 42.4062L39 42.4062C41.7391 42.4062 43.9062 40.2391 43.9062 37.5L43.9062 7.5C43.9062 4.7609 41.7392 2.5938 39.0002 2.5938L9.0002 2.5938L9 2.5938Z" stroke-width="1" stroke-linecap="butt" stroke="none" fill-rule="evenodd" fill="rgba(85, 87, 83, 1)"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(9.77055 14.0762)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-9.77055 -14.0762)" opacity="1">
+                     <path id="rect3256" stroke-linejoin="miter" d="M9 2.5938C8.75374 2.5938 8.5171 2.62243 8.28125 2.6563L4.09375 11.4688L4.09375 25.8438L15.1558 2.5938L8.99955 2.5938L9 2.5938Z" stroke-width="1" stroke-linecap="butt" stroke="none" fill-rule="evenodd" fill="rgba(46, 52, 54, 1)"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(38.057 30.58)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-38.057 -30.58)" opacity="1">
+                     <path id="rect3258" stroke-linejoin="miter" d="M43.906 18.469L32.5 42.406L39 42.406C39.1286 42.406 39.2491 42.3841 39.375 42.3747L43.9062 32.8435L43.9062 18.4685L43.906 18.469Z" stroke-width="1" stroke-linecap="butt" stroke="none" fill-rule="evenodd" fill="rgba(46, 52, 54, 1)"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(20.1923 30.4618)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-20.1923 -30.4618)" opacity="1">
+                     <path id="rect3260" stroke-linejoin="miter" d="M9.25 18.469L4.0938 29.313L4.0938 37.5005C4.0938 40.2396 6.2609 42.4067 9 42.4067L30.812 42.4067L36.1245 31.2187L9.2495 18.4687L9.25 18.469Z" stroke-width="1" stroke-linecap="butt" stroke="none" fill-rule="evenodd" fill="url(#0x00007fb3acccc450)"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(38.8053 32.0653)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-38.8053 -32.0653)" opacity="1">
+                     <path id="rect3265" stroke-linejoin="miter" d="M43.906 21.438L43.3435 22.6255L43.906 22.8755L43.906 21.438ZM42.406 24.6255L41.4372 26.6255L43.906 27.7817L43.906 25.3442L42.406 24.6255L42.406 24.6255ZM40.4998 28.6255L39.531 30.6567L42.781 32.1879L43.7498 30.1879L40.4998 28.6254L40.4998 28.6255ZM38.5936 32.6567L37.6248 34.6879L40.8748 36.2191L41.8123 34.2191L38.5935 32.6566L38.5936 32.6567ZM36.6874 36.6879L35.7186 38.6879L38.9686 40.2191L39.9061 38.2191L36.6873 36.6879L36.6874 36.6879ZM34.7499 40.6879L33.9686 42.4067L37.9374 42.4067L37.9994 42.2497L34.7494 40.6877L34.7499 40.6879Z" stroke-width="1" stroke-linecap="butt" stroke="none" fill-rule="evenodd" fill="rgba(238, 238, 236, 1)"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(9.06093 12.5743)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-9.06093 -12.5743)" opacity="1">
+                     <path id="path3433" stroke-linejoin="miter" d="M11.594 2.5938L13.3128 3.4063L13.719 2.5938L11.594 2.5938L11.594 2.5938ZM9.125 3.875L8.1562 5.9062L11.4062 7.4374L12.375 5.4374L9.12495 3.8749L9.125 3.875ZM7.2188 7.9062L6.25005 9.9062L9.50005 11.4374L10.4688 9.4374L7.2188 7.9062ZM5.3126 11.9062L4.34385 13.9374L7.59385 15.4686L8.5626 13.4686L5.3126 11.9061L5.3126 11.9062ZM4.0938 16.2502L4.0938 18.719L5.6875 19.5L6.625 17.469L4.0938 16.25L4.0938 16.2502ZM4.0938 21.1877L4.0938 22.8439L4.7188 21.5001L4.0938 21.1876L4.0938 21.1877Z" stroke-width="1" stroke-linecap="butt" stroke="none" fill-rule="evenodd" fill="rgba(238, 238, 236, 1)"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(26.8236 16.3173)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-26.8236 -16.3173)" opacity="1">
+                     <path id="path3362" stroke-linejoin="miter" d="M16.781 2.5938L9.9062 17.1248L36.7502 29.8748L43.9064 14.8438L43.9064 7.5C43.9064 6.91888 43.805 6.3581 43.6251 5.8438L36.7501 2.5938L16.7811 2.5938L16.781 2.5938Z" stroke-width="1" stroke-linecap="butt" stroke="none" fill-rule="evenodd" fill="url(#0x00007fb39b758b10)"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(24 22.5)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-24 -22.5)" opacity="1">
+                     <path id="path3431" stroke-linejoin="miter" d="M9 3.2188C6.5944 3.2188 4.7188 5.0944 4.7188 7.5L4.7188 37.5C4.7188 39.9056 6.5944 41.7812 9 41.7812L39 41.7812C41.4056 41.7812 43.2812 39.9056 43.2812 37.5L43.2812 7.5C43.2812 5.0944 41.4062 3.2188 39.0002 3.2188L9.0002 3.2188L9 3.2188Z" stroke-width="1" stroke-linecap="butt" stroke="url(#0x00007fb39b788400)" fill-rule="evenodd" fill="none"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(23.9998 13.7527)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-23.9998 -13.7527)" opacity="1">
+                     <path id="path3451" stroke-linejoin="miter" d="M9 2.5938C6.2609 2.5938 4.0938 4.7609 4.0938 7.5L4.0938 24.656C16.1788 19.5229 29.7748 15.0865 43.9058 12.125L43.9058 7.5C43.9058 4.7609 41.7387 2.5938 38.9996 2.5938L8.9996 2.5938L9 2.5938Z" stroke-width="1" stroke-linecap="butt" stroke="none" fill-rule="evenodd" fill="url(#0x00007fb39b0ce0e0)"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <linearGradient id="0x00007fb39b045460">
+   <stop stop-color="rgba(255, 183, 0, 1)" offset="0"/>
+   <stop stop-color="rgba(255, 114, 0, 1)" offset="1"/>
+  </linearGradient>
+  <linearGradient id="0x00007fb3a2c12550">
+   <stop stop-color="rgba(52, 101, 164, 1)" offset="0"/>
+   <stop stop-color="rgba(32, 74, 135, 1)" offset="1"/>
+  </linearGradient>
+  <linearGradient id="0x00007fb39b7ca090">
+   <stop stop-color="rgba(46, 52, 54, 1)" offset="0"/>
+   <stop stop-color="rgba(46, 52, 54, 0)" offset="1"/>
+  </linearGradient>
+  <linearGradient id="0x00007fb3a2aba8a0">
+   <stop stop-color="rgba(255, 255, 255, 0.8)" offset="0"/>
+   <stop stop-color="rgba(255, 255, 255, 0)" offset="1"/>
+  </linearGradient>
+  <linearGradient id="0x00007fb3a2af8320">
+   <stop stop-color="rgba(238, 238, 236, 1)" offset="0"/>
+   <stop stop-color="rgba(238, 238, 236, 0)" offset="1"/>
+  </linearGradient>
+  <linearGradient id="0x00007fb39b0e8b40">
+   <stop stop-color="rgba(0, 0, 0, 1)" offset="0"/>
+   <stop stop-color="rgba(255, 255, 255, 1)" offset="1"/>
+  </linearGradient>
+  <radialGradient cy="18.017" id="0x00007fb3acccc450" cx="3.5938" xlink:href="#0x00007fb3a2c12550" gradientUnits="userSpaceOnUse" r="41.4914"/>
+  <radialGradient cy="2.0938" id="0x00007fb39b758b10" cx="9.24072" xlink:href="#0x00007fb39b045460" gradientUnits="userSpaceOnUse" r="45.2311"/>
+  <linearGradient y2="42.281" id="0x00007fb39b788400" x2="0" xlink:href="#0x00007fb3a2aba8a0" y1="2.7188" x1="0" gradientUnits="userSpaceOnUse"/>
+  <linearGradient y2="25.4116" id="0x00007fb39b0ce0e0" x2="44.4058" xlink:href="#0x00007fb3a2af8320" y1="2.0938" x1="3.5938" gradientUnits="userSpaceOnUse"/>
+  <linearGradient id="0x00007fb39bd693c0" xlink:href="#0x00007fb39b0e8b40" gradientUnits="userSpaceOnUse">
+   <animate values="743.769;743.769;548.257;743.769" attributeName="x1" dur="8s" keyTimes="0;0;0.5;1" calcMode="spline" keySplines="0 0 1 1;0 0 1 1;0 0 1 1" repeatCount="indefinite"/>
+   <animate values="409.063;409.063;-751.261;409.063" attributeName="y1" dur="8s" keyTimes="0;0;0.5;1" calcMode="spline" keySplines="0 0 1 1;0 0 1 1;0 0 1 1" repeatCount="indefinite"/>
+   <animate values="762.795;762.795;567.283;762.795" attributeName="x2" dur="8s" keyTimes="0;0;0.5;1" calcMode="spline" keySplines="0 0 1 1;0 0 1 1;0 0 1 1" repeatCount="indefinite"/>
+   <animate values="701.921;701.921;-517.907;701.921" attributeName="y2" dur="8s" keyTimes="0;0;0.5;1" calcMode="spline" keySplines="0 0 1 1;0 0 1 1;0 0 1 1" repeatCount="indefinite"/>
+  </linearGradient>
+  <mask id="maskMask">
+   <g transform="translate(600.034 204.922)">
+    <g transform="translate(384.075 600.271)">
+     <g transform="rotate(0)">
+      <g transform="scale(1 1)">
+       <g transform="skewX(0) skewY(0)">
+        <g transform="translate(-600.034 -204.922)" opacity="1">
+         <rect x="-78.0809" height="995.451" id="mask" stroke-linejoin="round" stroke-width="0" stroke-linecap="round" width="1333.92" y="-543.778" stroke="none" rx="0" ry="0" fill="url(#0x00007fb39bd693c0)"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </mask>
+ </defs>
+</svg>
