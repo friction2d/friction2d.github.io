@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Friction - https://friction.graphics -->
+
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1920 1080">
+ <g transform="translate(326.964 326.964)">
+  <g transform="translate(633.036 213.036)">
+   <g transform="rotate(0)">
+    <g transform="scale(1 1)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(-326.964 -326.964)" opacity="1">
+       <path d="M0 653.929L0 0L653.929 0L653.929 653.929L0 653.929Z" stroke-width="0" fill="rgba(255, 255, 255, 0.2)" stroke="none" stroke-linecap="round" stroke-linejoin="round" id="square"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(0 0)">
+  <g transform="translate(960 540)">
+   <g transform="rotate(45)">
+    <g transform="scale(1 1)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(0 0)" opacity="1">
+       <path d="M0 0" stroke-width="0" fill="url(#0x00007fc01ebbf860)" stroke="none" stroke-linecap="round" stroke-linejoin="round" id="circle">
+        <animate repeatCount="indefinite" keyTimes="0;0;0.1;0.45;0.55;1" calcMode="spline" keySplines="0 0 1 1;0 0 1 1;0 0 1 1;0 0 1 1;0 0 1 1" dur="6.66667s" values="M0 -338.501C186.824 -338.501 338.501 -186.824 338.501 0C338.501 186.824 186.824 338.501 0 338.501C-186.824 338.501 -338.501 186.824 -338.501 0C-338.501 -186.824 -186.824 -338.501 0 -338.501Z;M0 -338.501C186.824 -338.501 338.501 -186.824 338.501 0C338.501 186.824 186.824 338.501 0 338.501C-186.824 338.501 -338.501 186.824 -338.501 0C-338.501 -186.824 -186.824 -338.501 0 -338.501Z;M0 -338.501C186.824 -338.501 338.501 -186.824 338.501 0C338.501 186.824 186.824 338.501 0 338.501C-186.824 338.501 -338.501 186.824 -338.501 0C-338.501 -186.824 -186.824 -338.501 0 -338.501Z;M2.27374e-13 -462.398C2.27374e-13 -462.398 462.398 1.13687e-13 462.398 1.13687e-13C462.398 1.13687e-13 0 462.398 0 462.398C0 462.398 -462.398 0 -462.398 0C-462.398 0 2.27374e-13 -462.398 2.27374e-13 -462.398Z;M2.27374e-13 -462.398C2.27374e-13 -462.398 462.398 1.13687e-13 462.398 1.13687e-13C462.398 1.13687e-13 0 462.398 0 462.398C0 462.398 -462.398 0 -462.398 0C-462.398 0 2.27374e-13 -462.398 2.27374e-13 -462.398Z;M0 -338.501C186.824 -338.501 338.501 -186.824 338.501 0C338.501 186.824 186.824 338.501 0 338.501C-186.824 338.501 -338.501 186.824 -338.501 0C-338.501 -186.824 -186.824 -338.501 0 -338.501Z" attributeName="d"/>
+       </path>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <linearGradient id="0x00007fc01ea8a890">
+   <stop stop-color="rgba(244, 118, 0, 1)" offset="0"/>
+   <stop stop-color="rgba(12, 90, 189, 1)" offset="1"/>
+  </linearGradient>
+  <linearGradient x1="-447.89" x2="431.302" y1="-145.155" xlink:href="#0x00007fc01ea8a890" y2="157.596" gradientUnits="userSpaceOnUse" id="0x00007fc01ebbf860"/>
+ </defs>
+</svg>
