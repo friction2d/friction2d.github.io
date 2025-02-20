@@ -6,6 +6,9 @@ permalink: documentation/animation_techniques.html
 
 # Animation techniques
 
+* table of contents
+{:toc}
+
 ## Loops
 
 It is possible to create **infinite loops** by mixing some Friction features:

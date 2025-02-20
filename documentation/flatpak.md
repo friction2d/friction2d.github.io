@@ -6,6 +6,9 @@ permalink: documentation/flatpak.html
 
 # Flatpak
 
+* table of contents
+{:toc}
+
 We believe in a universal package manager for Linux, and that widespread adoption of [Flatpak](https://flatpak.org) is essential for Linux on the desktop.
 
 We offer an official Flatpak repository for developers, beta testers and early adopters.

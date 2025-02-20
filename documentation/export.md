@@ -6,6 +6,9 @@ permalink: documentation/export.html
 
 # Export
 
+* table of contents
+{:toc}
+
 Friction can export to various media formats.
 
 ## SVG Animation
