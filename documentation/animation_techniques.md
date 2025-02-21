@@ -66,9 +66,11 @@ So the hierarchy would have to look like the following:
 
 In the case of masking for an **animated SVG**, it is possible to use shades of grey in the masking object. White will be considered opaque, black will be transparent and shades of grey a transparency ramp.
 
-## Blend modes
+## Blend Effects
 
-Please, don't confuse them with "Layer blending modes" as the name could be similar but the feature is totally different: **Friction** includes a smart way of handling **layer stacking** that simplifies the animation of objects that "change" their layer position with time. It is something that could be done with simpler animation techniques but `Blend modes` really simplifies it.
+Please, don't confuse them with "Layer blending modes" as the name could be similar but the feature is totally different: **Friction** includes a smart way of handling **layer stacking** that simplifies the animation of objects that "change" their layer position with time. It is something that could be done with simpler animation techniques but `Blend Effects` really simplifies it.
+
+![Blend Effect example](/assets/documentation/animation_techniques/anim_techniques_blend.svg)
 
 Check the following video for more information: 
 **[Blend modes](https://www.youtube.com/watch?v=xvDTJrKWmiE&list=PLb3wVIJ8v7fEx7qs_1lVBu2fsnaz31Iof&index=7)**
@@ -81,6 +83,8 @@ This technique allow users to create dynamic animations by using code (scripts) 
 ## Orbit
 
 With a smart use of **[Expressions](expressions.html)** and Custom Properties, it is possible to archive circular movements with just `x` and `y` translations. It may be useful in several scenarios.
+
+![Orbit example](/assets/documentation/animation_techniques/anim_techniques_orbit.svg)
 
 Check the following video for more information: 
 **[Orbit and custom properties](https://www.youtube.com/watch?v=-m-LoWDy8BE)**
