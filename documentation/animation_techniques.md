@@ -104,7 +104,9 @@ In some scenarios the target is no a visible object, in those cases it is a good
 
 ## Text effects
 
-Text can be animated per character and in so many other ways.
+Text can be animated per `character`, `word` or `line` and the effects are endless as it's possible to combine any `Transform` parameter and apply `path`, `base path`, `fill`, `outline base`, `outline` and/or `raster` effects.
+
+![Text effects screenshot](/assets/documentation/animation_techniques/anim_techniques_text_effects.png)
 
 Check the following video for more information:
 **[Text effects](https://www.youtube.com/watch?v=pOzta1KkXB0)**
