@@ -1,0 +1,34 @@
+{% include assign.html %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    {% include head.html %}
+    <body>
+        <div id="headerDefault">
+            {% include header.html %}
+        </div>
+        <div id="content">
+            <div id="contentInner">
+                {% if page.title != nil %}
+                <h1>{{ page.title }}</h1>
+                {% endif %}
+                {% if page.lead != nil %}
+                <p class="lead">{{ page.lead }}</p>
+                {% endif %}
+                {% if page.image != nil %}
+                {% if page.video != nil %}
+                <video width="100%" poster="{{ site.url}}/{{ page.image }}" muted autoplay loop controls>
+                    <source src="{{ page.video }}">
+                </video>
+                {% else %}
+                <img class="mainImage" src="{{ site.url}}/{{ page.image }}" alt="Screenshot">
+                {% endif %}
+                {% endif %}
+                {{ content }}
+                <p class="publishedDate">Published {{ page.date | date: "%-d %B %Y" }}.</p>
+            </div>
+        </div>
+        <div id="footer">
+            {% include footer.html %}
+        </div>
+    </body>
+</html>
