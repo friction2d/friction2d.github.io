@@ -6,6 +6,9 @@ permalink: documentation/shortcuts.html
 
 # Shortcuts
 
+* table of contents
+{:toc}
+
 Shortcuts available in Friction.
 
 ## General

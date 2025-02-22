@@ -5,3 +5,6 @@ permalink: documentation/faq.html
 ---
 
 # FAQ
+
+* table of contents
+{:toc}
