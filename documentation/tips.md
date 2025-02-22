@@ -170,3 +170,13 @@ When animating the nodes of a shape, if you delete some nodes, it will interpola
 Check the following video for more information:
 **[Dissolve nodes](https://www.youtube.com/watch?v=TyeN1OXodcU&list=PLb3wVIJ8v7fGVzg1hon2aH5xgMLBll8-l&index=3)**
 *(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
+
+## SVG animations love Expressions
+
+Not all **Friction** features are compatible with [**SMIL** (Synchronized Multimedia Integration Language)](https://www.w3.org/TR/REC-smil/) format or **Friction** developers had no time to create that feature but there is a **neat workaround** to be able to animate almost anything: use **[Expressions!](expressions.html)**.
+
+For instance, **Friction** is not yet capable to export animations that contain `Track Effect` or `keyframe easings` but it you are able to create an expression that **simulates** the feature, at export time all expressions are automatically converted into keyframes so, *voilà!*, you end up with a final animated SVG that "includes" that feature:
+
+![Track effect example](/assets/documentation/animation_techniques/anim_techniques_tracking.svg)
+
+*In the previous example the Arrow "looks" at the crossed square using an Expression.*
