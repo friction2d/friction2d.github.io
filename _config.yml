@@ -41,6 +41,9 @@ nav:
     ext: false
   - title: Download
     url: "/#download"
+  - title: Documentation
+    url: /documentation/
+    ext: false
     ext: false
   - title: Community
     url: /community.html

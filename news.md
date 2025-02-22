@@ -1,5 +1,5 @@
 ---
-title: "News and Releases"
-layout: post
+title: "News/Blog"
+layout: news
 permalink: news/
 ---

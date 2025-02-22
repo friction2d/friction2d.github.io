@@ -1,0 +1,37 @@
+{% include assign.html %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    {% include head.html %}
+    <body>
+        <div id="headerDefault">
+            {% include header.html %}
+        </div>
+        <div id="content">
+            {% include breadcrumbs.html %}
+            <div id="contentInner">
+                {% if page.title != nil %}
+                    <h1>{{ page.title }}</h1>
+                {% endif %}
+                {% if page.lead != nil %}
+                <p class="lead">{{ page.lead }}</p>
+                {% endif %}
+                <div class="blocks">
+                    {% for post in site.categories.releases %}
+                        <div class="block newsblock">
+                            <a href="{{ post.url }}">
+                                {% if post.image != nil %}
+                                <img class="blogImage" src="{{ post.image }}">
+                                {% endif %}
+                                <h2>{{ post.title }}</h2>
+                            </a>
+                            <p class="center">{{ post.date | date: "%-d %B %Y" }}<br><span class="category"><a href="{{ site.url }}/{{ post.categories}}">{{ post.categories }}</a></span></p>
+                        </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            {% include footer.html %}
+        </div>
+    </body>
+</html>
