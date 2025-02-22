@@ -28,7 +28,7 @@ Some suggested tools for designing assets could be the following:
     - **[Affinity Photo](https://affinity.serif.com/en-us/photo/)**
     - any software capable of exporting to JPEG, PNG or WEBP image files.
 
-## 1. Project and first scene creation
+## Project and first scene creation
 
 After opening Friction, the Canvas panel will prompt the user to:
 - **New**: create a new project.
@@ -69,7 +69,7 @@ As in other 2D graphical software the canvas can be navigated with two types of 
 
 In **`View > Zoom`** there are additional ways of navigating the canvas such as `Fit to canvas` or `Reset Zoom` and them all can also be triggered using [Keyboard Shortcuts](shortcuts.html).
 
-## 2. Creating assets
+## Creating assets
 
 It's possible to create basic shapes using Friction **[Tools panel](userinterface.html#4-tools)**. If it's the first time try creating a rectangle (`shift` + drag to create a square) or an ellipse (`shift` + drag to create a circle) by clicking and dragging the mouse pointer while in the canvas. Release to finish the creation of the shape.
 
@@ -87,7 +87,7 @@ Now, go to the **[Fill and Stroke panel](userinterface.html#9-fill-and-stroke)**
 
 ![Change color value](/assets/documentation/usage/usage_edit_color.png)
 
-## 3. Importing and linking
+## Importing and linking
 
 As commented previously, Friction is not a vector graphics design software but an animation one so is highly suggested that assets are created externally.
 
@@ -104,7 +104,7 @@ Bitmap graphics will always be **linked**, even if they are added with the **Imp
 
 Assets can be added by "drag & drop" from any file explorer to Friction canvas and they will be imported if possible (`SVG`) and linked if not (`JPEG`, `PNG`,...)
 
-## 4. Basic animation
+## Basic animation
 
 ### Keyframes
 
@@ -162,7 +162,7 @@ Example of keyframes with smooth handles:
 
 ![Graph view button](/assets/documentation/usage/usage_graph_view_4.png)
 
-## 5. Preview
+## Preview
 
 ![Play button](/assets/documentation/usage/usage_preview_play.png)
 
@@ -172,14 +172,14 @@ There are some ways to preview the scene animation within Friction:
 - **in editor Preview**: if `View > Preview Cache` menu checkbox is disabled, then the animation will be played without caching it, that is faster to play but it may be not in realtime as it will be dependent of your hardware (in case your computer is not capable of rendering all the frames at the scene FPS) so, it is possible that this preview is not played at realtime. The benefit of this mode is that selected objects will show their bounding boxes, pivots points, etc. and that may be interesting for the animator to check how the animation is performed.
 - **SVG Preview**: in case the animation is designed inside all the features of SVG animation, it is possible to run the `Preview SVG` button in the **[Main toolbar](userinterface.html#1-main-toolbar)** and preview it in the default SVG player of the computer (probably an Internet browser).
 
-## 6. Saving the project
+## Saving the project
 
-## 7. Export
+## Export
 SVG
 or rendering
 More in depth: [Export chapter](export.html)
 
-## 8. Advanced
+## Advanced
 
 ### Effects and shaders
 
@@ -226,7 +226,7 @@ This feature lets users create and save different `Canvas` and/or `Timeline`divi
 
 ![Division splitter](/assets/documentation/ui/ui_timeline-splitting-panel.png)
 
-## 9. Learning resources
+## Learning resources
 
 This is an always growing chapter and over time new resources could be included.
 

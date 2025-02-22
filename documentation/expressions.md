@@ -25,7 +25,7 @@ The Expressions popup window has 2 tabs:
 
 ![Expressions popup window](/assets/documentation/expressions/expressions_1.png)
 
-## 1. Bindings
+## Bindings
 
 In this section the user can create variables of properties with values coming from the scene:
 
@@ -46,7 +46,7 @@ Note that it's not possible to add here constant variables like `lenght = 100;`.
 
 Friction is not capable yet to get a value coming from another time or frame as in other famous software.
 
-## 2. Calculate
+## Calculate
 
 In this section the user is able to define constants, do calculations, use **ECMAScript (JavaScript)** functions.
 
@@ -66,7 +66,7 @@ Example:
 return position_x * 2;
 ```
 
-## 3. Definitions
+## Definitions
 
 When the user wants to add complex or long custom functions, they can be included here and called later in the **Calculate** section.
 
@@ -86,7 +86,7 @@ two = 200;
 return my_simple_function(one, two);
 ```
 
-## 4. Expressions Presets
+## Expressions Presets
 
 Writing lot of pieces of code and moreover, doing it for a few different parameters could be tedious and slowdown workflows so **Friction** let users save their code and functions inside a bundle called `Preset` for easy later use or to be shared with other animators.
 

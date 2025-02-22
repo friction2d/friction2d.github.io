@@ -11,8 +11,6 @@ permalink: documentation/userinterface.html
 
 ![Default interface](/assets/documentation/ui/ui_all.png)
 
-## Panels layout
-
 Some panels are rearrangable by pressing their left-right-up-down buttons:
 
 ![Rearrangement buttons](/assets/documentation/ui/ui_rearrange-buttons.png)
@@ -22,7 +20,7 @@ The Timeline can be splitted horizontally or vertically to allow better paramete
 ![Splitting buttons](/assets/documentation/ui/ui_timeline-splitting-panel.png)
 
 
-## 1. Main Toolbar
+## Main Toolbar
 
 ![Main Toolbar](/assets/documentation/ui/ui_panel1.png)
 
@@ -30,7 +28,7 @@ The main toolbar provides fast access to the most used commands related to creat
 
 ... expand on the right-click menu ...
 
-## 2. Color Toolbar
+## Color Toolbar
 
 ![Color Toolbar](/assets/documentation/ui/ui_panel2.png)
 
@@ -51,7 +49,7 @@ Mouse actions on hover is supported:
 
 ... expand on the right-click menu ...
 
-## 3. Viewer
+## Viewer
 
 ![Viewer](/assets/documentation/ui/ui_panel3.png)
 
@@ -67,7 +65,7 @@ On Windows and Linux the mouse wheel can zoom in/out, on macOS add the `option` 
 - `Ctrl/Cmd` + `0` = Fit to canvas
 - `Ctrl/Cmd` + `9` = Fit to canvas width
 
-## 4. Tools
+## Tools
 
 ![Tools](/assets/documentation/ui/ui_panel4.png)
 
@@ -95,7 +93,7 @@ The Toolbar contains a set of tools to create shapes, helpers and some others to
 
 ... expand on the right-click menu ...
 
-## 5. Timeline
+## Timeline
 
 ![Timeline](/assets/documentation/ui/ui_panel5.png)
 
@@ -103,7 +101,7 @@ The Timeline is where animations and keyframes are managed. Users can control ti
 
 There is an option to filter the hierarchy to edit the objects that are listed.
 
-## 6. Properties
+## Properties
 
 ![Properties](/assets/documentation/ui/ui_panel6.png)
 
@@ -113,7 +111,7 @@ In the case of selecting a Text object, then a panel with text parameters are sh
 
 At the bottom of the Properties panel there are a few options to easily align objects in the canvas relative to the canvas itself or other shapes.
 
-## 7. Assets
+## Assets
 
 ![Assets](/assets/documentation/ui/ui_panel7.png)
 
@@ -125,13 +123,13 @@ The Assets panel manages **linked** files, images, audio, and other resources us
 
 - **Remove**: it completely removes the object from the project.
 
-## 8. Queue
+## Queue
 
 ![Queue](/assets/documentation/ui/ui_panel8.png)
 
 The Queue section manages rendering tasks and export jobs. Users can monitor the progress of ongoing processes and manage output settings.
 
-## 9. Fill and Stroke
+## Fill and Stroke
 
 ![Fill and Stroke](/assets/documentation/ui/ui_panel9.png)
 
@@ -152,7 +150,7 @@ Fills and Strokes have 3 options to be drawn:
 
 In the previous image the `fill` changes from left to right: none, flat, linear gradient and radial gradient.
 
-## 10. Preferences
+## Preferences
 
 ![Preferences](/assets/documentation/ui/ui_panel10.png)
 
