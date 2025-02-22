@@ -28,6 +28,7 @@ Motion graphics has a wide variety of uses, including:
 * [Expressions](expressions.html)
 * [Effects](effects.html)
 * [Shader Effects](shaders.html)
+* [Learning resources](learning.html)
 * [FAQ](faq.html)
 
 ## Developers
