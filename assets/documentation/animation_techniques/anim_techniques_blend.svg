@@ -1,0 +1,149 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Friction - https://friction.graphics -->
+
+<svg viewBox="0 0 1920 1080" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+ <g transform="translate(960.445 541.287)">
+  <g transform="translate(0 0)">
+   <g transform="rotate(0)">
+    <g transform="scale(1.42 1.42)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(-960.445 -541.287)" opacity="1">
+       <g id="Group0">
+        <g transform="translate(0 0)">
+         <g transform="translate(960 540)">
+          <g transform="rotate(0)">
+           <g transform="scale(0.923914 0.923914)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(0 0)" opacity="1">
+              <ellipse stroke-linecap="round" cx="0" ry="278.314" stroke-width="0" stroke-linejoin="round" rx="278.314" stroke="none" fill="url(#0x00007fdc70aeee90)" cy="0" id="Circle"/>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(960.445 541.287)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-960.445 -541.287)" opacity="1">
+              <g mask="url(#mask0Mask)" id="orbit_masked">
+               <g transform="translate(712.543 839.93)">
+                <g transform="translate(247.457 -299.93)">
+                 <g transform="rotate(-20.3331)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-712.543 -839.93)" opacity="0.6">
+                     <path d="M712.543 996.65C496.678 996.65 321.685 926.484 321.685 839.93C321.685 753.376 496.678 683.21 712.543 683.21C928.913 683.21 1103.4 753.958 1103.4 839.93C1103.4 925.902 928.916 996.65 712.543 996.65" stroke-linecap="round" stroke-width="40" stroke-linejoin="round" fill-rule="evenodd" stroke="rgba(164, 164, 164, 0.500008)" fill="none" id="orbit"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(960.445 541.287)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-960.445 -541.287)" opacity="1">
+              <g mask="url(#maskMask)" id="star_masked">
+               <g transform="translate(968.485 543.157)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(-16)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-968.485 -543.157)" opacity="1">
+                     <g id="Group">
+                      <g transform="translate(0 0)">
+                       <g>
+                        <animateTransform repeatCount="indefinite" dur="5s" values="960 0;960 0;607.356 0;569.752 0;580.012 0;813.494 0;1075.93 0;1305.45 0;1349.81 0;1330.98 0;960 0" attributeName="transform" type="translate" keyTimes="0;0;0.18;0.250606;0.286667;0.44;0.546667;0.673333;0.750629;0.8;1" keySplines="0 0 1 1;0.331415 0.435935 0.664328 0.820207;0.333069 0.654126 0.666454 1;0.333265 0 0.666612 0.327278;0.33505 0.127829 0.668612 0.507761;0.334068 0.307115 0.666266 0.680834;0.331747 0.430771 0.665071 0.790364;0.333434 0.65723 0.666583 1;0.333087 2.4003e-13 0.666346 0.327579;0.335873 0.14006 0.668871 0.538934" calcMode="spline"/>
+                        <g>
+                         <animateTransform repeatCount="indefinite" dur="5s" values="0 696.72;0 696.72;0 619.099;0 478.248;0 383.428;0 383.28;0 478.495;0 618.84;0 696.72" attributeName="transform" type="translate" keyTimes="0;0;0.166667;0.313333;0.499987;0.5;0.686667;0.833333;1" keySplines="0 0 1 1;0.333633 0.0159762 0.666911 0.402306;0.33352 0.290231 0.66657 0.688409;0.332956 0.587285 0.666397 1;0.333333 0.333333 0.666667 0.666667;0.333605 5.92671e-05 0.667042 0.415009;0.333426 0.312271 0.666487 0.708732;0.33309 0.595707 0.666364 0.983947" calcMode="spline"/>
+                         <g transform="rotate(16)">
+                          <g transform="scale(0.313024 0.313024)">
+                           <g transform="skewX(0) skewY(0)">
+                            <g transform="translate(0 0)" opacity="1">
+                             <path d="M24.1677 -296.838C24.1677 -296.838 103.054 -136.996 103.054 -136.996C103.054 -136.996 279.45 -111.364 279.45 -111.364C288.746 -110.013 296.468 -103.503 299.371 -94.5693C302.273 -85.6362 299.852 -75.8298 293.126 -69.2734C293.126 -69.2734 165.485 55.146 165.485 55.146C165.485 55.146 195.617 230.829 195.617 230.829C197.205 240.087 193.399 249.443 185.8 254.964C178.201 260.485 168.127 261.214 159.813 256.843C159.813 256.843 2.03936 173.896 2.03936 173.896C2.03936 173.896 -155.734 256.843 -155.734 256.843C-164.048 261.214 -174.122 260.485 -181.721 254.964C-189.32 249.443 -193.126 240.087 -191.538 230.829C-191.538 230.829 -161.406 55.146 -161.406 55.146C-161.406 55.146 -289.048 -69.2734 -289.048 -69.2734C-295.774 -75.8298 -298.194 -85.6362 -295.292 -94.5694C-292.389 -103.503 -284.667 -110.013 -275.371 -111.364C-275.371 -111.364 -98.9756 -136.996 -98.9756 -136.996C-98.9756 -136.996 -20.0889 -296.838 -20.0889 -296.838C-15.932 -305.261 -7.35356 -310.593 2.03936 -310.593C11.4323 -310.593 20.0107 -305.261 24.1676 -296.838C24.1676 -296.838 24.1677 -296.838 24.1677 -296.838Z" stroke-linecap="round" stroke-width="2" stroke-linejoin="round" fill-rule="evenodd" stroke="none" fill="rgba(235, 190, 0, 1)" id="star"/>
+                            </g>
+                           </g>
+                          </g>
+                         </g>
+                        </g>
+                       </g>
+                      </g>
+                     </g>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <linearGradient id="0x00007fdc6918e950">
+   <stop offset="0" stop-color="rgba(209, 122, 14, 1)"/>
+   <stop offset="1" stop-color="rgba(1, 48, 87, 1)"/>
+  </linearGradient>
+  <linearGradient id="0x00007fdc4daebad0">
+   <stop offset="0" stop-color="rgba(209, 122, 14, 1)"/>
+   <stop offset="1" stop-color="rgba(1, 48, 87, 1)"/>
+  </linearGradient>
+  <linearGradient id="0x00007fdc7ab49d10">
+   <stop offset="0" stop-color="rgba(209, 122, 14, 1)"/>
+   <stop offset="1" stop-color="rgba(1, 48, 87, 1)"/>
+  </linearGradient>
+  <radialGradient cx="-132.202" r="544.931" xlink:href="#0x00007fdc6918e950" gradientUnits="userSpaceOnUse" cy="-153.848" id="0x00007fdc70aeee90"/>
+  <mask id="mask0Mask">
+   <g transform="translate(959.916 493.238)">
+    <g transform="translate(0 0)">
+     <g transform="rotate(0)">
+      <g transform="scale(1 1)">
+       <g transform="skewX(0) skewY(0)">
+        <g transform="translate(-959.916 -493.238)" opacity="1">
+         <path d="M0 1082.57C0 1082.57 0 0 0 0C0 0 1920.89 0 1920.89 0C1920.89 0 1920.89 1082.57 1920.89 1082.57C1920.89 1082.57 0 1082.57 0 1082.57ZM1210.2 480.469C1206.36 464.29 1200.99 448.701 1194.25 433.863C1180.77 404.187 1161.81 377.517 1138.67 355.146C1092.39 310.405 1029.39 282.862 960 282.862C818.082 282.862 702.862 398.082 702.862 540C702.862 566.5 706.879 592.07 714.338 616.132C721.796 640.194 760.363 575.428 804.334 558.96C865.051 536.22 842.309 544.835 968.491 506.497C1058.54 474.054 1214.04 496.648 1210.2 480.469Z" stroke-linecap="round" stroke-width="0" stroke-linejoin="round" stroke="none" fill="rgba(255, 255, 255, 1)" id="mask0"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </mask>
+  <mask id="maskMask">
+   <g transform="translate(959.916 493.238)">
+    <g transform="translate(0 0)">
+     <g transform="rotate(0)">
+      <g transform="scale(1 1)">
+       <g transform="skewX(0) skewY(0)">
+        <g transform="translate(-959.916 -493.238)" opacity="1">
+         <path d="M0 1082.57L0 0L1920.89 0L1920.89 1082.57L0 1082.57ZM1210.2 480.469C1206.36 464.29 1200.99 448.701 1194.25 433.863C1180.77 404.187 1161.81 377.517 1138.67 355.146C1092.39 310.405 1029.39 282.862 960 282.862C818.082 282.862 702.862 398.082 702.862 540C702.862 566.5 706.879 592.07 714.338 616.132C721.796 640.194 760.363 575.428 804.334 558.96C865.051 536.22 842.309 544.835 968.491 506.497C1058.54 474.054 1214.04 496.648 1210.2 480.469Z" stroke-linecap="round" stroke-width="0" stroke-linejoin="round" stroke="none" fill="rgba(255, 255, 255, 1)" id="mask"/>
+        </g>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </mask>
+ </defs>
+</svg>
