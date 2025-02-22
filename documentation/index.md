@@ -21,13 +21,13 @@ Motion graphics has a wide variety of uses, including:
 
 * [User Interface](userinterface.html)
 * [Usage basics](usage.html)
+* [Export](export.html)
+* [Shortcuts](shortcuts.html)
 * [Usage tips](tips.html)
 * [Animation techniques](animation_techniques.html)
-* [Shortcuts](shortcuts.html)
-* [Export](export.html)
 * [Expressions](expressions.html)
 * [Effects](effects.html)
-* [Shader Effects](shaders.html)
+* [Shaders](shaders.html)
 * [Learning resources](learning.html)
 * [FAQ](faq.html)
 
