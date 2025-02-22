@@ -174,10 +174,38 @@ There are some ways to preview the scene animation within Friction:
 
 ## Saving the project
 
+At any time, **Friction** lets users save the project into a file with `.friction` extension. Everything but linked assets will be saved inside the document. The file is binary so it can not be read with text editors but this may change in the future as there are plans to move into a text based project file.
+
 ## Export
-SVG
-or rendering
-More in depth: [Export chapter](export.html)
+
+The **Export** feature let users publish the project animations (bundled into scenes) to media files. There are 2 main ways of exporting:
+
+### Animated SVG
+
+This option will create an animated **SVG** file using the *non yet deprecated* [**SMIL** (Synchronized Multimedia Integration Language)](https://www.w3.org/TR/REC-smil/) format. This format is mainly useful for **web design** as it creates lightweight files that are compatible with most Internet browsers and devices.
+
+In order to export into **SVG** users will find 2 options:
+- **Preview SVG**: it will export and preview the file in your default Internet browser. It's a very useful and fast way to quickly preview the animation.
+- **Export SVG**: a new window will show up with options to generate the final **SVG** file. Among the self-explanatory options there is `Optimize for Web` that uses **[SVGO](https://github.com/svg/svgo)** for reducing the file size.
+
+![Export SVG dialog](/assets/documentation/usage/usage_export_svg.png)
+
+Both options are available in the **[Main Toolbar](userinterface.html#main-toolbar)**
+
+**Important note**: not all **Friction** features are compatible with animated SVG (and probably some are not implemented into the exporter yet). There is more information in the [Export chapter](export.html#svg-animation).
+
+### Rendered animation
+
+The second way of exporting is the conventional rendering of the scene animation into a video and/or audio format.
+
+In order to config the export, users should open the [Queue panel](userinterface.html#8-queue) and set:
+- **Scene Properties**: if they are correctly set and there is no need to trim, adjust or choose the `IN/OUT` option, this option could be skipped.
+- **Profiles**: saved profiles are convenient for choosing video/audio, format, codecs and their settings.
+- **Format**: in case of the need of manually changing the setttings here is the place to do it.
+
+![Export Queue panel](/assets/documentation/export/export_video-dialog.png)
+
+For more information about all exporting options there is a whole section about **[Export options](export.html#video--audio)**.
 
 ## Advanced
 
@@ -201,7 +229,7 @@ Following the previous picture, from top to bottom:
 - **Outline base effects**: same effects that applies to the outline applied to the object. The list of effects is the same of previous type of effects.
 - **Outline effects**: create "new outlines" and applies the selected effect. The list of effects is the same of previous type of effects.
 
-More on this subject in separate sections called **[Effects](effects.html)** and **[Shaders](shaders.html)**.
+More on this subject in separate sections **[Effects](effects.html)** and **[Shaders](shaders.html)**.
 
 ### Tools
 - **Null objects**: Adds an invisible reference object that can be used to group or control other elements by applying `Transform Effects` in the composition.
