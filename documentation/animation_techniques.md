@@ -113,3 +113,15 @@ Text can be animated per `character`, `word` or `line` and the effects are endle
 Check the following video for more information:
 **[Text effects](https://www.youtube.com/watch?v=pOzta1KkXB0)**
 *(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
+
+## Flip book
+
+This feature allows animators to cycle through a sequence of objects, shapes or images within a single object, enabling the creation of frame-by-frame animations. This is particularly useful for animating complex motions or character expressions that require detailed frame transitions.
+
+This feature can only be assigned to a **Group** or **Layer** objects while all its children will act as frames. **Only one frame will be displayed at a time** and an animatable parameter called `index` will determinate which frame will be displayed.
+
+![Flip book](/assets/documentation/animation_techniques/anim_techniques_flip-book.png)
+
+Check the following video for more information:
+**[Flip book](https://www.youtube.com/watch?v=a3etLEh01GE)**
+*(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
