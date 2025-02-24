@@ -118,9 +118,11 @@ Check the following video for more information:
 
 This feature allows animators to cycle through a sequence of objects, shapes or images within a single object, enabling the creation of frame-by-frame animations. This is particularly useful for animating complex motions or character expressions that require detailed frame transitions.
 
+![Flip book](/assets/documentation/animation_techniques/anim_techniques_flip-book.png)
+
 This feature can only be assigned to a **Group** or **Layer** objects while all its children will act as frames. **Only one frame will be displayed at a time** and an animatable parameter called `index` will determinate which frame will be displayed.
 
-![Flip book](/assets/documentation/animation_techniques/anim_techniques_flip-book.png)
+![Flip book](/assets/documentation/animation_techniques/anim_techniques_flip-book.svg)
 
 Check the following video for more information:
 **[Flip book](https://www.youtube.com/watch?v=a3etLEh01GE)**
