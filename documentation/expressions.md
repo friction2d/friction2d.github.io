@@ -105,6 +105,46 @@ Writing lot of pieces of code and moreover, doing it for a few different paramet
 
 Note that if creating them by hand, there must not be presets with the same field `id`. Apart from that, if the preset structure is preserved the `.fexpr` will be loaded at startup.
 
+## Custom Functions
+
+**Friction** comes with lots of functions provided from **[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)** basics but users may find some missing or they would just like to create their own ones and make them available across any **Expression editor**.
+
+For this to work users should open their `/Expressions/` folder where normal **Expressions Presets** are saved, that is:
+- **Linux**: `home_directory/.config/friction/Expressions`
+- **Windows**: `home_directly\AppData\Local\friction\Expressions`
+- **macOS**: `home_directory/Library/Preferences/friction/Expressions/`
+
+Open, duplicate or edit the one you want to turn into a **Function** with any text editor and make sure it has an structure like the following:
+```javascript
+[General]
+definitions=
+description=
+highlighters=
+id=
+title=
+version=
+```
+
+The most important parameters to fill up are `definitions=` where the custom function has to be included, `highlighters=` that will make it recognizable by **Friction** and `id=` where any string could be added while it doesn't contain blank spaces.
+
+A full working example:
+```javascript
+[General]
+definitions="function clamp(number, lower, upper) { return Math.max(lower, Math.min(number, upper)); }"
+categories=Core
+description=Clamp value to upper and lower.
+highlighters="clamp(x, lower, upper)"
+id=graphics.friction.clamp
+title=Clamp
+version=1
+```
+
+Save the file with any name and extension `fexpr` and reboot **Friction** as Presets and custom functions are loaded at startup.
+
+Take into account that the previous file structure is very similar to the one used for **Presets** but here it lacks of some of the parameters.
+
+If adding the functions with the normal **Expression editor** into **Definitions** files and saving them as **Presets** they will just work within that **Preset** and won't be available for other parameter Expressions. It can be created within **Friction** if desired but later it must be edited with a text editor so that it matches the "custom functions" structure.
+
 ## Tips and tricks
 
 - `Auto Apply` checkbox can be marked to let expressions to be live updated
