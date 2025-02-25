@@ -80,6 +80,8 @@ Check the following video for more information:
 
 This technique allow users to create dynamic animations by using code (scripts) to control object properties. Instead of relying on manual keyframes, the user can use expressions to automate behaviors, connect parameters, and add randomness or complexity. There is a whole section about **[Expressions](expressions.html)**.
 
+![Orbit example](/assets/documentation/animation_techniques/anim_techniques_wiggle.svg)
+
 ## Orbit
 
 With a smart use of **[Expressions](expressions.html)** and Custom Properties, it is possible to archive circular movements with just `x` and `y` translations. It may be useful in several scenarios.
