@@ -96,6 +96,8 @@ Check the following video for more information:
 
 **Friction** lacks of and advanced rigging system (bones) but there is a `Transform Effect` called `Parent Effect` that helps in this regard. Additionally, using **[Expressions](expressions.html)** with simple `Clamp` functions that limit the movements, makes parenting even more capable.
 
+![Parenting example](/assets/documentation/animation_techniques/anim_techniques_parenting.svg)
+
 ## Tracking
 
 There is a `Transform Effect` called `Track Effect` that makes an object "look at a target", that is, if the target object moves along the canvas, the rotation of the object with the `Track effect` will animate to follow that target.
