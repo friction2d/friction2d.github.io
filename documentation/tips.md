@@ -134,13 +134,24 @@ By default the interpolation between keyframes is set to **linear** when setting
 
 ![Timeline navigation](/assets/documentation/usage/usage_19.png)
 
-In the new view it is possible to select, move and set the keyframe node tangents to the desired curve by using the following tools:
+This is how it looks like:
 
 ![Timeline navigation](/assets/documentation/usage/usage_20.png)
 
-Some tools may need the user to select two nodes to work as it will affect the "curve segment" and not just a node.
+By default new keyframes interpolations are `linear`. It is possible to select, move, set the keyframe node and their tangents (when the node is set to `smooth`) to the desired curve by using the following tools:
 
 ![Timeline navigation](/assets/documentation/usage/usage_21.png)
+
+From left to right:
+- **easing**: create complex segment transitions. It could take into account left (`in`) and/or right (`out`) nodes of the segment.
+- **make segment a line**: make interpolation between nodes straight.
+- **make segment a curve**: make interpolation between nodes curved, it will show up node tangents.
+- **symmetric nodes**: it will make left and right node tangents of the same length.
+- **smooth nodes**: it will turn node tangent length higher than 0, that is visible.
+- **corner nodes**: it will turn node tangent length equal to 0, that is make it sharp.
+- **fit vertical**: it will fit the view (zoom) to show all nodes.
+
+Some tools may need the user to select two nodes to work as it will affect the "curve segment" and not just a node.
 
 It is possible to preview more than one parameter at the time by pressing `shift` in the keyboard and clicking the desired parameter with the left mouse button.
 
