@@ -173,6 +173,10 @@ It is possible to create dynamic booleans operations with some paths inside an u
 
 ![Dynamic path operations](/assets/documentation/tips/tips_dynamic_paths.png)
 
+For instance, with a simple animation of the path in the middle:
+
+![Dynamic path operations](/assets/documentation/tips/tips_dynamic_paths.svg)
+
 Check the following video for more information:
 **[Dynamic path operations](https://www.youtube.com/watch?v=cuJ_LM1twms&t=5s)**
 *(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
