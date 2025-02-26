@@ -126,7 +126,7 @@ You can use the visibility range to control the visibility of an object.
 
 ![Timeline navigation](/assets/documentation/usage/usage_18.png)
 
-Objects can just have 1 visibility range so if you select "Split" then a new object will be created
+Objects can just have 1 visibility range so if you want to have more ranges you will need to `Split` it by using the secondary button contextual menu, select  `Split` and then a new object will be created.
 
 ## Graph Editor
 
