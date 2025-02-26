@@ -98,7 +98,7 @@ Keyframes can be also duplicated when working in the Timeline, select a keyframe
 
 Objects, shapes and layers can blend with others (not groups, so don't forget to promote a group into a layer if blending is desired). Each object can be drawn on its parent **layer** using different compositing modes. You can select the composition mode in the combo box next to the object name.
 
-**Remember that objects are drawn on their first source layer, which means that layer groups do not influence the way objects are drawn**
+**Remember that objects are drawn on their first source layer, which means that layer groups do not influence the way objects are drawn**.
 
 ## Alpha Mask
 
