@@ -63,16 +63,19 @@ Every object has a pivot that can be moved to transform the object from its axis
 
 ![Timeline navigation](/assets/documentation/usage/usage_07.png)
 
-## Grouping
+## Groups and layers
 
-**Groups** combine or wrap objects into a new object, this new object has its own transform matrix:
+**Groups** combine or wrap objects into a new object, this new object has its own transform matrix, but `opacity` parameter does not work.
 
 ![Timeline navigation](/assets/documentation/usage/usage_08.png)
 
-**Layers** are special group types. You should use them whenever you want the group to be rasterized before being drawn or when you need to apply an effect to the group. For instance, you can promote a group to layer and then apply `Blur` which is a `Raster Effect`:
+**Layers** are special group types. You should use them whenever you want the group to be rasterized before being drawn or when you need to apply an effect to the group. Now **layers** do take into account the `opacity` parameter.
+
+For instance, a group can be **promoted to layer** and then apply `Blur` which is a `Raster Effect`:
 
 ![Timeline navigation](/assets/documentation/usage/usage_09.png)
 
+So **groups** and **layers** may look like similar, they kind of are but **they are definitely not**.
 
 ## Duplicating
 
