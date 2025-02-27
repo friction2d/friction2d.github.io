@@ -205,6 +205,14 @@ Check the following video for more information:
 **[Dissolve nodes](https://www.youtube.com/watch?v=TyeN1OXodcU&list=PLb3wVIJ8v7fGVzg1hon2aH5xgMLBll8-l&index=3)**
 *(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
 
+## Nodes sequence
+
+When in `node editing` (so called`Point editing`) mode, it is possible to check the node index applied to a shape. It could come handy when dissolving or morphing a shape into another one as at equal number of nodes each node will morph using its index.
+
+![Animating path nodes](/assets/documentation/tips/tips_node_index.png).
+
+In order to see the indexes just press `ctrl + shift` (`cmd + shift` in macOS) while in `Point editing`.
+
 ## SVG animations love Expressions
 
 Not all **Friction** features are compatible with [**SMIL** (Synchronized Multimedia Integration Language)](https://www.w3.org/TR/REC-smil/) format or **Friction** developers had no time to create that feature but there is a **neat workaround** to be able to animate almost anything: use **[Expressions!](expressions.html)**.
