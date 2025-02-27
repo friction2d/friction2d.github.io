@@ -183,7 +183,23 @@ Check the following video for more information:
 
 ## Dissolve nodes
 
-When animating the nodes of a shape, if you delete some nodes, it will interpolate the nodes from the keyframe with more nodes to the others with less or to the contrary.
+When animating the nodes of a shape, that is, if the path has the dot animation button turn on (red color):
+
+![Animating path nodes](/assets/documentation/tips/tips_dissolve_nodes_1.png)
+
+It is possible to "remove" nodes from specific keyframes, the feature is called **`Dissolve nodes`** because they are not really removed but "disabled" or "dissolved" as they are not taken into account to create the shape but they are still there. The only thing it is possible to do is to move them along the segment where it belonged.
+
+![Animating path nodes](/assets/documentation/tips/tips_dissolve_nodes_2.png)
+
+Then, it is possible to deactivate or `dissolve` in two ways:
+- **dissolve**: it will deactivate the node and will create a new segment taking into account just the activated nodes.
+- **dissolve approximated**: it will deactivate the node and will try to approximate the result of the segment to something similar it had with the activated node.
+
+The other way round, nodes could at any keyframe be "activated" again, this is called `promote to normal`.
+
+![Animating path nodes](/assets/documentation/tips/tips_dissolve_nodes.svg)
+
+When creating/designing the assets, it is needed to take into account the maximum number of nodes needed for the morphing animation as later some of them should be promoted to `dissolve` state.
 
 Check the following video for more information:
 **[Dissolve nodes](https://www.youtube.com/watch?v=TyeN1OXodcU&list=PLb3wVIJ8v7fGVzg1hon2aH5xgMLBll8-l&index=3)**
