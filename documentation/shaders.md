@@ -27,7 +27,7 @@ The **.gre** and **.frag** files have to share a name, e.g., `exampleEffect.gre`
 
 ### Root Element
 
-```
+```xml
 <ShaderEffect name="Example Effect">
   <!-- Properties (optional) -->
   <!-- Script (optional) -->
@@ -50,7 +50,7 @@ There are four types of properties:
 
 All types of properties are animatable, meaning their values can change with time. All properties have to be defined inside **Properties** element, and use the **Property** tag name.
 
-```
+```xml
 <ShaderEffect name="Example Effect">
     <Properties>
         <Property name="exampleProperty" nameUI="example property"
@@ -100,7 +100,7 @@ You can see the resulting interface elements in the screenshot below.
 
 ### Script (optional)
 
-```
+```xml
 <ShaderEffect name="Example Effect">
     <!-- Properties -->
     <Script>
@@ -141,7 +141,7 @@ Values for **vec2** properties are passed as arrays `[x, y]`.
 
 **.gre file:**
 
-```
+```xml
 <ShaderEffect name="Example Effect">
     <Properties>
         <Property name="exampleProperty" nameUI="example property"
@@ -166,7 +166,7 @@ Values for **vec2** properties are passed as arrays `[x, y]`.
 
 **.frag file:**
 
-```
+```javascript
 #version 330 core
 layout(location = 0) out vec4 fragColor;
 
@@ -214,7 +214,7 @@ To see how to use **Margin**, you can checkout the example eExplode effect.
 
 **multiplyRed.gre file:**
 
-```
+```xml
 <ShaderEffect name="Multiply Red">
     <Properties>
         <Property name="red" type="float" min="0" max="1"
@@ -225,7 +225,7 @@ To see how to use **Margin**, you can checkout the example eExplode effect.
 
 **multiplyRed.frag file:**
 
-```
+```javascript
 // Friction uses OpenGL 3.3
 #version 330 core
 // output color
