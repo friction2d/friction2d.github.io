@@ -131,3 +131,19 @@ This feature can only be assigned to a **Group** or **Layer** objects while all 
 Check the following video for more information:
 **[Flip book](https://www.youtube.com/watch?v=a3etLEh01GE)**
 *(**NOTE**: it's an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)*
+
+## Morphing
+
+This technique creates the illusion of one shape turning into a new one but the truth is that it transforms all its nodes into a new and final position but it is performed by just one path.
+
+![Morphing example](/assets/documentation/animation_techniques/anim_techniques_morphing.svg)
+
+Every keyframe saves the position of all nodes of a shape. They can be transformed over time, the same that happens with almost any other parameter.
+
+The trick here is the smart way of choosing the initial and final position of the group of nodes (and tangents) that conform the whole shape.
+
+This morphing can be done in two ways:
+- **start and end keyframes have the same number of nodes**: this is the simplest and easiest way to understand the animation as all the nodes just move from the start to an end position creating the morphing illusion. 
+- **start and end keyframes have different number of nodes**: in this case, **Friction** (driven by the animator indeed) decides what nodes are going to be "removed" from start to end as the path can't really animate this removal. But it will use the `dissolve node` feature that makes possible to `deactivate`and `activate` an animated node. More on this topic at **[Dissolve nodes feature](tips.html#dissolve-nodes)**.
+
+Whether using one or the other way of morphing, **Friction** allows to `copy path` and `paste path` from one path to another. It automatically will detect if the pasted one has the same or different number of nodes and it will animate the interpolation accordingly. By the way, it will probably need some post work on the nodes or a previous work with them as every node has an index and the node animation will be performed matching same start node index with same end node index so it will be crucial to know nodes indexes. **Friction** lets users check the index assigned to every node by pressing `ctrl + shift` (or `cmd + shift` in macOS) in your keyboard.
