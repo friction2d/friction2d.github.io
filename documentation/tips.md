@@ -209,9 +209,21 @@ Check the following video for more information:
 
 When in `node editing` (so called`Point editing`) mode, it is possible to check the node index applied to a shape. It could come handy when dissolving or morphing a shape into another one as at equal number of nodes each node will morph using its index.
 
-![Animating path nodes](/assets/documentation/tips/tips_node_index.png).
+![Animating path nodes](/assets/documentation/tips/tips_node_index.png)
 
 In order to see the indexes just press `ctrl + shift` (`cmd + shift` in macOS) while in `Point editing`.
+
+## Copy and paste paths
+
+Taking advantage of the previously explained **[Dissolve nodes](#dissolve-nodes)** feature, **Friction** allows to `copy path` and `paste path` from one path to another. It automatically will detect if the pasted one has the same or different number of nodes and it will animate the interpolation accordingly.
+
+![Copy and paste paths](/assets/documentation/tips/tips_copy-paste_path.png)
+
+It is very convenient when the animator has the start shape and end shape saved in different paths and want to animate the morphing between them both but happening in the same object (shape).
+
+The final result will be a kind of effortless morphing.
+
+![Morphing example](/assets/documentation/animation_techniques/anim_techniques_morphing.svg)
 
 ## SVG animations love Expressions
 
