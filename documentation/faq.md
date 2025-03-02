@@ -63,7 +63,7 @@ At the moment **Friction** has not option to retrieve information from another f
 
 No, while Lottie has its great advantages, **Friction** uses SVG animations with [**SMIL**](https://www.w3.org/TR/REC-smil/) *(Synchronized Multimedia Integration Language)* supported by the W3 Consortium.
 
-Current we have no plans to support Lottie, we only support/promote web standards.
+Currently we have no plans to support Lottie, we only support/promote web standards.
 
 ### Is Friction a fork of enve?
 
