@@ -28,7 +28,7 @@ Some suggested tools for designing assets could be the following:
     - **[Affinity Photo](https://affinity.serif.com/en-us/photo/)**
     - any software capable of exporting to JPEG, PNG or WEBP image files.
 
-## 1. Project and first scene creation
+## Project and first scene creation
 
 After opening Friction, the Canvas panel will prompt the user to:
 - **New**: create a new project.
@@ -69,7 +69,7 @@ As in other 2D graphical software the canvas can be navigated with two types of 
 
 In **`View > Zoom`** there are additional ways of navigating the canvas such as `Fit to canvas` or `Reset Zoom` and them all can also be triggered using [Keyboard Shortcuts](shortcuts.html).
 
-## 2. Creating assets
+## Creating assets
 
 It's possible to create basic shapes using Friction **[Tools panel](userinterface.html#4-tools)**. If it's the first time try creating a rectangle (`shift` + drag to create a square) or an ellipse (`shift` + drag to create a circle) by clicking and dragging the mouse pointer while in the canvas. Release to finish the creation of the shape.
 
@@ -87,7 +87,7 @@ Now, go to the **[Fill and Stroke panel](userinterface.html#9-fill-and-stroke)**
 
 ![Change color value](/assets/documentation/usage/usage_edit_color.png)
 
-## 3. Importing and linking
+## Importing and linking
 
 As commented previously, Friction is not a vector graphics design software but an animation one so is highly suggested that assets are created externally.
 
@@ -104,7 +104,7 @@ Bitmap graphics will always be **linked**, even if they are added with the **Imp
 
 Assets can be added by "drag & drop" from any file explorer to Friction canvas and they will be imported if possible (`SVG`) and linked if not (`JPEG`, `PNG`,...)
 
-## 4. Basic animation
+## Basic animation
 
 ### Keyframes
 
@@ -162,7 +162,7 @@ Example of keyframes with smooth handles:
 
 ![Graph view button](/assets/documentation/usage/usage_graph_view_4.png)
 
-## 5. Preview
+## Preview
 
 ![Play button](/assets/documentation/usage/usage_preview_play.png)
 
@@ -172,14 +172,42 @@ There are some ways to preview the scene animation within Friction:
 - **in editor Preview**: if `View > Preview Cache` menu checkbox is disabled, then the animation will be played without caching it, that is faster to play but it may be not in realtime as it will be dependent of your hardware (in case your computer is not capable of rendering all the frames at the scene FPS) so, it is possible that this preview is not played at realtime. The benefit of this mode is that selected objects will show their bounding boxes, pivots points, etc. and that may be interesting for the animator to check how the animation is performed.
 - **SVG Preview**: in case the animation is designed inside all the features of SVG animation, it is possible to run the `Preview SVG` button in the **[Main toolbar](userinterface.html#1-main-toolbar)** and preview it in the default SVG player of the computer (probably an Internet browser).
 
-## 6. Saving the project
+## Saving the project
 
-## 7. Export
-SVG
-or rendering
-More in depth: [Export chapter](export.html)
+At any time, **Friction** lets users save the project into a file with `.friction` extension. Everything but linked assets will be saved inside the document. The file is binary so it can not be read with text editors but this may change in the future as there are plans to move into a text based project file.
 
-## 8. Advanced
+## Export
+
+The **Export** feature let users publish the project animations (bundled into scenes) to media files. There are 2 main ways of exporting:
+
+### Animated SVG
+
+This option will create an animated **SVG** file using the *non yet deprecated* [**SMIL** (Synchronized Multimedia Integration Language)](https://www.w3.org/TR/REC-smil/) format. This format is mainly useful for **web design** as it creates lightweight files that are compatible with most Internet browsers and devices.
+
+In order to export into **SVG** users will find 2 options:
+- **Preview SVG**: it will export and preview the file in your default Internet browser. It's a very useful and fast way to quickly preview the animation.
+- **Export SVG**: a new window will show up with options to generate the final **SVG** file. Among the self-explanatory options there is `Optimize for Web` that uses **[SVGO](https://github.com/svg/svgo)** for reducing the file size.
+
+![Export SVG dialog](/assets/documentation/usage/usage_export_svg.png)
+
+Both options are available in the **[Main Toolbar](userinterface.html#main-toolbar)**
+
+**Important note**: not all **Friction** features are compatible with animated SVG (and probably some are not implemented into the exporter yet). There is more information in the [Export chapter](export.html#svg-animation).
+
+### Rendered animation
+
+The second way of exporting is the conventional rendering of the scene animation into a video and/or audio format.
+
+In order to config the export, users should open the [Queue panel](userinterface.html#8-queue) and set:
+- **Scene Properties**: if they are correctly set and there is no need to trim, adjust or choose the `IN/OUT` option, this option could be skipped.
+- **Profiles**: saved profiles are convenient for choosing video/audio, format, codecs and their settings.
+- **Format**: in case of the need of manually changing the setttings here is the place to do it.
+
+![Export Queue panel](/assets/documentation/export/export_video-dialog.png)
+
+For more information about all exporting options there is a whole section about **[Export options](export.html#video--audio)**.
+
+## Advanced
 
 ### Effects and shaders
 
@@ -201,7 +229,7 @@ Following the previous picture, from top to bottom:
 - **Outline base effects**: same effects that applies to the outline applied to the object. The list of effects is the same of previous type of effects.
 - **Outline effects**: create "new outlines" and applies the selected effect. The list of effects is the same of previous type of effects.
 
-More on this subject in separate sections called **[Effects](effects.html)** and **[Shaders](shaders.html)**.
+More on this subject in separate sections **[Effects](effects.html)** and **[Shaders](shaders.html)**.
 
 ### Tools
 - **Null objects**: Adds an invisible reference object that can be used to group or control other elements by applying `Transform Effects` in the composition.
@@ -226,7 +254,7 @@ This feature lets users create and save different `Canvas` and/or `Timeline`divi
 
 ![Division splitter](/assets/documentation/ui/ui_timeline-splitting-panel.png)
 
-## 9. Learning resources
+## Learning resources
 
 This is an always growing chapter and over time new resources could be included.
 

@@ -23,9 +23,9 @@ The Expressions popup window has 2 tabs:
 * Editor: where the Expressions are setup.
 * Easing: a simple way to create an easing animation for a parameter.
 
-![Expressions popup window](/assets/documentation/expressions/expressions_1-2.png)
+![Expressions popup window](/assets/documentation/expressions/expressions_1.png)
 
-## 1. Bindings
+## Bindings
 
 In this section the user can create variables of properties with values coming from the scene:
 
@@ -46,7 +46,7 @@ Note that it's not possible to add here constant variables like `lenght = 100;`.
 
 Friction is not capable yet to get a value coming from another time or frame as in other famous software.
 
-## 2. Calculate
+## Calculate
 
 In this section the user is able to define constants, do calculations, use **ECMAScript (JavaScript)** functions.
 
@@ -66,11 +66,11 @@ Example:
 return position_x * 2;
 ```
 
-## 3. Definitions
+## Definitions
 
 When the user wants to add complex or long custom functions, they can be included here and called later in the **Calculate** section.
 
-![Expressions popup window](/assets/documentation/expressions/expressions_3.png)
+![Expressions popup window](/assets/documentation/expressions/expressions_2.png)
 
 A simple example of use would be adding this function in the **Definitions** panel:
 ```javascript
@@ -84,6 +84,79 @@ And then in the **Calculate** one:
 one = 100;
 two = 200;
 return my_simple_function(one, two);
+```
+
+## Expressions Presets
+
+Writing lot of pieces of code and moreover, doing it for a few different parameters could be tedious and slowdown workflows so **Friction** let users save their code and functions inside a bundle called `Preset` for easy later use or to be shared with other animators.
+
+**Presets** can be managed with the following fields and commmands:
+- **selector**: in this dropdown it is possible to load a presaved `Preset` and automatically fill the `Bindings`, `Scripts` (so called `Calculate`) and `Definitions`.
+- **save**: it prompts for a preset name and adds it to the selector.
+- **delete**: it deletes the active preset from the selector. It asks the users if he is sure about it.
+- **update**: it updates both the name and code of active preset. The name can be updated by editing it in the selector field.
+- **export**: presets can be saved as external files with `.fexpr` extension so that they can be backed up or shared.
+- **import**: it lets import a preset from an external `.fexpr` file.
+
+`.fexpr` are text based files so they can be viewed, edited and/or created with any text editor. At **Friction** startup the presets placed into the following folder will be loaded:
+- **Linux**: `home_directory/.config/friction/Expressions`
+- **Windows**: `home_directly\AppData\Local\friction\Expressions`
+- **macOS**: `home_directory/Library/Preferences/friction/Expressions/`
+
+Note that if creating them by hand, there must not be presets with the same field `id`. Apart from that, if the preset structure is preserved the `.fexpr` will be loaded at startup.
+
+## Custom Functions
+
+**Friction** comes with lots of functions provided from **[ECMAScript](https://en.wikipedia.org/wiki/ECMAScript)** basics but users may find some missing or they would just like to create their own ones and make them available across any **Expression editor**.
+
+For this to work users should open their `/Expressions/` folder where normal **Expressions Presets** are saved, that is:
+- **Linux**: `home_directory/.config/friction/Expressions`
+- **Windows**: `home_directly\AppData\Local\friction\Expressions`
+- **macOS**: `home_directory/Library/Preferences/friction/Expressions/`
+
+Open, duplicate or edit the one you want to turn into a **Function** with any text editor and make sure it has an structure like the following:
+```javascript
+[General]
+definitions=
+description=
+highlighters=
+id=
+title=
+version=
+```
+
+The most important parameters to fill up are `definitions=` where the custom function has to be included, `highlighters=` that will make it recognizable by **Friction** and `id=` where any string could be added while it doesn't contain blank spaces.
+
+A full working example:
+```javascript
+[General]
+definitions="function clamp(number, lower, upper) { return Math.max(lower, Math.min(number, upper)); }"
+categories=Core
+description=Clamp value to upper and lower.
+highlighters="clamp(x, lower, upper)"
+id=graphics.friction.clamp
+title=Clamp
+version=1
+```
+
+Save the file with any name and extension `fexpr` and reboot **Friction** as Presets and custom functions are loaded at startup.
+
+Take into account that the previous file structure is very similar to the one used for **Presets** but here it lacks of some of the parameters.
+
+If adding the functions with the normal **Expression editor** into **Definitions** files and saving them as **Presets** they will just work within that **Preset** and won't be available for other parameter Expressions. It can be created within **Friction** if desired but later it must be edited with a text editor so that it matches the "custom functions" structure.
+
+## Tips and tricks
+
+- `Auto Apply` checkbox can be marked to let expressions to be live updated
+- the **Expressions Editor** window will stay open and on top in case it is needed to preview or change any other parameter in **Friction** GUI. That is, it is possible to continue editing and animating and keeping the **Expressions editor** open.
+- in `Bindings` not just "one value" parameters can be called, so if wanting to save into a variable a "two value" parameter just refer to that "group" of two values:
+
+```javascript
+// single value
+var x = transform.translate.x;
+
+// double value
+var translate = transform.translate;
 ```
 
 ## Useful expressions
