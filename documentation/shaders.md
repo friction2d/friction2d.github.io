@@ -1,7 +1,9 @@
 ---
 title: "Shader Effects"
-layout: default
+layout: documentation
 permalink: documentation/shaders.html
+categories: documentation
+order: 9
 ---
 
 # Shaders Effects

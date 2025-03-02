@@ -1,7 +1,9 @@
 ---
 title: "Build on macOS"
-layout: default
+layout: documentation
 permalink: documentation/source-macos.html
+categories: documentation
+order: 14
 ---
 
 # Build on macOS

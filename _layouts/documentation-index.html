@@ -1,0 +1,27 @@
+{% include assign.html %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    {% include head.html %}
+    <body>
+        <div id="headerDefault">
+            {% include header.html %}
+        </div>
+        <div id="content">
+            {% include breadcrumbs.html %}
+            <div id="contentInner">
+                {{ content }}
+                <div class="blocks">
+                    {% assign documentation_pages = site.pages | where_exp: "page", "page.categories contains 'documentation'" | sort: 'order' %}
+                    {% for page in documentation_pages %}
+                    <div class="block newsblock">
+                        <a href="{{ page.url }}"><h2>{{ page.title }}</h2></a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+            {% include footer.html %}
+        </div>
+    </body>
+</html>

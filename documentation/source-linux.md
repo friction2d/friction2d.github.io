@@ -1,7 +1,9 @@
 ---
 title: "Build on Linux"
-layout: default
+layout: documentation
 permalink: documentation/source-linux.html
+categories: documentation
+order: 12
 ---
 
 # Build on Linux

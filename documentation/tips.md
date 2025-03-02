@@ -1,7 +1,9 @@
 ---
 title: "Tips"
-layout: default
+layout: documentation
 permalink: documentation/tips.html
+categories: documentation
+order: 5
 ---
 
 # Tips

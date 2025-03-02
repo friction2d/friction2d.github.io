@@ -1,7 +1,9 @@
 ---
 title: "Build on Windows"
-layout: default
+layout: documentation
 permalink: documentation/source-windows.html
+categories: documentation
+order: 13
 ---
 
 # Build on Windows

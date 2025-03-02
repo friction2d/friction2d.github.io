@@ -1,7 +1,9 @@
 ---
 title: "Effects"
-layout: default
+layout: documentation
 permalink: documentation/effects.html
+categories: documentation
+order: 8
 ---
 
 # Effects

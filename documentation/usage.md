@@ -1,7 +1,9 @@
 ---
 title: "Usage"
-layout: default
+layout: documentation
 permalink: documentation/usage.html
+categories: documentation
+order: 2
 ---
 
 # Basic Usage

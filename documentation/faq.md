@@ -1,7 +1,9 @@
 ---
 title: "Frequently asked questions"
-layout: default
+layout: documentation
 permalink: documentation/faq.html
+categories: documentation
+order: 11
 ---
 
 # Frequently Asked Questions (FAQ)

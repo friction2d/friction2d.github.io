@@ -1,7 +1,9 @@
 ---
 title: "User Interface"
-layout: default
+layout: documentation
 permalink: documentation/userinterface.html
+categories: documentation
+order: 1
 ---
 
 # User Interface

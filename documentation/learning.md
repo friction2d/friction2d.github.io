@@ -1,7 +1,9 @@
 ---
 title: "Learning resources"
-layout: default
+layout: documentation
 permalink: documentation/learning.html
+categories: documentation
+order: 10
 ---
 
 # Learning resources

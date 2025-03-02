@@ -570,3 +570,32 @@ code {
 span.category {
     text-transform: capitalize;
 }
+
+.nextPrevButton {
+    background-color: rgb(33, 33, 38);
+    color: white;
+    padding: 0.5em;
+    border-radius: .25em;
+    margin: 0.2em;
+}
+
+.nextPrevButton:hover {
+    background-color: black;
+}
+
+.nextPrevContainer {
+    padding-top:2em;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-wrap: wrap;
+    gap: 2em;
+}
+
+.nextPrevContainer a,
+.nextPrevContainer a:hover,
+.nextPrevContainer a:visited
+{
+    color: white;
+    text-decoration: none;
+}

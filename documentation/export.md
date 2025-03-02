@@ -1,7 +1,9 @@
 ---
 title: "Export"
-layout: default
+layout: documentation
 permalink: documentation/export.html
+categories: documentation
+order: 3
 ---
 
 # Export

@@ -1,7 +1,9 @@
 ---
 title: "Shortcuts"
-layout: default
+layout: documentation
 permalink: documentation/shortcuts.html
+categories: documentation
+order: 4
 ---
 
 # Shortcuts

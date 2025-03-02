@@ -1,6 +1,6 @@
 ---
 title: "Documentation"
-layout: default
+layout: documentation-index
 permalink: documentation/
 ---
 
@@ -16,23 +16,3 @@ Motion graphics has a wide variety of uses, including:
 * **Web design:** Animated logos, banners, and interactive elements
 * **Social media:** Animated posts and stories
 * **Presentations:** Animated infographics and slideshows
-
-## Resources
-
-* [User Interface](userinterface.html)
-* [Usage basics](usage.html)
-* [Export](export.html)
-* [Shortcuts](shortcuts.html)
-* [Usage tips](tips.html)
-* [Animation techniques](animation_techniques.html)
-* [Expressions](expressions.html)
-* [Effects](effects.html)
-* [Shaders](shaders.html)
-* [Learning resources](learning.html)
-* [FAQ](faq.html)
-
-## Developers
-
-* [How to build on Linux](source-linux.html)
-* [How to build on Windows](source-windows.html)
-* [How to build on macOS](source-macos.html)

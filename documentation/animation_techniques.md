@@ -1,7 +1,9 @@
 ---
 title: "Animation techniques"
-layout: default
+layout: documentation
 permalink: documentation/animation_techniques.html
+categories: documentation
+order: 6
 ---
 
 # Animation techniques

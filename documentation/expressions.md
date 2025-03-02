@@ -1,7 +1,9 @@
 ---
 title: "Expressions"
-layout: default
+layout: documentation
 permalink: documentation/expressions.html
+categories: documentation
+order: 7
 ---
 
 # Expressions
