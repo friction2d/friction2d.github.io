@@ -599,3 +599,8 @@ span.category {
     color: white;
     text-decoration: none;
 }
+
+img.doc {
+    height: 300px;
+    object-fit: cover;
+}

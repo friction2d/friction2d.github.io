@@ -3,6 +3,7 @@ title: "Learning resources"
 layout: documentation
 permalink: documentation/learning.html
 categories: documentation
+cover: animation_techniques/anim_techniques_morphing.svg
 order: 10
 ---
 

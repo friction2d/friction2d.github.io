@@ -3,6 +3,7 @@ title: "Build on Linux"
 layout: documentation
 permalink: documentation/source-linux.html
 categories: documentation
+cover: console.svg
 order: 12
 ---
 

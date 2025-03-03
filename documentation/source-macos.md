@@ -3,6 +3,7 @@ title: "Build on macOS"
 layout: documentation
 permalink: documentation/source-macos.html
 categories: documentation
+cover: console.svg
 order: 14
 ---
 

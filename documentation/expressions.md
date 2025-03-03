@@ -3,6 +3,7 @@ title: "Expressions"
 layout: documentation
 permalink: documentation/expressions.html
 categories: documentation
+cover: expressions/expressions_screenshot.png
 order: 7
 ---
 

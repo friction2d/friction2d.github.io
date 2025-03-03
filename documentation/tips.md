@@ -3,6 +3,7 @@ title: "Tips"
 layout: documentation
 permalink: documentation/tips.html
 categories: documentation
+cover: usage/usage_07.png
 order: 5
 ---
 

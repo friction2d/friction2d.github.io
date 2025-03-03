@@ -3,6 +3,7 @@ title: "Frequently asked questions"
 layout: documentation
 permalink: documentation/faq.html
 categories: documentation
+cover: question.svg
 order: 11
 ---
 

@@ -3,6 +3,7 @@ title: "Build on Windows"
 layout: documentation
 permalink: documentation/source-windows.html
 categories: documentation
+cover: console.svg
 order: 13
 ---
 

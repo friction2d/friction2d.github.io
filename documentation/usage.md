@@ -3,6 +3,7 @@ title: "Usage"
 layout: documentation
 permalink: documentation/usage.html
 categories: documentation
+cover: usage/usage_edit_parameter.png
 order: 2
 ---
 

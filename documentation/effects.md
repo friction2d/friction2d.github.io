@@ -3,6 +3,7 @@ title: "Effects"
 layout: documentation
 permalink: documentation/effects.html
 categories: documentation
+cover: effects/effects_01.png
 order: 8
 ---
 

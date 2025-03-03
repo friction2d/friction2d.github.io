@@ -3,6 +3,7 @@ title: "User Interface"
 layout: documentation
 permalink: documentation/userinterface.html
 categories: documentation
+cover: usage/usage_startup.png
 order: 1
 ---
 

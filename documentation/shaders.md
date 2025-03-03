@@ -3,6 +3,7 @@ title: "Shader Effects"
 layout: documentation
 permalink: documentation/shaders.html
 categories: documentation
+cover: shaders/shaders_1.png
 order: 9
 ---
 

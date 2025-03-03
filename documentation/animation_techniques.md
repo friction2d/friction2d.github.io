@@ -3,6 +3,7 @@ title: "Animation techniques"
 layout: documentation
 permalink: documentation/animation_techniques.html
 categories: documentation
+cover: animation_techniques/anim_techniques_follow-path.svg
 order: 6
 ---
 

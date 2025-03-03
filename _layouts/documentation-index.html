@@ -14,7 +14,10 @@
                     {% assign documentation_pages = site.pages | where_exp: "page", "page.categories contains 'documentation'" | sort: 'order' %}
                     {% for page in documentation_pages %}
                     <div class="block newsblock">
-                        <a href="{{ page.url }}"><h2>{{ page.title }}</h2></a>
+                        <a href="{{ page.url }}">
+                            <img class="doc" src="{{ site.url }}/assets/documentation/{{ page.cover }}" />
+                            <h2>{{ page.title }}</h2>
+                        </a>
                     </div>
                     {% endfor %}
                 </div>

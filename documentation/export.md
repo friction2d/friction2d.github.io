@@ -3,6 +3,7 @@ title: "Export"
 layout: documentation
 permalink: documentation/export.html
 categories: documentation
+cover: export/export_svg-dialog.png
 order: 3
 ---
 
