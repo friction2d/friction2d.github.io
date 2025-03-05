@@ -93,6 +93,8 @@ return my_simple_function(one, two);
 
 Writing lot of pieces of code and moreover, doing it for a few different parameters could be tedious and slowdown workflows so **Friction** let users save their code and functions inside a bundle called `Preset` for easy later use or to be shared with other animators.
 
+![Expressions presets example](/assets/documentation/expressions/expressions_presets.gif)
+
 **Presets** can be managed with the following fields and commmands:
 - **selector**: in this dropdown it is possible to load a presaved `Preset` and automatically fill the `Bindings`, `Scripts` (so called `Calculate`) and `Definitions`.
 - **save**: it prompts for a preset name and adds it to the selector.
