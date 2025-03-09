@@ -861,11 +861,7 @@ whether future versions of the GNU Lesser General Public License shall
 apply, that proxy&#39;s public statement of acceptance of any version is
 permanent authorization for you to choose that version for the Library.</code></pre>
 <h2 id="qt-libraries">Qt Libraries</h2>
-<p>The Qt framework and tools are primarily licensed under the license
-terms specified above. However, Qt does contain certain components and
-third party software that are licensed under terms different from the
-above licenses. The third party software, including Open Source Software
-included in Qt is as follows:</p>
+<p>The Qt framework and tools are primarily licensed under the license terms specified above. However, Qt does contain certain components and third party software that are licensed under terms different from the above licenses. The third party software, including Open Source Software included in Qt is as follows:</p>
 <pre><code>----------------------------------
 FreeType 2 (freetype) version 2.3.6
 ----------------------------------
@@ -1072,17 +1068,9 @@ Copyright (c) 2001-2006 Wolfram Gloger
 Permission to use, copy, modify, distribute, and sell this software and its documentation for any purpose is hereby granted without fee, provided that (i) the above copyright notices and this permission notice appear in all copies of the software and related documentation, and (ii) the name of Wolfram Gloger may not be used in any advertising or publicity relating to the software.
 THE SOFTWARE IS PROVIDED &quot;AS-IS&quot; AND WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED OR OTHERWISE, INCLUDING WITHOUT LIMITATION, ANY WARRANTY OF MERCHANTABILITY OR FITNESS FOR A PARTICULAR PURPOSE.
 IN NO EVENT SHALL WOLFRAM GLOGER BE LIABLE FOR ANY SPECIAL, INCIDENTAL, INDIRECT OR CONSEQUENTIAL DAMAGES OF ANY KIND, OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER OR NOT ADVISED OF THE POSSIBILITY OF DAMAGE, AND ON ANY THEORY OF LIABILITY, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.</code></pre>
-<h2 id="non-digia-owned-code-used-in-qt">Non-Digia Owned Code used in
-Qt</h2>
-<p>Qt contains some code that is not provided under the the GNU General
-Public License version 3 (GPL), or the GNU Lesser General Public License
-version 2.1 (LGPL), but rather under specific highly permissive licenses
-from the original authors. This page lists the licenses used for that
-code, names the authors, and links to the points where it is used.</p>
-<p>Digia gratefully acknowledges these and others contributions to Qt.
-We recommend that programs that use Qt or Qtopia Core also acknowledge
-these contributions, and quote these license statements in an appendix
-to the documentation.</p>
+<h2 id="non-digia-owned-code-used-in-qt">Non-Digia Owned Code used in Qt</h2>
+<p>Qt contains some code that is not provided under the the GNU General Public License version 3 (GPL), or the GNU Lesser General Public License version 2.1 (LGPL), but rather under specific highly permissive licenses from the original authors. This page lists the licenses used for that code, names the authors, and links to the points where it is used.</p>
+<p>Digia gratefully acknowledges these and others contributions to Qt. We recommend that programs that use Qt or Qtopia Core also acknowledge these contributions, and quote these license statements in an appendix to the documentation.</p>
 <pre><code>Copyright (C) 1999 Serika Kurusugawa. All rights reserved.
 Redistribution and use in source and binary forms, with or without modification, are permitted provided that the following conditions are met:
 1. Redistributions of source code must retain the above copyright notice, this list of conditions and the following disclaimer.
@@ -1158,27 +1146,19 @@ Modifications Copyright 1999 Matt Koss, under the same license as above.
 Permission to use, copy, modify, and distribute this software for any purpose with or without fee is hereby granted, provided that the above copyright notice and this permission notice appear in all copies.
 THIS SOFTWARE IS PROVIDED ``AS IS&#39;&#39; AND WITHOUT ANY EXPRESS OR IMPLIED WARRANTIES, INCLUDING, WITHOUT LIMITATION, THE IMPLIED WARRANTIES OF MERCHANTIBILITY AND FITNESS FOR A PARTICULAR PURPOSE. THE AUTHORS AND CONTRIBUTORS ACCEPT NO RESPONSIBILITY IN ANY CONCEIVABLE MANNER.
 * Parts of the QCrashHandler Class</code></pre>
-<p>Parts of the FreeType projects have been modified and put into Qt and
-Qtopia Core for use in the painting subsystem. These files are
-ftraster.h, ftraster.c, ftgrays.h and ftgrays.c. The following
-modifications has been made to these files:</p>
+<p>Parts of the FreeType projects have been modified and put into Qt and Qtopia Core for use in the painting subsystem. These files are ftraster.h, ftraster.c, ftgrays.h and ftgrays.c. The following modifications has been made to these files:</p>
 <ul>
-<li>Renamed FT and ft_symbols to QT_FT_and qt_ft to avoid name conflicts
-in qrasterdefs_p.h.</li>
-<li>Removed parts of code not relevant when compiled with
-<em>STANDALONE</em> defined.</li>
-<li>Changed behavior in ftraster.c to follow X polygon filling
-rules.</li>
-<li>Implemented support in ftraster.c for winding / odd even polygon
-fill rules.</li>
+<li>Renamed FT and ft_symbols to QT_FT_and qt_ft to avoid name conflicts in qrasterdefs_p.h.</li>
+<li>Removed parts of code not relevant when compiled with <em>STANDALONE</em> defined.</li>
+<li>Changed behavior in ftraster.c to follow X polygon filling rules.</li>
+<li>Implemented support in ftraster.c for winding / odd even polygon fill rules.</li>
 <li>Replaced bitmap generation with span generation in ftraster.c.</li>
 <li>Renamed ftraster.h as qblackraster_p.h.</li>
 <li>Renamed ftraster.c as qblackraster.c.</li>
 <li>Renamed ftgrays.h as qgrayraster_p.h.</li>
 <li>Renamed ftgrays.c as qgrayraster.c.</li>
 </ul>
-<p>See src/3rdparty/freetype/docs/FTL.txt and
-src/3rdparty/freetype/docs/GPL.txt for license details.</p>
+<p>See src/3rdparty/freetype/docs/FTL.txt and src/3rdparty/freetype/docs/GPL.txt for license details.</p>
 <pre><code>Copyright (c) 1985, 1986, 1987 X Consortium
 Permission is hereby granted, free of charge, to any person obtaining a copy of this software and associated documentation files (the &quot;Software&quot;), to deal in the Software without restriction, including without limitation the rights to use, copy, modify, merge, publish, distribute, sublicense, and/or sell copies of the Software, and to permit persons to whom the Software is furnished to do so, subject to the following conditions:
 The above copyright notice and this permission notice shall be included in all copies or substantial portions of the Software.
@@ -1190,8 +1170,7 @@ All Rights Reserved
 Permission to use, copy, modify, and distribute this software and its documentation for any purpose and without fee is hereby granted, provided that the above copyright notice appear in all copies and that both that copyright notice and this permission notice appear in supporting documentation, and that the name of Digital not be used in advertising or publicity pertaining to distribution of the software without specific, written prior permission.
 DIGITAL DISCLAIMS ALL WARRANTIES WITH REGARD TO THIS SOFTWARE, INCLUDING ALL IMPLIED WARRANTIES OF MERCHANTABILITY AND FITNESS, IN NO EVENT SHALL DIGITAL BE LIABLE FOR ANY SPECIAL, INDIRECT OR CONSEQUENTIAL DAMAGES OR ANY DAMAGES WHATSOEVER RESULTING FROM LOSS OF USE, DATA OR PROFITS, WHETHER IN AN ACTION OF CONTRACT, NEGLIGENCE OR OTHER TORTIOUS ACTION, ARISING OUT OF OR IN CONNECTION WITH THE USE OR PERFORMANCE OF THIS SOFTWARE.
 * Parts of the Q3PolygonScanner class used in Qt for Embedded Linux</code></pre>
-<p>OpenGL is a trademark of Silicon Graphics, Inc. in the United States
-and other countries.</p>
+<p>OpenGL is a trademark of Silicon Graphics, Inc. in the United States and other countries.</p>
 <ul>
 <li>QGLFormat</li>
 </ul>

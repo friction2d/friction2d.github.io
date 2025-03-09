@@ -19,7 +19,7 @@ You should have received a copy of the GNU General Public License along with thi
 - Sanjay 
 - vestineo 
 - irwanto 
-- luzpaz 
+- Luz Paz 
 - Adam Belis 
 - axiomgraph 
 - eFe Muñoz
@@ -32,9 +32,8 @@ Friction is based on enve - Copyright &copy; Maurycy Liebner and contributors.
 - Poren Chiang 
 - Yash Pal Goyal 
 - Peter Eszlari 
-- Alexandre Prokoudine 
 - eszlari 
-- luz paz 
+- Alexandre Prokoudine 
 - nabbisen 
 - yashpalgoyal1304 
 

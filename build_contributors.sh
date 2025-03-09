@@ -23,6 +23,7 @@ CWD=`pwd`
 CAP="2023-01-01"
 BUILD=${CWD}/build-contributors
 ORG=https://github.com/friction2d
+SED=${SED:-sed}
 
 if [ -d "${BUILD}" ]; then
     rm -rf ${BUILD}
@@ -52,11 +53,13 @@ git shortlog -sne --all > ${BUILD}/friction-shaders.txt
 
 # Filter out duplicates
 cd ${BUILD}
-find . -type f -name "*.txt" -exec sed -i "/André </d" {} \;
-find . -type f -name "*.txt" -exec sed -i "/AG <68/d" {} \;
-find . -type f -name "*.txt" -exec sed -i "/liebner@proton/d" {} \;
-find . -type f -name "*.txt" -exec sed -i "/maurycyliebner/d" {} \;
-find . -type f -name "*.txt" -exec sed -i "/MaurycyLiebner/d" {} \;
+find . -type f -name "*.txt" -exec ${SED} -i "/luz paz </d" {} \;
+find . -type f -name "*.txt" -exec ${SED} -i "/luzpaz </d" {} \;
+find . -type f -name "*.txt" -exec ${SED} -i "/André </d" {} \;
+find . -type f -name "*.txt" -exec ${SED} -i "/AG <68/d" {} \;
+find . -type f -name "*.txt" -exec ${SED} -i "/liebner@proton/d" {} \;
+find . -type f -name "*.txt" -exec ${SED} -i "/maurycyliebner/d" {} \;
+find . -type f -name "*.txt" -exec ${SED} -i "/MaurycyLiebner/d" {} \;
 
 # Generate About
 DOC=${CWD}/about.md
@@ -70,7 +73,7 @@ echo >> ${DOC}
 
 echo "Friction is copyright &copy; Ole-André Rodlie and contributors." >> ${DOC}
 echo >> ${DOC}
-echo "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, either version 3 of the License, or (at your option) any later version." >> ${DOC}
+echo "This program is free software: you can redistribute it and/or modify it under the terms of the GNU General Public License as published by the Free Software Foundation, version 3." >> ${DOC}
 echo >> ${DOC}
 echo "This program is distributed in the hope that it will be useful, but WITHOUT ANY WARRANTY; without even the implied warranty of MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE. See the GNU General Public License for more details." >> ${DOC}
 echo >> ${DOC}
@@ -80,14 +83,14 @@ echo >> ${DOC}
 echo "### Contributors" >> ${DOC}
 echo >> ${DOC}
 
-cat friction.txt friction-theme.txt friction-web-docs.txt friction-shaders.txt | awk '{$1=""; print $0}' | awk '!seen[$0]++' | awk {'print "-"$0'} | sed 's/^ //g;s/<.*//' >> ${DOC}
+cat friction.txt friction-theme.txt friction-web-docs.txt friction-shaders.txt | awk '{$1=""; print $0}' | awk '!seen[$0]++' | awk {'print "-"$0'} | ${SED} 's/^ //g;s/<.*//' >> ${DOC}
 echo "- eFe Muñoz" >> ${DOC}
 echo "- Alex Kiryanov" >> ${DOC}
 echo >> ${DOC}
 
 echo "Friction is based on enve - Copyright &copy; Maurycy Liebner and contributors." >> ${DOC}
 echo >> ${DOC}
-cat enve.txt | awk {'$1=""; print "-"$0'} |sed 's/^ //g;s/<.*//' >> ${DOC}
+cat enve.txt | awk {'$1=""; print "-"$0'} | ${SED} 's/^ //g;s/<.*//' >> ${DOC}
 echo >> ${DOC}
 
 cat ${DOC}

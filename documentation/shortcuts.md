@@ -9,9 +9,6 @@ order: 4
 
 # Shortcuts
 
-* table of contents
-{:toc}
-
 Shortcuts available in Friction.
 
 ## General
