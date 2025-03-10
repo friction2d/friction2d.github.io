@@ -170,10 +170,11 @@ For other inquiries use support at friction dot graphics.
 * Microsoft Windows (N) 10/11 x64
   * *Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed*
 * Enterprise Linux 7.9/8/9/10 x86_64 and compatible
+  * *VFX Platform CY2021+ compatible*
   * *Generic Linux with X11 or Wayland, PulseAudio and glibc 2.17+ should work*
-* macOS Monterey (12.7 Intel) or newer, will work on latest macOS
-  * Apple Silicon is supported through Rosetta 2 at the moment
-  * Note macOS is still experimental
+* macOS Monterey (12.7) Intel x86_64, will work on latest macOS
+  * *Apple Silicon is supported through Rosetta 2 at the moment*
+  * ***Note macOS is still experimental***
 
 ---
 
