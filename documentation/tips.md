@@ -25,7 +25,13 @@ Use the mouse wheel while hovering over the bottom scroll bar to scale the timel
 
 ![Timeline navigation](/assets/documentation/usage/usage_02.png)
 
-You can change the values by clicking in the value box and moving the cursor sideways or by clicking in the value box and using the keyboard to enter the values.
+It is possible to change the values by: 
+- clicking in the value box and dragging the cursor sideways (if holding `alt` key modifier it will change values in smaller steps)
+- single clicking in the value box and using the keyboard to enter the values.
+
+For both of them and when editing a value part of a **double value** (usually **X** and **Y**), it is possible to perform an **uniform value input** if pressing `shift` while editing or while hitting `Enter` to accept the changes, that is, the value will be applied to both fields.
+
+![Uniform value input](/assets/documentation/tips/tips_uniform_value_input.gif)
 
 ## Adding keyframes
 
