@@ -14,7 +14,7 @@ download_active: true
 comments: ""
 ---
 
-While there are some TODOs left we are feature complete and stability is already better than 0.9.6.1. So why not do a new release? Enjoy!
+While there are some TODOs left we are feature complete and stability is already better than 0.9.6.1. Enjoy!
 
 ## Changes since Beta 2
 
@@ -28,6 +28,9 @@ https://friction.graphics/documentation
 
 ### UI/UX
 
+* Value sliders now support uniform scaling if using the `Shift` modifier
+  * `Shift` + `Enter` if adding numbers
+* Various UI/UX changes
 * UI fix for text effect properties
 * Theme fixes
 * Toolbars UI/UX fixes
