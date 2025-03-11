@@ -2,19 +2,19 @@
 title: "Friction 1.0.0-rc.1"
 layout: post
 lead: "Introducing the first release candidate for Friction 1.0.0."
-image: "/assets/screenshots/100/friction-100b2-screenshot.png"
+image: "/assets/screenshots/100/friction-100rc1-screenshot.png"
 categories: releases
 release: 1.0.0-rc.1
 windows_setup: "setup-win64.exe"
 windows_portable: "windows-x64.7z"
 linux_portable: "linux-x86_64.tar.xz"
 linux_appimage: "x86_64.AppImage"
-mac_dmg: "x86_64.dmg"
+mac_intel_dmg: "x86_64.dmg"
 download_active: true
 comments: ""
 ---
 
-While there are some TODOs left we are feature complete and stability is already better than 0.9.6.1. Enjoy!
+While there are some TODOs left we are feature complete and stability is already better than the 0.9 series. Enjoy!
 
 ## Changes since Beta 2
 
@@ -24,7 +24,7 @@ We have documentation! Big thanks to Pablo Gil for doing the majority of work.
 
 We are still working on it, so don't mind spelling mistakes etc, it will be fixed.
 
-https://friction.graphics/documentation
+[https://friction.graphics/documentation](https://friction.graphics/documentation)
 
 ### UI/UX
 
@@ -127,7 +127,8 @@ macOS is still experimental, but we continue to improve the port.
 The Linux port got several new enhancements (future-proofing) in this version.
 
 * Flatpak support
-* XDG Portal support
+  * Will be submitted to Flathub on final release
+* Initial XDG Portal support
 * Wayland support
 * Use EGL as default (GLX is deprecated)
 * All binaries now support both X11 and native Wayland out-of-the-box
@@ -135,6 +136,51 @@ The Linux port got several new enhancements (future-proofing) in this version.
 ### SDK
 
 We upgraded to Qt 5.15.16 with the latest KDE patches for this version.
+
+### Checksums
+
+```
+-----BEGIN PGP SIGNED MESSAGE-----
+Hash: SHA512
+
+SHA256 Checksum: 
+b61e651e135617769a3ff38116c50ff246afc06fef4c13d10ef3ca054d336290  Friction-1.0.0-rc.1-x86_64.AppImage
+
+SHA256 Checksum: 
+42b2e9de36effe76d8bac882271ef2b25e5f156aec15bf4f5307f0b72fc0d83f  Friction-1.0.0-rc.1-x86_64.dmg
+
+SHA256 Checksum: 
+78f8da3074a6a42b457f3eeaa406a94f1fbc70f525527bb848bd5134ea42b368  friction-1.0.0-rc.1-linux-x86_64.tar.xz
+
+SHA256 Checksum: 
+3e399960ff4635be048746f1be2653d8185c494fbbfa977eb322f252e15ca130  friction-1.0.0-rc.1-setup-win64.exe
+
+SHA256 Checksum: 
+e1c8d80d4f7bf44a1407101e04d1fbc0728ce6b82036ec5f433d49c51af3a9f6  friction-1.0.0-rc.1-windows-x64.7z
+
+SHA256 Checksum: 
+26c536371d77c72d6cda210eed26b56bae6197df6c2954202fef77768d2f95f7  friction-1.0.0-rc.1.tar.xz
+
+SHA256 Checksum: 
+a8e1e0e6e42814ea1fea1012fb64b0b164ab8e80bf652675223cb368c85857b0  friction-1.0.0.rc.1-1.x86_64.rpm
+
+-----BEGIN PGP SIGNATURE-----
+
+iQIzBAEBCgAdFiEEaJcvKbgc2jraF+repD5Lhhb4ydMFAmfQbtQACgkQpD5Lhhb4
+ydMAGhAAodhE3X5pmGBYRvbQT8uyQchFrs1Q+yIUneZLQD5C4t/ROHASG2uJRxmE
+eJw3z8sqOlX6HQp0kuMXL38nGoH1rqcbC0ry/aRR/Dp7QtzUsorUJqg96dDZpbYe
++mk0+7DzZqEwRLGGGpB+pf/cs7YGf3MITN6TWqpnTjZVCK9zAMZwkt7CBnzC0AjS
+kftd2E13vk427V+ZcxiYNAYn/hqEIGGBjSa5o/fUDb0BNkfBAt769T7RjMSL7bn8
+6fEwYafeVLW46RAf31ykXy3U4CNBj6K1QsYR8npJS23/9hSI3eA/+RY5m7DnjLPk
+mdiiS3E099mE7kkjC6R5tbGXDMkMakncpUHiF7wH/n2OYMPZQP2lkbDEo1PeQXKk
+SA3XQwiOwGPhCSxJ3F/Xs9ws2RfM6XOILGBcUIuTyh5mSFvbKQCh5GX6kWxradMy
+jGLrT7eTUlp2CBRHmVYzycb4ea/ukT7zZOk1nsLxBOsBWIZT2Md8pTpvYOlUj6nN
+253FUYUdM99LLRG12AKu2G/dMaDA/EDfvqixIXmycfacYZywNuQPnm/Zeo3/71aW
+ghpBjIFA9f9WsG8/+BMWx8/kbP/BhU0guOymgG1W/OPJXWp8Ylwo9Gvjrrl9Cqqp
+CglsaizXYtymgpyk1DcnPdi5G0IviVk1oSZNEVnMAcYrmtROGxg=
+=LsrY
+-----END PGP SIGNATURE-----
+```
 
 ## Support
 
