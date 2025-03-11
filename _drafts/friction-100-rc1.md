@@ -40,7 +40,7 @@ https://friction.graphics/documentation
   * on Windows, been disabled on Linux and macOS
 * Icons updates
 * Text tool will now open text editor if clicking on text box
-* Canvas toolbar now supports show/hide lables
+* Canvas toolbar now supports show/hide labels
   * See right-click context menu
 * Restore UI visibility state for "Fill and Stroke"
   * You can show/hide the widget with the `F` key
@@ -72,17 +72,21 @@ The align tool got some new options in this version.
 * Added support for pivot alignment
   * Align to bounding box
   * Align to scene
+  * Align all pivots to last selected object bounding box
+  * Align all pivots to last selected object pivot
 
 ### Expressions
 
 Several changes to the expression engine was introduced in this version. We got scene bindings and support for external JS functions/add-ons.
 
-Expression Presets have been added to speed up workflows. It allows to load, save, rename, import and export presets which bundling the code written in Bindings, Scripts (Calculate) and Definitions.
+Expression Presets have been added to speed up workflows. They allow to load, save, rename, import, and export presets, which bundle the code written in Bindings, Scripts (Calculate), and Definitions.
 
 * Editor: removed easing tab
 * UI/Font fixes in editor
 * Added `clamp` function
 * Added `lerp` function
+* Added `oscillation` function
+* Added `noise` function
 * Support external JS functions/add-ons
 * Added scene bindings
   * `$scene.fps`
@@ -96,7 +100,6 @@ Expression Presets have been added to speed up workflows. It allows to load, sav
   * Copy Y
   * Orbit X
   * Orbit Y
-  * Oscillation
   * Rotation
   * Time
   * Track Object
