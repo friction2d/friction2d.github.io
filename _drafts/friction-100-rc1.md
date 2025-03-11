@@ -14,7 +14,7 @@ download_active: true
 comments: ""
 ---
 
-While there are some TODOs left we are feature complete and stability is already better than the 0.9 series. Enjoy!
+While there are some TODOs left we are feature complete and stability is already much better than the 0.9 series. Enjoy!
 
 ## Changes since Beta 2
 
