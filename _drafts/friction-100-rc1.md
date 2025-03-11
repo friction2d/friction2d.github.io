@@ -63,7 +63,7 @@ This version introduces settings for MSAA, needed for smooth lines and text. Pri
 * Default is still 4x
 * Recommended is 0x or 16x for modern NVIDIA/Radeon cards
 
-Intel (GPU) users should stay on the default x4.
+Intel (GPU) users should stay on the default (4x).
 
 ### Align
 
