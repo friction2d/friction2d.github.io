@@ -89,7 +89,7 @@ Friction can export projects to the most common video formats such as:
 * WAV / WAVE
 * OGG
 * Audio IFF
-* and many more thanks to integrated [FFMEG](https://www.ffmpeg.org/)
+* and many more thanks to integrated [FFMPEG](https://www.ffmpeg.org/)
 
 Note that **GIF** is not included in the list as other applications does a much better job.
 
