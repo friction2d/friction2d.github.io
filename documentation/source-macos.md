@@ -66,6 +66,12 @@ sudo ln -s /opt/local/bin/python3 /usr/local/bin/python
 git clone --recurse-submodules https://github.com/friction2d/friction
 ```
 
+Keep the source updated with:
+
+```
+git pull && git submodule update --init --recursive
+```
+
 ## Build
 
 Create the `build` folder:
