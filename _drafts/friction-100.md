@@ -67,6 +67,7 @@ Lorem ipsum
 * Easing support on timeline and graph
 * Various Undo/Redo fixes
 * User defaults for new scene
+* Clear selection on right-click if in draw/circle/rectangle mode
 
 ### SVG
 
