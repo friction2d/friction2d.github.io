@@ -67,7 +67,11 @@ Lorem ipsum
 * Easing support on timeline and graph
 * Various Undo/Redo fixes
 * User defaults for new scene
-* Clear selection on right-click if in draw/circle/rectangle mode
+* Improved fill and stroke workflow
+  * Last used fill/stroke color and stroke width is now stored for reuse
+  * Restore last used fill/stroke on startup
+  * New scene will adjust last used colors to background color (avoid identical color)
+  * Clear selection on right-click if in draw/circle/rectangle mode
 
 ### SVG
 
