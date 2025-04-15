@@ -14,7 +14,7 @@ mac_arm_dmg: "arm64.dmg"
 download_active: true
 ---
 
-Lorem ipsum
+Lorem ipsum.
 
 * table of contents
 {:toc}
@@ -66,18 +66,19 @@ Lorem ipsum
 * Support adjust scene to first clip added
 * Easing support on timeline and graph
 * Various Undo/Redo fixes
-* User defaults for new scene
+* User defaults for new scene (override default values for new scene)
 * Improved fill and stroke workflow
   * Last used fill/stroke color and stroke width is now stored for reuse
   * Restore last used fill/stroke on startup
-  * New scene will adjust last used colors to background color (avoid identical color)
+  * New scene will adjust last used colors to background color (avoid identical colors)
   * Clear selection on right-click if in draw/circle/rectangle mode
+* Improved HiDPI support on Windows
 
 ### SVG
 
 * Support paste SVG from clipboard (shift+ctrl+v)
 * Experimental support for interactive SVG transforms
-* Support for optimized SVG on export
+* Support for optimized SVG on export (requires SVGO)
 * Support for `animateMotion` (follow path)
 * The 'follow path' effect can now be used for SVG animations
 * Support Inkscape labels
@@ -103,30 +104,37 @@ Lorem ipsum
 
 ### Other
 
-* Apple Silicon support
-* New Portable Mode
-* **macOS:** Initial (experimental) support
-* **macOS:** Multi-Touch support
+* Improved Portable Mode
+* Upgraded SDK to Qt 5.15.16 with KDE Patch Collection
+
+### macOS
+
+This release introduces official (but still experimental) support for macOS.
+
+* Testing and development happens on macOS 12 (Intel) and macOS 15 (Apple Silicon)
+* We target latest macOS with backwards compatibility with macOS 12.7
+* Multi-Touch support
   * Pan (Slide two fingers, alt modifier to zoom)
   * Zoom in or out (Pinch with two fingers)
   * Smart Zoom (Double-tap with two fingers)
-* **macOS:** Gesture support in timeline
+* Gesture support in timeline
   * zoom (pinch-to-zoom) timeline range
   * scroll (swipe) timeline range
-* **Windows:** Improved HiDPI support
-* **Linux:** Flatpak support *(not on flathub yet)*
-* **Linux:** Initial XDG Portal support
-* **Linux:** Wayland support
-* **Linux:** Use EGL as default (GLX is deprecated)
-* **Linux:** All binaries now support both X11 and native Wayland out-of-the-box
-* **Linux:** Improved XDG (desktop) integration
-* **SDK:** upgraded to Qt 5.15.16 with the latest KDE patches
+
+### Linux
+
+Several major changes to our Linux port in this version.
+
+* Flatpak support *(not on flathub yet)*
+* Initial XDG Portal support
+* Wayland support
+* Use EGL as default (GLX is deprecated)
+* All binaries now support both X11 and native Wayland out-of-the-box
+* Improved XDG (desktop) integration
 
 ### Documentation
 
 We have documentation! Big thanks to Pablo Gil for doing the majority of work.
-
-We are still working on it, so don't mind spelling mistakes etc, it will be fixed.
 
 [https://friction.graphics/documentation](https://friction.graphics/documentation)
 
@@ -288,6 +296,8 @@ Expression Presets have been added to speed up workflows. They allow to load, sa
 A new way of previewing scene animations have been added. instead of rendering into cache it just plays the canvas view, that's it, showing gizmos, selections, pivots, etc.
 
 See `Menu` > `View` > `Preview Cache`.
+
+**On macOS this is the recommended mode, this is due to an unresolved issue related to cache.**
 
 ## Examples
 
