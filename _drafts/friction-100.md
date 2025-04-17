@@ -76,6 +76,7 @@ Lorem ipsum.
 
 ### SVG
 
+* Support for `DstOut` blending (inverted masking)
 * Support paste SVG from clipboard (shift+ctrl+v)
 * Experimental support for interactive SVG transforms
 * Support for optimized SVG on export (requires SVGO)
