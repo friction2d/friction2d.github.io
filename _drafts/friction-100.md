@@ -81,7 +81,7 @@ Lorem ipsum.
 * Experimental support for interactive SVG transforms
 * Support for optimized SVG on export (requires SVGO)
 * Support for `animateMotion` (follow path)
-* The 'follow path' effect can now be used for SVG animations
+  * The 'follow path' effect can now be used for SVG animations
 * Support Inkscape labels
 
 ### GPU/Audio/Video/Effects
@@ -121,6 +121,12 @@ This release introduces official (but still experimental) support for macOS.
 * Gesture support in timeline
   * zoom (pinch-to-zoom) timeline range
   * scroll (swipe) timeline range
+
+Note that there are some issues with the macOS version:
+
+* Cache does not work properly, use 'clear cache' (cmd+r) if your changes does not apply
+  * Or use our new "realtime" cache
+* Some minor UI redraw glitches
 
 ### Linux
 
