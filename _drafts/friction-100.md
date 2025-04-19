@@ -73,6 +73,8 @@ Lorem ipsum.
   * New scene will adjust last used colors to background color (avoid identical colors)
   * Clear selection on right-click if in draw/circle/rectangle mode
 * Improved HiDPI support on Windows
+* Rewind / Fast Forward by quarters in timeline
+  * `shift` + `alt` + `left`/`right`
 
 ### SVG
 
