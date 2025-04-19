@@ -76,6 +76,8 @@ Lorem ipsum.
 
 ### SVG
 
+* Support for CSS blend modes on export/preview
+  * Enable in export dialog ("Mix Blend Modes")
 * Support for `DstOut` blending (inverted masking)
 * Support paste SVG from clipboard (shift+ctrl+v)
 * Experimental support for interactive SVG transforms
