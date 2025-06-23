@@ -21,7 +21,7 @@ Generic instructions for building Friction on a Linux system.
 * python3
 * cmake
 * clang
-* Qt 5.15.16 + KDE Patch Collection recommended, minimum 5.15.3
+* Qt 5.15.17 + KDE Patch Collection recommended, minimum 5.15.13
     * Gui
     * Widgets
     * OpenGL

@@ -16,8 +16,6 @@ Generic instructions for building Friction on macOS.
 
 macOS Monterey (12) or newer recommended, will also build on macOS 10.15 and 11.
 
-Only tested on Intel (x86_64), Apple silicon (M series) status is unknown.
-
 ## Xcode
 
 Open a new terminal using `Terminal.app`.
