@@ -74,26 +74,6 @@
             <p class="shadow noDeco"><a href="{{ site.url }}/releases/friction-{{ site.unstable_version | remove: '.' }}.html">Please read the release notes before usage.</a></p>
         </div>
         {% endif %}
-        <div class="blocks">
-            <div class="block darkAlpha blurry">
-                <h2 class="left">System Requirements</h2>
-                <p>Most computers in use today should work just fine with Friction. The requirements are:</p>
-                <ul>
-                    <li>AVX compatible CPU</li>
-                    <li>OpenGL 3.3 compatible GPU</li>
-                </ul>
-                <p>In general, a dual-core laptop with 8GB of RAM should be usable for small and medium projects.</p>
-            </div>
-            <div class="block darkAlpha blurry">
-                <h2 class="left">Supported Platforms</h2>
-                <p>Friction currently supports the following platforms:</p>
-                <ul>
-                    <li>Microsoft Windows (N) 10/11 x64</li>
-                    <li>Enterprise Linux 7/8/9/10 x86_64 and compatible</li>
-                    <li>macOS 12/13/14/15 arm64/x86_64 </li>
-                </ul>
-            </div>
-        </div>
         <div class="bigTitle"><h1>Friction is powered by</h1></div>
         <div class="blocks">
             <div class="block darkAlpha blurry">
@@ -117,7 +97,7 @@
                 <p>The Industry's Foundation for High Performance Graphics. OpenGL® is a cross-language, cross-platform application programming interface for rendering 2D and 3D vector graphics.</p>
             </div>
         </div>
-        <div id="footer" class="darkAlpha blurry">
+        <div id="footer">
             {% include footer.html %}
         </div>
     </body>
