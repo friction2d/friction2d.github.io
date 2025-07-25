@@ -1,0 +1,58 @@
+{% include assign.html %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    {% include head.html %}
+    <body>
+        <div id="headerDefault">
+            {% include header.html %}
+        </div>
+        <div id="content">
+            <div id="contentInner">
+                {% if page.title != nil %}
+                <h1>{{ page.title }}</h1>
+                {% endif %}
+                {% if page.lead != nil %}
+                <p class="lead">{{ page.lead }}</p>
+                {% endif %}
+
+                <h2>Production release v{{ site.latest_version }}</h2>
+                <p>The latest recommended release for production work.</p>
+                <p>Please read the <a href="{{ site.url }}/releases/friction-{{ site.latest_version | remove: '.' }}.html">release notes</a> before usage.</p>
+                <div class="download">
+                    <a title="Download setup for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_windows_setup }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-setup.svg"></a>
+                    <a title="Download portable for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_windows_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-portable.svg"></a>
+                    <a title="Download AppImage for Linux x86_64" href="{{ site.github_download_url }}v{{ site.latest_version }}/Friction-{{ site.latest_version }}-{{ site.github_release_suffix_linux_appimage }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-appimage.svg"></a>
+                    <a title="Download portable tarball for Linux x86_64" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_linux_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-portable.svg"></a>
+                    <!-- <a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a> -->
+                </div>
+
+                {% if site.unstable_version != nil %}
+                <hr>
+                <h2>Development release v{{ site.unstable_version }}</h2>
+                <p>Latest development release, may contain bugs and/or regressions compared to the production release.</p>
+                <p>Please read the <a href="{{ site.url }}/releases/friction-{{ site.unstable_version | remove: '.' }}.html">release notes</a> before usage.</p>
+                <div class="download">
+                    <a title="Download setup for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ site.unstable_version }}/friction-{{ site.unstable_version }}-{{ site.github_release_suffix_windows_setup }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-setup.svg"></a>
+                    <a title="Download portable for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ site.unstable_version }}/friction-{{ site.unstable_version }}-{{ site.github_release_suffix_windows_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-portable.svg"></a>
+                    <a title="Download AppImage for Linux x86_64" href="{{ site.github_download_url }}v{{ site.unstable_version }}/Friction-{{ site.unstable_version }}-{{ site.github_release_suffix_linux_appimage }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-appimage.svg"></a>
+                    <a title="Download portable tarball for Linux x86_64" href="{{ site.github_download_url }}v{{ site.unstable_version }}/friction-{{ site.unstable_version }}-{{ site.github_release_suffix_linux_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-portable.svg"></a>
+                    <a title="Download for macOS Intel" href="{{ site.github_download_url }}v{{ site.unstable_version }}/friction-{{ site.unstable_version }}-{{ site.github_release_suffix_mac_intel_dmg }}"><img class="platform" src="{{ site.url }}/assets/buttons/macos-intel.svg"></a>
+                    <!-- <a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ site.unstable_version }}/friction-{{ site.unstable_version | replace: '-beta', '.beta' }}-{{ site.github_release_suffix_linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a> -->
+                </div>
+                {% endif %}
+                <hr>
+                <h2>Development snapshots</h2>
+                <p>Always up to date snapshots directly from the development branch. Breaking changes will happen, only for testing.</p>
+                <div class="download">
+                    <a title="Download installer/portable for Windows 10/11 x64" href="https://windows.ci.friction.graphics"><img class="platform" src="{{ site.url }}/assets/windows.svg"></a>
+                    <a title="Download AppImage for Linux x86_64" href="https://linux.ci.friction.graphics"><img class="platform" src="{{ site.url }}/assets/buttons/linux-appimage.svg"></a>
+                </div>
+
+                <hr>
+                {{ content }}
+        </div>
+        <div id="footer">
+            {% include footer.html %}
+        </div>
+    </body>
+</html>

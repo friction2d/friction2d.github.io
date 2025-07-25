@@ -41,7 +41,7 @@ nav:
     url: /news/
     ext: false
   - title: Download
-    url: "/#download"
+    url: /download.html
   - title: Documentation
     url: /documentation/
     ext: false

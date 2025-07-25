@@ -28,12 +28,7 @@ Yes, there are no restrictions, you can use **Friction** for anything you want.
 
 **Friction** is currently available for **Linux**, **Windows** and experimentally **macOS**.
 
-Officially supported systems:
-
-- Windows (N) 10/11 x64
-- macOS (Monterey) 12.7+ *(Intel)*
-- Enterprise Linux 7.9/8/9/10 x86_64 *(and compatible)*
-  - [VFX Reference Platform](https://vfxplatform.com/) CY2021+
+See [download](/download.html#requirements) section for updated information.
 
 ### Can I contribute to Friction's development?
 

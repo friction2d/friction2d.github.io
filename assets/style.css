@@ -465,6 +465,12 @@ ul.platform { list-style-type: none; }
     flex-wrap: wrap;
 }
 
+.download {
+    display: flex;
+    gap: 1em;
+    flex-wrap: wrap;
+}
+
 .shadow {
     text-shadow: #000 1px 0 10px;
 }
