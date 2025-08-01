@@ -37,7 +37,6 @@
      id="g59779"
      transform="matrix(0.61295602,0,0,0.61295602,11.852056,3.2644014)"
      style="filter:url(#filter365)">
-<animate keyTimes="0;0;1" keySplines="0 0 1 1;0 0 1 1" attributeName="opacity" dur="1s" calcMode="spline" values="1;1;0.9999" repeatCount="indefinite"/>
     <g
        id="g59864"
        transform="matrix(0.86099437,0,0,0.86099437,31.801191,8.3308665)">
