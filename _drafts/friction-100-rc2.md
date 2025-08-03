@@ -53,6 +53,11 @@ The new toolbar also includes sub tools (node/draw mode) previous located in the
 
 The color picker indicator has also been moved to this toolbar.
 
+![ToolBox Screenshot 1](/assets/screenshots/100/friction-100rc2-toolbox-01.png)
+![ToolBox Screenshot 2](/assets/screenshots/100/friction-100rc2-toolbox-02.png)
+![ToolBox Screenshot 3](/assets/screenshots/100/friction-100rc2-toolbox-03.png)
+![ToolBox Screenshot 4](/assets/screenshots/100/friction-100rc2-toolbox-04.png)
+
 More toolbar related features are planned for v1.1.
 
 ### SVG
