@@ -14,7 +14,9 @@ mac_arm_dmg: "arm64.dmg"
 download_active: false
 ---
 
-This release includes several UI/UX changes and fixes. This was originally intended to be the final version, but due to the number of changes, a new release candidate is necessary.
+This new release candidate introduces significant UI/UX improvements and bug fixes. While this was originally intended to be the final version, the extensive changes have necessitated another release candidate.
+
+We've focused on streamlining the user interface and optimizing the workflow, along with adding new SVG capabilities.
 
 Please test this version and provide feedback.
 
