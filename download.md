@@ -45,3 +45,11 @@ permalink: download.html
 * Linux binaries support both X11 and Wayland
 * Linux binaries are VFX Platform CY2021+ compatible
 * The Nouveau graphics driver is not supported on Linux, use official drivers from NVIDIA
+
+### Known issues
+
+* **Unsigned Binaries:** The binaries are not signed with a digital certificate, which may cause security warnings or require additional steps to run the application for the first time on macOS and Windows.
+* **Antialiasing Artifacts:** Some GPUs may exhibit poor or missing antialiasing. To resolve this, navigate to the preferences and set Multi-Sample Anti-Aliasing (MSAA) to 16x.
+* **macOS Cache Issues:** Changes to animated items may not display or redraw correctly on macOS due to caching problems. To fix this, you can either clear the cache by pressing `Cmd`+`r` or disable the preview cache from the view menu.
+
+See more issues on [GitHub](https://github.com/friction2d/friction/issues).
