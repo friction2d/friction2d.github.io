@@ -41,6 +41,7 @@ Please test and give use feedback.
   * Improves the text tool UX
 * Refactored align widget, no visible changes
 * Refactored font widget, no visible changes
+* Fixed scroll event in frame spinbox (avoid crash)
 * Major changes to the tools and toolbar UI, see below:
 
 ### ToolBox (toolbars)
