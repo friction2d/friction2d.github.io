@@ -147,7 +147,7 @@ Every shape has 2 parts:
 Fills and Strokes have 3 options to be drawn:
 * **None**: the element disables or turns invisible
 * **Flat**: the element is colored with a flat or constant color
-* **None**: the element is colored using a gradient which is a transition of 2 or more colors. It can be linear or radial.
+* **Gradient**: the element is colored using a gradient which is a transition of 2 or more colors. It can be linear or radial.
 
 ![Fill and Stroke](/assets/documentation/ui/ui_none-flat-gradients.png)
 
