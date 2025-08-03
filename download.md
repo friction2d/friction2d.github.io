@@ -32,21 +32,21 @@ permalink: download.html
   * Intel HD Graphics 620 or newer
   * Apple Silicon M1 or newer
 
-### Supported systems
+## Supported systems
 
 * Microsoft Windows (N) 10/11 x64
 * macOS Monterey (12.7) or newer
 * Red Hat Enterprise Linux 7.9/8.x/9.x/10.x x86_64 and compatible
 * Ubuntu 14.04-26.04 x86_64 and compatible
 
-#### Notes:
+### Notes:
 
 * Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed on Windows 10
 * Linux binaries support both X11 and Wayland
 * Linux binaries are VFX Platform CY2021+ compatible
 * The Nouveau graphics driver is not supported on Linux, use official drivers from NVIDIA
 
-### Known issues
+## Known issues
 
 * **Unsigned Binaries:** The binaries are not signed with a digital certificate, which may cause security warnings or require additional steps to run the application for the first time on macOS and Windows.
 * **Antialiasing Artifacts:** Some GPUs may exhibit poor or missing antialiasing. To resolve this, navigate to the preferences and set Multi-Sample Anti-Aliasing (MSAA) to 16x.
