@@ -14,43 +14,40 @@ mac_arm_dmg: "arm64.dmg"
 download_active: false
 ---
 
-This release includes several UI/UX changes and fixes. This was supposed to be the final version, but due to the amount of changes we need another release candidate.
+This release includes several UI/UX changes and fixes. This was originally intended to be the final version, but due to the number of changes, a new release candidate is necessary.
 
-Please test and give use feedback.
+Please test this version and provide feedback.
 
 ## Changes since RC 1
 
 ### UI/UX
 
-* Added (horizontal) zoom button(s) in timeline/graph
-* Remember (and store) last used fill/stroke
-  * Improves the drawing UX
-* Clear selection if right-click in draw/circle/rectangle mode
-* Added restore default fill/stroke in help menu
-* Added restore default UI in help menu
-* Set white as default fill color
-* Adjust default fill/stroke to background on new scene (avoid same color)
-* Rewind/Forward in quarters can be triggered with `Shift`+`Alt`+`left/right`
-* Update scene after zoom in/out actions
-* Icon updates
-* Support TAB to focus from/to X/Y value sliders
-* Undo fixes
-* Set cursor to end when focus on text input
-* Added lock/unlock toolbars option in view menu
-* Remember last used font family, size and style
-  * Improves the text tool UX
-* Refactored align widget, no visible changes
-* Refactored font widget, no visible changes
-* Fixed scroll event in frame spinbox (avoid crash)
-* Major changes to the tools and toolbar UI, see below:
+* Added horizontal zoom buttons to the timeline/graph
+* The last-used fill/stroke is now remembered and stored, which improves the drawing experience
+* The selection is now cleared when you right-click in draw, circle, or rectangle mode
+* "Restore default fill/stroke" and "Restore default UI" options have been added to the help menu
+* The default fill color is now white
+* The default fill/stroke colors are now adjusted to the background on a new scene to avoid color conflicts
+* Rewind/Forward in quarters can now be triggered with `Shift`+`Alt`+`left/right`
+* The scene is now updated after zoom in/out actions
+* Icons have been updated
+* You can now use `TAB` to focus to and from X/Y value sliders
+* Undo functionality has been improved
+* The cursor is now set to the end of the text when a text input is focused
+* An option to lock/unlock toolbars has been added to the view menu
+* The last-used font family, size, and style are now remembered, which improves the text tool experience
+* The align widget has been refactored with no visible changes
+* The font widget has been refactored with no visible changes
+* A crash caused by scroll events in the frame spinbox has been fixed
+* Major changes have been made to the tools and toolbar UI (see below)
 
 ### ToolBox (toolbars)
 
-Refactored several toolbars, merged into "ToolBox".
+Several toolbars have been refactored and merged into a new "ToolBox".
 
-This release introduces a new toolbar for easy access to common properties. This includes transforms and related properties for item selected. 
+This release introduces a new toolbar for easy access to common properties, including transforms and related properties for selected items.
 
-The new toolbar also includes sub tools (node/draw mode) previous located in the tool selector toolbar.
+This new toolbar also includes sub-tools (node/draw mode) that were previously located in the tool selector toolbar.
 
 The color picker indicator has also been moved to this toolbar.
 
@@ -59,39 +56,36 @@ The color picker indicator has also been moved to this toolbar.
 ![ToolBox Screenshot 3](/assets/screenshots/100/friction-100rc2-toolbox-03.png)
 ![ToolBox Screenshot 4](/assets/screenshots/100/friction-100rc2-toolbox-04.png)
 
-More toolbar related features are planned for v1.1.
+More toolbar-related features are planned for v1.1.
 
 ### SVG
 
-* **Import**: Support paste SVG from clipboard (`Shift`+`Ctrl/Cmd`+`v`)
-* **Export**: Added `DstOut` masking support
-* **Export**: Added `mix-blend-mode` (blend modes) support
+* **Import**: Support for pasting SVG from the clipboard (`Shift`+`Ctrl/Cmd`+`v`) has been added
+* **Export**: `DstOut` masking support has been added
+* **Export**: `mix-blend-mode` (blend modes) support has been added.
 
 ### Renderer
 
-* PNG images now has proper unassociated alpha (unpremultiplied)
-  * Now converts from premultiplied
-* TIFF images now has proper associated alpha (premultiplied)
-  * Tag fix, the alpha was always premultiplied
-* Trim output path
+* PNG images now have proper unassociated alpha (unpremultiplied) by converting from premultiplied alpha
+* TIFF images now have proper associated alpha (premultiplied), with a tag fix to reflect that the alpha was always premultiplied
+* The output path is now trimmed
 
 ### Windows
 
-* UI font fixes
+* UI font issues have been fixed
 
 ### macOS
 
-* Apple Silicon native support
+* Native support for Apple Silicon has been added
 
 ### Linux
 
-* Fixed XDG arguments bug in AppImage
-* Disabled fullscreen on Wayland
+* An XDG arguments bug in AppImage has been fixed
+* Fullscreen has been disabled on Wayland
 
 ### SDK
 
-* Updated to Qt 5.15.17 with KDE/custom patches
-  * Qt 5.15.13 is now the minimum supported version
+* Updated to Qt 5.15.17 with KDE/custom patches (Qt 5.15.13 is now the minimum supported version)
 * Updated to FFmpeg 4.2.11 with custom patches
 
 ### Checksums
