@@ -14,7 +14,7 @@ mac_arm_dmg: "arm64.dmg"
 download_active: false
 ---
 
-This release includes several UI/UX changes and fixes. This was supposed to be the final version, but due to the amount of changes we needed another release candidate.
+This release includes several UI/UX changes and fixes. This was supposed to be the final version, but due to the amount of changes we need another release candidate.
 
 Please test and give use feedback.
 
@@ -24,41 +24,50 @@ Please test and give use feedback.
 
 * Added (horizontal) zoom button(s) in timeline/graph
 * Remember (and store) last used fill/stroke
+  * Improves the drawing UX
 * Clear selection if right-click in draw/circle/rectangle mode
 * Added restore default fill/stroke in help menu
 * Added restore default UI in help menu
 * Set white as default fill color
 * Adjust default fill/stroke to background on new scene (avoid same color)
-* Rewind/Forward in quarters can be triggered with shift+alt+left/right
-* Update canvas after zoom in/out actions
+* Rewind/Forward in quarters can be triggered with `Shift`+`Alt`+`left/right`
+* Update scene after zoom in/out actions
 * Icon updates
-* Value Slider: support TAB to sibling
-  * Support TAB to focus from/to X/Y value sliders
+* Support TAB to focus from/to X/Y value sliders
 * Undo fixes
 * Set cursor to end when focus on text input
 * Added lock/unlock toolbars option in view menu
 * Remember last used font family, size and style
+  * Improves the text tool UX
 * Refactored align widget, no visible changes
 * Refactored font widget, no visible changes
 * Major changes to the tools and toolbar UI, see below:
 
 ### ToolBox (toolbars)
 
-TODO
+Refactored several toolbars, merged into "ToolBox".
+
+This release introduces a new toolbar for easy access to common properties. This includes transforms and related properties for item selected. 
+
+The new toolbar also includes sub tools (node/draw mode) previous located in the tool selector toolbar.
+
+The color picker indicator has also been moved to this toolbar.
+
+More toolbar related features are planned for v1.1.
 
 ### SVG
 
-* **Import**: Support paste SVG from clipboard (shift+ctrl+v)
+* **Import**: Support paste SVG from clipboard (`Shift`+`Ctrl/Cmd`+`v`)
 * **Export**: Added `DstOut` masking support
 * **Export**: Added `mix-blend-mode` (blend modes) support
 
 ### Renderer
 
-* PNG images now has unassociated alpha (unpremultiplied)
-  * Converted from premultiplied
-* TIFF images now has associated alpha (premultiplied)
+* PNG images now has proper unassociated alpha (unpremultiplied)
+  * Now converts from premultiplied
+* TIFF images now has proper associated alpha (premultiplied)
   * Tag fix, the alpha was always premultiplied
-* Trim output path for whitespace etc
+* Trim output path
 
 ### Windows
 
@@ -71,8 +80,7 @@ TODO
 ### Linux
 
 * Fixed XDG arguments bug in AppImage
-  * Desktop integration commands now works from the terminal (again)
-* Disable fullscreen on Wayland
+* Disabled fullscreen on Wayland
 
 ### SDK
 
@@ -93,6 +101,6 @@ N/A
 
 ---
 
-* See RC 1 [release notes](https://friction.graphics/releases/friction-100-rc1.html) for more information regarding changes in v1.0.
-* See Beta 2 [release notes](https://friction.graphics/releases/friction-100-beta2.html) for more information regarding changes in v1.0.
-* See Beta 1 [release notes](https://friction.graphics/releases/friction-100-beta1.html) for more information regarding changes in v1.0.
+* See RC 1 [release notes](https://friction.graphics/releases/friction-100-rc1.html) for more information regarding changes for v1.0
+* See Beta 2 [release notes](https://friction.graphics/releases/friction-100-beta2.html) for more information regarding changes for v1.0
+* See Beta 1 [release notes](https://friction.graphics/releases/friction-100-beta1.html) for more information regarding changes for v1.0
