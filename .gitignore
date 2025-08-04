@@ -4,6 +4,7 @@ pandoc/bin
 pandoc/pandoc*
 build
 build-contributors
+build-docs
 tmp*
 pdf/friction.md
 pdf/friction.pdf
