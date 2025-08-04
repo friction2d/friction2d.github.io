@@ -243,3 +243,11 @@ For instance, **Friction** is not yet capable to export animations that contain 
 ![Track effect example](/assets/documentation/animation_techniques/anim_techniques_tracking.svg)
 
 *In the previous example the Arrow "looks" at the crossed square using an Expression.*
+
+## Fast Scene Properties edit
+
+Designers often edit the scene properties while in the middle of an animation, the normal procedure is going to `Menu -> Scene -> Scene properties...` and edit them.
+
+The most used ones, `width`, `height`, `start frame` and `end frame`, are exposed all time in the main window so there is no need to open any dialog:
+
+![Preferences](/assets/documentation/tips/tips_fast_scene_properties.png)
