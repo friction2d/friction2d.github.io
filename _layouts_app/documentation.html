@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+        <title>{{ page.title }}</title>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="headerDefault">
+            <div id="headerInner">
+                <a href="index.html"><img src="assets/logo.svg" width="267px" height="80px" /></a>
+            </div>
+        </div>
+        <div id="content">
+            <div id="contentInner">
+                {{ content }}
+                {% assign documentation_pages = site.pages | where_exp: "page", "page.categories contains 'documentation'" | sort: 'order' %}
+                {% assign index = 0 %}
+                {% for item in documentation_pages %}
+                    {% if item.url == page.url %}
+                        {% assign index = forloop.index %}
+                    {% endif %}
+                {% endfor %}
+                {% for item in documentation_pages %}
+                    {% assign index_prev = index | minus: 1 %}
+                    {% assign index_next = index | plus: 1 %}
+                    {% if forloop.index == index_prev %}
+                        {% assign prev = item %}
+                    {% endif %}
+                    {% if forloop.index == index_next and page.url != page.dir %}
+                        {% assign next = item %}
+                    {% endif %}
+                {% endfor %}
+                <div class="nextPrevContainer">
+                    {% if prev.title and prev.title != '' %}
+                    <a href="{{ prev.url | replace_first:'/','' }}"><span class="nextPrevButton">&lt; {{ prev.title }}</span></a>
+                    {% else %}
+                    <span></span>
+                    {% endif %}
+                    {% if next.title and next.title != '' %}
+                    <a href="{{ next.url | replace_first:'/','' }}"><span class="nextPrevButton">{{ next.title }} &gt;</span></a>
+                    {% else %}
+                    <span></span>
+                    {% endif %}
+                    </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>

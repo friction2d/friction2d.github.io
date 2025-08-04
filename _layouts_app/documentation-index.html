@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    <head>
+        <title>{{ page.title }}</title>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="headerDefault">
+            <div id="headerInner">
+                <a href="index.html"><img src="assets/logo.svg" width="267px" height="80px" /></a>
+            </div>
+        </div>
+        <div id="content">
+            <div id="contentInner">
+                {{ content }}
+                <div class="blocks">
+                    {% assign documentation_pages = site.pages | where_exp: "page", "page.categories contains 'documentation'" | sort: 'order' %}
+                    {% for page in documentation_pages %}
+                    <div class="block newsblock">
+                        <a href="{{ page.url | replace_first:'/','' }}">
+                            <img class="doc" src="assets/documentation/{{ page.cover }}" />
+                            <h2>{{ page.title }}</h2>
+                        </a>
+                    </div>
+                    {% endfor %}
+                </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>
