@@ -158,3 +158,11 @@ Fills and Strokes have 3 options to be drawn:
 ![Preferences](/assets/documentation/ui/ui_panel10.png)
 
 The Preferences menu contains settings for customizing scenes, preview resolution and layouts.
+
+## Toolbox
+
+![Color Toolbar](/assets/documentation/ui/ui_panel11.png)
+
+This toolbar with dynamic buttons exposes most used parameters of **just one selected object** for easy and fast editing. It is even possible to animate values or use `Shift` modifier to edit `X` and `Y` values at the shame time. Exposed parameters change depending on the nature of the shape or object.
+
+*This is a new feature and may de improved in the near future to allow multiple selection and other commonly used parameters.*
