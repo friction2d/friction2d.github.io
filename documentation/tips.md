@@ -149,7 +149,7 @@ This is how it looks like:
 
 By default new keyframes interpolations are `linear`. It is possible to select, move, set the keyframe node and their tangents (when the node is set to `smooth`) to the desired curve by using the following tools:
 
-![Timeline navigation](/assets/documentation/usage/usage_21.png)
+![Graph view button](/assets/documentation/usage/usage_graph_view_3.png)
 
 From left to right:
 - **easing**: create complex segment transitions. It could take into account left (`in`) and/or right (`out`) nodes of the segment.
@@ -158,7 +158,8 @@ From left to right:
 - **symmetric nodes**: it will make left and right node tangents of the same length.
 - **smooth nodes**: it will turn node tangent length higher than 0, that is visible.
 - **corner nodes**: it will turn node tangent length equal to 0, that is make it sharp.
-- **fit vertical**: it will fit the view (zoom) to show all nodes.
+- **vertical fit view**: it will fit all the keyframes (or nodes) in the view
+- **horizontal fit view**: it will fit all the selected keyframes (or nodes) in the view. If none selected it will fit the whole scene.
 
 Some tools may need the user to select two nodes to work as it will affect the "curve segment" and not just a node.
 
