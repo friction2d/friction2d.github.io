@@ -101,6 +101,8 @@ There are two ways of importing assets:
 - **Link**: if the asset is a bitmap graphics one (`JPEG`, `PNG`,...) or even `SVG` vector, if using this option, they will be linked or externally referenced. A transform parameter will be added but the assets won't be able to be edited within Friction. The great advantage of using this method is that they can be modified externally and the results will be automatically updated in Friction.
 Each linked asset will be registered in the **[Assets Panel](userinterface.html#7-assets)** and from there it will be able to `reload`, `replace` or `remove` the asset.
 
+![Import and link buttons in the main window](/assets/documentation/usage/usage_import_link.png)
+
 Both options can be found in the **[Main toolbar](userinterface.html#1-main-toolbar)** or under `File` menu.
 
 Bitmap graphics will always be **linked**, even if they are added with the **Import** option as there are no tools for editing pixel base images within Friction.
@@ -160,6 +162,7 @@ From left to right:
 - **smooth node**: turn from corner to smooth handles, in this mode left and right node handles share the same tangency angle.
 - **corner nodes**: turn from smooth to corner handles, in this mode left and right node handles have independent tangency angles.
 - **vertical fit view**: fits all the keyframes (or nodes) in the view
+- **horizontal fit view**: fits all the selected keyframes (or nodes) in the view. If none selected it will fit the whole scene.
 
 Example of keyframes with smooth handles:
 
