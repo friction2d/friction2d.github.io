@@ -159,6 +159,10 @@ Fills and Strokes have 3 options to be drawn:
 
 The Preferences menu contains settings for customizing scenes, preview resolution and layouts.
 
+It might be important to note that it is also possible to fast edit **Start/End scene frames** at the [Timeline playback row](#Timeline), using the Left and Right spinboxes:
+
+![Preferences](/assets/documentation/ui/ui_panel10b.png)
+
 ## Toolbox
 
 ![Color Toolbar](/assets/documentation/ui/ui_panel11.png)
