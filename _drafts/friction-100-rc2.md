@@ -41,6 +41,7 @@ Please test this version and provide feedback.
 * The align widget has been refactored with no visible changes
 * The font widget has been refactored with no visible changes
 * A crash caused by scroll events in the frame spinbox has been fixed
+* Added "Center Align" option in scene context menu
 * Major changes have been made to the tools and toolbar UI (see below)
 
 ### ToolBox (toolbars)
