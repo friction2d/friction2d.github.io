@@ -11,7 +11,7 @@ linux_portable: "linux-x86_64.tar.xz"
 linux_appimage: "x86_64.AppImage"
 mac_intel_dmg: "x86_64.dmg"
 mac_arm_dmg: "arm64.dmg"
-download_active: false
+download_active: true
 ---
 
 This new release candidate introduces significant UI/UX improvements and bug fixes. While this was originally intended to be the final version, the extensive changes have necessitated another release candidate.
