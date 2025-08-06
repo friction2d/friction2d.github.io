@@ -36,6 +36,9 @@
                         {% if page.linux_rpm != nil %}
                             <a title="Download package for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release | replace: '-beta', '.beta' }}-{{ page.linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a>
                         {% endif %}
+                        {% if page.mac_arm_dmg != nil %}
+                        <a title="Download for macOS 12 Arm" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.mac_arm_dmg }}"><img class="platform" src="{{ site.url }}/assets/buttons/macos-arm.svg"></a>
+                        {% endif %}
                         {% if page.mac_intel_dmg != nil %}
                         <a title="Download for macOS 12 Intel" href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ page.mac_intel_dmg }}"><img class="platform" src="{{ site.url }}/assets/buttons/macos-intel.svg"></a>
                         {% endif %}
