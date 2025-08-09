@@ -61,13 +61,14 @@ If **Friction** it works as follows:
 1. The objects, shapes, etc. to be masked are going to lay at the bottom.
 2. On top of them all and at the same level, the masking shape. Its color must be pure white.
 3. Group them all
-4. Now promote the group into a layer
-5. Finally, set the blending mode of the masking object to `DstIn`
+4. Now, important, **promote the group into a layer**
+5. Finally, set the blending mode of the masking object to `DstIn` (or `DstOut to mask the opposite)
+
 So the hierarchy would have to look like the following:
 
 ![Hierarchy example](/assets/documentation/animation_techniques/anim_techniques_mask_layers.png)
 
-In the case of masking for an **animated SVG**, it is possible to use shades of grey in the masking object. White will be considered opaque, black will be transparent and shades of grey a transparency ramp.
+In the case of masking for an **animated SVG**, it is possible to use shades of grey in the masking object. **White** color will be considered opaque, **black** color will be transparent and shades of grey a transparency ramp.
 
 ## Blend Effects
 
