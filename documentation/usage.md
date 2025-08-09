@@ -252,6 +252,8 @@ The destination of the alignment is called "reference" and can be `Scene`, `Boun
 
 The buttons let users apply the alignment to just a side `Left`, `Horizontal center`, `Right`, `Top`, `Vertical center` and `Bottom`.
 
+![Alignment example](/assets/documentation/usage/usage_alignment_example.gif)
+
 ### Layouts
 
 ![Layouts](/assets/documentation/usage/usage_layout.png)
