@@ -155,7 +155,7 @@ It possible to select the keyframes (or nodes now as the curves are **Bezier cur
 ![Graph view button](/assets/documentation/usage/usage_graph_view_3.png)
 
 From left to right:
-- **Easing modes**: some presets to easily animate the movement between two keyframes.
+- **Easing modes**: some presets to easily animate the movement between two keyframes. It could take into account left (`in`) and/or right (`out`) nodes of the segment. Check the available ones [here](/tips.html#Easing_reference_chart).
 - **line segment**: default "curve" between keyframes.
 - **curved segment**: make the nodes (or keyframes) handles appear
 - **symmetric handles**: make left and right handles symmetric
@@ -192,7 +192,7 @@ This option will create an animated **SVG** file using the *non yet deprecated* 
 
 In order to export into **SVG** users will find 2 options:
 - **Preview SVG**: it will export and preview the file in your default Internet browser. It's a very useful and fast way to quickly preview the animation.
-- **Export SVG**: a new window will show up with options to generate the final **SVG** file. Among the self-explanatory options there is `Optimize for Web` that uses **[SVGO](https://github.com/svg/svgo)** for reducing the file size.
+- **Export SVG**: a new window will show up with options to generate the final **SVG** file. Among the self-explanatory options there is `Optimize for Web` that uses **[SVGO](https://github.com/svg/svgo)** for reducing the file size and `Mix Blend Modes` that enables Layer color blending to the final SVG file using `CSS` rules.
 
 ![Export SVG dialog](/assets/documentation/export/export_svg-dialog.png)
 
