@@ -37,7 +37,8 @@ Note that what you see in the viewer is not necessarily what you get when export
 * Blur effect
 * Shadow effect
 * Shape morphing
-* Masking (Blend Mode `DstIn`)
+* Masking (Blend Mode `DstIn` and `DstOut`)
+* Mix Blend Modes (it is needed to enable it at export dialog)
 
 ### Quick preview
 
@@ -75,6 +76,8 @@ Under **Options** it is possible to set:
 
 * **Optimize for web**: if available, it lets the user apply some optimization to reduce the `.svg` file size using [SVGO](https://github.com/svg/svgo).
 
+* **Mix Blend Modes**: it enables **[Blending modes](tips.html#Layer_blending_modes)** for shapes
+
 ## Video / Audio
 
 Friction can export projects to the most common video formats such as:
@@ -105,10 +108,10 @@ Once the **"Add to queue"** button is pressed, the active scene is loaded into t
 ### Scene Properties
 
 This section lets the user to set key details about the scene rendering:
-- Scene Name
-- Frame Range
-- Resolution
-- FPS (Frames Per Second)
+- **Scene Name**: Name of the scene.
+- **Frame Range**: First and last frames to render.
+- **Resolution**: Output size in pixels (width × height).
+- **FPS** (Frames Per Second): Playback frame rate of the export.
 
 ### Profiles
 
