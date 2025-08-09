@@ -114,7 +114,7 @@ By default the Properties panel displays the attributes of just the selected obj
 
 In the case of selecting a Text object, then a panel with text parameters are shown.
 
-At the bottom of the Properties panel there are a few options to easily align objects in the canvas relative to the canvas itself or other shapes.
+At the bottom of the Properties panel there are a few options to **[easily align objects in the canvas](usage.html#Alignment)** relative to the canvas itself or other shapes.
 
 ## Assets
 
