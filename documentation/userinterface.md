@@ -104,6 +104,8 @@ The Timeline is where animations and keyframes are managed. Users can control ti
 
 There is an option to filter the hierarchy to edit the objects that are listed.
 
+It is possible to set a **[Blending mode](tips.html#Layer_blending_modes)** for every layer (or object).
+
 ## Properties
 
 ![Properties](/assets/documentation/ui/ui_panel6.png)
