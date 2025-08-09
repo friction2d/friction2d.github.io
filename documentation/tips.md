@@ -26,8 +26,8 @@ Use the mouse wheel while hovering over the bottom scroll bar to scale the timel
 ![Timeline navigation](/assets/documentation/tips/tips_02.png)
 
 It is possible to change the values by: 
-- clicking in the value box and dragging the cursor sideways (if holding `alt` key modifier it will change values in smaller steps)
-- single clicking in the value box and using the keyboard to enter the values.
+- **clicking in the value box and dragging the cursor sideways** (if holding `alt` key modifier it will change values in smaller steps)
+- **single clicking in the value box** and using the keyboard to enter the values.
 
 For both of them and when editing a value part of a **double value** (usually **X** and **Y**), it is possible to perform an **uniform value input** if pressing `shift` while editing or while hitting `Enter` to accept the changes, that is, the value will be applied to both fields.
 
@@ -88,7 +88,7 @@ So **groups** and **layers** may look like similar, they kind of are but **they 
 
 ## Duplicating
 
-Instead of "copy" and "paste", you can use **duplicate** and get an exact copy of your duplicated object (transform, colors, shapes,...):
+Instead of "*Copy*" and "*Paste*", it is better to use **Duplicate** and get an exact copy of your duplicated object (transform, colors, shapes,...):
 
 ![Timeline navigation](/assets/documentation/tips/tips_10.png)
 
@@ -115,7 +115,7 @@ To create a simple alpha mask you need at least two objects, one of which will a
 
 You have to put both objects inside a **layer** so that the mask does not influence the objects outside the layer. That is, grouping them is not enough, you need to promote the group to layer:
 
-![Promote to layer button](/assets/documentation/tips/tips_14b.png)
+![Promote to layer button](/assets/documentation/tips/tips_14.png)
 
 For instance, if you want the rounded green rectangle to mask the star below:
 
@@ -139,7 +139,7 @@ Objects can just have 1 visibility range so if you want to have more ranges you 
 
 ## Graph Editor
 
-By default the interpolation between keyframes is set to **linear** when setting them with the parameter fields or within the canvas if editing transformations. Friction interpolation system is based on graphs, that means you could set up complex interpolations based on arcs and Bezier curves. In order to edit them the user must select a parameter and hit the `Graph button` to change from timeline "Keyframes view" to "Graph view":
+By default the interpolation between keyframes is set to **linear** when setting them with the parameter fields or within the canvas if editing transformations. Friction interpolation system is based on graphs, that means you could set up complex interpolations based on arcs and Bezier curves. In order to edit them the user must select a parameter and hit the `Graph button` to change from timeline `Keyframes view` to `Graph view`:
 
 ![Timeline navigation](/assets/documentation/tips/tips_19.png)
 
@@ -149,10 +149,10 @@ This is how it looks like:
 
 By default new keyframes interpolations are `linear`. It is possible to select, move, set the keyframe node and their tangents (when the node is set to `smooth`) to the desired curve by using the following tools:
 
-![Graph view button](/assets/documentation/tips/tips_graph_view_3.png)
+![Graph view button](/assets/documentation/usage/usage_graph_view_3.png)
 
 From left to right:
-- **easing**: create complex segment transitions. It could take into account left (`in`) and/or right (`out`) nodes of the segment.
+- **easing**: create complex segment transitions. It could take into account left (`in`) and/or right (`out`) nodes of the segment. Check the available ones [here](/tips.html#Easing_reference_chart).
 - **make segment a line**: make interpolation between nodes straight.
 - **make segment a curve**: make interpolation between nodes curved, it will show up node tangents.
 - **symmetric nodes**: it will make left and right node tangents of the same length.
