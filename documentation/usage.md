@@ -101,6 +101,8 @@ There are two ways of importing assets:
 - **Link**: if the asset is a bitmap graphics one (`JPEG`, `PNG`,...) or even `SVG` vector, if using this option, they will be linked or externally referenced. A transform parameter will be added but the assets won't be able to be edited within Friction. The great advantage of using this method is that they can be modified externally and the results will be automatically updated in Friction.
 Each linked asset will be registered in the **[Assets Panel](userinterface.html#7-assets)** and from there it will be able to `reload`, `replace` or `remove` the asset.
 
+![Import and link buttons in the main window](/assets/documentation/usage/usage_import_link.png)
+
 Both options can be found in the **[Main toolbar](userinterface.html#1-main-toolbar)** or under `File` menu.
 
 Bitmap graphics will always be **linked**, even if they are added with the **Import** option as there are no tools for editing pixel base images within Friction.
@@ -153,13 +155,14 @@ It possible to select the keyframes (or nodes now as the curves are **Bezier cur
 ![Graph view button](/assets/documentation/usage/usage_graph_view_3.png)
 
 From left to right:
-- **Easing modes**: some presets to easily animate the movement between two keyframes.
+- **Easing modes**: some presets to easily animate the movement between two keyframes. It could take into account left (`in`) and/or right (`out`) nodes of the segment. Check the available ones [here](/tips.html#Easing_reference_chart).
 - **line segment**: default "curve" between keyframes.
 - **curved segment**: make the nodes (or keyframes) handles appear
 - **symmetric handles**: make left and right handles symmetric
 - **smooth node**: turn from corner to smooth handles, in this mode left and right node handles share the same tangency angle.
 - **corner nodes**: turn from smooth to corner handles, in this mode left and right node handles have independent tangency angles.
 - **vertical fit view**: fits all the keyframes (or nodes) in the view
+- **horizontal fit view**: fits all the selected keyframes (or nodes) in the view. If none selected it will fit the whole scene.
 
 Example of keyframes with smooth handles:
 
@@ -189,7 +192,7 @@ This option will create an animated **SVG** file using the *non yet deprecated* 
 
 In order to export into **SVG** users will find 2 options:
 - **Preview SVG**: it will export and preview the file in your default Internet browser. It's a very useful and fast way to quickly preview the animation.
-- **Export SVG**: a new window will show up with options to generate the final **SVG** file. Among the self-explanatory options there is `Optimize for Web` that uses **[SVGO](https://github.com/svg/svgo)** for reducing the file size.
+- **Export SVG**: a new window will show up with options to generate the final **SVG** file. Among the self-explanatory options there is `Optimize for Web` that uses **[SVGO](https://github.com/svg/svgo)** for reducing the file size and `Mix Blend Modes` that enables Layer color blending to the final SVG file using `CSS` rules.
 
 ![Export SVG dialog](/assets/documentation/export/export_svg-dialog.png)
 
@@ -248,6 +251,8 @@ The options allow aligning `Geometry`, `Geometry by its pivot` and just the `Piv
 The destination of the alignment is called "reference" and can be `Scene`, `Bounding box`, `Last selected` object or `Last selected pivot` which references to the last selected object pivot.
 
 The buttons let users apply the alignment to just a side `Left`, `Horizontal center`, `Right`, `Top`, `Vertical center` and `Bottom`.
+
+![Alignment example](/assets/documentation/usage/usage_alignment_example.gif)
 
 ### Layouts
 
