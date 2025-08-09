@@ -252,3 +252,11 @@ Designers often edit the scene properties while in the middle of an animation, t
 The most used ones, `width`, `height`, `start frame` and `end frame`, are exposed all time in the main window so there is no need to open any dialog:
 
 ![Preferences](/assets/documentation/tips/tips_fast_scene_properties.png)
+
+## Easing reference chart
+
+Friction provides some *precooked* keyframes transitions for fast animation. They can be applied between 2 keyframes and in 3 modes `in`, `out` and `in+out`.
+
+Check the following chart as reference:
+
+![Easing reference chart](/assets/documentation/tips/tips_easing_chart.png)
