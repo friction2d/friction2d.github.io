@@ -31,12 +31,12 @@
                     {% if prev.title and prev.title != '' %}
                     <a href="{{ prev.url }}"><span class="nextPrevButton">&lt; {{ prev.title }}</span></a>
                     {% else %}
-                    <span></span>
+                     <a href="{{ site.url }}/documentation"><span class="nextPrevButton">&lt; Index</span></a>
                     {% endif %}
                     {% if next.title and next.title != '' %}
                     <a href="{{ next.url }}"><span class="nextPrevButton">{{ next.title }} &gt;</span></a>
                     {% else %}
-                    <span></span>
+                    <a href="{{ site.url }}/documentation"><span class="nextPrevButton">Index &gt;</span></a>
                     {% endif %}
                     </div>
             </div>

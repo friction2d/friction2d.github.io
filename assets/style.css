@@ -107,10 +107,8 @@ div.bigTitle {
 div#contentInner,
 #breadcrumbs {
     padding: 1em;
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
-    background-color: rgba(33, 3, 72, 0.607);
-    border: 2px solid rgba(133, 33, 106, 0.133);
+    background-color: rgba(33, 3, 72, 0.906);
+    border: 2px solid rgba(133, 33, 106, 0.491);
     border-radius: .5em;
     margin-top: 1em;
     margin-bottom: 2em;
@@ -280,8 +278,6 @@ th {
 
 td {
     width: 50%;
-    -webkit-backdrop-filter: blur(25px);
-    backdrop-filter: blur(25px);
     background-color: rgba(33, 3, 72, 0.607);
     border: 2px solid rgba(133, 33, 106, 0.133);
     padding: .5em;
@@ -410,13 +406,10 @@ ul.platform { list-style-type: none; }
         border: 1px solid #333;
         height: 4em;
         padding: 0.5em;
-        /*transition: height 400ms cubic-bezier(0.23, 1, 0.32, 1);*/
-                -webkit-backdrop-filter: blur(10px);
-    backdrop-filter: blur(10px);
-    background-color: #00000047;
-    border: 2px solid #370753ff;
-    border-left: none;
-    border-right: none;
+        background-color: #00000047;
+        border: 2px solid #370753ff;
+        border-left: none;
+        border-right: none;
         line-height: 3em;
     }
 
