@@ -6,7 +6,7 @@ permalink: documentation/
 
 # Welcome to Friction
 
-![Default interface](/assets/screenshots/100/friction-100b2-screenshot.png)
+![Default interface](/assets/screenshots/100/friction-100rc2-screenshot.png)
 
 **Friction** is a powerful and versatile motion graphics application that allows you to create vector and raster animations for web and video.
 
