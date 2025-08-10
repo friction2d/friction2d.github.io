@@ -3,7 +3,7 @@ title: "Shortcuts"
 layout: documentation
 permalink: documentation/shortcuts.html
 categories: documentation
-cover: usage/usage_02.png
+cover: tips/tips_02.png
 order: 4
 ---
 

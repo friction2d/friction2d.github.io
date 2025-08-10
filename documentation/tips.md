@@ -3,7 +3,7 @@ title: "Tips"
 layout: documentation
 permalink: documentation/tips.html
 categories: documentation
-cover: usage/usage_07.png
+cover: tips/tips_07.png
 order: 5
 ---
 
@@ -14,7 +14,7 @@ order: 5
 
 ## Timeline navigation
 
-![Timeline navigation](/assets/documentation/usage/usage_01.png)
+![Timeline navigation](/assets/documentation/tips/tips_01.png)
 
 - The upper line allows you to change the current frame.
 - The lower line allows you to change a range of visible frames of the timeline.
@@ -23,11 +23,11 @@ Use the mouse wheel while hovering over the bottom scroll bar to scale the timel
 
 ## Changing values
 
-![Timeline navigation](/assets/documentation/usage/usage_02.png)
+![Timeline navigation](/assets/documentation/tips/tips_02.png)
 
 It is possible to change the values by: 
-- clicking in the value box and dragging the cursor sideways (if holding `alt` key modifier it will change values in smaller steps)
-- single clicking in the value box and using the keyboard to enter the values.
+- **clicking in the value box and dragging the cursor sideways** (if holding `alt` key modifier it will change values in smaller steps)
+- **single clicking in the value box** and using the keyboard to enter the values.
 
 For both of them and when editing a value part of a **double value** (usually **X** and **Y**), it is possible to perform an **uniform value input** if pressing `shift` while editing or while hitting `Enter` to accept the changes, that is, the value will be applied to both fields.
 
@@ -35,7 +35,7 @@ For both of them and when editing a value part of a **double value** (usually **
 
 ## Adding keyframes
 
-![Timeline navigation](/assets/documentation/usage/usage_03.png)
+![Timeline navigation](/assets/documentation/tips/tips_03.png)
 
 To activate the recording of values, click on the record button next to the property name.
 
@@ -49,18 +49,18 @@ For selected objects it is possible to use the following Keyboard shortcuts:
 - `R`: Rotate
 - `S`: Scale
 
-![Timeline navigation](/assets/documentation/usage/usage_04.png)
+![Timeline navigation](/assets/documentation/tips/tips_04.png)
 
 There is a way of limiting the translation or scale to just one axis by using the following shortcuts:
 
 - `X`: Horizontal
 - `Y`: Vertical
 
-![Timeline navigation](/assets/documentation/usage/usage_05.png)
+![Timeline navigation](/assets/documentation/tips/tips_05.png)
 
 It is possible to use numerical values when transforming objects, just type the desired numbers:
 
-![Timeline navigation](/assets/documentation/usage/usage_06.png)
+![Timeline navigation](/assets/documentation/tips/tips_06.png)
 
 To **apply** a transformation press `ENTER` or release the mouse.
 
@@ -70,40 +70,40 @@ To **cancel** press `Esc` or the right mouse button.
 
 Every object has a pivot that can be moved to transform the object from its axis, for instance if you rotate the object by pressing `R` shortcut:
 
-![Timeline navigation](/assets/documentation/usage/usage_07.png)
+![Timeline navigation](/assets/documentation/tips/tips_07.png)
 
 ## Groups and layers
 
 **Groups** combine or wrap objects into a new object, this new object has its own transform matrix, but `opacity` parameter does not work.
 
-![Timeline navigation](/assets/documentation/usage/usage_08.png)
+![Timeline navigation](/assets/documentation/tips/tips_08.png)
 
 **Layers** are special group types. You should use them whenever you want the group to be rasterized before being drawn or when you need to apply an effect to the group. Now **layers** do take into account the `opacity` parameter.
 
 For instance, a group can be **promoted to layer** and then apply `Blur` which is a `Raster Effect`:
 
-![Timeline navigation](/assets/documentation/usage/usage_09.png)
+![Timeline navigation](/assets/documentation/tips/tips_09.png)
 
 So **groups** and **layers** may look like similar, they kind of are but **they are definitely not**.
 
 ## Duplicating
 
-Instead of "copy" and "paste", you can use **duplicate** and get an exact copy of your duplicated object (transform, colors, shapes,...):
+Instead of "*Copy*" and "*Paste*", it is better to use **Duplicate** and get an exact copy of your duplicated object (transform, colors, shapes,...):
 
-![Timeline navigation](/assets/documentation/usage/usage_10.png)
+![Timeline navigation](/assets/documentation/tips/tips_10.png)
 
 Keyframes can be also duplicated when working in the Timeline, select a keyframe, place the time line at the desired frame and duplicate it:
 
-![Timeline navigation](/assets/documentation/usage/usage_11.png)
+![Timeline navigation](/assets/documentation/tips/tips_11.png)
 
 – `Shift + D` duplicate and move frame
 – `Ctrl + D` copy and paste in actual frame
 
 ## Layer blending modes
 
-*(Not to be confused with `Blend Effects` explained **[here](animation_tecniques.hmtl#blend-modes)**)*
+*(Not to be confused with `Blend Effects` explained **[here](animation_techniques.html#blend-effects)**)*
 
-![Timeline navigation](/assets/documentation/usage/usage_12.png)
+![Timeline navigation](/assets/documentation/tips/tips_12.png)
 
 Objects, shapes and layers can blend with others (not groups, so don't forget to promote a group into a layer if blending is desired). Each object can be drawn on its parent **layer** using different compositing modes. You can select the composition mode in the combo box next to the object name.
 
@@ -115,56 +115,57 @@ To create a simple alpha mask you need at least two objects, one of which will a
 
 You have to put both objects inside a **layer** so that the mask does not influence the objects outside the layer. That is, grouping them is not enough, you need to promote the group to layer:
 
-![Promote to layer button](/assets/documentation/usage/usage_14b.png)
+![Promote to layer button](/assets/documentation/tips/tips_14.png)
 
 For instance, if you want the rounded green rectangle to mask the star below:
 
-![Timeline navigation](/assets/documentation/usage/usage_15.png)
+![Timeline navigation](/assets/documentation/tips/tips_15.png)
 
 You will need to set the rectangle layer (the rectangle shape itself) blend mode to `DstIn` and you will get the following mask:
 
-![Timeline navigation](/assets/documentation/usage/usage_16.png)
+![Timeline navigation](/assets/documentation/tips/tips_16.png)
 
 In case you want the inverted mask use `DstOut`:
 
-![Timeline navigation](/assets/documentation/usage/usage_17.png)
+![Timeline navigation](/assets/documentation/tips/tips_17.png)
 
 ## Visibility range
 
 You can use the visibility range to control the visibility of an object. 
 
-![Timeline navigation](/assets/documentation/usage/usage_18.png)
+![Timeline navigation](/assets/documentation/tips/tips_18.png)
 
 Objects can just have 1 visibility range so if you want to have more ranges you will need to `Split` it by using the secondary button contextual menu, select  `Split` and then a new object will be created.
 
 ## Graph Editor
 
-By default the interpolation between keyframes is set to **linear** when setting them with the parameter fields or within the canvas if editing transformations. Friction interpolation system is based on graphs, that means you could set up complex interpolations based on arcs and Bezier curves. In order to edit them the user must select a parameter and hit the `Graph button` to change from timeline "Keyframes view" to "Graph view":
+By default the interpolation between keyframes is set to **linear** when setting them with the parameter fields or within the canvas if editing transformations. Friction interpolation system is based on graphs, that means you could set up complex interpolations based on arcs and Bezier curves. In order to edit them the user must select a parameter and hit the `Graph button` to change from timeline `Keyframes view` to `Graph view`:
 
-![Timeline navigation](/assets/documentation/usage/usage_19.png)
+![Timeline navigation](/assets/documentation/tips/tips_19.png)
 
 This is how it looks like:
 
-![Timeline navigation](/assets/documentation/usage/usage_20.png)
+![Timeline navigation](/assets/documentation/tips/tips_20.png)
 
 By default new keyframes interpolations are `linear`. It is possible to select, move, set the keyframe node and their tangents (when the node is set to `smooth`) to the desired curve by using the following tools:
 
-![Timeline navigation](/assets/documentation/usage/usage_21.png)
+![Graph view button](/assets/documentation/usage/usage_graph_view_3.png)
 
 From left to right:
-- **easing**: create complex segment transitions. It could take into account left (`in`) and/or right (`out`) nodes of the segment.
+- **easing**: create complex segment transitions. It could take into account left (`in`) and/or right (`out`) nodes of the segment. Check the available ones [here](tips.html#easing-reference-chart).
 - **make segment a line**: make interpolation between nodes straight.
 - **make segment a curve**: make interpolation between nodes curved, it will show up node tangents.
 - **symmetric nodes**: it will make left and right node tangents of the same length.
 - **smooth nodes**: it will turn node tangent length higher than 0, that is visible.
 - **corner nodes**: it will turn node tangent length equal to 0, that is make it sharp.
-- **fit vertical**: it will fit the view (zoom) to show all nodes.
+- **vertical fit view**: it will fit all the keyframes (or nodes) in the view
+- **horizontal fit view**: it will fit all the selected keyframes (or nodes) in the view. If none selected it will fit the whole scene.
 
 Some tools may need the user to select two nodes to work as it will affect the "curve segment" and not just a node.
 
 It is possible to preview more than one parameter at the time by pressing `shift` in the keyboard and clicking the desired parameter with the left mouse button.
 
-![Timeline navigation](/assets/documentation/usage/usage_22.png)
+![Timeline navigation](/assets/documentation/tips/tips_22.png)
 
 ## Copy node information
 Moving a node of an object while holding `shift` to another node of another object **copies** its exact location and the angle and length of both handles.
@@ -243,3 +244,19 @@ For instance, **Friction** is not yet capable to export animations that contain 
 ![Track effect example](/assets/documentation/animation_techniques/anim_techniques_tracking.svg)
 
 *In the previous example the Arrow "looks" at the crossed square using an Expression.*
+
+## Fast Scene Properties edit
+
+Designers often edit the scene properties while in the middle of an animation, the normal procedure is going to `Menu -> Scene -> Scene properties...` and edit them.
+
+The most used ones, `width`, `height`, `start frame` and `end frame`, are exposed all time in the main window so there is no need to open any dialog:
+
+![Preferences](/assets/documentation/tips/tips_fast_scene_properties.png)
+
+## Easing reference chart
+
+Friction provides some *precooked* keyframes transitions for fast animation. They can be applied between 2 keyframes and in 3 modes `in`, `out` and `in+out`.
+
+Check the following chart as reference:
+
+![Easing reference chart](/assets/documentation/tips/tips_easing_chart.png)

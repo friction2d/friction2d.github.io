@@ -104,6 +104,8 @@ The Timeline is where animations and keyframes are managed. Users can control ti
 
 There is an option to filter the hierarchy to edit the objects that are listed.
 
+It is possible to set a **[Blending mode](tips.html#layer-blending-modes)** for every layer (or object).
+
 ## Properties
 
 ![Properties](/assets/documentation/ui/ui_panel6.png)
@@ -112,7 +114,7 @@ By default the Properties panel displays the attributes of just the selected obj
 
 In the case of selecting a Text object, then a panel with text parameters are shown.
 
-At the bottom of the Properties panel there are a few options to easily align objects in the canvas relative to the canvas itself or other shapes.
+At the bottom of the Properties panel there are a few options to **[easily align objects in the canvas](usage.html#alignment)** relative to the canvas itself or other shapes.
 
 ## Assets
 
@@ -147,14 +149,26 @@ Every shape has 2 parts:
 Fills and Strokes have 3 options to be drawn:
 * **None**: the element disables or turns invisible
 * **Flat**: the element is colored with a flat or constant color
-* **None**: the element is colored using a gradient which is a transition of 2 or more colors. It can be linear or radial.
+* **Gradient**: the element is colored using a gradient which is a transition of 2 or more colors. It can be **linear** or **radial**.
 
 ![Fill and Stroke](/assets/documentation/ui/ui_none-flat-gradients.png)
 
-In the previous image the `fill` changes from left to right: none, flat, linear gradient and radial gradient.
+*In the previous image the `fill` changes from left to right: none, flat, linear gradient and radial gradient.*
 
 ## Preferences
 
 ![Preferences](/assets/documentation/ui/ui_panel10.png)
 
 The Preferences menu contains settings for customizing scenes, preview resolution and layouts.
+
+It might be important to note that it is also possible to fast edit **Start/End scene frames** at the [Timeline playback row](#Timeline), using the Left and Right spinboxes:
+
+![Preferences](/assets/documentation/ui/ui_panel10b.png)
+
+## Toolbox
+
+![Color Toolbar](/assets/documentation/ui/ui_panel11.png)
+
+This toolbar with dynamic buttons exposes most used parameters of **just one selected object** for easy and fast editing. It is even possible to animate values or use `Shift` modifier to edit `X` and `Y` values at the shame time. Exposed parameters change depending on the nature of the shape or object.
+
+*This is a new feature and will be improved in the near future to allow multiple selection and other commonly used parameters.*

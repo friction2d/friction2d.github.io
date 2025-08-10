@@ -74,19 +74,19 @@ In **`View > Zoom`** there are additional ways of navigating the canvas such as 
 
 ## Creating assets
 
-It's possible to create basic shapes using Friction **[Tools panel](userinterface.html#4-tools)**. If it's the first time try creating a rectangle (`shift` + drag to create a square) or an ellipse (`shift` + drag to create a circle) by clicking and dragging the mouse pointer while in the canvas. Release to finish the creation of the shape.
+It's possible to create basic shapes using Friction **[Tools panel](userinterface.html#tools)**. If it's the first time try creating a rectangle (`shift` + drag to create a square) or an ellipse (`shift` + drag to create a circle) by clicking and dragging the mouse pointer while in the canvas. Release to finish the creation of the shape.
 
 These shapes are vector graphics so they can be edited afterwards so change to the `Object selection tool` and then select the shape. Now:
 
-- in the **[Properties panel](userinterface.html#6-properties)**: and expanding the item it is possible to browse and change all the parameters that define the shape.
-- in the **[Fill and Stroke panel](userinterface.html#9-fill-and-stroke)**: it is possible to edit the fill type, color and some parameters related with the Fill and Stroke of the shape.
-- in the **[Timeline panel](userinterface.html#5-timeline)**: it is possible to browse and change all the parameters that define the shape in a similar way than in the **[Properties panel](userinterface.html#6-properties)** but here with the timeline to the right so that those parameters can be animated in time and more.
+- in the **[Properties panel](userinterface.html#properties)**: and expanding the item it is possible to browse and change all the parameters that define the shape.
+- in the **[Fill and Stroke panel](userinterface.html#fill-and-stroke)**: it is possible to edit the fill type, color and some parameters related with the Fill and Stroke of the shape.
+- in the **[Timeline panel](userinterface.html#timeline)**: it is possible to browse and change all the parameters that define the shape in a similar way than in the **[Properties panel](userinterface.html#properties)** but here with the timeline to the right so that those parameters can be animated in time and more.
 
-For instance, go to the **[Properties panel](userinterface.html#6-properties)** expand the shape to `Shape > transform > translation > x` and change the values so that the shape moves near the right side of the canvas.
+For instance, go to the **[Properties panel](userinterface.html#properties)** expand the shape to `Shape > transform > translation > x` and change the values so that the shape moves near the right side of the canvas.
 
 ![Change parameter value](/assets/documentation/usage/usage_edit_parameter.png)
 
-Now, go to the **[Fill and Stroke panel](userinterface.html#9-fill-and-stroke)** and under `Fill` change the type from `none` to `fill` and move the color channel sliders to select a nice color.
+Now, go to the **[Fill and Stroke panel](userinterface.html#fill-and-stroke)** and under `Fill` change the type from `none` to `fill` and move the color channel sliders to select a nice color.
 
 ![Change color value](/assets/documentation/usage/usage_edit_color.png)
 
@@ -99,9 +99,11 @@ There are two ways of importing assets:
 - **Import**: if the asset is `SVG` when using this option the shapes will be imported inside the project. It will be able to modify colors, shapes, etc. within Friction.
 
 - **Link**: if the asset is a bitmap graphics one (`JPEG`, `PNG`,...) or even `SVG` vector, if using this option, they will be linked or externally referenced. A transform parameter will be added but the assets won't be able to be edited within Friction. The great advantage of using this method is that they can be modified externally and the results will be automatically updated in Friction.
-Each linked asset will be registered in the **[Assets Panel](userinterface.html#7-assets)** and from there it will be able to `reload`, `replace` or `remove` the asset.
+Each linked asset will be registered in the **[Assets Panel](userinterface.html#assets)** and from there it will be able to `reload`, `replace` or `remove` the asset.
 
-Both options can be found in the **[Main toolbar](userinterface.html#1-main-toolbar)** or under `File` menu.
+![Import and link buttons in the main window](/assets/documentation/usage/usage_import_link.png)
+
+Both options can be found in the **[Main toolbar](userinterface.html#main-toolbar)** or under `File` menu.
 
 Bitmap graphics will always be **linked**, even if they are added with the **Import** option as there are no tools for editing pixel base images within Friction.
 
@@ -132,7 +134,7 @@ If the  user wants to completely delete all the keyframes of the parameter, just
 
 ### Timeline
 
-The **[Timeline](userinterface.html#5-timeline)** panel will be so helpful to see where the keyframes are placed along time and easy to remap their position in time as it is possible to click and drag them and move them to another time.
+The **[Timeline](userinterface.html#timeline)** panel will be so helpful to see where the keyframes are placed along time and easy to remap their position in time as it is possible to click and drag them and move them to another time.
 
 In this panel, it is possible to `copy`, `paste` and even `duplicate` keyframes to new frames just by placing the time line in the desired frame and running the command.
 
@@ -140,7 +142,7 @@ In this panel, it is possible to `copy`, `paste` and even `duplicate` keyframes 
 
 The interpolation between keyframes **is linear by default**, but this can be changed with the `Graph view` as it adds the possibility to edit the "speed" and evolution of the value animation from one keyframe to the other in a graphical way.
 
-In order to activate it, it is needed to select at least one parameter (if more than one just add more to the selection using the `Shift` modifier, a color between the "activate animation" button and the parameter label will show the color of the graph curves) in the **[Timeline](userinterface.html#5-timeline)** panel (it doesn't work in the Properties panel as there is no timeline in that panel) and press the `Graph view` icon:
+In order to activate it, it is needed to select at least one parameter (if more than one just add more to the selection using the `Shift` modifier, a color between the "activate animation" button and the parameter label will show the color of the graph curves) in the **[Timeline](userinterface.html#timeline)** panel (it doesn't work in the Properties panel as there is no timeline in that panel) and press the `Graph view` icon:
 
 ![Graph view button](/assets/documentation/usage/usage_graph_view_1.png)
 
@@ -153,13 +155,14 @@ It possible to select the keyframes (or nodes now as the curves are **Bezier cur
 ![Graph view button](/assets/documentation/usage/usage_graph_view_3.png)
 
 From left to right:
-- **Easing modes**: some presets to easily animate the movement between two keyframes.
+- **Easing modes**: some presets to easily animate the movement between two keyframes. It could take into account left (`in`) and/or right (`out`) nodes of the segment. Check the available ones [here](tips.html#easing-reference-chart).
 - **line segment**: default "curve" between keyframes.
 - **curved segment**: make the nodes (or keyframes) handles appear
 - **symmetric handles**: make left and right handles symmetric
 - **smooth node**: turn from corner to smooth handles, in this mode left and right node handles share the same tangency angle.
 - **corner nodes**: turn from smooth to corner handles, in this mode left and right node handles have independent tangency angles.
 - **vertical fit view**: fits all the keyframes (or nodes) in the view
+- **horizontal fit view**: fits all the selected keyframes (or nodes) in the view. If none selected it will fit the whole scene.
 
 Example of keyframes with smooth handles:
 
@@ -173,7 +176,7 @@ There are some ways to preview the scene animation within Friction:
 - **Manual scrubbing** the "time line" by dragging it left or right, this is not really a "mode" but it is very commonly done by animators.
 - **Preview Cache**: playing the animation pressing the "Play" button on top of the time line. By default this preview will be rendered into a temporal cache and then played at realtime.
 - **in editor Preview**: if `View > Preview Cache` menu checkbox is disabled, then the animation will be played without caching it, that is faster to play but it may be not in realtime as it will be dependent of your hardware (in case your computer is not capable of rendering all the frames at the scene FPS) so, it is possible that this preview is not played at realtime. The benefit of this mode is that selected objects will show their bounding boxes, pivots points, etc. and that may be interesting for the animator to check how the animation is performed.
-- **SVG Preview**: in case the animation is designed inside all the features of SVG animation, it is possible to run the `Preview SVG` button in the **[Main toolbar](userinterface.html#1-main-toolbar)** and preview it in the default SVG player of the computer (probably an Internet browser).
+- **SVG Preview**: in case the animation is designed inside all the features of SVG animation, it is possible to run the `Preview SVG` button in the **[Main toolbar](userinterface.html#main-toolbar)** and preview it in the default SVG player of the computer (probably an Internet browser).
 
 ## Saving the project
 
@@ -189,7 +192,7 @@ This option will create an animated **SVG** file using the *non yet deprecated* 
 
 In order to export into **SVG** users will find 2 options:
 - **Preview SVG**: it will export and preview the file in your default Internet browser. It's a very useful and fast way to quickly preview the animation.
-- **Export SVG**: a new window will show up with options to generate the final **SVG** file. Among the self-explanatory options there is `Optimize for Web` that uses **[SVGO](https://github.com/svg/svgo)** for reducing the file size.
+- **Export SVG**: a new window will show up with options to generate the final **SVG** file. Among the self-explanatory options there is `Optimize for Web` that uses **[SVGO](https://github.com/svg/svgo)** for reducing the file size and `Mix Blend Modes` that enables Layer color blending to the final SVG file using `CSS` rules.
 
 ![Export SVG dialog](/assets/documentation/export/export_svg-dialog.png)
 
@@ -201,7 +204,7 @@ Both options are available in the **[Main Toolbar](userinterface.html#main-toolb
 
 The second way of exporting is the conventional rendering of the scene animation into a video and/or audio format.
 
-In order to config the export, users should open the [Queue panel](userinterface.html#8-queue) and set:
+In order to config the export, users should open the [Queue panel](userinterface.html#queue) and set:
 - **Scene Properties**: if they are correctly set and there is no need to trim, adjust or choose the `IN/OUT` option, this option could be skipped.
 - **Profiles**: saved profiles are convenient for choosing video/audio, format, codecs and their settings.
 - **Format**: in case of the need of manually changing the setttings here is the place to do it.
@@ -239,7 +242,7 @@ More on this subject in separate sections **[Effects](effects.html)** and **[Sha
 
 ### Alignment
 
-In the **[Properties panel](userinterface.html#6-properties)** there is a group of dropdown and buttons that allow users to align one or several objects to the chosen reference.
+In the **[Properties panel](userinterface.html#properties)** there is a group of dropdown and buttons that allow users to align one or several objects to the chosen reference.
 
 ![Alignment tools](/assets/documentation/usage/usage_alignment_panel.png)
 
@@ -248,6 +251,8 @@ The options allow aligning `Geometry`, `Geometry by its pivot` and just the `Piv
 The destination of the alignment is called "reference" and can be `Scene`, `Bounding box`, `Last selected` object or `Last selected pivot` which references to the last selected object pivot.
 
 The buttons let users apply the alignment to just a side `Left`, `Horizontal center`, `Right`, `Top`, `Vertical center` and `Bottom`.
+
+![Alignment example](/assets/documentation/usage/usage_alignment_example.gif)
 
 ### Layouts
 
