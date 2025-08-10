@@ -101,7 +101,7 @@ Keyframes can be also duplicated when working in the Timeline, select a keyframe
 
 ## Layer blending modes
 
-*(Not to be confused with `Blend Effects` explained **[here](animation_tecniques.hmtl#blend-modes)**)*
+*(Not to be confused with `Blend Effects` explained **[here](animation_techniques.html#blend-effects)**)*
 
 ![Timeline navigation](/assets/documentation/tips/tips_12.png)
 
@@ -152,7 +152,7 @@ By default new keyframes interpolations are `linear`. It is possible to select, 
 ![Graph view button](/assets/documentation/usage/usage_graph_view_3.png)
 
 From left to right:
-- **easing**: create complex segment transitions. It could take into account left (`in`) and/or right (`out`) nodes of the segment. Check the available ones [here](/tips.html#Easing_reference_chart).
+- **easing**: create complex segment transitions. It could take into account left (`in`) and/or right (`out`) nodes of the segment. Check the available ones [here](tips.html#easing-reference-chart).
 - **make segment a line**: make interpolation between nodes straight.
 - **make segment a curve**: make interpolation between nodes curved, it will show up node tangents.
 - **symmetric nodes**: it will make left and right node tangents of the same length.

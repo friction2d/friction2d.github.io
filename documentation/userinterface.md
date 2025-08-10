@@ -104,7 +104,7 @@ The Timeline is where animations and keyframes are managed. Users can control ti
 
 There is an option to filter the hierarchy to edit the objects that are listed.
 
-It is possible to set a **[Blending mode](tips.html#Layer_blending_modes)** for every layer (or object).
+It is possible to set a **[Blending mode](tips.html#layer-blending-modes)** for every layer (or object).
 
 ## Properties
 
@@ -114,7 +114,7 @@ By default the Properties panel displays the attributes of just the selected obj
 
 In the case of selecting a Text object, then a panel with text parameters are shown.
 
-At the bottom of the Properties panel there are a few options to **[easily align objects in the canvas](usage.html#Alignment)** relative to the canvas itself or other shapes.
+At the bottom of the Properties panel there are a few options to **[easily align objects in the canvas](usage.html#alignment)** relative to the canvas itself or other shapes.
 
 ## Assets
 
@@ -171,4 +171,4 @@ It might be important to note that it is also possible to fast edit **Start/End 
 
 This toolbar with dynamic buttons exposes most used parameters of **just one selected object** for easy and fast editing. It is even possible to animate values or use `Shift` modifier to edit `X` and `Y` values at the shame time. Exposed parameters change depending on the nature of the shape or object.
 
-*This is a new feature and may de improved in the near future to allow multiple selection and other commonly used parameters.*
+*This is a new feature and will be improved in the near future to allow multiple selection and other commonly used parameters.*

@@ -76,7 +76,7 @@ Under **Options** it is possible to set:
 
 * **Optimize for web**: if available, it lets the user apply some optimization to reduce the `.svg` file size using [SVGO](https://github.com/svg/svgo).
 
-* **Mix Blend Modes**: it enables **[Blending modes](tips.html#Layer_blending_modes)** for shapes
+* **Mix Blend Modes**: it enables **[Blending modes](tips.html#layer-blending-modes)** for shapes
 
 ## Video / Audio
 

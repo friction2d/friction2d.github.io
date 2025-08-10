@@ -106,7 +106,7 @@ Check the following video for more information:
 
 There is a `Transform Effect` called `Track Effect` that makes an object "look at a target", that is, if the target object moves along the canvas, the rotation of the object with the `Track effect` will animate to follow that target.
 
-In some scenarios the target is no a visible object, in those cases it is a good idea to use a `Null object`, they can be created selecting the `Null object tool` at the **[Tools panel](userinterface.html#4-tools)**.
+In some scenarios the target is no a visible object, in those cases it is a good idea to use a `Null object`, they can be created selecting the `Null object tool` at the **[Tools panel](userinterface.html#tools)**.
 
 ![Tracking example](/assets/documentation/animation_techniques/anim_techniques_tracking.svg)
 
