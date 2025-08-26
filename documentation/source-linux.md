@@ -14,6 +14,12 @@ order: 12
 
 Generic instructions for building Friction on a Linux system.
 
+### Important
+
+Friction relies on specific versions and patches of third-party software for proper operation. We strongly recommend against packaging Friction in third-party distributions because it is exceptionally difficult to ensure compatibility and stability.
+
+For this reason, we are unable to offer support for custom builds. We encourage you to use the official release, as it has been tested and verified to work correctly.
+
 ## Requirements
 
 * pkg-config
