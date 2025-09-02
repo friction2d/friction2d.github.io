@@ -41,6 +41,7 @@ exclude:
   - _config_app.yml
   - _layouts_app/
   - assets/style-docs.css
+  - branding/
 nav:
   - title: News
     url: /news/
