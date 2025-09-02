@@ -10,3 +10,4 @@ pdf/friction.md
 pdf/friction.pdf
 *.friction_backup
 
+.DS_Store
