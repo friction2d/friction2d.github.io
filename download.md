@@ -24,24 +24,25 @@ permalink: download.html
 * 16GB+ RAM
 * CPU
   * Intel Kaby Lake Core i5/i7 or newer
-  * AMD Ryzen 1000 series or newer
-  * Apple Silicon M1 or newer
+  * AMD Ryzen
+  * Apple Silicon
 * GPU
   * NVIDIA GeForce GTX 1050 or newer
   * AMD Radeon RX 560 or newer
-  * Intel HD Graphics 620 or newer
-  * Apple Silicon M1 or newer
+  * Intel (U)HD Graphics 620 or newer
+  * Apple Silicon
 
 ## Supported systems
 
-* Microsoft Windows (N) 10/11 x64
-* macOS Monterey (12.7) or newer
-* Red Hat Enterprise Linux 7.9/8.x/9.x/10.x x86_64 and compatible
-* Ubuntu 14.04-26.04 x86_64 and compatible
+* Microsoft Windows (N) 10/11 (x64)
+* macOS 12/13/14/15 (arm64/x86_64)
+* Red Hat Enterprise Linux 7/8/9/10 (x86_64) and compatible
+* Ubuntu Desktop LTS 14/16/18/20/22/24 (x86_64) and compatible
 
 ### Notes:
 
 * Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed on Windows 10
+* macOS binaries support both Apple Silicon and Intel (universal)
 * Linux binaries support both X11 and Wayland
 * Linux binaries are VFX Platform CY2021+ compatible
 * The Nouveau graphics driver is not supported on Linux, use official drivers from NVIDIA
