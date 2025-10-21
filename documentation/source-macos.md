@@ -12,9 +12,7 @@ order: 14
 * table of contents
 {:toc}
 
-Generic instructions for building Friction on macOS.
-
-macOS Monterey (12) or newer recommended, will also build on macOS 10.15 and 11.
+Generic instructions for building Friction on macOS Big Sur (11.0) or newer.
 
 ## Xcode
 

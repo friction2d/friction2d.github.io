@@ -8,7 +8,7 @@ permalink: download.html
 
 ### Minimum hardware
 
-* 4GB+ RAM
+* 4GB RAM
 * AVX x86_64 compatible dual core CPU
   * Intel Sandy Bridge Core i3/i5/i7
   * AMD Bulldozer
@@ -17,11 +17,11 @@ permalink: download.html
   * AMD Radeon HD 2000 series (R600/TeraScale 1)
   * Intel HD Graphics 4000 (Ivy Bridge)
 * Audio device supporting WASAPI on Windows and PulseAudio on Linux
-* Any Mac compatible with macOS [Monterey](https://support.apple.com/en-us/103260) (12.7) or newer
+* Any Mac compatible with macOS [Big Sur](https://support.apple.com/en-us/111980) (11.0) or newer
 
 ### Recommended hardware
 
-* 16GB+ RAM
+* 16GB RAM
 * CPU
   * Intel Kaby Lake Core i5/i7 or newer
   * AMD Ryzen
@@ -35,7 +35,7 @@ permalink: download.html
 ## Supported systems
 
 * Microsoft Windows (N) 10/11 (x64)
-* macOS 12/13/14/15 (arm64/x86_64)
+* macOS 11/12/13/14/15 universal
 * Red Hat Enterprise Linux 7/8/9/10 (x86_64) and compatible
 * Ubuntu Desktop LTS 14/16/18/20/22/24 (x86_64) and compatible
 
