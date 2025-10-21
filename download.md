@@ -17,7 +17,14 @@ permalink: download.html
   * AMD Radeon HD 2000 series (R600/TeraScale 1)
   * Intel HD Graphics 4000 (Ivy Bridge)
 * Audio device supporting WASAPI on Windows and PulseAudio on Linux
-* Any Mac compatible with macOS [Big Sur](https://support.apple.com/en-us/111980) (11.0) or newer
+* Any Mac compatible with macOS Big Sur (11.0) or newer
+  * MacBook (2015 or later)
+  * MacBook Air (2013 or later)
+  * MacBook Pro (Late 2013 or later)
+  * Mac mini (2014 or later)
+  * iMac (2014 or later)
+  * iMac Pro (2017 or later)
+  * Mac Pro (2013 or later)
 
 ### Recommended hardware
 
