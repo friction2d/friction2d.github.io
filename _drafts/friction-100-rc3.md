@@ -55,6 +55,7 @@ TODO
 
 ### Effects
 
+* Parent effect now supports influence (pending PR merge)
 * Improved stability of (GLSL) shaders
 * Fixed a crash tied to visibility range and motion blur
 
