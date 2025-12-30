@@ -16,7 +16,7 @@ comments: ""
 
 This new release candidate introduces significant user experience (UX) improvements and several important stability fixes.
 
-Your feedback is essential. Please test this version and let us know what you think.
+While introducing new features during the third release candidate deviates from our standard release policy, we’ve decided to bundle a few 'must-have' features into RC3 because we know they’ll make a huge difference in your workflow. Additionally, several changes to the renderer require further validation, so we are extending the testing phase to ensure improved stability and usability for the final release.
 
 * Complete changelog can be found on [GitHub](https://github.com/friction2d/friction/compare/v1.0.0-rc.2...v1.0.0-rc.3)
 * Additional downloads can be found on [GitHub](https://github.com/friction2d/friction/releases/tag/v1.0.0-rc.3)
@@ -36,17 +36,18 @@ Your feedback is essential. Please test this version and let us know what you th
 * Corrected frame-to-seconds calculations in the New/Edit Scene dialog
 * Improved timeline and graph zooming behavior
 * The timeline range now automatically fits to the scene on load
+* Timeline: on resume preview check frame state
 
-### Transform Interacts
+### Gizmos, Grid and Snapping!
 
 TODO
 
 ### Nodes
 
 * Added new "Remove Node" action
-* Added new "Split Nodes" action (pending PR merge)
-* Added new "Set First Node" action (pending PR merge)
-* Added new "Reverse Nodes Order" action (pending PR merge)
+* Added new "Split Nodes" action
+* Added new "Set First Node" action
+* Added new "Reverse Nodes Order" action
 
 ### SVG
 
@@ -55,7 +56,8 @@ TODO
 
 ### Effects
 
-* Parent effect now supports influence (pending PR merge)
+* Parent effect now supports influence
+* Track effect: Don't change rotation if target changes
 * Improved stability of (GLSL) shaders
 * Fixed a crash tied to visibility range and motion blur
 
@@ -68,12 +70,14 @@ Added proper support for constant frame rate (CFR) in exported videos. This sign
 * Fixed a crash during render by correctly reading the app's memory (RAM) usage
 * Added support for Universal Binaries (Apple Silicon ARM64 & Intel x86_64)
 * The minimum supported version is now macOS 11.0 (Big Sur)
+* New issue: exported ProRes with alpha is not compatible with Apple Silicon decoders
 
 macOS support is still experimental.
 
 ### Linux
 
-Fixed missing/broken application icon in the XFCE desktop environment.
+* Fixed missing/broken application icon in the XFCE desktop environment.
+* Support server side decorations on COSMIC desktop environment.
 
 ### SDK
 
