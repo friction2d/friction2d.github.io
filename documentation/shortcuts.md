@@ -82,7 +82,9 @@ Shortcuts are valid on active timeline.
 | Action | Shortcut |
 | ------ | -------- |
 | Rewind *(first frame)* | `Shift` + `Left`
+| Rewind in quarters | `Shift` + `Alt` + `Left`
 | Fast Forward *(last frame)* | `Shift` + `Right`
+| Fast Forward in quarters | `Shift` + `Alt` + `Right`
 | Previous Frame | `Left`
 | Next Frame | `Right`
 | Previous Keyframe | `Down`
@@ -123,6 +125,21 @@ Shortcuts are valid on active viewer.
 | Reset Rotation | `Alt` + `R`
 | Rotate | `R` and move mouse/touchpad
 | Scale | `S` and move mouse/touchpad
+| Move | `G` and move mouse/touchpad
+
+### Snapping
+
+| Action | Shortcut |
+| ------ | -------- |
+| Snapping On/Off | `Shift` + `Tab`
+| Bypass Snapping | `Shift` while move mouse/touchpad
+| Force Snapping *(no threshold)* | `Ctrl` while move mouse/touchpad
+
+### Value Sliders
+
+| Action | Shortcut |
+| ------ | -------- |
+| Uniform X/Y | `Shift` + `Enter` on input or `Shift` while move mouse/touchpad
 
 ## Other
 
