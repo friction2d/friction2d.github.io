@@ -8,6 +8,7 @@ permalink: download.html
 
 ### Minimum hardware
 
+* 720p display (native/scaling)
 * 4GB RAM
 * AVX x86_64 compatible dual core CPU
   * Intel Sandy Bridge Core i3/i5/i7
@@ -28,7 +29,8 @@ permalink: download.html
 
 ### Recommended hardware
 
-* 16GB RAM
+* 1080p display (native/scaling)
+* 16GB+ RAM
 * CPU
   * Intel Kaby Lake Core i5/i7 or newer
   * AMD Ryzen
