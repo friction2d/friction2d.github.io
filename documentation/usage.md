@@ -192,7 +192,7 @@ This option will create an animated **SVG** file using the *non yet deprecated* 
 
 In order to export into **SVG** users will find 2 options:
 - **Preview SVG**: it will export and preview the file in your default Internet browser. It's a very useful and fast way to quickly preview the animation.
-- **Export SVG**: a new window will show up with options to generate the final **SVG** file. Among the self-explanatory options there is `Optimize for Web` that uses **[SVGO](https://github.com/svg/svgo)** for reducing the file size and `Mix Blend Modes` that enables Layer color blending to the final SVG file using `CSS` rules.
+- **Export SVG**: a new window will show up with options to generate the final **SVG** file. Among the self-explanatory options there is `Optimize for Web` that reduces the file size and `Mix Blend Modes` that enables Layer color blending to the final SVG file using `CSS` rules.
 
 ![Export SVG dialog](/assets/documentation/export/export_svg-dialog.png)
 
