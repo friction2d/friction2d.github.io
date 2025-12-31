@@ -74,9 +74,11 @@ Under **Options** it is possible to set:
 
 * **Fixed Size**: adds `width` and `height` to `viewBox`.
 
-* **Optimize for web**: if available, it lets the user apply some optimization to reduce the `.svg` file size using [SVGO](https://github.com/svg/svgo).
+* **Optimize for Web**: will try to optimize the SVG for web use (make it smaller). Does not apply to previews.
 
 * **Mix Blend Modes**: it enables **[Blending modes](tips.html#layer-blending-modes)** for shapes
+
+* **SVG 1.1 Colors**: uses hexcodes for colors, else defaults to `rgba()`.
 
 ## Video / Audio
 
@@ -98,6 +100,9 @@ Note that **GIF** is not included in the list as other applications does a much 
 
 * Export as MP4 and then use [GIFTuna](https://giftuna.io/) to convert it to a GIF
 * Export as PNG image sequence and then use [Gifski](https://github.com/sindresorhus/Gifski) to convert it to a GIF.
+
+
+Note that **ProRes** files with alpha is not compatible with Apple Silicon decoders. This is a known issue and will be fixed in a future release.
 
 ### Render dialog
 
