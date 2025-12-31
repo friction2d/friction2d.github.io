@@ -23,6 +23,10 @@ While introducing new features during the third release candidate deviates from 
 
 ## Changes
 
+### Gizmos, Grid and Snapping!
+
+TODO
+
 ### UI/UX
 
 * Fixed a clamping issue in the resolution selector and added more default resolutions
@@ -38,10 +42,6 @@ While introducing new features during the third release candidate deviates from 
 * The timeline range now automatically fits to the scene on load
 * Timeline: on resume preview check frame state
 
-### Gizmos, Grid and Snapping!
-
-TODO
-
 ### Nodes
 
 * Added new "Remove Node" action
@@ -53,6 +53,8 @@ TODO
 
 * Ensured `rx` and `ry` values for circles are always positive on export
 * Added optional support for SVG 1.1 compatible colors (see export dialog)
+* New custom SVG optimizer (see "Optimize for Web" option in export dialog)
+  * Replaces external SVGO application
 
 ### Effects
 
