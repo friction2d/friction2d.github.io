@@ -27,7 +27,7 @@ For this reason, we are unable to offer support for custom builds. We encourage 
 * python3
 * cmake
 * clang
-* Qt 5.15.17 + KDE Patch Collection recommended, minimum 5.15.13
+* Qt 5.15.18 + KDE Patch Collection (and other [patches](https://github.com/friction2d/friction/tree/main/src/scripts/patches)) recommended, minimum 5.15.13. Note that "vanilla" Qt 5.15.x will degrade your experience.
     * Gui
     * Widgets
     * OpenGL
@@ -35,7 +35,7 @@ For this reason, we are unable to offer support for custom builds. We encourage 
     * Qml
     * Xml
 * qscintilla
-* ffmpeg 4.2 recommended, [will not build on 7+](https://github.com/friction2d/friction/issues/135)
+* ffmpeg 4.2/4.4 required, [support for 6+ is in testing](https://github.com/friction2d/friction/issues/135).
     * libavformat
     * libavcodec
     * libavutil
@@ -43,19 +43,17 @@ For this reason, we are unable to offer support for custom builds. We encourage 
     * libswresample
 * libunwind
 * expat
-* harfbuzz
 * freetype
 * fontconfig
 * libjpeg-turbo
 * libpng
 * libwebp
 * zlib
-* icu
 
 Example for Debian/Ubuntu compatible systems:
 
 ```
-sudo apt install clang cmake python3 ninja-build libfontconfig1-dev libfreetype-dev libavcodec-dev libavformat-dev libavutil-dev libqscintilla2-qt5-dev libqt5opengl5-dev libswresample-dev libswscale-dev libunwind-dev qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev libexpat1-dev libfreetype-dev libjpeg-turbo8-dev libpng-dev libwebp-dev zlib1g-dev libicu-dev libharfbuzz-dev libqt5multimedia5-plugins libgl1-mesa-dev libegl1-mesa-dev libgles2-mesa-dev
+sudo apt install clang cmake python3 ninja-build libfontconfig1-dev libfreetype-dev libavcodec-dev libavformat-dev libavutil-dev libqscintilla2-qt5-dev libqt5opengl5-dev libswresample-dev libswscale-dev libunwind-dev qtbase5-dev qtdeclarative5-dev qtmultimedia5-dev libexpat1-dev libfreetype-dev libjpeg-turbo8-dev libpng-dev libwebp-dev zlib1g-dev libqt5multimedia5-plugins libgl1-mesa-dev libegl1-mesa-dev libgles2-mesa-dev
 ```
 
 ## Get Source
@@ -94,7 +92,7 @@ Note that on some configurations you will need to specify `qscintilla` paths:
 Now build:
 
 ```
-cmake --build . --config Release
+cmake --build .
 ```
 
 Executable is available in `src/app/friction`.
