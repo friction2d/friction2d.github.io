@@ -17,6 +17,8 @@ domain: "friction.graphics"
 url: "https://friction.graphics"
 description: "Friction is a powerful and versatile motion graphics application that allows you to create vector and raster animations for web and video."
 permalink: /:categories/:title:output_ext
+include:
+  - .well-known
 exclude:
   - README.md
   - Gemfile
