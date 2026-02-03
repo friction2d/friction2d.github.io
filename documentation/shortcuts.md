@@ -94,7 +94,7 @@ Shortcuts are valid on active timeline.
 | Stop | `Esc`
 | Frame In | `I`
 | Frame Out | `O`
-| Marker | `k`
+| Add Marker | `M`
 | Add Key(s) | `Insert`
 
 ## Viewer/Canvas
