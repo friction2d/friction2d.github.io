@@ -47,7 +47,7 @@ git pull && git submodule update --init --recursive
 
 The Friction SDK is required to build from source.
 
-[Download](https://github.com/friction2d/friction-sdk/releases/download/v1.0.0/friction-sdk-1.0.0r4-windows-x64.7z) and extract, move the extracted `sdk` folder to the Friction source folder.
+[Download](https://github.com/friction2d/friction-sdk/releases/download/v1.0.0/friction-sdk-1.0.0r6-windows-x64.7z) and extract, move the extracted `sdk` folder to the Friction source folder.
 
 ## Build
 
