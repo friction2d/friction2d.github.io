@@ -5,25 +5,16 @@
         <link href="assets/style.css" rel="stylesheet" />
     </head>
     <body>
-        <div id="headerDefault">
-            <div id="headerInner">
-                <a href="index.html"><img src="assets/logo.svg" width="267px" height="80px" /></a>
-            </div>
-        </div>
         <div id="content">
             <div id="contentInner">
                 {{ content }}
-                <div class="blocks">
+                <h2>Documentation</h2>
+                <ul>
                     {% assign documentation_pages = site.pages | where_exp: "page", "page.categories contains 'documentation'" | sort: 'order' %}
                     {% for page in documentation_pages %}
-                    <div class="block newsblock">
-                        <a href="{{ page.url | replace_first:'/','' }}">
-                            <img class="doc" src="assets/documentation/{{ page.cover }}" />
-                            <h2>{{ page.title }}</h2>
-                        </a>
-                    </div>
+                    <li><a href="{{ page.url | replace_first:'/','' }}">{{ page.title }}</a></li>
                     {% endfor %}
-                </div>
+                </ul>
             </div>
         </div>
         <div id="footer">

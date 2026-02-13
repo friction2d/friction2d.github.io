@@ -5,11 +5,6 @@
         <link href="assets/style.css" rel="stylesheet" />
     </head>
     <body>
-        <div id="headerDefault">
-            <div id="headerInner">
-                <a href="index.html"><img src="assets/logo.svg" width="267px" height="80px" /></a>
-            </div>
-        </div>
         <div id="content">
             <div id="contentInner">
                 {{ content }}
@@ -32,14 +27,11 @@
                 {% endfor %}
                 <div class="nextPrevContainer">
                     {% if prev.title and prev.title != '' %}
-                    <a href="{{ prev.url | replace_first:'/','' }}"><span class="nextPrevButton">&lt; {{ prev.title }}</span></a>
-                    {% else %}
-                    <a href="index.html"><span class="nextPrevButton">&lt; Index</span></a>
+                    <a href="{{ prev.url | replace_first:'/','' }}"><span class="nextPrevButton">Previous</span></a>
                     {% endif %}
+                    <a href="index.html"><span class="nextPrevButton">Index</span></a>
                     {% if next.title and next.title != '' %}
-                    <a href="{{ next.url | replace_first:'/','' }}"><span class="nextPrevButton">{{ next.title }} &gt;</span></a>
-                    {% else %}
-                    <a href="index.html"><span class="nextPrevButton">Index &gt;</span></a>
+                    <a href="{{ next.url | replace_first:'/','' }}"><span class="nextPrevButton">Next</span></a>
                     {% endif %}
                     </div>
             </div>
