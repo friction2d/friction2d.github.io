@@ -27,7 +27,7 @@ For this reason, we are unable to offer support for custom builds. We encourage 
 * python3
 * cmake
 * clang
-* Qt 5.15.18 + KDE Patch Collection (and other [patches](https://github.com/friction2d/friction/tree/main/src/scripts/patches)) recommended, minimum 5.15.13. Note that "vanilla" Qt 5.15.x will degrade your experience.
+* Qt 5.15.18 + [KDE Patch Collection](https://community.kde.org/Qt5PatchCollection) (and other [patches](https://github.com/friction2d/friction/tree/main/src/scripts/patches)) recommended, minimum 5.15.13. Note that "vanilla" Qt 5.15.x will degrade your experience.
     * Gui
     * Widgets
     * OpenGL
