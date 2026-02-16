@@ -45,6 +45,7 @@ cd ${BUILD}
 git clone ${ORG}/friction-icon-theme
 cd friction-icon-theme
 git shortlog -sne --all > ${BUILD}/friction-theme.txt
+sed -i  "s/NicKraneis/Nic Kraneis/g" ${BUILD}/friction-theme.txt
 
 cd ${BUILD}
 git clone ${ORG}/friction-shader-plugins
@@ -84,6 +85,8 @@ echo "### Contributors" >> ${DOC}
 echo >> ${DOC}
 
 cat friction.txt friction-theme.txt friction-web-docs.txt friction-shaders.txt | awk '{$1=""; print $0}' | awk '!seen[$0]++' | awk {'print "-"$0'} | ${SED} 's/^ //g;s/<.*//' >> ${DOC}
+echo "- Jonathan (Nuxttux Creative)" >> ${DOC}
+echo "- tonton (samytichadou)" >> ${DOC}
 echo "- eFe Muñoz" >> ${DOC}
 echo "- Alex Kiryanov" >> ${DOC}
 echo >> ${DOC}
