@@ -48,34 +48,8 @@
                 <p>Friction offers experimental support for user-customizable shader effects. A limited set of effects are included.</p>
             </div>
         </div>
-        <div class="bigTitle" id="download"><h1>Download</h1></div>
-        <div class="bigTitle darkAlpha blurry round">
-            <h2>Production release v{{ site.latest_version }}</h2>
-            <div class="downloads">
-                <a title="Download setup for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_windows_setup }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-setup.svg"></a>
-                <a title="Download portable for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_windows_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-portable.svg"></a>
-                <a title="Download AppImage for Linux x86_64" href="{{ site.github_download_url }}v{{ site.latest_version }}/Friction-{{ site.latest_version }}-{{ site.github_release_suffix_linux_appimage }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-appimage.svg"></a>
-                <a title="Download portable tarball for Linux x86_64" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_linux_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-portable.svg"></a>
-                <!-- <a title="Download RPM for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a> -->
-                <!-- <a title="Download DMG for macOS 12.7+ (Apple Silicon)" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_mac_arm_dmg }}"><img class="platform" src="{{ site.url }}/assets/buttons/macos-arm.svg"></a> -->
-                <!-- <a title="Download DMG for macOS 12.7+ (Intel)" href="{{ site.github_download_url }}v{{ site.latest_version }}/friction-{{ site.latest_version }}-{{ site.github_release_suffix_mac_intel_dmg }}"><img class="platform" src="{{ site.url }}/assets/buttons/macos-intel.svg"></a> -->
-            </div>
-            <p class="shadow noDeco"><a href="{{ site.url }}/releases/friction-{{ site.latest_version | remove: '.' }}.html">Please read the release notes before usage.</a></p>
-        </div>
-        {% if site.unstable_version != nil %}
-        <div class="bigTitle darkAlpha blurry round">
-            <h2>Development release v{{ site.unstable_version }}</h2>
-            <div class="downloads">
-                <a title="Download setup for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ site.unstable_version }}/friction-{{ site.unstable_version }}-{{ site.github_release_suffix_windows_setup }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-setup.svg"></a>
-                <a title="Download portable for Windows 10/11 x64" href="{{ site.github_download_url }}v{{ site.unstable_version }}/friction-{{ site.unstable_version }}-{{ site.github_release_suffix_windows_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/windows-portable.svg"></a>
-                <a title="Download AppImage for Linux x86_64" href="{{ site.github_download_url }}v{{ site.unstable_version }}/Friction-{{ site.unstable_version }}-{{ site.github_release_suffix_linux_appimage }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-appimage.svg"></a>
-                <a title="Download portable tarball for Linux x86_64" href="{{ site.github_download_url }}v{{ site.unstable_version }}/friction-{{ site.unstable_version }}-{{ site.github_release_suffix_linux_portable }}"><img class="platform" src="{{ site.url }}/assets/buttons/linux-portable.svg"></a>
-                <!-- <a title="Download RPM for Enterprise Linux (VFX Reference Platform)" href="{{ site.github_download_url }}v{{ site.unstable_version }}/friction-{{ site.unstable_version | replace: '-beta', '.beta' }}-{{ site.github_release_suffix_linux_rpm }}"><img class="platform" src="{{ site.url }}/assets/buttons/rhel-rpm.svg"></a> -->
-                <a title="Download for macOS 11.0+ universal" href="{{ site.github_download_url }}v{{ site.unstable_version }}/Friction-{{ site.unstable_version }}{{ site.github_release_suffix_mac_uni_dmg }}"><img class="platform" src="{{ site.url }}/assets/buttons/macos-uni.svg"></a>
-            </div>
-            <p class="shadow noDeco"><a href="{{ site.url }}/releases/friction-{{ site.unstable_version | remove: '.' }}.html">Please read the release notes before usage.</a></p>
-        </div>
-        {% endif %}
+        <div class="bigTitle" id="download"><h1>Downloads</h1></div>
+        {% include downloads.html %}
         <div class="bigTitle"><h1>Friction is powered by</h1></div>
         <div class="blocks">
             <div class="block darkAlpha blurry">

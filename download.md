@@ -1,5 +1,5 @@
 ---
-title: "Downloads"
+title: "Download"
 layout: download
 permalink: download.html
 ---

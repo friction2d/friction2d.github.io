@@ -1,5 +1,6 @@
 latest_version: 0.9.6.1
 unstable_version: 1.0.0-rc.3
+latest_download: 1.0.0-rc.3
 github_release_suffix_windows_setup: "setup-win64.exe"
 github_release_suffix_windows_portable: "windows-x64.7z"
 github_release_suffix_linux_portable: "linux-x86_64.tar.xz"
