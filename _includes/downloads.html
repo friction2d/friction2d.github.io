@@ -13,11 +13,13 @@
                 <img src="{{ site.url }}/assets/downloads/box.svg" alt="Download">
                 <span>Portable Version</span>
             </a>
+            {% if page.download_devel %}
             <br>
             <a href="https://windows.ci.friction.graphics" class="btn-download-small-red">
                 <img src="{{ site.url }}/assets/downloads/download.svg" alt="Download">
                 <span>Development Version</span>
             </a>
+            {% endif %}
         </p>
     </div>
     <div class="block center darkAlpha blurry">
@@ -38,11 +40,13 @@
                 <img src="{{ site.url }}/assets/downloads/redhat.svg" alt="Download">
                 <span>RPM Package</span>
             </a>
+            {% if page.download_devel %}
             <br>
             <a href="https://linux.ci.friction.graphics" class="btn-download-small-red">
                 <img src="{{ site.url }}/assets/downloads/download.svg" alt="Download">
                 <span>Development Version</span>
             </a>
+            {% endif %}
         </p>
     </div>
     <div class="block center darkAlpha blurry">
@@ -54,11 +58,13 @@
                 <img src="{{ site.url }}/assets/downloads/download.svg" alt="Download">
                 <span>Download</span>
             </a>
+            {% if page.download_devel %}
             <br>
             <a href="https://macos.ci.friction.graphics" class="btn-download-small-red">
                 <img src="{{ site.url }}/assets/downloads/download.svg" alt="Download">
                 <span>Development Version</span>
             </a>
+            {% endif %}
         </p>
     </div>
     <div class="block center darkAlpha blurry">
