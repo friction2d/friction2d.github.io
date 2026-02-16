@@ -2,6 +2,7 @@
 title: "Download"
 layout: download
 permalink: download.html
+release: 1.0.0-rc.3
 ---
 
 ## Requirements

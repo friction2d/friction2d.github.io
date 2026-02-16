@@ -14,8 +14,8 @@
                 {% if page.lead != nil %}
                 <p class="lead">{{ page.lead }}</p>
                 {% endif %}
-                <h2>Friction v{{ site.latest_download }}</h2>
-                <p>Please read the <a href="{{ site.url }}/releases/friction-{{ site.latest_download | remove: '.' }}.html">release notes</a> before usage.</p>
+                <h2>Friction v{{ page.release }}</h2>
+                <p>Please read the <a href="{{ site.url }}/releases/friction-{{ page.release | remove: '.' }}.html">release notes</a> before usage.</p>
                 {% include downloads.html %}
                 <style>.block { background-color: transparent !important; }</style>
                 {{ content }}
