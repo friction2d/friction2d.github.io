@@ -2,11 +2,10 @@ Freedesktop compatible icon theme for Friction.
 
 ### Credits
 
-* [Enve](https://github.com/MaurycyLiebner/enve) icons contributors
-* Friction icon is a modification of an icon made by sixsixfive
-* [Andrzej Ambroż](https://devtalk.blender.org/u/jendrzych)
-* [Adam Belis](https://www.adambelis.com)
+* [Nic Kraneis](https://nikramedia.com/) (Friction logo)
 * [Pablo Gil](http://www.dolphinboy.es)
+* [Adam Belis](https://www.adambelis.com)
+* [Blender](https://ui.blender.org/icons) *([Andrzej Ambroż](https://devtalk.blender.org/u/jendrzych))*
 
 ### License
 
