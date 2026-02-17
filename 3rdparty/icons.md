@@ -2,7 +2,7 @@ Freedesktop compatible icon theme for Friction.
 
 ### Credits
 
-* [Nic Kraneis](https://nikramedia.com/) (Friction logo)
+* [Nic Kraneis](https://parzival-design.com/) (Friction logo)
 * [Pablo Gil](http://www.dolphinboy.es)
 * [Adam Belis](https://www.adambelis.com)
 * [Blender](https://ui.blender.org/icons) *([Andrzej Ambroż](https://devtalk.blender.org/u/jendrzych))*
