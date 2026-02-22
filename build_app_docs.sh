@@ -69,3 +69,8 @@ tree -lah
 echo "source 'https://rubygems.org'" > Gemfile
 echo "gem 'jekyll'" >> Gemfile
 bundle exec jekyll build
+
+echo "### Auto generated from build_app_docs.sh" > ${BUILD}/_site/README.md
+
+mv ${BUILD}/_site ${CWD}/offline
+

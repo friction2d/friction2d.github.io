@@ -45,6 +45,7 @@ exclude:
   - _layouts_app/
   - assets/style-docs.css
   - branding/
+  - offline/
 nav:
   - title: News
     url: /news/
