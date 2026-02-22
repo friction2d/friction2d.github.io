@@ -52,10 +52,10 @@ userinterface.md
 for page in ${PAGES}; do cp ${CWD}/documentation/${page} . ; done
 
 ASSETS=`grep -ho 'assets/[^"'\''\)]*' ${PAGES} | sort | uniq`
+sed -i '/Default interface/d' index.md
 sed -i 's/permalink: documentation\//permalink: /g; s/\/assets/assets/g' ${PAGES}
 sed -i 's/permalink: /permalink: index/g' index.md
 sed -i 's/\/assets\///g' assets/style.css
-sed -i '/Default interface/d' index.md
 
 for asset in ${ASSETS}; do
     relative_path=${asset#assets/}
