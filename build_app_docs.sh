@@ -33,6 +33,7 @@ mkdir -p _layouts assets/backgrounds assets/documentation
 cp ${CWD}/_config_app.yml _config.yml
 cp ${CWD}/_layouts_app/* _layouts/
 cp ${CWD}/assets/style-doc.css assets/style.css
+cp ${CWD}/assets/badge-alt.svg assets/logo.svg
 
 PAGES="
 animation_techniques.md
@@ -54,6 +55,7 @@ ASSETS=`grep -ho 'assets/[^"'\''\)]*' ${PAGES} | sort | uniq`
 sed -i 's/permalink: documentation\//permalink: /g; s/\/assets/assets/g' ${PAGES}
 sed -i 's/permalink: /permalink: index/g' index.md
 sed -i 's/\/assets\///g' assets/style.css
+sed -i '/Default interface/d' index.md
 
 for asset in ${ASSETS}; do
     relative_path=${asset#assets/}
