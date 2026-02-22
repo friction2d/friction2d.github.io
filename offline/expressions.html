@@ -1,0 +1,360 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Expressions</title>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="header"><a href="index.html"><img src="assets/logo.svg" height="80px"></a></div>
+        <div id="content">
+            <div id="contentInner">
+                <h1 id="expressions">Expressions</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#expressions" id="markdown-toc-expressions">Expressions</a>    <ul>
+      <li><a href="#bindings" id="markdown-toc-bindings">Bindings</a></li>
+      <li><a href="#calculate" id="markdown-toc-calculate">Calculate</a></li>
+      <li><a href="#definitions" id="markdown-toc-definitions">Definitions</a></li>
+      <li><a href="#expressions-presets" id="markdown-toc-expressions-presets">Expressions Presets</a></li>
+      <li><a href="#custom-functions" id="markdown-toc-custom-functions">Custom Functions</a></li>
+      <li><a href="#tips-and-tricks" id="markdown-toc-tips-and-tricks">Tips and tricks</a></li>
+      <li><a href="#useful-expressions" id="markdown-toc-useful-expressions">Useful expressions</a>        <ul>
+          <li><a href="#clamp" id="markdown-toc-clamp">Clamp</a></li>
+          <li><a href="#simple-wiggle-random" id="markdown-toc-simple-wiggle-random">Simple Wiggle (random)</a></li>
+          <li><a href="#wiggle" id="markdown-toc-wiggle">Wiggle</a></li>
+          <li><a href="#loop" id="markdown-toc-loop">Loop</a></li>
+          <li><a href="#orbit" id="markdown-toc-orbit">Orbit</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>Expressions in <strong>Friction</strong> allow users to create dynamic animations by using code to control object properties. Instead of relying on manual keyframes, the user can use expressions to automate behaviors, connect parameters, and add randomness or complexity.</p>
+
+<p>Expressions are written in <strong><a href="https://en.wikipedia.org/wiki/ECMAScript">ECMAScript</a></strong>. Each property in Friction has an optional expression field where you can input code that dynamically calculates the property’s value for each frame.</p>
+
+<p><img src="assets/documentation/expressions/expressions_screenshot.png" alt="Expressions screenshot" /></p>
+
+<p>In order to create an expression, the user should select a single parameter in the Timeline panel or in the Properties one, click on the secondary button and select “<strong>Set Expression</strong>”.</p>
+
+<p>The Expressions popup window has 2 tabs:</p>
+<ul>
+  <li>Editor: where the Expressions are setup.</li>
+  <li>Easing: a simple way to create an easing animation for a parameter.</li>
+</ul>
+
+<p><img src="assets/documentation/expressions/expressions_1.png" alt="Expressions popup window" /></p>
+
+<h2 id="bindings">Bindings</h2>
+
+<p>In this section the user can create variables of properties with values coming from the scene:</p>
+
+<ul>
+  <li><strong><code class="language-plaintext highlighter-rouge">$value</code></strong>: the numeric value the property has, that is, the constant number or actual value driven by keyframes.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">$frame</code></strong>: the actual frame value. Afterwards this value could be divided by the scene FPS to turn it into a time value.</li>
+  <li><strong><code class="language-plaintext highlighter-rouge">property</code></strong>: by writing a hierarchy separed by dots <code class="language-plaintext highlighter-rouge">.</code> it is possible to get any property value from the scene. If it is referred to the object where the Expression is being written there is no need to start by writing the name of the object.</li>
+</ul>
+
+<p>Some examples:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">value</span> <span class="o">=</span> <span class="nx">$value</span><span class="p">;</span>
+<span class="nx">frame</span> <span class="o">=</span> <span class="nx">$frame</span><span class="p">;</span>
+<span class="nx">position_x</span> <span class="o">=</span> <span class="nx">transform</span><span class="p">.</span><span class="nx">translation</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+<span class="nx">position_y</span> <span class="o">=</span> <span class="nx">transform</span><span class="p">.</span><span class="nx">translation</span><span class="p">.</span><span class="nx">y</span><span class="p">;</span>
+<span class="nx">opacity</span> <span class="o">=</span> <span class="nx">transform</span><span class="p">.</span><span class="nx">opacity</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>Note that it’s not possible to add here constant variables like <code class="language-plaintext highlighter-rouge">lenght = 100;</code>.  That must be done in the <strong>Calculate section</strong>.</p>
+
+<p>Friction is not capable yet to get a value coming from another time or frame as in other famous software.</p>
+
+<h2 id="calculate">Calculate</h2>
+
+<p>In this section the user is able to define constants, do calculations, use <strong>ECMAScript (JavaScript)</strong> functions.</p>
+
+<p>Example:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">width</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="nx">final_value</span> <span class="o">=</span> <span class="nx">width</span> <span class="o">/</span> <span class="mi">2</span><span class="p">;</span>
+<span class="k">return</span> <span class="nx">final_value</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p>For convenience, it is possible to write custom funtions that are stored in the “<strong>Definitions</strong>” tab.</p>
+
+<p>Note that this section must always finish with a <code class="language-plaintext highlighter-rouge">return</code> line where it is defined the final value that gets the Expression.</p>
+
+<p>Example:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="nx">position_x</span> <span class="o">*</span> <span class="mi">2</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="definitions">Definitions</h2>
+
+<p>When the user wants to add complex or long custom functions, they can be included here and called later in the <strong>Calculate</strong> section.</p>
+
+<p><img src="assets/documentation/expressions/expressions_2.png" alt="Expressions popup window" /></p>
+
+<p>A simple example of use would be adding this function in the <strong>Definitions</strong> panel:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">my_simple_function</span> <span class="p">(</span><span class="nx">value1</span><span class="p">,</span> <span class="nx">value2</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nx">value1</span> <span class="o">+</span> <span class="nx">value2</span><span class="p">;</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p>And then in the <strong>Calculate</strong> one:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">one</span> <span class="o">=</span> <span class="mi">100</span><span class="p">;</span>
+<span class="nx">two</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+<span class="k">return</span> <span class="nf">my_simple_function</span><span class="p">(</span><span class="nx">one</span><span class="p">,</span> <span class="nx">two</span><span class="p">);</span>
+</code></pre></div></div>
+
+<h2 id="expressions-presets">Expressions Presets</h2>
+
+<p>Writing lot of pieces of code and moreover, doing it for a few different parameters could be tedious and slowdown workflows so <strong>Friction</strong> let users save their code and functions inside a bundle called <code class="language-plaintext highlighter-rouge">Preset</code> for easy later use or to be shared with other animators.</p>
+
+<p><img src="assets/documentation/expressions/expressions_presets.gif" alt="Expressions presets example" /></p>
+
+<p><strong>Presets</strong> can be managed with the following fields and commmands:</p>
+<ul>
+  <li><strong>selector</strong>: in this dropdown it is possible to load a presaved <code class="language-plaintext highlighter-rouge">Preset</code> and automatically fill the <code class="language-plaintext highlighter-rouge">Bindings</code>, <code class="language-plaintext highlighter-rouge">Scripts</code> (so called <code class="language-plaintext highlighter-rouge">Calculate</code>) and <code class="language-plaintext highlighter-rouge">Definitions</code>.</li>
+  <li><strong>save</strong>: it prompts for a preset name and adds it to the selector.</li>
+  <li><strong>delete</strong>: it deletes the active preset from the selector. It asks the users if he is sure about it.</li>
+  <li><strong>update</strong>: it updates both the name and code of active preset. The name can be updated by editing it in the selector field.</li>
+  <li><strong>export</strong>: presets can be saved as external files with <code class="language-plaintext highlighter-rouge">.fexpr</code> extension so that they can be backed up or shared.</li>
+  <li><strong>import</strong>: it lets import a preset from an external <code class="language-plaintext highlighter-rouge">.fexpr</code> file.</li>
+</ul>
+
+<p><code class="language-plaintext highlighter-rouge">.fexpr</code> are text based files so they can be viewed, edited and/or created with any text editor. At <strong>Friction</strong> startup the presets placed into the following folder will be loaded:</p>
+<ul>
+  <li><strong>Linux</strong>: <code class="language-plaintext highlighter-rouge">home_directory/.config/friction/Expressions</code></li>
+  <li><strong>Windows</strong>: <code class="language-plaintext highlighter-rouge">home_directly\AppData\Local\friction\Expressions</code></li>
+  <li><strong>macOS</strong>: <code class="language-plaintext highlighter-rouge">home_directory/Library/Preferences/friction/Expressions/</code></li>
+</ul>
+
+<p>Note that if creating them by hand, there must not be presets with the same field <code class="language-plaintext highlighter-rouge">id</code>. Apart from that, if the preset structure is preserved the <code class="language-plaintext highlighter-rouge">.fexpr</code> will be loaded at startup.</p>
+
+<h2 id="custom-functions">Custom Functions</h2>
+
+<p><strong>Friction</strong> comes with lots of functions provided from <strong><a href="https://en.wikipedia.org/wiki/ECMAScript">ECMAScript</a></strong> basics but users may find some missing or they would just like to create their own ones and make them available across any <strong>Expression editor</strong>.</p>
+
+<p>For this to work users should open their <code class="language-plaintext highlighter-rouge">/Expressions/</code> folder where normal <strong>Expressions Presets</strong> are saved, that is:</p>
+<ul>
+  <li><strong>Linux</strong>: <code class="language-plaintext highlighter-rouge">home_directory/.config/friction/Expressions</code></li>
+  <li><strong>Windows</strong>: <code class="language-plaintext highlighter-rouge">home_directly\AppData\Local\friction\Expressions</code></li>
+  <li><strong>macOS</strong>: <code class="language-plaintext highlighter-rouge">home_directory/Library/Preferences/friction/Expressions/</code></li>
+</ul>
+
+<p>Open, duplicate or edit the one you want to turn into a <strong>Function</strong> with any text editor and make sure it has an structure like the following:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nx">General</span><span class="p">]</span>
+<span class="nx">definitions</span><span class="o">=</span>
+<span class="nx">description</span><span class="o">=</span>
+<span class="nx">highlighters</span><span class="o">=</span>
+<span class="nx">id</span><span class="o">=</span>
+<span class="nx">title</span><span class="o">=</span>
+<span class="nx">version</span><span class="o">=</span>
+</code></pre></div></div>
+
+<p>The most important parameters to fill up are <code class="language-plaintext highlighter-rouge">definitions=</code> where the custom function has to be included, <code class="language-plaintext highlighter-rouge">highlighters=</code> that will make it recognizable by <strong>Friction</strong> and <code class="language-plaintext highlighter-rouge">id=</code> where any string could be added while it doesn’t contain blank spaces.</p>
+
+<p>A full working example:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="p">[</span><span class="nx">General</span><span class="p">]</span>
+<span class="nx">definitions</span><span class="o">=</span><span class="dl">"</span><span class="s2">function clamp(number, lower, upper) { return Math.max(lower, Math.min(number, upper)); }</span><span class="dl">"</span>
+<span class="nx">categories</span><span class="o">=</span><span class="nx">Core</span>
+<span class="nx">description</span><span class="o">=</span><span class="nx">Clamp</span> <span class="nx">value</span> <span class="nx">to</span> <span class="nx">upper</span> <span class="nx">and</span> <span class="nx">lower</span><span class="p">.</span>
+<span class="nx">highlighters</span><span class="o">=</span><span class="dl">"</span><span class="s2">clamp(x, lower, upper)</span><span class="dl">"</span>
+<span class="nx">id</span><span class="o">=</span><span class="nx">graphics</span><span class="p">.</span><span class="nx">friction</span><span class="p">.</span><span class="nx">clamp</span>
+<span class="nx">title</span><span class="o">=</span><span class="nx">Clamp</span>
+<span class="nx">version</span><span class="o">=</span><span class="mi">1</span>
+</code></pre></div></div>
+
+<p>Save the file with any name and extension <code class="language-plaintext highlighter-rouge">fexpr</code> and reboot <strong>Friction</strong> as Presets and custom functions are loaded at startup.</p>
+
+<p>Take into account that the previous file structure is very similar to the one used for <strong>Presets</strong> but here it lacks of some of the parameters.</p>
+
+<p>If adding the functions with the normal <strong>Expression editor</strong> into <strong>Definitions</strong> files and saving them as <strong>Presets</strong> they will just work within that <strong>Preset</strong> and won’t be available for other parameter Expressions. It can be created within <strong>Friction</strong> if desired but later it must be edited with a text editor so that it matches the “custom functions” structure.</p>
+
+<h2 id="tips-and-tricks">Tips and tricks</h2>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Auto Apply</code> checkbox can be marked to let expressions to be live updated</li>
+  <li>the <strong>Expressions Editor</strong> window will stay open and on top in case it is needed to preview or change any other parameter in <strong>Friction</strong> GUI. That is, it is possible to continue editing and animating and keeping the <strong>Expressions editor</strong> open.</li>
+  <li>in <code class="language-plaintext highlighter-rouge">Bindings</code> not just “one value” parameters can be called, so if wanting to save into a variable a “two value” parameter just refer to that “group” of two values:</li>
+</ul>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// single value</span>
+<span class="kd">var</span> <span class="nx">x</span> <span class="o">=</span> <span class="nx">transform</span><span class="p">.</span><span class="nx">translate</span><span class="p">.</span><span class="nx">x</span><span class="p">;</span>
+
+<span class="c1">// double value</span>
+<span class="kd">var</span> <span class="nx">translate</span> <span class="o">=</span> <span class="nx">transform</span><span class="p">.</span><span class="nx">translate</span><span class="p">;</span>
+</code></pre></div></div>
+
+<h2 id="useful-expressions">Useful expressions</h2>
+
+<p>Following up there is a list of commonly used expressions so that new users can test and learn:</p>
+
+<h3 id="clamp">Clamp</h3>
+
+<p><strong>Bindings</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">value</span> <span class="o">=</span> <span class="nx">$value</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Calculate</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="nf">clamp </span><span class="p">(</span><span class="nx">value</span><span class="p">,</span> <span class="mi">0</span><span class="p">,</span> <span class="mi">100</span><span class="p">);</span>
+</code></pre></div></div>
+
+<p><strong>Definitions</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">clamp</span> <span class="p">(</span><span class="nx">num</span><span class="p">,</span> <span class="nx">lower</span><span class="p">,</span> <span class="nx">upper</span><span class="p">)</span> <span class="p">{</span>
+    <span class="k">return</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">min</span><span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nf">max</span><span class="p">(</span><span class="nx">num</span><span class="p">,</span> <span class="nx">lower</span><span class="p">),</span> <span class="nx">upper</span><span class="p">);</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="simple-wiggle-random">Simple Wiggle (random)</h3>
+
+<p><strong>Bindings</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">value</span> <span class="o">=</span> <span class="nx">$value</span><span class="p">;</span>
+<span class="nx">frame</span> <span class="o">=</span> <span class="nx">$frame</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Calculate</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="k">return</span> <span class="nf">smoothWiggleX</span><span class="p">(</span><span class="mi">2</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="nx">frame</span><span class="p">,</span> <span class="nx">value</span><span class="p">)</span>
+</code></pre></div></div>
+
+<p><strong>Definitions</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">smoothWiggleY</span><span class="p">(</span><span class="nx">frequency</span><span class="p">,</span> <span class="nx">amplitude</span><span class="p">,</span> <span class="nx">time</span><span class="p">,</span> <span class="nx">start</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">offsetY</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">cos</span><span class="p">(</span><span class="nx">time</span> <span class="o">*</span> <span class="nx">frequency</span> <span class="o">*</span> <span class="mf">1.3</span><span class="p">)</span> <span class="o">*</span> <span class="nx">amplitude</span> <span class="o">+</span> <span class="nx">start</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">offsetY</span>
+<span class="p">}</span>
+
+<span class="kd">function</span> <span class="nf">smoothWiggleX</span><span class="p">(</span><span class="nx">frequency</span><span class="p">,</span> <span class="nx">amplitude</span><span class="p">,</span> <span class="nx">time</span><span class="p">,</span> <span class="nx">start</span><span class="p">)</span> <span class="p">{</span>
+    <span class="kd">var</span> <span class="nx">offsetX</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">sin</span><span class="p">(</span><span class="nx">time</span> <span class="o">*</span> <span class="nx">frequency</span><span class="p">)</span> <span class="o">*</span> <span class="nx">amplitude</span> <span class="o">+</span> <span class="nx">start</span><span class="p">;</span>
+    <span class="k">return</span> <span class="nx">offsetX</span>
+<span class="p">}</span>
+</code></pre></div></div>
+
+<h3 id="wiggle">Wiggle</h3>
+<p>Ported from Blender’s noise modifier:</p>
+
+<p><strong>Bindings</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">frame</span> <span class="o">=</span> <span class="nx">$frame</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Calculate</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">const</span> <span class="nx">fps</span> <span class="o">=</span> <span class="mi">30</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">value</span> <span class="o">=</span> <span class="mi">200</span><span class="p">;</span>
+<span class="kd">const</span> <span class="nx">time</span> <span class="o">=</span> <span class="nx">frame</span> <span class="o">/</span> <span class="nx">fps</span><span class="p">;</span>
+<span class="c1">// generateNoise(time, scale, strength, phase, detail)</span>
+<span class="kd">const</span> <span class="nx">noise</span> <span class="o">=</span> <span class="nf">generateNoise</span><span class="p">(</span><span class="nx">time</span><span class="p">,</span> <span class="mf">0.6</span><span class="p">,</span> <span class="mi">20</span><span class="p">,</span> <span class="mi">5</span><span class="p">,</span> <span class="mi">4</span><span class="p">);</span>
+<span class="k">return</span> <span class="nx">noise</span><span class="o">+</span><span class="nx">value</span>
+</code></pre></div></div>
+
+<p><strong>Definitions</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">function</span> <span class="nf">generateNoise</span><span class="p">(</span><span class="nx">t</span><span class="p">,</span> <span class="nx">scale</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">strength</span> <span class="o">=</span> <span class="mi">1</span><span class="p">,</span> <span class="nx">phase</span> <span class="o">=</span> <span class="mi">0</span><span class="p">,</span> <span class="nx">detail</span> <span class="o">=</span> <span class="mi">1</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// Fixed permutation for consistency</span>
+    <span class="kd">const</span> <span class="nx">permutation</span> <span class="o">=</span> <span class="nb">Array</span><span class="p">.</span><span class="k">from</span><span class="p">({</span> <span class="na">length</span><span class="p">:</span> <span class="mi">256</span> <span class="p">},</span> <span class="p">(</span><span class="nx">_</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">i</span><span class="p">).</span><span class="nf">concat</span><span class="p">(</span><span class="nb">Array</span><span class="p">.</span><span class="k">from</span><span class="p">({</span> <span class="na">length</span><span class="p">:</span> <span class="mi">256</span> <span class="p">},</span> <span class="p">(</span><span class="nx">_</span><span class="p">,</span> <span class="nx">i</span><span class="p">)</span> <span class="o">=&gt;</span> <span class="nx">i</span><span class="p">));</span>
+    
+    <span class="kd">function</span> <span class="nf">fade</span><span class="p">(</span><span class="nx">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">t</span> <span class="o">*</span> <span class="nx">t</span> <span class="o">*</span> <span class="nx">t</span> <span class="o">*</span> <span class="p">(</span><span class="nx">t</span> <span class="o">*</span> <span class="p">(</span><span class="nx">t</span> <span class="o">*</span> <span class="mi">6</span> <span class="o">-</span> <span class="mi">15</span><span class="p">)</span> <span class="o">+</span> <span class="mi">10</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nf">lerp</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">b</span><span class="p">,</span> <span class="nx">t</span><span class="p">)</span> <span class="p">{</span>
+        <span class="k">return</span> <span class="nx">a</span> <span class="o">+</span> <span class="nx">t</span> <span class="o">*</span> <span class="p">(</span><span class="nx">b</span> <span class="o">-</span> <span class="nx">a</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nf">grad</span><span class="p">(</span><span class="nx">hash</span><span class="p">,</span> <span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">h</span> <span class="o">=</span> <span class="nx">hash</span> <span class="o">&amp;</span> <span class="mi">15</span><span class="p">;</span>
+        <span class="kd">const</span> <span class="nx">gradient</span> <span class="o">=</span> <span class="mi">1</span> <span class="o">+</span> <span class="p">(</span><span class="nx">h</span> <span class="o">&amp;</span> <span class="mi">7</span><span class="p">);</span> <span class="c1">// Gradient range between 1 and 8</span>
+        <span class="k">return </span><span class="p">(</span><span class="nx">h</span> <span class="o">&amp;</span> <span class="mi">8</span> <span class="p">?</span> <span class="o">-</span><span class="nx">gradient</span> <span class="p">:</span> <span class="nx">gradient</span><span class="p">)</span> <span class="o">*</span> <span class="nx">x</span><span class="p">;</span>
+    <span class="p">}</span>
+
+    <span class="kd">function</span> <span class="nf">perlinNoise</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="p">{</span>
+        <span class="kd">const</span> <span class="nx">X</span> <span class="o">=</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">floor</span><span class="p">(</span><span class="nx">x</span><span class="p">)</span> <span class="o">&amp;</span> <span class="mi">255</span><span class="p">;</span>
+        <span class="nx">x</span> <span class="o">-=</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">floor</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+        <span class="kd">const</span> <span class="nx">u</span> <span class="o">=</span> <span class="nf">fade</span><span class="p">(</span><span class="nx">x</span><span class="p">);</span>
+
+        <span class="kd">const</span> <span class="nx">a</span> <span class="o">=</span> <span class="nx">permutation</span><span class="p">[</span><span class="nx">X</span><span class="p">];</span>
+        <span class="kd">const</span> <span class="nx">b</span> <span class="o">=</span> <span class="nx">permutation</span><span class="p">[</span><span class="nx">X</span> <span class="o">+</span> <span class="mi">1</span><span class="p">];</span>
+
+        <span class="k">return</span> <span class="nf">lerp</span><span class="p">(</span><span class="nf">grad</span><span class="p">(</span><span class="nx">a</span><span class="p">,</span> <span class="nx">x</span><span class="p">),</span> <span class="nf">grad</span><span class="p">(</span><span class="nx">b</span><span class="p">,</span> <span class="nx">x</span> <span class="o">-</span> <span class="mi">1</span><span class="p">),</span> <span class="nx">u</span><span class="p">);</span>
+    <span class="p">}</span>
+
+    <span class="kd">let</span> <span class="nx">amplitude</span> <span class="o">=</span> <span class="nx">strength</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">frequency</span> <span class="o">=</span> <span class="nx">scale</span><span class="p">;</span>
+    <span class="kd">let</span> <span class="nx">total</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+
+    <span class="k">for </span><span class="p">(</span><span class="kd">let</span> <span class="nx">i</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span> <span class="nx">i</span> <span class="o">&lt;</span> <span class="nx">detail</span><span class="p">;</span> <span class="nx">i</span><span class="o">++</span><span class="p">)</span> <span class="p">{</span>
+        <span class="nx">total</span> <span class="o">+=</span> <span class="nf">perlinNoise</span><span class="p">((</span><span class="nx">t</span> <span class="o">+</span> <span class="nx">phase</span><span class="p">)</span> <span class="o">*</span> <span class="nx">frequency</span><span class="p">)</span> <span class="o">*</span> <span class="nx">amplitude</span><span class="p">;</span>
+        <span class="nx">frequency</span> <span class="o">*=</span> <span class="mi">2</span><span class="p">;</span>       <span class="c1">// Double frequency for each octave</span>
+        <span class="nx">amplitude</span> <span class="o">/=</span> <span class="mi">2</span><span class="p">;</span>       <span class="c1">// Halve amplitude for each octave</span>
+    <span class="p">}</span>
+    <span class="k">return</span> <span class="nx">total</span><span class="p">;</span>
+<span class="p">}</span>
+
+</code></pre></div></div>
+
+<h3 id="loop">Loop</h3>
+
+<p><strong>Bindings</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">frame</span> <span class="o">=</span> <span class="nx">$frame</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Calculate</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">loopDuration</span> <span class="o">=</span> <span class="mi">60</span><span class="p">;</span>
+<span class="nx">startValue</span> <span class="o">=</span> <span class="mi">0</span><span class="p">;</span>
+<span class="nx">finalValue</span> <span class="o">=</span> <span class="mi">1</span><span class="p">;</span>
+<span class="k">return</span>  <span class="nx">startValue</span> <span class="o">+</span> <span class="p">((</span><span class="nx">frame</span> <span class="o">%</span> <span class="nx">loopDuration</span><span class="p">)</span> <span class="o">/</span> <span class="nx">loopDuration</span><span class="p">)</span> <span class="o">*</span> <span class="p">(</span><span class="nx">finalValue</span> <span class="o">-</span> <span class="nx">startValue</span><span class="p">)</span>
+</code></pre></div></div>
+
+<h3 id="orbit">Orbit</h3>
+
+<p>For a easier control of this expression, some <em>custom properties</em> are created but it could be modified to don’t use them and just add the values in the <strong>Calculate</strong> section:</p>
+
+<p><strong>Custom properties</strong></p>
+<ul>
+  <li>centerX (pixels)</li>
+  <li>centerY (pixels)</li>
+  <li>radius (pixels)</li>
+  <li>speed (frames)</li>
+  <li>direction (1 clockwise, -1 counter clockwise)</li>
+  <li>offset (degrees)</li>
+</ul>
+
+<p><strong>Bindings</strong>:</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">centerX</span> <span class="o">=</span> <span class="nx">properties</span><span class="p">.</span><span class="nx">centerX</span><span class="p">;</span>
+<span class="nx">centerY</span> <span class="o">=</span> <span class="nx">properties</span><span class="p">.</span><span class="nx">centerY</span><span class="p">;</span>
+<span class="nx">radius</span> <span class="o">=</span> <span class="nx">properties</span><span class="p">.</span><span class="nx">radius</span><span class="p">;</span>
+<span class="nx">speed</span> <span class="o">=</span> <span class="nx">properties</span><span class="p">.</span><span class="nx">speed</span><span class="p">;</span>
+<span class="nx">direction</span> <span class="o">=</span> <span class="nx">properties</span><span class="p">.</span><span class="nx">direction</span><span class="p">;</span>
+<span class="nx">offset</span> <span class="o">=</span> <span class="nx">properties</span><span class="p">.</span><span class="nx">offset</span><span class="p">;</span>
+<span class="nx">frame</span> <span class="o">=</span> <span class="nx">$frame</span><span class="p">;</span>
+</code></pre></div></div>
+
+<p><strong>Calculate</strong> (for <code class="language-plaintext highlighter-rouge">translate X</code> parameter):</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">offset</span> <span class="o">=</span> <span class="nx">offset</span> <span class="o">*</span> <span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">/</span> <span class="mi">180</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">centerOfComp</span> <span class="o">=</span> <span class="p">[</span><span class="nx">centerX</span><span class="p">,</span> <span class="nx">centerY</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">circleOverTime</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">sin</span><span class="p">(</span> <span class="p">(</span><span class="nx">frame</span><span class="o">/</span><span class="nx">speed</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="nx">direction</span> <span class="o">+</span> <span class="nx">offset</span> <span class="p">)</span> <span class="o">*</span> <span class="nx">radius</span><span class="p">,</span> <span class="o">-</span><span class="nb">Math</span><span class="p">.</span><span class="nf">cos</span><span class="p">(</span> <span class="p">(</span><span class="nx">frame</span><span class="o">/</span><span class="nx">speed</span><span class="p">)</span><span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="nx">direction</span> <span class="o">+</span> <span class="nx">offset</span> <span class="p">)</span> <span class="o">*</span> <span class="nx">radius</span> <span class="p">];</span>  
+<span class="k">return</span> <span class="nx">centerOfComp</span><span class="p">[</span><span class="mi">0</span><span class="p">]</span> <span class="o">+</span> <span class="nx">circleOverTime</span><span class="p">[</span><span class="mi">0</span><span class="p">];</span>
+</code></pre></div></div>
+
+<p><strong>Calculate</strong> (for <code class="language-plaintext highlighter-rouge">translate Y</code> parameter):</p>
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="kd">var</span> <span class="nx">offset</span> <span class="o">=</span> <span class="nx">offset</span> <span class="o">*</span> <span class="p">(</span><span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">/</span> <span class="mi">180</span><span class="p">);</span>
+<span class="kd">var</span> <span class="nx">centerOfComp</span> <span class="o">=</span> <span class="p">[</span><span class="nx">centerX</span><span class="p">,</span> <span class="nx">centerY</span><span class="p">];</span>
+<span class="kd">var</span> <span class="nx">circleOverTime</span> <span class="o">=</span> <span class="p">[</span> <span class="nb">Math</span><span class="p">.</span><span class="nf">sin</span><span class="p">(</span> <span class="p">(</span><span class="nx">frame</span><span class="o">/</span><span class="nx">speed</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="nx">direction</span> <span class="o">+</span> <span class="nx">offset</span> <span class="p">)</span> <span class="o">*</span> <span class="nx">radius</span><span class="p">,</span> <span class="o">-</span><span class="nb">Math</span><span class="p">.</span><span class="nf">cos</span><span class="p">(</span> <span class="p">(</span><span class="nx">frame</span><span class="o">/</span><span class="nx">speed</span><span class="p">)</span> <span class="o">*</span> <span class="mi">2</span> <span class="o">*</span> <span class="nb">Math</span><span class="p">.</span><span class="nx">PI</span> <span class="o">*</span> <span class="nx">direction</span> <span class="o">+</span> <span class="nx">offset</span> <span class="p">)</span> <span class="o">*</span> <span class="nx">radius</span> <span class="p">];</span>  
+<span class="k">return</span> <span class="nx">centerOfComp</span><span class="p">[</span><span class="mi">1</span><span class="p">]</span> <span class="o">+</span> <span class="nx">circleOverTime</span><span class="p">[</span><span class="mi">1</span><span class="p">];</span>
+</code></pre></div></div>
+
+
+                
+                
+                
+                
+                <div class="nextPrevContainer">
+                    
+                    <a href="animation_techniques.html"><span class="nextPrevButton">Previous</span></a>
+                    
+                    <a href="index.html"><span class="nextPrevButton">Index</span></a>
+                    
+                    <a href="effects.html"><span class="nextPrevButton">Next</span></a>
+                    
+                    </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,1153 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<!-- Created with Friction - https://friction.graphics -->
+
+<svg xmlns:xlink="http://www.w3.org/1999/xlink" viewBox="0 0 1920 540" xmlns="http://www.w3.org/2000/svg">
+ <g transform="translate(0 0)">
+  <g transform="translate(1451.15 270)">
+   <g transform="rotate(0)">
+    <g transform="scale(1 1)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(0 0)" opacity="1">
+       <ellipse id="Circle" cx="0" ry="213.695" stroke-width="0" stroke="none" rx="213.695" fill="url(#0x00007fee5fe70790)" stroke-linejoin="round" cy="0" stroke-linecap="round"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(36 36)">
+  <g transform="translate(1415.15 234)">
+   <g transform="rotate(0)">
+    <g transform="scale(9.01974 9.01974)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(-36 -36)" opacity="1">
+       <g id="s1" visibility="hidden">
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="color" visibility="hidden">
+               <g transform="translate(36 44.5529)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.5529)" opacity="1">
+                     <path id="path1" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(255, 255, 255, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z">
+                      <animate values="visible;hidden;hidden" keyTimes="0;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9885 49.5792)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9885 -49.5792)" opacity="1">
+                     <path id="path2" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(234, 90, 71, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z">
+                      <animate values="visible;hidden;hidden" keyTimes="0;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <animate values="visible;hidden;hidden" keyTimes="0;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="line" visibility="hidden">
+               <g transform="translate(36 36)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -36)" opacity="1">
+                     <ellipse id="circle2" cx="36" ry="23" stroke-width="2" stroke="rgba(86, 65, 14, 1)" rx="23" visibility="hidden" fill="none" stroke-linejoin="miter" cy="36" stroke-linecap="round">
+                      <animate values="visible;hidden;hidden" keyTimes="0;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </ellipse>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(36 44.4455)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.4455)" opacity="1">
+                     <path id="path3" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z">
+                      <animate values="visible;hidden;hidden" keyTimes="0;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9968 49.4785)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9968 -49.4785)" opacity="1">
+                     <path id="path4" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z">
+                      <animate values="visible;hidden;hidden" keyTimes="0;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(27 31)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-27 -31)" opacity="1">
+                     <path id="path5" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(0, 0, 0, 1)" stroke-linejoin="miter" stroke-linecap="round" d="M30 31C30 32.6568 28.6552 34 27 34C25.3447 34 24 32.6567 24 31C24 29.3448 25.3447 28 27 28C28.6552 28 30 29.3448 30 31">
+                      <animate values="visible;hidden;hidden" keyTimes="0;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(45 31)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-45 -31)" opacity="1">
+                     <path id="path6" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(0, 0, 0, 1)" stroke-linejoin="miter" stroke-linecap="round" d="M48 31C48 32.6568 46.6553 34 45 34C43.3447 34 42 32.6567 42 31C42 29.3448 43.3447 28 45 28C46.6553 28 48 29.3448 48 31">
+                      <animate values="visible;hidden;hidden" keyTimes="0;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <animate values="visible;hidden;hidden" keyTimes="0;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <animate values="visible;hidden;hidden" keyTimes="0;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(36 36)">
+  <g transform="translate(1415.15 234)">
+   <g transform="rotate(0)">
+    <g transform="scale(9.01974 9.01974)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(-36 -36)" opacity="1">
+       <g id="s2" visibility="hidden">
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="color" visibility="hidden">
+               <g transform="translate(36 44.5529)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.5529)" opacity="1">
+                     <path id="path1" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(255, 255, 255, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.25;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9885 49.5792)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9885 -49.5792)" opacity="1">
+                     <path id="path2" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(234, 90, 71, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.25;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.25;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="g6" visibility="hidden">
+               <g transform="translate(36 36)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -36)" opacity="1">
+                     <ellipse id="circle2" cx="36" ry="23" stroke-width="2" stroke="rgba(93, 70, 35, 1)" rx="23" visibility="hidden" fill="none" stroke-linejoin="miter" cy="36" stroke-linecap="round">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.25;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </ellipse>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(36 44.4455)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.4455)" opacity="1">
+                     <path id="path3" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.25;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9968 49.4785)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9968 -49.4785)" opacity="1">
+                     <path id="path4" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13C49.7251 46.13 49.7251 46.13 49.7251 46.13Z">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.25;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(27 31)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-27 -31)" opacity="1">
+                     <path id="path5" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(0, 0, 0, 1)" stroke-linejoin="miter" stroke-linecap="round" d="M30 31C30 32.6568 28.6552 34 27 34C25.3447 34 24 32.6567 24 31C24 29.3448 25.3447 28 27 28C28.6552 28 30 29.3448 30 31">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.25;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(44.625 30.703)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-44.625 -30.703)" opacity="1">
+                     <path id="path60" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M48.9441 32.4036C48.1857 30.6965 46.493 29.5963 44.625 29.5963C42.757 29.5963 41.0643 30.6965 40.3059 32.4036">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.25;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.25;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.25;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(36 36)">
+  <g transform="translate(1415.15 234)">
+   <g transform="rotate(0)">
+    <g transform="scale(9.01974 9.01974)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(-36 -36)" opacity="1">
+       <g id="s3" visibility="hidden">
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="color" visibility="hidden">
+               <g transform="translate(36 44.5529)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.5529)" opacity="1">
+                     <path id="path1" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(255, 255, 255, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.5;0.758333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9885 49.5792)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9885 -49.5792)" opacity="1">
+                     <path id="path2" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(234, 90, 71, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.5;0.758333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.5;0.758333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="line" visibility="hidden">
+               <g transform="translate(36 36)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -36)" opacity="1">
+                     <ellipse id="circle2" cx="36" ry="23" stroke-width="2" stroke="rgba(93, 70, 35, 1)" rx="23" visibility="hidden" fill="none" stroke-linejoin="miter" cy="36" stroke-linecap="round">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.5;0.758333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </ellipse>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(36 44.4455)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.4455)" opacity="1">
+                     <path id="path3" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.5;0.758333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9968 49.4785)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9968 -49.4785)" opacity="1">
+                     <path id="path4" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.5;0.758333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(27.375 30.703)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-27.375 -30.703)" opacity="1">
+                     <path id="path5" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M31.6941 32.4036C30.9357 30.6965 29.243 29.5963 27.375 29.5963C25.507 29.5963 23.8143 30.6965 23.0559 32.4036">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.5;0.758333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(44.625 30.703)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-44.625 -30.703)" opacity="1">
+                     <path id="path6" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M48.9441 32.4036C48.1857 30.6965 46.493 29.5963 44.625 29.5963C42.757 29.5963 41.0643 30.6965 40.3059 32.4036">
+                      <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.5;0.758333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.5;0.758333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <animate values="hidden;visible;hidden;hidden" keyTimes="0;0.5;0.758333;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(36 36)">
+  <g transform="translate(1415.15 234)">
+   <g transform="rotate(0)">
+    <g transform="scale(9.01974 9.01974)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(-36 -36)" opacity="1">
+       <g id="s4" visibility="hidden">
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="color" visibility="hidden">
+               <g transform="translate(36 44.5529)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.5529)" opacity="1">
+                     <path id="path1" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(255, 255, 255, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z">
+                      <animate values="hidden;visible;hidden" keyTimes="0;0.75;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9885 49.5792)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9885 -49.5792)" opacity="1">
+                     <path id="path2" stroke-width="1" fill-rule="evenodd" stroke="none" visibility="hidden" fill="rgba(255, 255, 255, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z">
+                      <animate values="hidden;visible;hidden" keyTimes="0;0.75;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <animate values="hidden;visible;hidden" keyTimes="0;0.75;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="line" visibility="hidden">
+               <g transform="translate(36 36)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -36)" opacity="1">
+                     <ellipse id="circle2" cx="36" ry="23" stroke-width="2" stroke="rgba(93, 70, 35, 1)" rx="23" visibility="hidden" fill="none" stroke-linejoin="miter" cy="36" stroke-linecap="round">
+                      <animate values="hidden;visible;hidden" keyTimes="0;0.75;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </ellipse>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(36 44.4455)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.4455)" opacity="1">
+                     <path id="path3" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z">
+                      <animate values="hidden;visible;hidden" keyTimes="0;0.75;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9968 49.4785)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9968 -49.4785)" opacity="1">
+                     <path id="path4" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z">
+                      <animate values="hidden;visible;hidden" keyTimes="0;0.75;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(27.375 30.703)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-27.375 -30.703)" opacity="1">
+                     <path id="path5" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M31.6941 32.4036C30.9357 30.6965 29.243 29.5963 27.375 29.5963C25.507 29.5963 23.8143 30.6965 23.0559 32.4036">
+                      <animate values="hidden;visible;hidden" keyTimes="0;0.75;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(44.625 30.703)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-44.625 -30.703)" opacity="1">
+                     <path id="path6" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" visibility="hidden" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M48.9441 32.4036C48.1857 30.6965 46.493 29.5963 44.625 29.5963C42.757 29.5963 41.0643 30.6965 40.3059 32.4036">
+                      <animate values="hidden;visible;hidden" keyTimes="0;0.75;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+                     </path>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <animate values="hidden;visible;hidden" keyTimes="0;0.75;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <animate values="hidden;visible;hidden" keyTimes="0;0.75;1" repeatCount="indefinite" dur="4s" attributeName="visibility"/>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(163.254 183.919)">
+  <g transform="translate(529.348 27.0552)">
+   <g transform="rotate(0)">
+    <g transform="scale(1 1)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(-163.254 -183.919)" opacity="1">
+       <rect width="803.332" id="RectangleBox" x="-282.572" height="360.478" ry="40" stroke-width="0" stroke="none" rx="40" fill="rgba(255, 255, 255, 0.300008)" stroke-linejoin="round" stroke-linecap="round" y="7.36001"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(0 0)">
+  <g transform="translate(908.151 466.222)">
+   <g transform="rotate(0)">
+    <g transform="scale(0.5 0.2)">
+     <g transform="skewX(-18) skewY(0)">
+      <g transform="translate(0 0)" opacity="1">
+       <ellipse id="Circle0" cx="0" ry="213.695" stroke-width="20" stroke="rgba(93, 70, 35, 1)" rx="213.695" fill="url(#0x00007fee68c4b770)" stroke-linejoin="round" cy="0" stroke-linecap="round"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(36 36)">
+  <g transform="translate(868.74 293.575)">
+   <g transform="rotate(0)">
+    <g transform="scale(4.50987 2)">
+     <g transform="skewX(-22.5) skewY(0)">
+      <g transform="translate(-36 -36)">
+       <g id="s0">
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="color">
+               <g transform="translate(36 44.5529)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.5529)" opacity="1">
+                     <path id="path1" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(255, 255, 255, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9885 49.5792)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9885 -49.5792)" opacity="1">
+                     <path id="path2" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(234, 90, 71, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="line">
+               <g transform="translate(36 44.4455)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.4455)" opacity="1">
+                     <path id="path3" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9968 49.4785)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9968 -49.4785)" opacity="1">
+                     <path id="path4" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(27 31)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-27 -31)" opacity="1">
+                     <path id="path5" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(0, 0, 0, 1)" stroke-linejoin="miter" stroke-linecap="round" d="M30 31C30 32.6568 28.6552 34 27 34C25.3447 34 24 32.6567 24 31C24 29.3448 25.3447 28 27 28C28.6552 28 30 29.3448 30 31"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(45 31)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-45 -31)" opacity="1">
+                     <path id="path6" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(0, 0, 0, 1)" stroke-linejoin="miter" stroke-linecap="round" d="M48 31C48 32.6568 46.6553 34 45 34C43.3447 34 42 32.6567 42 31C42 29.3448 43.3447 28 45 28C46.6553 28 48 29.3448 48 31"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+       </g>
+       <animate calcMode="spline" values="1;1;1;0.1;0.1" keySplines="0 0 1 1;0 0.333333 1 0.666667;0 0 1 1;0 0 1 1" keyTimes="0;0;0.241667;0.258333;1" repeatCount="indefinite" dur="4s" attributeName="opacity"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(36 36)">
+  <g transform="translate(868.74 213.575)">
+   <g transform="rotate(0)">
+    <g transform="scale(4.50987 2)">
+     <g transform="skewX(-22.5) skewY(0)">
+      <g transform="translate(-36 -36)">
+       <g id="s1">
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="color">
+               <g transform="translate(36 44.5529)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.5529)" opacity="1">
+                     <path id="path1" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(255, 255, 255, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9885 49.5792)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9885 -49.5792)" opacity="1">
+                     <path id="path2" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(234, 90, 71, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="g6">
+               <g transform="translate(36 44.4455)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.4455)" opacity="1">
+                     <path id="path3" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9968 49.4785)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9968 -49.4785)" opacity="1">
+                     <path id="path4" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13C49.7251 46.13 49.7251 46.13 49.7251 46.13Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(27 31)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-27 -31)" opacity="1">
+                     <path id="path5" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(0, 0, 0, 1)" stroke-linejoin="miter" stroke-linecap="round" d="M30 31C30 32.6568 28.6552 34 27 34C25.3447 34 24 32.6567 24 31C24 29.3448 25.3447 28 27 28C28.6552 28 30 29.3448 30 31"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(44.625 30.703)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-44.625 -30.703)" opacity="1">
+                     <path id="path60" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M48.9441 32.4036C48.1857 30.6965 46.493 29.5963 44.625 29.5963C42.757 29.5963 41.0643 30.6965 40.3059 32.4036"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+       </g>
+       <animate calcMode="spline" values="0.1;0.1;0.1;1;1;0.1;0.1" keySplines="0 0 1 1;0 0.333333 1 0.666667;0 0 1 1;0 0.333333 1 0.666667;0 0 1 1;0 0 1 1" keyTimes="0;0;0.241667;0.258333;0.491667;0.508333;1" repeatCount="indefinite" dur="4s" attributeName="opacity"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(36 36)">
+  <g transform="translate(869.976 132.478)">
+   <g transform="rotate(0)">
+    <g transform="scale(4.50987 2)">
+     <g transform="skewX(-22.5) skewY(0)">
+      <g transform="translate(-36 -36)">
+       <g id="s2">
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="color">
+               <g transform="translate(36 44.5529)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.5529)" opacity="1">
+                     <path id="path1" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(255, 255, 255, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9885 49.5792)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9885 -49.5792)" opacity="1">
+                     <path id="path2" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(234, 90, 71, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="line">
+               <g transform="translate(36 44.4455)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.4455)" opacity="1">
+                     <path id="path3" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9968 49.4785)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9968 -49.4785)" opacity="1">
+                     <path id="path4" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(27.375 30.703)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-27.375 -30.703)" opacity="1">
+                     <path id="path5" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M31.6941 32.4036C30.9357 30.6965 29.243 29.5963 27.375 29.5963C25.507 29.5963 23.8143 30.6965 23.0559 32.4036"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(44.625 30.703)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-44.625 -30.703)" opacity="1">
+                     <path id="path6" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M48.9441 32.4036C48.1857 30.6965 46.493 29.5963 44.625 29.5963C42.757 29.5963 41.0643 30.6965 40.3059 32.4036"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+       </g>
+       <animate calcMode="spline" values="0.1;0.1;0.1;1;1;0.1;0.1;0.1" keySplines="0 0 1 1;0 0.333333 1 0.666667;0 0 1 1;0 0.333333 1 0.666667;0 0 1 1;0 0.333333 1 0.666667;0 0.333333 1 0.666667" keyTimes="0;0;0.491667;0.508333;0.741667;0.758333;0.983333;1" repeatCount="indefinite" dur="4s" attributeName="opacity"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(36 36)">
+  <g transform="translate(869.976 52.4782)">
+   <g transform="rotate(0)">
+    <g transform="scale(4.50987 2)">
+     <g transform="skewX(-22.5) skewY(0)">
+      <g transform="translate(-36 -36)">
+       <g id="s3">
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="color">
+               <g transform="translate(36 44.5529)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.5529)" opacity="1">
+                     <path id="path1" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(255, 255, 255, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9885 49.5792)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9885 -49.5792)" opacity="1">
+                     <path id="path2" stroke-width="1" fill-rule="evenodd" stroke="none" fill="rgba(255, 255, 255, 1)" stroke-linejoin="miter" stroke-linecap="butt" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+        <g transform="translate(36 36)">
+         <g transform="translate(0 0)">
+          <g transform="rotate(0)">
+           <g transform="scale(1 1)">
+            <g transform="skewX(0) skewY(0)">
+             <g transform="translate(-36 -36)" opacity="1">
+              <g id="line">
+               <g transform="translate(36 44.4455)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-36 -44.4455)" opacity="1">
+                     <path id="path3" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M50.595 41.64C50.607 43.1797 50.3112 44.7062 49.725 46.13C37.235 49.16 24.295 46.47 22.235 46C21.6762 44.6148 21.3943 43.1336 21.405 41.64C21.405 41.64 21.515 41.64 21.515 41.64C21.515 41.64 36.315 45.23 50.405 41.71C50.405 41.71 50.595 41.64 50.595 41.64Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(35.9968 49.4785)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-35.9968 -49.4785)" opacity="1">
+                     <path id="path4" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M49.7251 46.13C47.9351 50.4 43.3751 53.36 36.0351 53.36C28.6251 53.36 24.0051 50.33 22.2351 46C24.2951 46.47 37.235 49.16 49.7251 46.13Z"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(27.375 30.703)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-27.375 -30.703)" opacity="1">
+                     <path id="path5" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M31.6941 32.4036C30.9357 30.6965 29.243 29.5963 27.375 29.5963C25.507 29.5963 23.8143 30.6965 23.0559 32.4036"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+               <g transform="translate(44.625 30.703)">
+                <g transform="translate(0 0)">
+                 <g transform="rotate(0)">
+                  <g transform="scale(1 1)">
+                   <g transform="skewX(0) skewY(0)">
+                    <g transform="translate(-44.625 -30.703)" opacity="1">
+                     <path id="path6" stroke-width="2" fill-rule="evenodd" stroke="rgba(0, 0, 0, 1)" fill="none" stroke-linejoin="miter" stroke-linecap="round" d="M48.9441 32.4036C48.1857 30.6965 46.493 29.5963 44.625 29.5963C42.757 29.5963 41.0643 30.6965 40.3059 32.4036"/>
+                    </g>
+                   </g>
+                  </g>
+                 </g>
+                </g>
+               </g>
+              </g>
+             </g>
+            </g>
+           </g>
+          </g>
+         </g>
+        </g>
+       </g>
+       <animate calcMode="spline" values="0.1;0.1;0.1;1;1;0.1" keySplines="0 0 1 1;0 0.333333 1 0.666667;0 0 1 1;0 0.333333 1 0.666667;0 0 1 1" keyTimes="0;0;0.741667;0.758333;0.983333;1" repeatCount="indefinite" dur="4s" attributeName="opacity"/>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <g transform="translate(0 0)">
+  <g transform="translate(296.87 229.631)">
+   <g transform="rotate(0)">
+    <g transform="scale(1 1)">
+     <g transform="skewX(0) skewY(0)">
+      <g transform="translate(0 0)" opacity="1">
+       <g font-size="60" id="Text" font-family="Arial" stroke-width="10" stroke="none" fill="rgba(255, 255, 255, 1)" stroke-linejoin="round" stroke-linecap="round" text-anchor="start">
+        <text letter-spacing="0em" word-spacing="0em">
+         <tspan x="0">flipbook group</tspan>
+        </text>
+       </g>
+      </g>
+     </g>
+    </g>
+   </g>
+  </g>
+ </g>
+ <defs>
+  <linearGradient id="0x00007fee73880180">
+   <stop offset="0" stop-color="rgba(255, 228, 19, 1)"/>
+   <stop offset="1" stop-color="rgba(204, 132, 15, 1)"/>
+  </linearGradient>
+  <radialGradient id="0x00007fee5fe70790" cx="-84.6992" r="384.301" gradientUnits="userSpaceOnUse" xlink:href="#0x00007fee73880180" cy="-116.783"/>
+  <radialGradient id="0x00007fee68c4b770" cx="-84.6992" r="384.301" gradientUnits="userSpaceOnUse" xlink:href="#0x00007fee73880180" cy="-116.783"/>
+ </defs>
+</svg>

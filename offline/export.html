@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Export</title>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="header"><a href="index.html"><img src="assets/logo.svg" height="80px"></a></div>
+        <div id="content">
+            <div id="contentInner">
+                <h1 id="export">Export</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#export" id="markdown-toc-export">Export</a>    <ul>
+      <li><a href="#svg-animation" id="markdown-toc-svg-animation">SVG Animation</a>        <ul>
+          <li><a href="#supported-features" id="markdown-toc-supported-features">Supported features</a></li>
+          <li><a href="#quick-preview" id="markdown-toc-quick-preview">Quick preview</a></li>
+          <li><a href="#export-dialog" id="markdown-toc-export-dialog">Export dialog</a></li>
+        </ul>
+      </li>
+      <li><a href="#video--audio" id="markdown-toc-video--audio">Video / Audio</a>        <ul>
+          <li><a href="#render-dialog" id="markdown-toc-render-dialog">Render dialog</a></li>
+          <li><a href="#scene-properties" id="markdown-toc-scene-properties">Scene Properties</a></li>
+          <li><a href="#profiles" id="markdown-toc-profiles">Profiles</a></li>
+          <li><a href="#format" id="markdown-toc-format">Format</a></li>
+          <li><a href="#destination" id="markdown-toc-destination">Destination</a></li>
+          <li><a href="#render" id="markdown-toc-render">Render</a></li>
+        </ul>
+      </li>
+      <li><a href="#image-sequence" id="markdown-toc-image-sequence">Image sequence</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Friction can export to various media formats.</p>
+
+<h2 id="svg-animation">SVG Animation</h2>
+
+<p>Friction can export to SVG animation for use on the web.</p>
+
+<p>Note that what you see in the viewer is not necessarily what you get when exporting an SVG. Only a subset of the features in Friction are supported by the SVG exporter.</p>
+
+<p><em>There is ongoing work to support more features in the SVG exporter.</em></p>
+
+<h3 id="supported-features">Supported features</h3>
+
+<ul>
+  <li>Transforms (translation, rotation, scale, shear, pivot and opacity)</li>
+  <li>Gradients</li>
+  <li>Images</li>
+  <li>Texts</li>
+  <li>Keyframes</li>
+  <li>Graph</li>
+  <li>Expressions</li>
+  <li>Transform effects (follow path)</li>
+  <li>Path effects (trim path and more)</li>
+  <li>Raster assets (images/videos)</li>
+  <li>Blur effect</li>
+  <li>Shadow effect</li>
+  <li>Shape morphing</li>
+  <li>Masking (Blend Mode <code class="language-plaintext highlighter-rouge">DstIn</code> and <code class="language-plaintext highlighter-rouge">DstOut</code>)</li>
+  <li>Mix Blend Modes (it is needed to enable it at export dialog)</li>
+</ul>
+
+<h3 id="quick-preview">Quick preview</h3>
+
+<p>Quick preview will export the current scene with default settings <em>(see export dialog)</em> and open the preview in the default browser.</p>
+
+<p>Quick preview is available from the file menu and on the toolbar. Shortcut is <code class="language-plaintext highlighter-rouge">Ctrl+F12</code>.</p>
+
+<p>Preview files are stored in the system temp folder.</p>
+
+<h3 id="export-dialog">Export dialog</h3>
+
+<p><img src="assets/documentation/export/export_svg-dialog.png" alt="Export dialog" /></p>
+
+<p>Under <strong>Scene</strong> it is possible to set:</p>
+
+<ul>
+  <li>
+    <p><strong>Scene</strong>: sets the scene to export.</p>
+  </li>
+  <li>
+    <p><strong>Fist frame</strong>: first frame to export.</p>
+  </li>
+  <li>
+    <p><strong>Last frame</strong>: last frame to export.</p>
+  </li>
+</ul>
+
+<p>Under <strong>Options</strong> it is possible to set:</p>
+
+<ul>
+  <li>
+    <p><strong>File format</strong>: in case the scene has images, it converts them into the selected image file format.</p>
+  </li>
+  <li>
+    <p><strong>Compression</strong>: the compression rate of the image format.</p>
+  </li>
+  <li>
+    <p><strong>Background</strong>: it lets user include or not the scene background color.</p>
+  </li>
+  <li>
+    <p><strong>Loop</strong>: sets the animation as looped if checked, that is, the animation will start again if finished.</p>
+  </li>
+  <li>
+    <p><strong>Notify when done</strong>: if checked a popup warns the user that the export has been done.</p>
+  </li>
+  <li>
+    <p><strong>Fixed Size</strong>: adds <code class="language-plaintext highlighter-rouge">width</code> and <code class="language-plaintext highlighter-rouge">height</code> to <code class="language-plaintext highlighter-rouge">viewBox</code>.</p>
+  </li>
+  <li>
+    <p><strong>Optimize for Web</strong>: will try to optimize the SVG for web use (make it smaller). Does not apply to previews.</p>
+  </li>
+  <li>
+    <p><strong>Mix Blend Modes</strong>: it enables <strong><a href="tips.html#layer-blending-modes">Blending modes</a></strong> for shapes</p>
+  </li>
+  <li>
+    <p><strong>SVG 1.1 Colors</strong>: uses hexcodes for colors, else defaults to <code class="language-plaintext highlighter-rouge">rgba()</code>.</p>
+  </li>
+</ul>
+
+<h2 id="video--audio">Video / Audio</h2>
+
+<p>Friction can export projects to the most common video formats such as:</p>
+
+<ul>
+  <li>MP4 (H264)</li>
+  <li>ProRes (MOV)</li>
+  <li>MPEG-4</li>
+  <li>AVI</li>
+  <li>WebM</li>
+  <li>MP3</li>
+  <li>raw FLAC</li>
+  <li>WAV / WAVE</li>
+  <li>OGG</li>
+  <li>Audio IFF</li>
+  <li>and many more thanks to integrated <a href="https://www.ffmpeg.org/">FFMPEG</a></li>
+</ul>
+
+<p>Note that <strong>GIF</strong> is not included in the list as other applications does a much better job.</p>
+
+<ul>
+  <li>Export as MP4 and then use <a href="https://giftuna.io/">GIFTuna</a> to convert it to a GIF</li>
+  <li>Export as PNG image sequence and then use <a href="https://github.com/sindresorhus/Gifski">Gifski</a> to convert it to a GIF.</li>
+</ul>
+
+<p>Note that <strong>ProRes</strong> files with alpha is not compatible with Apple Silicon decoders. This is a known issue and will be fixed in a future release.</p>
+
+<h3 id="render-dialog">Render dialog</h3>
+
+<p><img src="assets/documentation/export/export_video-dialog.png" alt="Video/Audio render dialog" /></p>
+
+<p>Once the <strong>“Add to queue”</strong> button is pressed, the active scene is loaded into the panel. The user can then configure exporting parameters to fine-tune the final output.</p>
+
+<h3 id="scene-properties">Scene Properties</h3>
+
+<p>This section lets the user to set key details about the scene rendering:</p>
+<ul>
+  <li><strong>Scene Name</strong>: Name of the scene.</li>
+  <li><strong>Frame Range</strong>: First and last frames to render.</li>
+  <li><strong>Resolution</strong>: Output size in pixels (width × height).</li>
+  <li><strong>FPS</strong> (Frames Per Second): Playback frame rate of the export.</li>
+</ul>
+
+<h3 id="profiles">Profiles</h3>
+
+<p>The <strong>Profiles</strong> button allows users to select or create predefined rendering profiles. These profiles may include common settings such as resolution, codec, and bitrate, saving time when rendering multiple scenes with similar configurations.</p>
+
+<h3 id="format">Format</h3>
+
+<p>It lets users choose the export format for the video. Common options include <code class="language-plaintext highlighter-rouge">.mp4</code>, <code class="language-plaintext highlighter-rouge">.mov</code>, <code class="language-plaintext highlighter-rouge">.avi</code>, and others, depending on the supported formats in <strong>Friction</strong>.</p>
+
+<h3 id="destination">Destination</h3>
+
+<p>It specifies where the rendered video will be saved. Users can browse their file system to select a folder or enter a path manually.</p>
+
+<h3 id="render">Render</h3>
+
+<p>Finally, clicking the <strong>“Render”</strong> button will start the rendering process for all queued scenes. During rendering:</p>
+<ul>
+  <li>A progress bar may appear to indicate the status of the rendering process.</li>
+  <li>Users can monitor the estimated time remaining and potential errors.</li>
+</ul>
+
+<p>If necessary, there is also a <strong>“Cancel”</strong> button available to stop the rendering process at any time.</p>
+
+<h2 id="image-sequence">Image sequence</h2>
+
+<p>Friction can export projects to image sequences (TIFF/PNG/JPEG).</p>
+
+<p>Use the default profiles for <code class="language-plaintext highlighter-rouge">PNG</code> or <code class="language-plaintext highlighter-rouge">TIFF</code>, or make your own profile. Friction uses <code class="language-plaintext highlighter-rouge">%05d</code> for image sequences, that means it will prefix <code class="language-plaintext highlighter-rouge">00001</code> etc to the rendered image files.</p>
+
+                
+                
+                
+                
+                <div class="nextPrevContainer">
+                    
+                    <a href="usage.html"><span class="nextPrevButton">Previous</span></a>
+                    
+                    <a href="index.html"><span class="nextPrevButton">Index</span></a>
+                    
+                    <a href="shortcuts.html"><span class="nextPrevButton">Next</span></a>
+                    
+                    </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,386 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Usage</title>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="header"><a href="index.html"><img src="assets/logo.svg" height="80px"></a></div>
+        <div id="content">
+            <div id="contentInner">
+                <h1 id="basic-usage">Basic Usage</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#basic-usage" id="markdown-toc-basic-usage">Basic Usage</a>    <ul>
+      <li><a href="#project-and-first-scene-creation" id="markdown-toc-project-and-first-scene-creation">Project and first scene creation</a></li>
+      <li><a href="#canvas-zooming-and-panning" id="markdown-toc-canvas-zooming-and-panning">Canvas zooming and panning</a></li>
+      <li><a href="#creating-assets" id="markdown-toc-creating-assets">Creating assets</a></li>
+      <li><a href="#importing-and-linking" id="markdown-toc-importing-and-linking">Importing and linking</a></li>
+      <li><a href="#basic-animation" id="markdown-toc-basic-animation">Basic animation</a>        <ul>
+          <li><a href="#keyframes" id="markdown-toc-keyframes">Keyframes</a></li>
+          <li><a href="#timeline" id="markdown-toc-timeline">Timeline</a></li>
+          <li><a href="#graph-view" id="markdown-toc-graph-view">Graph view</a></li>
+        </ul>
+      </li>
+      <li><a href="#preview" id="markdown-toc-preview">Preview</a></li>
+      <li><a href="#saving-the-project" id="markdown-toc-saving-the-project">Saving the project</a></li>
+      <li><a href="#export" id="markdown-toc-export">Export</a>        <ul>
+          <li><a href="#animated-svg" id="markdown-toc-animated-svg">Animated SVG</a></li>
+          <li><a href="#rendered-animation" id="markdown-toc-rendered-animation">Rendered animation</a></li>
+        </ul>
+      </li>
+      <li><a href="#advanced" id="markdown-toc-advanced">Advanced</a>        <ul>
+          <li><a href="#effects-and-shaders" id="markdown-toc-effects-and-shaders">Effects and shaders</a></li>
+          <li><a href="#tools" id="markdown-toc-tools">Tools</a></li>
+          <li><a href="#alignment" id="markdown-toc-alignment">Alignment</a></li>
+          <li><a href="#layouts" id="markdown-toc-layouts">Layouts</a></li>
+        </ul>
+      </li>
+      <li><a href="#learning-resources" id="markdown-toc-learning-resources">Learning resources</a>        <ul>
+          <li><a href="#tutorials" id="markdown-toc-tutorials">Tutorials</a></li>
+          <li><a href="#video-tutorials" id="markdown-toc-video-tutorials">Video tutorials</a></li>
+          <li><a href="#other" id="markdown-toc-other">Other</a></li>
+        </ul>
+      </li>
+    </ul>
+  </li>
+</ul>
+
+<p>After learning how the <a href="userinterface.html">User Interface</a> works, it is time to create a project, create or add some assets and start animating them.</p>
+
+<p>It is important to understand that <strong>Friction is not a vector or raster drawing software but an animation one</strong>.</p>
+
+<p>Sure it can create some basic vector based shapes such as rectangles, squares, ellipses, circles, shapes based on nodes and Bezier curves, hand drawn curves or even it’s possible to import bitmap images (raster) but there are lot of drawing tools that a regular designer would miss inside Friction if he insists on looking for them. Being that said, it is highly suggested to design the assets out of Friction and then import or link them into the software.</p>
+
+<p>Some suggested tools for designing assets could be the following:</p>
+
+<ul>
+  <li><strong>Vector graphics design</strong>
+    <ul>
+      <li><strong><a href="(https://inkscape.org/)">Inkscape</a></strong></li>
+      <li><strong><a href="https://affinity.serif.com/en-us/designer/">Affinity Designer</a></strong></li>
+      <li>any software capable of exporting to SVG vector graphics file.</li>
+    </ul>
+  </li>
+  <li><strong>Bitmap graphic design</strong>
+    <ul>
+      <li><strong><a href="(https://krita.org/)">Krita</a></strong></li>
+      <li><strong><a href="(https://www.gimp.org/)">Gimp</a></strong></li>
+      <li><strong><a href="https://affinity.serif.com/en-us/photo/">Affinity Photo</a></strong></li>
+      <li>any software capable of exporting to JPEG, PNG or WEBP image files.</li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="project-and-first-scene-creation">Project and first scene creation</h2>
+
+<p>After opening Friction, the Canvas panel will prompt the user to:</p>
+<ul>
+  <li><strong>New</strong>: create a new project.</li>
+  <li><strong>Open</strong>: open an existing Friction project choosing it using your OS file browser.</li>
+  <li><strong>Recent files</strong>: open an existing Friction project previously opened. Click the button to get a list of the available projects ordered by date (newest to oldest).</li>
+</ul>
+
+<p><img src="assets/documentation/usage/usage_startup.png" alt="Startup window" /></p>
+
+<p>Assuming it is the first time the user opens Friction, click on <code class="language-plaintext highlighter-rouge">New</code> to create a new project. A window will popup showing the Scene Properties:</p>
+
+<p><img src="assets/documentation/usage/usage_scene_properties.png" alt="Scene Properties window" /></p>
+
+<p>An unique Friction project is capable to have any number of scenes but the first time a project is created it prompts the user to create the first one.</p>
+
+<p>It is possible to set the parameters that define a scene (them all could be modified later):</p>
+<ul>
+  <li>dimensions of the canvas: <strong>Width</strong> and <strong>Height</strong> expressed in pixels</li>
+  <li><strong>Duration</strong> of the scene: setting the first frame (usually 0) and the last one expressed in <code class="language-plaintext highlighter-rouge">frames</code> or <code class="language-plaintext highlighter-rouge">seconds</code>. Take into account that Friction internally works if <code class="language-plaintext highlighter-rouge">frames</code> so if the user selects <code class="language-plaintext highlighter-rouge">seconds</code> it will use the following parameter, FPS, to make the conversion into <code class="language-plaintext highlighter-rouge">frames</code>.</li>
+  <li><strong>FPS</strong> (Frames Per Second): number of frames per second.</li>
+  <li><strong>Background</strong>: a RGB color that defines the background scene color. Note that it allows setting a “transparent” color by setting the <code class="language-plaintext highlighter-rouge">Alpha color</code>to 0.</li>
+</ul>
+
+<p>Pressing the <code class="language-plaintext highlighter-rouge">...</code> buttons will list some default and commonly used values or custom ones used in previous projects.</p>
+
+<p>When happy with the settings, the user can press on <code class="language-plaintext highlighter-rouge">OK</code> to create the very first scene.</p>
+
+<p><img src="assets/documentation/usage/usage_scene_blank.png" alt="Blank scene" /></p>
+
+<p>At this point other panels and all tools are enabled to let the user start creating or adding (importing or linking) assets to the scene canvas.</p>
+
+<h2 id="canvas-zooming-and-panning">Canvas zooming and panning</h2>
+
+<p>As in other 2D graphical software the canvas can be navigated with two types of movements:</p>
+
+<ul>
+  <li>
+    <p><strong>Pan</strong>: click and drag with the middle mouse button or use two fingers on your trackpad.</p>
+  </li>
+  <li>
+    <p><strong>Zoom</strong>: use the mouse wheel or using two fingers on your trackpad “pinch in” to zoom in or “pinch out” to zoom out.</p>
+  </li>
+</ul>
+
+<p><strong>Note:</strong> Gestures are only supported on macOS at the moment.</p>
+
+<p>In <strong><code class="language-plaintext highlighter-rouge">View &gt; Zoom</code></strong> there are additional ways of navigating the canvas such as <code class="language-plaintext highlighter-rouge">Fit to canvas</code> or <code class="language-plaintext highlighter-rouge">Reset Zoom</code> and them all can also be triggered using <a href="shortcuts.html">Keyboard Shortcuts</a>.</p>
+
+<h2 id="creating-assets">Creating assets</h2>
+
+<p>It’s possible to create basic shapes using Friction <strong><a href="userinterface.html#tools">Tools panel</a></strong>. If it’s the first time try creating a rectangle (<code class="language-plaintext highlighter-rouge">shift</code> + drag to create a square) or an ellipse (<code class="language-plaintext highlighter-rouge">shift</code> + drag to create a circle) by clicking and dragging the mouse pointer while in the canvas. Release to finish the creation of the shape.</p>
+
+<p>These shapes are vector graphics so they can be edited afterwards so change to the <code class="language-plaintext highlighter-rouge">Object selection tool</code> and then select the shape. Now:</p>
+
+<ul>
+  <li>in the <strong><a href="userinterface.html#properties">Properties panel</a></strong>: and expanding the item it is possible to browse and change all the parameters that define the shape.</li>
+  <li>in the <strong><a href="userinterface.html#fill-and-stroke">Fill and Stroke panel</a></strong>: it is possible to edit the fill type, color and some parameters related with the Fill and Stroke of the shape.</li>
+  <li>in the <strong><a href="userinterface.html#timeline">Timeline panel</a></strong>: it is possible to browse and change all the parameters that define the shape in a similar way than in the <strong><a href="userinterface.html#properties">Properties panel</a></strong> but here with the timeline to the right so that those parameters can be animated in time and more.</li>
+</ul>
+
+<p>For instance, go to the <strong><a href="userinterface.html#properties">Properties panel</a></strong> expand the shape to <code class="language-plaintext highlighter-rouge">Shape &gt; transform &gt; translation &gt; x</code> and change the values so that the shape moves near the right side of the canvas.</p>
+
+<p><img src="assets/documentation/usage/usage_edit_parameter.png" alt="Change parameter value" /></p>
+
+<p>Now, go to the <strong><a href="userinterface.html#fill-and-stroke">Fill and Stroke panel</a></strong> and under <code class="language-plaintext highlighter-rouge">Fill</code> change the type from <code class="language-plaintext highlighter-rouge">none</code> to <code class="language-plaintext highlighter-rouge">fill</code> and move the color channel sliders to select a nice color.</p>
+
+<p><img src="assets/documentation/usage/usage_edit_color.png" alt="Change color value" /></p>
+
+<h2 id="importing-and-linking">Importing and linking</h2>
+
+<p>As commented previously, Friction is not a vector graphics design software but an animation one so is highly suggested that assets are created externally.</p>
+
+<p>There are two ways of importing assets:</p>
+
+<ul>
+  <li>
+    <p><strong>Import</strong>: if the asset is <code class="language-plaintext highlighter-rouge">SVG</code> when using this option the shapes will be imported inside the project. It will be able to modify colors, shapes, etc. within Friction.</p>
+  </li>
+  <li>
+    <p><strong>Link</strong>: if the asset is a bitmap graphics one (<code class="language-plaintext highlighter-rouge">JPEG</code>, <code class="language-plaintext highlighter-rouge">PNG</code>,…) or even <code class="language-plaintext highlighter-rouge">SVG</code> vector, if using this option, they will be linked or externally referenced. A transform parameter will be added but the assets won’t be able to be edited within Friction. The great advantage of using this method is that they can be modified externally and the results will be automatically updated in Friction.
+Each linked asset will be registered in the <strong><a href="userinterface.html#assets">Assets Panel</a></strong> and from there it will be able to <code class="language-plaintext highlighter-rouge">reload</code>, <code class="language-plaintext highlighter-rouge">replace</code> or <code class="language-plaintext highlighter-rouge">remove</code> the asset.</p>
+  </li>
+</ul>
+
+<p><img src="assets/documentation/usage/usage_import_link.png" alt="Import and link buttons in the main window" /></p>
+
+<p>Both options can be found in the <strong><a href="userinterface.html#main-toolbar">Main toolbar</a></strong> or under <code class="language-plaintext highlighter-rouge">File</code> menu.</p>
+
+<p>Bitmap graphics will always be <strong>linked</strong>, even if they are added with the <strong>Import</strong> option as there are no tools for editing pixel base images within Friction.</p>
+
+<p>Assets can be added by “drag &amp; drop” from any file explorer to Friction canvas and they will be imported if possible (<code class="language-plaintext highlighter-rouge">SVG</code>) and linked if not (<code class="language-plaintext highlighter-rouge">JPEG</code>, <code class="language-plaintext highlighter-rouge">PNG</code>,…)</p>
+
+<h2 id="basic-animation">Basic animation</h2>
+
+<h3 id="keyframes">Keyframes</h3>
+
+<p>Any object, shape or in general, any parameter of them could be animated using the <a href="https://en.wikipedia.org/wiki/Key_frame">keyframes technique</a>. There is no need to animate each frame but the important positions or values they will take over time, <strong>frames in the middle will be interpolated automatically</strong>.</p>
+
+<p>For instance, select a shape, object, image, etc. already in the canvas, expand it properties to see <code class="language-plaintext highlighter-rouge">Object &gt; Transform &gt; Translate &gt; x</code>. If the value is changed the position of all the frames of the scene will be updated unless the “animate value” button is activated:</p>
+
+<p><img src="assets/documentation/usage/usage_animate_value.png" alt="Animate value button" /></p>
+
+<p>Once pressed the “dot icon” will turn from white to red color which means that value is animated. An alternative way of activating it is by selecting the parameter, opening the contextual menu with the secondary mouse button and selection the <code class="language-plaintext highlighter-rouge">Add Key(s)</code> option.
+At the same moment the animation is activated, a keyframe icon (circle) will appear at the timeline right at the frame the <code class="language-plaintext highlighter-rouge">time line</code> is placed.</p>
+
+<p>Following the example, if a keyframe for <code class="language-plaintext highlighter-rouge">Object &gt; Transform &gt; Translate &gt; x</code> parameter is created at, for instance “frame 0”, then move the time line to another frame, for instance “frame 30”, and there change the value of the parameter, it can be done in different ways:</p>
+<ul>
+  <li>changing the parameter value with the numerical field</li>
+  <li>moving the object to a different place in the canvas, that is, a place in the canvas with different <code class="language-plaintext highlighter-rouge">x</code> value.</li>
+  <li>if the time line is in a frame with no keyframe but the user wants to add a keyframe with the same value that is taking in that exact frame, open the contextual menu with the secondary mouse button and selection the <code class="language-plaintext highlighter-rouge">Add Key(s)</code> option</li>
+  <li>finally, the user can use the <code class="language-plaintext highlighter-rouge">Insert</code> keyboard button</li>
+</ul>
+
+<p>Individual keyframes can be removed by pressing <code class="language-plaintext highlighter-rouge">Delete</code> or using the contextual menu.</p>
+
+<p>If the  user wants to completely delete all the keyframes of the parameter, just press the red icon again and it will turn back to white meaning the parameter is no longer animated and it will take a single value along time. Note that the value it will “choose” to have will be the one taking and the frame where the time line is placed at the time the red button is pressed.</p>
+
+<h3 id="timeline">Timeline</h3>
+
+<p>The <strong><a href="userinterface.html#timeline">Timeline</a></strong> panel will be so helpful to see where the keyframes are placed along time and easy to remap their position in time as it is possible to click and drag them and move them to another time.</p>
+
+<p>In this panel, it is possible to <code class="language-plaintext highlighter-rouge">copy</code>, <code class="language-plaintext highlighter-rouge">paste</code> and even <code class="language-plaintext highlighter-rouge">duplicate</code> keyframes to new frames just by placing the time line in the desired frame and running the command.</p>
+
+<h3 id="graph-view">Graph view</h3>
+
+<p>The interpolation between keyframes <strong>is linear by default</strong>, but this can be changed with the <code class="language-plaintext highlighter-rouge">Graph view</code> as it adds the possibility to edit the “speed” and evolution of the value animation from one keyframe to the other in a graphical way.</p>
+
+<p>In order to activate it, it is needed to select at least one parameter (if more than one just add more to the selection using the <code class="language-plaintext highlighter-rouge">Shift</code> modifier, a color between the “activate animation” button and the parameter label will show the color of the graph curves) in the <strong><a href="userinterface.html#timeline">Timeline</a></strong> panel (it doesn’t work in the Properties panel as there is no timeline in that panel) and press the <code class="language-plaintext highlighter-rouge">Graph view</code> icon:</p>
+
+<p><img src="assets/documentation/usage/usage_graph_view_1.png" alt="Graph view button" /></p>
+
+<p>Once the Graph view is activated this is what it would look like:</p>
+
+<p><img src="assets/documentation/usage/usage_graph_view_2.png" alt="Graph view button" /></p>
+
+<p>It possible to select the keyframes (or nodes now as the curves are <strong>Bezier curves</strong>), turn on their tangent handles and some more by using the following buttons placed on the right-bottom of the graph view:</p>
+
+<p><img src="assets/documentation/usage/usage_graph_view_3.png" alt="Graph view button" /></p>
+
+<p>From left to right:</p>
+<ul>
+  <li><strong>Easing modes</strong>: some presets to easily animate the movement between two keyframes. It could take into account left (<code class="language-plaintext highlighter-rouge">in</code>) and/or right (<code class="language-plaintext highlighter-rouge">out</code>) nodes of the segment. Check the available ones <a href="tips.html#easing-reference-chart">here</a>.</li>
+  <li><strong>line segment</strong>: default “curve” between keyframes.</li>
+  <li><strong>curved segment</strong>: make the nodes (or keyframes) handles appear</li>
+  <li><strong>symmetric handles</strong>: make left and right handles symmetric</li>
+  <li><strong>smooth node</strong>: turn from corner to smooth handles, in this mode left and right node handles share the same tangency angle.</li>
+  <li><strong>corner nodes</strong>: turn from smooth to corner handles, in this mode left and right node handles have independent tangency angles.</li>
+  <li><strong>vertical fit view</strong>: fits all the keyframes (or nodes) in the view</li>
+  <li><strong>horizontal fit view</strong>: fits all the selected keyframes (or nodes) in the view. If none selected it will fit the whole scene.</li>
+</ul>
+
+<p>Example of keyframes with smooth handles:</p>
+
+<p><img src="assets/documentation/usage/usage_graph_view_4.png" alt="Graph view button" /></p>
+
+<h2 id="preview">Preview</h2>
+
+<p><img src="assets/documentation/usage/usage_preview_play.png" alt="Play button" /></p>
+
+<p>There are some ways to preview the scene animation within Friction:</p>
+<ul>
+  <li><strong>Manual scrubbing</strong> the “time line” by dragging it left or right, this is not really a “mode” but it is very commonly done by animators.</li>
+  <li><strong>Preview Cache</strong>: playing the animation pressing the “Play” button on top of the time line. By default this preview will be rendered into a temporal cache and then played at realtime.</li>
+  <li><strong>in editor Preview</strong>: if <code class="language-plaintext highlighter-rouge">View &gt; Preview Cache</code> menu checkbox is disabled, then the animation will be played without caching it, that is faster to play but it may be not in realtime as it will be dependent of your hardware (in case your computer is not capable of rendering all the frames at the scene FPS) so, it is possible that this preview is not played at realtime. The benefit of this mode is that selected objects will show their bounding boxes, pivots points, etc. and that may be interesting for the animator to check how the animation is performed.</li>
+  <li><strong>SVG Preview</strong>: in case the animation is designed inside all the features of SVG animation, it is possible to run the <code class="language-plaintext highlighter-rouge">Preview SVG</code> button in the <strong><a href="userinterface.html#main-toolbar">Main toolbar</a></strong> and preview it in the default SVG player of the computer (probably an Internet browser).</li>
+</ul>
+
+<h2 id="saving-the-project">Saving the project</h2>
+
+<p>At any time, <strong>Friction</strong> lets users save the project into a file with <code class="language-plaintext highlighter-rouge">.friction</code> extension. Everything but linked assets will be saved inside the document. The file is binary so it can not be read with text editors but this may change in the future as there are plans to move into a text based project file.</p>
+
+<h2 id="export">Export</h2>
+
+<p>The <strong>Export</strong> feature let users publish the project animations (bundled into scenes) to media files. There are 2 main ways of exporting:</p>
+
+<h3 id="animated-svg">Animated SVG</h3>
+
+<p>This option will create an animated <strong>SVG</strong> file using the <em>non yet deprecated</em> <a href="https://www.w3.org/TR/REC-smil/"><strong>SMIL</strong> (Synchronized Multimedia Integration Language)</a> format. This format is mainly useful for <strong>web design</strong> as it creates lightweight files that are compatible with most Internet browsers and devices.</p>
+
+<p>In order to export into <strong>SVG</strong> users will find 2 options:</p>
+<ul>
+  <li><strong>Preview SVG</strong>: it will export and preview the file in your default Internet browser. It’s a very useful and fast way to quickly preview the animation.</li>
+  <li><strong>Export SVG</strong>: a new window will show up with options to generate the final <strong>SVG</strong> file. Among the self-explanatory options there is <code class="language-plaintext highlighter-rouge">Optimize for Web</code> that reduces the file size and <code class="language-plaintext highlighter-rouge">Mix Blend Modes</code> that enables Layer color blending to the final SVG file using <code class="language-plaintext highlighter-rouge">CSS</code> rules.</li>
+</ul>
+
+<p><img src="assets/documentation/export/export_svg-dialog.png" alt="Export SVG dialog" /></p>
+
+<p>Both options are available in the <strong><a href="userinterface.html#main-toolbar">Main Toolbar</a></strong></p>
+
+<p><strong>Important note</strong>: not all <strong>Friction</strong> features are compatible with animated SVG (and probably some are not implemented into the exporter yet). There is more information in the <a href="export.html#svg-animation">Export chapter</a>.</p>
+
+<h3 id="rendered-animation">Rendered animation</h3>
+
+<p>The second way of exporting is the conventional rendering of the scene animation into a video and/or audio format.</p>
+
+<p>In order to config the export, users should open the <a href="userinterface.html#queue">Queue panel</a> and set:</p>
+<ul>
+  <li><strong>Scene Properties</strong>: if they are correctly set and there is no need to trim, adjust or choose the <code class="language-plaintext highlighter-rouge">IN/OUT</code> option, this option could be skipped.</li>
+  <li><strong>Profiles</strong>: saved profiles are convenient for choosing video/audio, format, codecs and their settings.</li>
+  <li><strong>Format</strong>: in case of the need of manually changing the setttings here is the place to do it.</li>
+</ul>
+
+<p><img src="assets/documentation/export/export_video-dialog.png" alt="Export Queue panel" /></p>
+
+<p>For more information about all exporting options there is a whole section about <strong><a href="export.html#video--audio">Export options</a></strong>.</p>
+
+<h2 id="advanced">Advanced</h2>
+
+<h3 id="effects-and-shaders">Effects and shaders</h3>
+
+<p>Using the previously commented features will let animators create pretty rich and complex animations but with the following features the animation process can be simplified in some cases and/or it will be possible to create new animations that could not be done with “traditional” animation. As considered as medium to advanced features, they are hidden by default, the way to show them all or one by one is by opening the contextual menu with the secondary mouse button and activating the needed ones. Once activated, new sections will appear in the object hierarchy, and listed in the natural place:</p>
+
+<p><img src="assets/documentation/usage/usage_effects.png" alt="Effects hierarchy" /></p>
+
+<p>Following the previous picture, from top to bottom:</p>
+
+<ul>
+  <li><strong>Custom Properties</strong>: it is able to create custom parameters to be used in the Expression editor and be able to animate or control easily how the object behaves along time. It is possible to create single or double value parameters.</li>
+</ul>
+
+<p><img src="assets/documentation/usage/usage_custom_properties.png" alt="Custom Properties" /></p>
+
+<ul>
+  <li><strong>Blend effects</strong>: these effect control the layer position of objects and they are useful when it is needed to animate it so that that position changes over time.</li>
+  <li><strong>Interactive SVG Properties</strong>: they control the SVG playback of the object as it allows to play it when hovering with the mouse, clicking, double clicking, etc.</li>
+  <li><strong>Transform effects</strong>: allow to manipulate objects in terms of position, rotation, scale, and skew and using other objects as reference.</li>
+  <li><strong>Path base effects</strong>: are applied directly to vector paths, allowing modifications such as Displace, Spatial Displace, Dash, Duplicate, Sub-Path, Solidify, Sum, Lines, ZigZag or Subdivide.</li>
+  <li><strong>Fill effects</strong>: control the fill properties of shapes, including solid colors, gradients, and patterns. The effect available are similar to the Path base effects but applied to fills.</li>
+  <li><strong>Outline base effects</strong>: same effects that applies to the outline applied to the object. The list of effects is the same of previous type of effects.</li>
+  <li><strong>Outline effects</strong>: create “new outlines” and applies the selected effect. The list of effects is the same of previous type of effects.</li>
+</ul>
+
+<p>More on this subject in separate sections <strong><a href="effects.html">Effects</a></strong> and <strong><a href="shaders.html">Shaders</a></strong>.</p>
+
+<h3 id="tools">Tools</h3>
+<ul>
+  <li><strong>Null objects</strong>: Adds an invisible reference object that can be used to group or control other elements by applying <code class="language-plaintext highlighter-rouge">Transform Effects</code> in the composition.</li>
+</ul>
+
+<h3 id="alignment">Alignment</h3>
+
+<p>In the <strong><a href="userinterface.html#properties">Properties panel</a></strong> there is a group of dropdown and buttons that allow users to align one or several objects to the chosen reference.</p>
+
+<p><img src="assets/documentation/usage/usage_alignment_panel.png" alt="Alignment tools" /></p>
+
+<p>The options allow aligning <code class="language-plaintext highlighter-rouge">Geometry</code>, <code class="language-plaintext highlighter-rouge">Geometry by its pivot</code> and just the <code class="language-plaintext highlighter-rouge">Pivot</code> and keeping the geometry in place.</p>
+
+<p>The destination of the alignment is called “reference” and can be <code class="language-plaintext highlighter-rouge">Scene</code>, <code class="language-plaintext highlighter-rouge">Bounding box</code>, <code class="language-plaintext highlighter-rouge">Last selected</code> object or <code class="language-plaintext highlighter-rouge">Last selected pivot</code> which references to the last selected object pivot.</p>
+
+<p>The buttons let users apply the alignment to just a side <code class="language-plaintext highlighter-rouge">Left</code>, <code class="language-plaintext highlighter-rouge">Horizontal center</code>, <code class="language-plaintext highlighter-rouge">Right</code>, <code class="language-plaintext highlighter-rouge">Top</code>, <code class="language-plaintext highlighter-rouge">Vertical center</code> and <code class="language-plaintext highlighter-rouge">Bottom</code>.</p>
+
+<p><img src="assets/documentation/usage/usage_alignment_example.gif" alt="Alignment example" /></p>
+
+<h3 id="layouts">Layouts</h3>
+
+<p><img src="assets/documentation/usage/usage_layout.png" alt="Layouts" /></p>
+
+<p>This feature lets users create and save different <code class="language-plaintext highlighter-rouge">Canvas</code> and/or <code class="language-plaintext highlighter-rouge">Timeline</code>divisions under a name and switch from one to another. It doesn’t save panels position or visibility state (shown or hidden) but the size, number and scene applied to the <code class="language-plaintext highlighter-rouge">Canvas</code> and <code class="language-plaintext highlighter-rouge">Timeline</code> divisions:</p>
+
+<p><img src="assets/documentation/ui/ui_timeline-splitting-panel.png" alt="Division splitter" /></p>
+
+<h2 id="learning-resources">Learning resources</h2>
+
+<p>This is an always growing chapter and over time new resources could be included.</p>
+
+<p>It is interesting know that <strong>Friction</strong> is a fork of <strong>Enve</strong> so if you don’t find a tutorial or video explaining a feature, you might find it if you do an Internet search with the <code class="language-plaintext highlighter-rouge">Enve</code> keyword on it.</p>
+
+<h3 id="tutorials">Tutorials</h3>
+<ul>
+  <li><strong><a href="https://theflydesign.es/manual-enve-2d-animation-english/">Enve manual</a></strong></li>
+</ul>
+
+<h3 id="video-tutorials">Video tutorials</h3>
+<ul>
+  <li><strong><a href="https://www.youtube.com/watch?v=dIzzXyrJRHs">Friction 2d Beginner Tutorial - Freeware Camp</a></strong></li>
+  <li><strong><a href="https://github.com/orgs/friction2d/discussions/403">Introduction to Friction2d (Tutorial)</a></strong></li>
+  <li><strong><a href="https://www.youtube.com/playlist?list=PLiIhhu566LD9xzcRXgRqMkr8sIqaKO1HF">Beginner Enve Tutorials</a></strong></li>
+  <li><strong><a href="https://www.youtube.com/playlist?list=PLiIhhu566LD-4zvcPCCGZtp1KS1Ew5Ehu">Beginner’s Complete Guide To Enve 2D</a></strong></li>
+  <li><strong><a href="https://www.youtube.com/playlist?list=PLQFW7x3qFlrBAqVFHCS8QGf2ooegv4riN">Enve’s Alexander Kiryanov advanced tutorials</a></strong></li>
+</ul>
+
+<h3 id="other">Other</h3>
+<ul>
+  <li><strong><a href="https://github.com/orgs/friction2d/discussions/434">Friction Tips meta-thread</a></strong></li>
+  <li><strong><a href="https://github.com/orgs/friction2d/discussions/407">Friction2d (Friction 2d) Showcase/Renders</a></strong></li>
+  <li><strong><a href="https://github.com/orgs/friction2d/discussions/292">Expressions tutorial?</a></strong></li>
+  <li><strong><a href="https://github.com/orgs/friction2d/discussions/242">Support of Common Expressions in Friction’s Expression Editor</a></strong></li>
+  <li><strong><a href="https://github.com/orgs/friction2d/discussions">Friction discussion panel</a></strong></li>
+  <li><strong>Friction social platforms</strong> (linked in the this web page footer)</li>
+</ul>
+
+                
+                
+                
+                
+                <div class="nextPrevContainer">
+                    
+                    <a href="userinterface.html"><span class="nextPrevButton">Previous</span></a>
+                    
+                    <a href="index.html"><span class="nextPrevButton">Index</span></a>
+                    
+                    <a href="export.html"><span class="nextPrevButton">Next</span></a>
+                    
+                    </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>

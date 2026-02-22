@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>User Interface</title>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="header"><a href="index.html"><img src="assets/logo.svg" height="80px"></a></div>
+        <div id="content">
+            <div id="contentInner">
+                <h1 id="user-interface">User Interface</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#user-interface" id="markdown-toc-user-interface">User Interface</a>    <ul>
+      <li><a href="#main-toolbar" id="markdown-toc-main-toolbar">Main Toolbar</a></li>
+      <li><a href="#color-toolbar" id="markdown-toc-color-toolbar">Color Toolbar</a></li>
+      <li><a href="#viewer" id="markdown-toc-viewer">Viewer</a></li>
+      <li><a href="#tools" id="markdown-toc-tools">Tools</a></li>
+      <li><a href="#timeline" id="markdown-toc-timeline">Timeline</a></li>
+      <li><a href="#properties" id="markdown-toc-properties">Properties</a></li>
+      <li><a href="#assets" id="markdown-toc-assets">Assets</a></li>
+      <li><a href="#queue" id="markdown-toc-queue">Queue</a></li>
+      <li><a href="#fill-and-stroke" id="markdown-toc-fill-and-stroke">Fill and Stroke</a></li>
+      <li><a href="#preferences" id="markdown-toc-preferences">Preferences</a></li>
+      <li><a href="#toolbox" id="markdown-toc-toolbox">Toolbox</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p><img src="assets/documentation/ui/ui_all.png" alt="Default interface" /></p>
+
+<p>Some panels are rearrangable by pressing their left-right-up-down buttons:</p>
+
+<p><img src="assets/documentation/ui/ui_rearrange-buttons.png" alt="Rearrangement buttons" /></p>
+
+<p>The Timeline can be splitted horizontally or vertically to allow better parameter keyframe editing:</p>
+
+<p><img src="assets/documentation/ui/ui_timeline-splitting-panel.png" alt="Splitting buttons" /></p>
+
+<h2 id="main-toolbar">Main Toolbar</h2>
+
+<p><img src="assets/documentation/ui/ui_panel1.png" alt="Main Toolbar" /></p>
+
+<p>The main toolbar provides fast access to the most used commands related to creating/saving projects and importing and exporting assets into the active project.</p>
+
+<p>… expand on the right-click menu …</p>
+
+<h2 id="color-toolbar">Color Toolbar</h2>
+
+<p><img src="assets/documentation/ui/ui_panel2.png" alt="Color Toolbar" /></p>
+
+<p>The color toolbar provides fast access to edit colors, types (none, flat or gradient) and other parameters of selected shapes or the scene background:</p>
+
+<ul>
+  <li>
+    <p><strong>Fill</strong>: Allows users to set the interior color, gradient or “no color” of selected shapes. Users can choose between solid colors (flat), linear or radial gradients.</p>
+  </li>
+  <li>
+    <p><strong>Stroke</strong>: Controls the outline of shapes, including its color, width, and style. Users can define other parameters such as width, join and cap styles.</p>
+  </li>
+  <li>
+    <p><strong>Background</strong>: Sets the background color of the canvas or scene. This option ensures consistency in visual presentation across the workspace.</p>
+  </li>
+</ul>
+
+<p>Mouse actions on hover is supported:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">scroll</code> = change hue</li>
+  <li><code class="language-plaintext highlighter-rouge">scroll</code> + <code class="language-plaintext highlighter-rouge">shift</code> = change value</li>
+  <li><code class="language-plaintext highlighter-rouge">scroll</code> + <code class="language-plaintext highlighter-rouge">ctrl/cmd</code> = change saturation</li>
+  <li><code class="language-plaintext highlighter-rouge">click</code> = open fill/stroke widget</li>
+</ul>
+
+<p>… expand on the right-click menu …</p>
+
+<h2 id="viewer">Viewer</h2>
+
+<p><img src="assets/documentation/ui/ui_panel3.png" alt="Viewer" /></p>
+
+<p>The Viewer is the central workspace where users can visualize and interact with their projects, it can also be called <strong>Canvas</strong>. It displays the active composition or animation and allows for real-time previews and adjustments.</p>
+
+<p>The Canvas can be zoomed in and out or fitted in some ways or even reset to default size. Check <code class="language-plaintext highlighter-rouge">Menu &gt; View &gt; Zoom</code> for a full list of options.</p>
+
+<p>On Windows and Linux the mouse wheel can zoom in/out, on macOS add the <code class="language-plaintext highlighter-rouge">option</code> key when using the mouse wheel. Gestures for pan, zoom and smart zoom is supported on macOS.</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl/Cmd</code> + <code class="language-plaintext highlighter-rouge">+</code> = Zoom in (We should change this to not include shift!)</li>
+  <li><code class="language-plaintext highlighter-rouge">Shift + Ctrl/Cmd</code> + <code class="language-plaintext highlighter-rouge">-</code> = Zoom Out (We should change this to not include shift!)</li>
+  <li><code class="language-plaintext highlighter-rouge">Ctrl/Cmd</code> + <code class="language-plaintext highlighter-rouge">1</code> = Reset zoom</li>
+  <li><code class="language-plaintext highlighter-rouge">Ctrl/Cmd</code> + <code class="language-plaintext highlighter-rouge">0</code> = Fit to canvas</li>
+  <li><code class="language-plaintext highlighter-rouge">Ctrl/Cmd</code> + <code class="language-plaintext highlighter-rouge">9</code> = Fit to canvas width</li>
+</ul>
+
+<h2 id="tools">Tools</h2>
+
+<p><img src="assets/documentation/ui/ui_panel4.png" alt="Tools" /></p>
+
+<p>The Toolbar contains a set of tools to create shapes, helpers and some others to edit already created objects.</p>
+
+<ul>
+  <li>
+    <p><strong>Object selection mode</strong>: Allows users to select and manipulate entire objects on the canvas. This mode is essential for positioning, scaling, and rotating objects.</p>
+  </li>
+  <li>
+    <p><strong>Point selection mode</strong>: Enables users to select and modify individual points or vertices of an object, offering fine control over shapes and paths.</p>
+  </li>
+  <li>
+    <p><strong>Path</strong>: Creates precise vector paths by placing anchor points and defining curves. Ideal for drawing custom shapes and lines.</p>
+  </li>
+  <li>
+    <p><strong>Hand-drawn Path</strong>: Allows freehand drawing of paths, giving users more flexibility and a natural drawing experience.</p>
+  </li>
+  <li>
+    <p><strong>Circle</strong>: Draws perfect circles or ellipses. Users can define dimensions and position on the canvas.</p>
+  </li>
+  <li>
+    <p><strong>Rectangle</strong>: Creates rectangular or square shapes. Useful for building structured layouts and designs.</p>
+  </li>
+  <li>
+    <p><strong>Text</strong>: Adds text elements to the canvas. Users can adjust font, size, alignment, and other typographical properties.</p>
+  </li>
+  <li>
+    <p><strong>Null object</strong>: Adds an invisible reference object that can be used to group or control other elements in the composition.</p>
+  </li>
+  <li>
+    <p><strong>Color picker</strong>: Enables users to sample and apply colors directly from the canvas or predefined palettes.</p>
+  </li>
+  <li>
+    <p><strong>Global/Local Pivot Toggle</strong>: Switches between global and local pivot points, allowing more precise control over transformations and rotations.</p>
+  </li>
+</ul>
+
+<p>… expand on the right-click menu …</p>
+
+<h2 id="timeline">Timeline</h2>
+
+<p><img src="assets/documentation/ui/ui_panel5.png" alt="Timeline" /></p>
+
+<p>The Timeline is where animations and keyframes are managed. Users can control timing, easing, curves of every object parameter. All the hierarchy of shapes, layers, groups, helpers, etc. are displayed using the “layer concept”, that is, objects on top of the list lay in the canvas on top of other objects that lay below.</p>
+
+<p>There is an option to filter the hierarchy to edit the objects that are listed.</p>
+
+<p>It is possible to set a <strong><a href="tips.html#layer-blending-modes">Blending mode</a></strong> for every layer (or object).</p>
+
+<h2 id="properties">Properties</h2>
+
+<p><img src="assets/documentation/ui/ui_panel6.png" alt="Properties" /></p>
+
+<p>By default the Properties panel displays the attributes of just the selected object, layer, group, etc.</p>
+
+<p>In the case of selecting a Text object, then a panel with text parameters are shown.</p>
+
+<p>At the bottom of the Properties panel there are a few options to <strong><a href="usage.html#alignment">easily align objects in the canvas</a></strong> relative to the canvas itself or other shapes.</p>
+
+<h2 id="assets">Assets</h2>
+
+<p><img src="assets/documentation/ui/ui_panel7.png" alt="Assets" /></p>
+
+<p>The Assets panel manages <strong>linked</strong> files, images, audio, and other resources used in the project. By clicking the secondary mouse button in an asset it is possible to:</p>
+
+<ul>
+  <li>
+    <p><strong>Reload</strong>: reads the file again from source.</p>
+  </li>
+  <li>
+    <p><strong>Replace</strong>: it lets the user select another file to replace the already linked one.</p>
+  </li>
+  <li>
+    <p><strong>Remove</strong>: it completely removes the object from the project.</p>
+  </li>
+</ul>
+
+<h2 id="queue">Queue</h2>
+
+<p><img src="assets/documentation/ui/ui_panel8.png" alt="Queue" /></p>
+
+<p>The Queue section manages rendering tasks and export jobs. Users can monitor the progress of ongoing processes and manage output settings.</p>
+
+<h2 id="fill-and-stroke">Fill and Stroke</h2>
+
+<p><img src="assets/documentation/ui/ui_panel9.png" alt="Fill and Stroke" /></p>
+
+<p>The Fill and Stroke panel allows users to control the color, gradient, and outline (stroke) properties of objects. It provides precise control over visual styles.</p>
+
+<p>Every shape has 2 parts:</p>
+<ul>
+  <li><strong>Fill</strong>: the area contained in the drawn shape</li>
+  <li><strong>Stroke</strong>: the outline drawn along the shape</li>
+</ul>
+
+<p><img src="assets/documentation/ui/ui_fill-stroke.png" alt="Fill and Stroke" /></p>
+
+<p>Fills and Strokes have 3 options to be drawn:</p>
+<ul>
+  <li><strong>None</strong>: the element disables or turns invisible</li>
+  <li><strong>Flat</strong>: the element is colored with a flat or constant color</li>
+  <li><strong>Gradient</strong>: the element is colored using a gradient which is a transition of 2 or more colors. It can be <strong>linear</strong> or <strong>radial</strong>.</li>
+</ul>
+
+<p><img src="assets/documentation/ui/ui_none-flat-gradients.png" alt="Fill and Stroke" /></p>
+
+<p><em>In the previous image the <code class="language-plaintext highlighter-rouge">fill</code> changes from left to right: none, flat, linear gradient and radial gradient.</em></p>
+
+<h2 id="preferences">Preferences</h2>
+
+<p><img src="assets/documentation/ui/ui_panel10.png" alt="Preferences" /></p>
+
+<p>The Preferences menu contains settings for customizing scenes, preview resolution and layouts.</p>
+
+<p>It might be important to note that it is also possible to fast edit <strong>Start/End scene frames</strong> at the <a href="#Timeline">Timeline playback row</a>, using the Left and Right spinboxes:</p>
+
+<p><img src="assets/documentation/ui/ui_panel10b.png" alt="Preferences" /></p>
+
+<h2 id="toolbox">Toolbox</h2>
+
+<p><img src="assets/documentation/ui/ui_panel11.png" alt="Color Toolbar" /></p>
+
+<p>This toolbar with dynamic buttons exposes most used parameters of <strong>just one selected object</strong> for easy and fast editing. It is even possible to animate values or use <code class="language-plaintext highlighter-rouge">Shift</code> modifier to edit <code class="language-plaintext highlighter-rouge">X</code> and <code class="language-plaintext highlighter-rouge">Y</code> values at the shame time. Exposed parameters change depending on the nature of the shape or object.</p>
+
+<p><em>This is a new feature and will be improved in the near future to allow multiple selection and other commonly used parameters.</em></p>
+
+                
+                
+                
+                
+                <div class="nextPrevContainer">
+                    
+                    <a href="index.html"><span class="nextPrevButton">Index</span></a>
+                    
+                    <a href="usage.html"><span class="nextPrevButton">Next</span></a>
+                    
+                    </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>

@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Tips</title>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="header"><a href="index.html"><img src="assets/logo.svg" height="80px"></a></div>
+        <div id="content">
+            <div id="contentInner">
+                <h1 id="tips">Tips</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#tips" id="markdown-toc-tips">Tips</a>    <ul>
+      <li><a href="#timeline-navigation" id="markdown-toc-timeline-navigation">Timeline navigation</a></li>
+      <li><a href="#changing-values" id="markdown-toc-changing-values">Changing values</a></li>
+      <li><a href="#adding-keyframes" id="markdown-toc-adding-keyframes">Adding keyframes</a></li>
+      <li><a href="#canvas-shortcuts" id="markdown-toc-canvas-shortcuts">Canvas shortcuts</a></li>
+      <li><a href="#pivots" id="markdown-toc-pivots">Pivots</a></li>
+      <li><a href="#groups-and-layers" id="markdown-toc-groups-and-layers">Groups and layers</a></li>
+      <li><a href="#duplicating" id="markdown-toc-duplicating">Duplicating</a></li>
+      <li><a href="#layer-blending-modes" id="markdown-toc-layer-blending-modes">Layer blending modes</a></li>
+      <li><a href="#alpha-mask" id="markdown-toc-alpha-mask">Alpha Mask</a></li>
+      <li><a href="#visibility-range" id="markdown-toc-visibility-range">Visibility range</a></li>
+      <li><a href="#graph-editor" id="markdown-toc-graph-editor">Graph Editor</a></li>
+      <li><a href="#copy-node-information" id="markdown-toc-copy-node-information">Copy node information</a></li>
+      <li><a href="#dynamic-path-operations" id="markdown-toc-dynamic-path-operations">Dynamic path operations</a></li>
+      <li><a href="#dissolve-nodes" id="markdown-toc-dissolve-nodes">Dissolve nodes</a></li>
+      <li><a href="#nodes-sequence" id="markdown-toc-nodes-sequence">Nodes sequence</a></li>
+      <li><a href="#copy-and-paste-paths" id="markdown-toc-copy-and-paste-paths">Copy and paste paths</a></li>
+      <li><a href="#svg-animations-love-expressions" id="markdown-toc-svg-animations-love-expressions">SVG animations love Expressions</a></li>
+      <li><a href="#fast-scene-properties-edit" id="markdown-toc-fast-scene-properties-edit">Fast Scene Properties edit</a></li>
+      <li><a href="#easing-reference-chart" id="markdown-toc-easing-reference-chart">Easing reference chart</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="timeline-navigation">Timeline navigation</h2>
+
+<p><img src="assets/documentation/tips/tips_01.png" alt="Timeline navigation" /></p>
+
+<ul>
+  <li>The upper line allows you to change the current frame.</li>
+  <li>The lower line allows you to change a range of visible frames of the timeline.</li>
+</ul>
+
+<p>Use the mouse wheel while hovering over the bottom scroll bar to scale the timeline.</p>
+
+<h2 id="changing-values">Changing values</h2>
+
+<p><img src="assets/documentation/tips/tips_02.png" alt="Timeline navigation" /></p>
+
+<p>It is possible to change the values by:</p>
+<ul>
+  <li><strong>clicking in the value box and dragging the cursor sideways</strong> (if holding <code class="language-plaintext highlighter-rouge">alt</code> key modifier it will change values in smaller steps)</li>
+  <li><strong>single clicking in the value box</strong> and using the keyboard to enter the values.</li>
+</ul>
+
+<p>For both of them and when editing a value part of a <strong>double value</strong> (usually <strong>X</strong> and <strong>Y</strong>), it is possible to perform an <strong>uniform value input</strong> if pressing <code class="language-plaintext highlighter-rouge">shift</code> while editing or while hitting <code class="language-plaintext highlighter-rouge">Enter</code> to accept the changes, that is, the value will be applied to both fields.</p>
+
+<p><img src="assets/documentation/tips/tips_uniform_value_input.gif" alt="Uniform value input" /></p>
+
+<h2 id="adding-keyframes">Adding keyframes</h2>
+
+<p><img src="assets/documentation/tips/tips_03.png" alt="Timeline navigation" /></p>
+
+<p>To activate the recording of values, click on the record button next to the property name.</p>
+
+<p>Keyframes are automatically added for properties with value registration enabled each time their value is changed.</p>
+
+<h2 id="canvas-shortcuts">Canvas shortcuts</h2>
+
+<p>For selected objects it is possible to use the following Keyboard shortcuts:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">G</code>: Move</li>
+  <li><code class="language-plaintext highlighter-rouge">R</code>: Rotate</li>
+  <li><code class="language-plaintext highlighter-rouge">S</code>: Scale</li>
+</ul>
+
+<p><img src="assets/documentation/tips/tips_04.png" alt="Timeline navigation" /></p>
+
+<p>There is a way of limiting the translation or scale to just one axis by using the following shortcuts:</p>
+
+<ul>
+  <li><code class="language-plaintext highlighter-rouge">X</code>: Horizontal</li>
+  <li><code class="language-plaintext highlighter-rouge">Y</code>: Vertical</li>
+</ul>
+
+<p><img src="assets/documentation/tips/tips_05.png" alt="Timeline navigation" /></p>
+
+<p>It is possible to use numerical values when transforming objects, just type the desired numbers:</p>
+
+<p><img src="assets/documentation/tips/tips_06.png" alt="Timeline navigation" /></p>
+
+<p>To <strong>apply</strong> a transformation press <code class="language-plaintext highlighter-rouge">ENTER</code> or release the mouse.</p>
+
+<p>To <strong>cancel</strong> press <code class="language-plaintext highlighter-rouge">Esc</code> or the right mouse button.</p>
+
+<h2 id="pivots">Pivots</h2>
+
+<p>Every object has a pivot that can be moved to transform the object from its axis, for instance if you rotate the object by pressing <code class="language-plaintext highlighter-rouge">R</code> shortcut:</p>
+
+<p><img src="assets/documentation/tips/tips_07.png" alt="Timeline navigation" /></p>
+
+<h2 id="groups-and-layers">Groups and layers</h2>
+
+<p><strong>Groups</strong> combine or wrap objects into a new object, this new object has its own transform matrix, but <code class="language-plaintext highlighter-rouge">opacity</code> parameter does not work.</p>
+
+<p><img src="assets/documentation/tips/tips_08.png" alt="Timeline navigation" /></p>
+
+<p><strong>Layers</strong> are special group types. You should use them whenever you want the group to be rasterized before being drawn or when you need to apply an effect to the group. Now <strong>layers</strong> do take into account the <code class="language-plaintext highlighter-rouge">opacity</code> parameter.</p>
+
+<p>For instance, a group can be <strong>promoted to layer</strong> and then apply <code class="language-plaintext highlighter-rouge">Blur</code> which is a <code class="language-plaintext highlighter-rouge">Raster Effect</code>:</p>
+
+<p><img src="assets/documentation/tips/tips_09.png" alt="Timeline navigation" /></p>
+
+<p>So <strong>groups</strong> and <strong>layers</strong> may look like similar, they kind of are but <strong>they are definitely not</strong>.</p>
+
+<h2 id="duplicating">Duplicating</h2>
+
+<p>Instead of “<em>Copy</em>” and “<em>Paste</em>”, it is better to use <strong>Duplicate</strong> and get an exact copy of your duplicated object (transform, colors, shapes,…):</p>
+
+<p><img src="assets/documentation/tips/tips_10.png" alt="Timeline navigation" /></p>
+
+<p>Keyframes can be also duplicated when working in the Timeline, select a keyframe, place the time line at the desired frame and duplicate it:</p>
+
+<p><img src="assets/documentation/tips/tips_11.png" alt="Timeline navigation" /></p>
+
+<p>– <code class="language-plaintext highlighter-rouge">Shift + D</code> duplicate and move frame
+– <code class="language-plaintext highlighter-rouge">Ctrl + D</code> copy and paste in actual frame</p>
+
+<h2 id="layer-blending-modes">Layer blending modes</h2>
+
+<p><em>(Not to be confused with <code class="language-plaintext highlighter-rouge">Blend Effects</code> explained <strong><a href="animation_techniques.html#blend-effects">here</a></strong>)</em></p>
+
+<p><img src="assets/documentation/tips/tips_12.png" alt="Timeline navigation" /></p>
+
+<p>Objects, shapes and layers can blend with others (not groups, so don’t forget to promote a group into a layer if blending is desired). Each object can be drawn on its parent <strong>layer</strong> using different compositing modes. You can select the composition mode in the combo box next to the object name.</p>
+
+<p><strong>Remember that objects are drawn on their first source layer, which means that layer groups do not influence the way objects are drawn</strong>.</p>
+
+<h2 id="alpha-mask">Alpha Mask</h2>
+
+<p>To create a simple alpha mask you need at least two objects, one of which will act as a mask.</p>
+
+<p>You have to put both objects inside a <strong>layer</strong> so that the mask does not influence the objects outside the layer. That is, grouping them is not enough, you need to promote the group to layer:</p>
+
+<p><img src="assets/documentation/tips/tips_14.png" alt="Promote to layer button" /></p>
+
+<p>For instance, if you want the rounded green rectangle to mask the star below:</p>
+
+<p><img src="assets/documentation/tips/tips_15.png" alt="Timeline navigation" /></p>
+
+<p>You will need to set the rectangle layer (the rectangle shape itself) blend mode to <code class="language-plaintext highlighter-rouge">DstIn</code> and you will get the following mask:</p>
+
+<p><img src="assets/documentation/tips/tips_16.png" alt="Timeline navigation" /></p>
+
+<p>In case you want the inverted mask use <code class="language-plaintext highlighter-rouge">DstOut</code>:</p>
+
+<p><img src="assets/documentation/tips/tips_17.png" alt="Timeline navigation" /></p>
+
+<h2 id="visibility-range">Visibility range</h2>
+
+<p>You can use the visibility range to control the visibility of an object.</p>
+
+<p><img src="assets/documentation/tips/tips_18.png" alt="Timeline navigation" /></p>
+
+<p>Objects can just have 1 visibility range so if you want to have more ranges you will need to <code class="language-plaintext highlighter-rouge">Split</code> it by using the secondary button contextual menu, select  <code class="language-plaintext highlighter-rouge">Split</code> and then a new object will be created.</p>
+
+<h2 id="graph-editor">Graph Editor</h2>
+
+<p>By default the interpolation between keyframes is set to <strong>linear</strong> when setting them with the parameter fields or within the canvas if editing transformations. Friction interpolation system is based on graphs, that means you could set up complex interpolations based on arcs and Bezier curves. In order to edit them the user must select a parameter and hit the <code class="language-plaintext highlighter-rouge">Graph button</code> to change from timeline <code class="language-plaintext highlighter-rouge">Keyframes view</code> to <code class="language-plaintext highlighter-rouge">Graph view</code>:</p>
+
+<p><img src="assets/documentation/tips/tips_19.png" alt="Timeline navigation" /></p>
+
+<p>This is how it looks like:</p>
+
+<p><img src="assets/documentation/tips/tips_20.png" alt="Timeline navigation" /></p>
+
+<p>By default new keyframes interpolations are <code class="language-plaintext highlighter-rouge">linear</code>. It is possible to select, move, set the keyframe node and their tangents (when the node is set to <code class="language-plaintext highlighter-rouge">smooth</code>) to the desired curve by using the following tools:</p>
+
+<p><img src="assets/documentation/usage/usage_graph_view_3.png" alt="Graph view button" /></p>
+
+<p>From left to right:</p>
+<ul>
+  <li><strong>easing</strong>: create complex segment transitions. It could take into account left (<code class="language-plaintext highlighter-rouge">in</code>) and/or right (<code class="language-plaintext highlighter-rouge">out</code>) nodes of the segment. Check the available ones <a href="tips.html#easing-reference-chart">here</a>.</li>
+  <li><strong>make segment a line</strong>: make interpolation between nodes straight.</li>
+  <li><strong>make segment a curve</strong>: make interpolation between nodes curved, it will show up node tangents.</li>
+  <li><strong>symmetric nodes</strong>: it will make left and right node tangents of the same length.</li>
+  <li><strong>smooth nodes</strong>: it will turn node tangent length higher than 0, that is visible.</li>
+  <li><strong>corner nodes</strong>: it will turn node tangent length equal to 0, that is make it sharp.</li>
+  <li><strong>vertical fit view</strong>: it will fit all the keyframes (or nodes) in the view</li>
+  <li><strong>horizontal fit view</strong>: it will fit all the selected keyframes (or nodes) in the view. If none selected it will fit the whole scene.</li>
+</ul>
+
+<p>Some tools may need the user to select two nodes to work as it will affect the “curve segment” and not just a node.</p>
+
+<p>It is possible to preview more than one parameter at the time by pressing <code class="language-plaintext highlighter-rouge">shift</code> in the keyboard and clicking the desired parameter with the left mouse button.</p>
+
+<p><img src="assets/documentation/tips/tips_22.png" alt="Timeline navigation" /></p>
+
+<h2 id="copy-node-information">Copy node information</h2>
+<p>Moving a node of an object while holding <code class="language-plaintext highlighter-rouge">shift</code> to another node of another object <strong>copies</strong> its exact location and the angle and length of both handles.</p>
+
+<p><img src="assets/documentation/tips/tips_copying_nodes.svg" alt="Copy node information" /></p>
+
+<p>Check the following video for more information:
+<strong><a href="https://www.youtube.com/watch?v=4Yg6RtBcjso">Copy node information</a></strong>
+<em>(<strong>NOTE</strong>: it’s an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)</em></p>
+
+<h2 id="dynamic-path-operations">Dynamic path operations</h2>
+
+<p>It is possible to create dynamic booleans operations with some paths inside an unique shape.</p>
+
+<p><img src="assets/documentation/tips/tips_dynamic_paths.png" alt="Dynamic path operations" /></p>
+
+<p>For instance, with a simple animation of the path in the middle:</p>
+
+<p><img src="assets/documentation/tips/tips_dynamic_paths.svg" alt="Dynamic path operations" /></p>
+
+<p>Check the following video for more information:
+<strong><a href="https://www.youtube.com/watch?v=cuJ_LM1twms&amp;t=5s">Dynamic path operations</a></strong>
+<em>(<strong>NOTE</strong>: it’s an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)</em></p>
+
+<h2 id="dissolve-nodes">Dissolve nodes</h2>
+
+<p>When animating the nodes of a shape, that is, if the path has the dot animation button turn on (red color):</p>
+
+<p><img src="assets/documentation/tips/tips_dissolve_nodes_1.png" alt="Animating path nodes" /></p>
+
+<p>It is possible to “remove” nodes from specific keyframes, the feature is called <strong><code class="language-plaintext highlighter-rouge">Dissolve nodes</code></strong> because they are not really removed but “disabled” or “dissolved” as they are not taken into account to create the shape but they are still there. The only thing it is possible to do is to move them along the segment where it belonged.</p>
+
+<p><img src="assets/documentation/tips/tips_dissolve_nodes_2.png" alt="Animating path nodes" /></p>
+
+<p>Then, it is possible to deactivate or <code class="language-plaintext highlighter-rouge">dissolve</code> in two ways:</p>
+<ul>
+  <li><strong>dissolve</strong>: it will deactivate the node and will create a new segment taking into account just the activated nodes.</li>
+  <li><strong>dissolve approximated</strong>: it will deactivate the node and will try to approximate the result of the segment to something similar it had with the activated node.</li>
+</ul>
+
+<p>The other way round, nodes could at any keyframe be “activated” again, this is called <code class="language-plaintext highlighter-rouge">promote to normal</code>.</p>
+
+<p><img src="assets/documentation/tips/tips_dissolve_nodes.svg" alt="Animating path nodes" /></p>
+
+<p>When creating/designing the assets, it is needed to take into account the maximum number of nodes needed for the morphing animation as later some of them should be promoted to <code class="language-plaintext highlighter-rouge">dissolve</code> state.</p>
+
+<p>Check the following video for more information:
+<strong><a href="https://www.youtube.com/watch?v=TyeN1OXodcU&amp;list=PLb3wVIJ8v7fGVzg1hon2aH5xgMLBll8-l&amp;index=3">Dissolve nodes</a></strong>
+<em>(<strong>NOTE</strong>: it’s an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)</em></p>
+
+<h2 id="nodes-sequence">Nodes sequence</h2>
+
+<p>When in <code class="language-plaintext highlighter-rouge">node editing</code> (so called<code class="language-plaintext highlighter-rouge">Point editing</code>) mode, it is possible to check the node index applied to a shape. It could come handy when dissolving or morphing a shape into another one as at equal number of nodes each node will morph using its index.</p>
+
+<p><img src="assets/documentation/tips/tips_node_index.png" alt="Animating path nodes" /></p>
+
+<p>In order to see the indexes just press <code class="language-plaintext highlighter-rouge">ctrl + shift</code> (<code class="language-plaintext highlighter-rouge">cmd + shift</code> in macOS) while in <code class="language-plaintext highlighter-rouge">Point editing</code>.</p>
+
+<h2 id="copy-and-paste-paths">Copy and paste paths</h2>
+
+<p>Taking advantage of the previously explained <strong><a href="#dissolve-nodes">Dissolve nodes</a></strong> feature, <strong>Friction</strong> allows to <code class="language-plaintext highlighter-rouge">copy path</code> and <code class="language-plaintext highlighter-rouge">paste path</code> from one path to another. It automatically will detect if the pasted one has the same or different number of nodes and it will animate the interpolation accordingly.</p>
+
+<p><img src="assets/documentation/tips/tips_copy-paste_path.png" alt="Copy and paste paths" /></p>
+
+<p>It is very convenient when the animator has the start shape and end shape saved in different paths and want to animate the morphing between them both but happening in the same object (shape).</p>
+
+<p>The final result will be a kind of effortless morphing.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_morphing.svg" alt="Morphing example" /></p>
+
+<h2 id="svg-animations-love-expressions">SVG animations love Expressions</h2>
+
+<p>Not all <strong>Friction</strong> features are compatible with <a href="https://www.w3.org/TR/REC-smil/"><strong>SMIL</strong> (Synchronized Multimedia Integration Language)</a> format or <strong>Friction</strong> developers had no time to create that feature but there is a <strong>neat workaround</strong> to be able to animate almost anything: use <strong><a href="expressions.html">Expressions!</a></strong>.</p>
+
+<p>For instance, <strong>Friction</strong> is not yet capable to export animations that contain <code class="language-plaintext highlighter-rouge">Track Effect</code> or <code class="language-plaintext highlighter-rouge">keyframe easings</code> but it you are able to create an expression that <strong>simulates</strong> the feature, at export time all expressions are automatically converted into keyframes so, <em>voilà!</em>, you end up with a final animated SVG that “includes” that feature:</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_tracking.svg" alt="Track effect example" /></p>
+
+<p><em>In the previous example the Arrow “looks” at the crossed square using an Expression.</em></p>
+
+<h2 id="fast-scene-properties-edit">Fast Scene Properties edit</h2>
+
+<p>Designers often edit the scene properties while in the middle of an animation, the normal procedure is going to <code class="language-plaintext highlighter-rouge">Menu -&gt; Scene -&gt; Scene properties...</code> and edit them.</p>
+
+<p>The most used ones, <code class="language-plaintext highlighter-rouge">width</code>, <code class="language-plaintext highlighter-rouge">height</code>, <code class="language-plaintext highlighter-rouge">start frame</code> and <code class="language-plaintext highlighter-rouge">end frame</code>, are exposed all time in the main window so there is no need to open any dialog:</p>
+
+<p><img src="assets/documentation/tips/tips_fast_scene_properties.png" alt="Preferences" /></p>
+
+<h2 id="easing-reference-chart">Easing reference chart</h2>
+
+<p>Friction provides some <em>precooked</em> keyframes transitions for fast animation. They can be applied between 2 keyframes and in 3 modes <code class="language-plaintext highlighter-rouge">in</code>, <code class="language-plaintext highlighter-rouge">out</code> and <code class="language-plaintext highlighter-rouge">in+out</code>.</p>
+
+<p>Check the following chart as reference:</p>
+
+<p><img src="assets/documentation/tips/tips_easing_chart.png" alt="Easing reference chart" /></p>
+
+                
+                
+                
+                
+                <div class="nextPrevContainer">
+                    
+                    <a href="shortcuts.html"><span class="nextPrevButton">Previous</span></a>
+                    
+                    <a href="index.html"><span class="nextPrevButton">Index</span></a>
+                    
+                    <a href="animation_techniques.html"><span class="nextPrevButton">Next</span></a>
+                    
+                    </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>

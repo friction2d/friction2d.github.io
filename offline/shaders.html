@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Shader Effects</title>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="header"><a href="index.html"><img src="assets/logo.svg" height="80px"></a></div>
+        <div id="content">
+            <div id="contentInner">
+                <h1 id="shaders-effects">Shaders Effects</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#shaders-effects" id="markdown-toc-shaders-effects">Shaders Effects</a>    <ul>
+      <li><a href="#definitions-gre-file" id="markdown-toc-definitions-gre-file">Definitions (*.gre file)</a>        <ul>
+          <li><a href="#root-element" id="markdown-toc-root-element">Root Element</a></li>
+          <li><a href="#properties" id="markdown-toc-properties">Properties</a>            <ul>
+              <li><a href="#property-attributes" id="markdown-toc-property-attributes">Property Attributes</a></li>
+              <li><a href="#default-attribute-values" id="markdown-toc-default-attribute-values">Default Attribute Values</a></li>
+            </ul>
+          </li>
+          <li><a href="#script-optional" id="markdown-toc-script-optional">Script (optional)</a></li>
+          <li><a href="#glvalues-optional" id="markdown-toc-glvalues-optional">glValues (optional)</a>            <ul>
+              <li><a href="#attributes" id="markdown-toc-attributes">Attributes</a></li>
+            </ul>
+          </li>
+          <li><a href="#margin" id="markdown-toc-margin">Margin</a></li>
+        </ul>
+      </li>
+      <li><a href="#fragment-shader-frag-file" id="markdown-toc-fragment-shader-frag-file">Fragment Shader (*.frag file)</a></li>
+    </ul>
+  </li>
+</ul>
+
+<p>Shader effects let users create their own raster effects. You need two files to get started with shader effects.</p>
+
+<ul>
+  <li>The <a href="https://www.w3schools.com/xml/xml_whatis.asp">XML</a> <strong>.gre</strong> file defines properties visible in the interface, and values passed to the fragment shader.</li>
+  <li>The <a href="https://www.khronos.org/opengl/wiki/Fragment_Shader">GLSL fragment shader</a> <strong>.frag</strong> file defines the effect for a given set of values defined in <strong>.gre</strong> file.</li>
+</ul>
+
+<p>To use shader effects, both <strong>.gre</strong> and <strong>.frag</strong> files have to be placed in:</p>
+<ul>
+  <li><strong>Linux</strong>: <code class="language-plaintext highlighter-rouge">home_directory/.config/friction/ShadersEffects</code></li>
+  <li><strong>Windows</strong>: <code class="language-plaintext highlighter-rouge">home_directly\AppData\Local\friction\ShadersEffects</code></li>
+  <li><strong>macOS</strong>: <code class="language-plaintext highlighter-rouge">home_directory/Library/Preferences/friction/ShadersEffects/</code></li>
+</ul>
+
+<p>The <strong>.gre</strong> and <strong>.frag</strong> files have to share a name, e.g., <code class="language-plaintext highlighter-rouge">exampleEffect.gre</code> and <code class="language-plaintext highlighter-rouge">exampleEffect.frag</code>.</p>
+
+<p><a href="https://github.com/friction2d/friction-shader-plugins">Here you can find some examples</a></p>
+
+<h2 id="definitions-gre-file">Definitions (*.gre file)</h2>
+
+<h3 id="root-element">Root Element</h3>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ShaderEffect</span> <span class="na">name=</span><span class="s">"Example Effect"</span><span class="nt">&gt;</span>
+  <span class="c">&lt;!-- Properties (optional) --&gt;</span>
+  <span class="c">&lt;!-- Script (optional) --&gt;</span>
+  <span class="c">&lt;!-- glValues (optional) --&gt;</span>
+  <span class="c">&lt;!-- Margin (optional) --&gt;</span>
+<span class="nt">&lt;/ShaderEffect&gt;</span>
+</code></pre></div></div>
+
+<p>A <strong>ShaderEffect</strong> <a href="https://en.wikipedia.org/wiki/Root_element">root element</a> has only a <strong>name</strong> attribute. The <strong>name</strong> will be visible in <strong>Friction</strong> interface.
+The <strong>ShaderEffect</strong> encloses <strong>Properties</strong>, a <strong>Script</strong>, <strong>glValues</strong>, and a <strong>Margin</strong> for the effect.</p>
+
+<h3 id="properties">Properties</h3>
+
+<p>There are four types of properties:</p>
+
+<ul>
+  <li><strong>int</strong> - integer properties</li>
+  <li><strong>float</strong> - floating-point number properties</li>
+  <li><strong>vec2</strong> - two-value float properties</li>
+  <li><strong>color</strong> - four-value (red, green, blue, alpha) float properties</li>
+</ul>
+
+<p>All types of properties are animatable, meaning their values can change with time. All properties have to be defined inside <strong>Properties</strong> element, and use the <strong>Property</strong> tag name.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ShaderEffect</span> <span class="na">name=</span><span class="s">"Example Effect"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Properties&gt;</span>
+        <span class="nt">&lt;Property</span> <span class="na">name=</span><span class="s">"exampleProperty"</span> <span class="na">nameUI=</span><span class="s">"example property"</span>
+                  <span class="na">type=</span><span class="s">"float"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">ini=</span><span class="s">"8"</span> <span class="na">step=</span><span class="s">"1"</span>
+                  <span class="na">glValue=</span><span class="s">"true"</span> <span class="na">resolutionScaled=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+        <span class="c">&lt;!-- More Properties (optional) --&gt;</span>
+    <span class="nt">&lt;/Properties&gt;</span>
+    <span class="c">&lt;!-- Script (optional) --&gt;</span>
+    <span class="c">&lt;!-- glValues (optional) --&gt;</span>
+    <span class="c">&lt;!-- Margin (optional) --&gt;</span>
+<span class="nt">&lt;/ShaderEffect&gt;</span>
+</code></pre></div></div>
+
+<p>You can see the resulting interface elements in the screenshot below.</p>
+
+<p><img src="assets/documentation/shaders/shaders_1.png" alt="example" /></p>
+
+<h4 id="property-attributes">Property Attributes</h4>
+
+<ul>
+  <li><strong>name</strong> - name used to reference the property from the <strong>Script</strong> and fragment shader (if <strong>glValue</strong> is true), no spaces or special characters.</li>
+  <li><strong>nameUI</strong> - name visible in <strong>Friction</strong> interface.</li>
+  <li><strong>xnameUI</strong> - name of the x component of <strong>vec2</strong> property.</li>
+  <li><strong>ynameUI</strong> - name of the y component of <strong>vec2</strong> property.</li>
+  <li><strong>type</strong> - type of the property (<strong>int</strong>, <strong>float</strong>, <strong>vec2</strong>).</li>
+  <li><strong>min</strong> - minimum value.</li>
+  <li><strong>max</strong> - maximum value.</li>
+  <li><strong>ini</strong> - initial value.</li>
+  <li><strong>step</strong> - value increment for user interactions.</li>
+  <li><strong>glValue</strong> - whether the property is used in the fragment shader.</li>
+  <li><strong>resolutionScaled</strong> - whether the property value is multiplied by scene resolution.</li>
+</ul>
+
+<p><strong>vec2</strong> attributes support values like <code class="language-plaintext highlighter-rouge">[x, y]</code> or <code class="language-plaintext highlighter-rouge">x</code> expanded to <code class="language-plaintext highlighter-rouge">[x, x]</code>.</p>
+
+<h4 id="default-attribute-values">Default Attribute Values</h4>
+
+<ul>
+  <li><strong>name</strong> - required, no default.</li>
+  <li><strong>nameUI</strong> - same as <strong>name</strong>.</li>
+  <li><strong>xnameUI</strong> - <code class="language-plaintext highlighter-rouge">x</code>.</li>
+  <li><strong>ynameUI</strong> - <code class="language-plaintext highlighter-rouge">y</code>.</li>
+  <li><strong>type</strong> - required, no default.</li>
+  <li><strong>min</strong> - <code class="language-plaintext highlighter-rouge">0</code>.</li>
+  <li><strong>max</strong> - <code class="language-plaintext highlighter-rouge">100</code>.</li>
+  <li><strong>ini</strong> - <code class="language-plaintext highlighter-rouge">0</code>.</li>
+  <li><strong>step</strong> - <code class="language-plaintext highlighter-rouge">1</code>.</li>
+  <li><strong>glValue</strong> - <code class="language-plaintext highlighter-rouge">false</code>.</li>
+  <li><strong>resolutionScaled</strong> - <code class="language-plaintext highlighter-rouge">false</code>.</li>
+</ul>
+
+<h3 id="script-optional">Script (optional)</h3>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ShaderEffect</span> <span class="na">name=</span><span class="s">"Example Effect"</span><span class="nt">&gt;</span>
+    <span class="c">&lt;!-- Properties --&gt;</span>
+    <span class="nt">&lt;Script&gt;</span>
+        <span class="c">&lt;!-- Obviously, it is just an example,
+             it would make more sense to
+             multiply the value directly from
+             the 'Calculate' portion of the script,
+             without the function definition --&gt;</span>
+        <span class="nt">&lt;Definitions&gt;</span> <span class="c">&lt;!-- Optional --&gt;</span>
+            <span class="c">&lt;!-- JavaScript functions for use in Calculate --&gt;</span>
+            function exampleFunction(x) {
+                return 2*x;
+            }
+        <span class="nt">&lt;/Definitions&gt;</span>
+      
+        <span class="c">&lt;!-- Variables defined with 'extern' can be accessed
+             from glValue and Margin 'value' scripts. --&gt;</span>
+        <span class="nt">&lt;Calculate&gt;</span>
+            var exampleLocalVariable = Math.PI * exampleProperty;
+            extern exampleExternVariable = exampleFunction(exampleLocalVariable);
+        <span class="nt">&lt;/Calculate&gt;</span>
+    <span class="nt">&lt;/Script&gt;</span>
+    <span class="c">&lt;!-- glValues --&gt;</span>
+    <span class="c">&lt;!-- Margin (optional) --&gt;</span>
+<span class="nt">&lt;/ShaderEffect&gt;</span>
+</code></pre></div></div>
+
+<p><strong>Script</strong> is divided into two portions, both of which should be written in JavaScript:</p>
+
+<ul>
+  <li><strong>Definitions</strong> - here you can define functions, it is run only once, it cannot access property values</li>
+  <li><strong>Calculate</strong> - it is run every time the effect is being called, lets you <strong>extern</strong> variable to use them in <strong>glValue</strong> and <strong>Margin</strong> scripts. You can use functions defined in <strong>Definitions</strong>. You can access <strong>Property</strong> values.</li>
+</ul>
+
+<p>Values for <strong>vec2</strong> properties are passed as arrays <code class="language-plaintext highlighter-rouge">[x, y]</code>.</p>
+
+<p><strong>Friction</strong> provides <strong>_eRect</strong>, an additional variable you can access directly from <strong>Calculate</strong>, and glValue and <strong>Margin</strong> scripts. <strong>_eRect</strong> corresponds to the bounding rectangle <code class="language-plaintext highlighter-rouge">[x, y, width, height]</code> for the object the effect is being applied to. Please note, that the <strong>_eRect</strong> corresponds to the bounding rectangle prior to applying the <strong>Margin</strong>. To see how to use <strong>_eRect</strong>, you can checkout the example eExplode effect and eDots.</p>
+
+<h3 id="glvalues-optional">glValues (optional)</h3>
+
+<p><strong>.gre file:</strong></p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ShaderEffect</span> <span class="na">name=</span><span class="s">"Example Effect"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Properties&gt;</span>
+        <span class="nt">&lt;Property</span> <span class="na">name=</span><span class="s">"exampleProperty"</span> <span class="na">nameUI=</span><span class="s">"example property"</span>
+                  <span class="na">type=</span><span class="s">"float"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">ini=</span><span class="s">"8"</span> <span class="na">step=</span><span class="s">"1"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/Properties&gt;</span>
+    <span class="nt">&lt;Script&gt;</span>
+        <span class="nt">&lt;Definitions&gt;</span>
+            function exampleFunction(x) {
+                return 2*x;
+            }
+        <span class="nt">&lt;/Definitions&gt;</span>
+        <span class="nt">&lt;Calculate&gt;</span>
+            var exampleLocalVariable = Math.PI * exampleProperty;
+            extern exampleExternVariable = exampleFunction(exampleLocalVariable);
+        <span class="nt">&lt;/Calculate&gt;</span>
+    <span class="nt">&lt;/Script&gt;</span>
+    <span class="nt">&lt;glValues&gt;</span>
+        <span class="nt">&lt;glValue</span> <span class="na">name=</span><span class="s">"exampleValue"</span> <span class="na">type=</span><span class="s">"float"</span> <span class="na">value=</span><span class="s">"exampleExternVariable"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/glValues&gt;</span>
+<span class="nt">&lt;/ShaderEffect&gt;</span>
+</code></pre></div></div>
+
+<p><strong>.frag file:</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nx">#version</span> <span class="mi">330</span> <span class="nx">core</span>
+<span class="nf">layout</span><span class="p">(</span><span class="nx">location</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="nx">out</span> <span class="nx">vec4</span> <span class="nx">fragColor</span><span class="p">;</span>
+
+<span class="k">in</span> <span class="nx">vec2</span> <span class="nx">texCoord</span>
+
+<span class="nx">uniform</span> <span class="nx">sampler2D</span> <span class="nx">texture</span><span class="p">;</span>
+
+<span class="nx">uniform</span> <span class="nx">float</span> <span class="nx">exampleValue</span><span class="p">;</span> <span class="c1">// the same name as the glValue</span>
+
+<span class="k">void</span> <span class="nf">main</span><span class="p">(</span><span class="k">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="nx">fragColor</span> <span class="o">=</span> <span class="nf">vec4</span><span class="p">(</span><span class="nx">color</span><span class="p">.</span><span class="nx">rgb</span><span class="p">,</span> <span class="nx">exampleValue</span><span class="p">);</span> 
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>glValues</strong> have no representation in the user interface. Instead, they let you pass variables you defined as <strong>extern</strong>, in the <strong>Calculate</strong> portion of the <strong>Script</strong>, to the fragment shader.</p>
+
+<h4 id="attributes">Attributes</h4>
+
+<ul>
+  <li><strong>name</strong> - name that will be used to reference the value from the fragment shader, cannot contain spaces or special characters, e.g., <code class="language-plaintext highlighter-rouge">exampleValue</code></li>
+  <li><strong>type</strong> - value type (<code class="language-plaintext highlighter-rouge">float</code>, <code class="language-plaintext highlighter-rouge">vec2</code>, <code class="language-plaintext highlighter-rouge">vec3</code>, <code class="language-plaintext highlighter-rouge">vec4</code>, <code class="language-plaintext highlighter-rouge">int</code>, <code class="language-plaintext highlighter-rouge">ivec2</code>, <code class="language-plaintext highlighter-rouge">ivec3</code>, <code class="language-plaintext highlighter-rouge">ivec4</code>).</li>
+  <li><strong>value</strong> - specifies the value, e.g., <code class="language-plaintext highlighter-rouge">0</code>, <code class="language-plaintext highlighter-rouge">exampleProperty*5</code>, <code class="language-plaintext highlighter-rouge">[exampleVec2Property[0]*5, exampleVec2Value[1]*5]</code>(<strong>vec2</strong> only)</li>
+</ul>
+
+<h3 id="margin">Margin</h3>
+
+<p>Some effects might need to expand the texture size, e.g., blur effects require additional space depending on the radius. <strong>Friction</strong> will expand the texture for you, all you have to do is define the <strong>Margin</strong>.</p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ShaderEffect</span> <span class="na">name=</span><span class="s">"Example Blur"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Properties&gt;</span>
+        <span class="nt">&lt;Property</span> <span class="na">name=</span><span class="s">"blurRadius"</span> <span class="na">nameUI=</span><span class="s">"blur radius"</span>
+                  <span class="na">type=</span><span class="s">"float"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"100"</span> <span class="na">ini=</span><span class="s">"0"</span> <span class="na">step=</span><span class="s">"1"</span>
+                  <span class="na">glValue=</span><span class="s">"true"</span> <span class="na">resolutionScaled=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/Properties&gt;</span>
+    <span class="nt">&lt;Margin</span> <span class="na">value=</span><span class="s">"blurRadius"</span><span class="nt">/&gt;</span>
+<span class="nt">&lt;/ShaderEffect&gt;</span>
+</code></pre></div></div>
+
+<p><img src="assets/documentation/shaders/shaders_2.png" alt="Margin example" /></p>
+
+<p>The <strong>Margin</strong> only has the <strong>value</strong> attribute.
+All variables defined as ‘extern’ in the <strong>Calculate</strong> portion of the <strong>Script</strong> are available to the <strong>Margin</strong> along with all the <strong>Property</strong> values. The <strong>Margin</strong> can be defined with four values <code class="language-plaintext highlighter-rouge">[left, top, right, bottom]</code>, with two values <code class="language-plaintext highlighter-rouge">[horizontal, vertical]</code>, which translates to <code class="language-plaintext highlighter-rouge">[horizontal, vertical, horizontal, vertical]</code>, or with a single value margin, which translates to <code class="language-plaintext highlighter-rouge">[margin, margin, margin, margin]</code>.
+To see how to use <strong>Margin</strong>, you can checkout the example eExplode effect.</p>
+
+<h2 id="fragment-shader-frag-file">Fragment Shader (*.frag file)</h2>
+
+<p><strong>multiplyRed.gre file:</strong></p>
+
+<div class="language-xml highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="nt">&lt;ShaderEffect</span> <span class="na">name=</span><span class="s">"Multiply Red"</span><span class="nt">&gt;</span>
+    <span class="nt">&lt;Properties&gt;</span>
+        <span class="nt">&lt;Property</span> <span class="na">name=</span><span class="s">"red"</span> <span class="na">type=</span><span class="s">"float"</span> <span class="na">min=</span><span class="s">"0"</span> <span class="na">max=</span><span class="s">"1"</span>
+                  <span class="na">ini=</span><span class="s">"0"</span> <span class="na">step=</span><span class="s">"0.1"</span> <span class="na">glValue=</span><span class="s">"true"</span><span class="nt">/&gt;</span>
+    <span class="nt">&lt;/Properties&gt;</span>
+<span class="nt">&lt;/ShaderEffect&gt;</span>
+</code></pre></div></div>
+
+<p><strong>multiplyRed.frag file:</strong></p>
+
+<div class="language-javascript highlighter-rouge"><div class="highlight"><pre class="highlight"><code><span class="c1">// Friction uses OpenGL 3.3</span>
+<span class="nx">#version</span> <span class="mi">330</span> <span class="nx">core</span>
+<span class="c1">// output color</span>
+<span class="nf">layout</span><span class="p">(</span><span class="nx">location</span> <span class="o">=</span> <span class="mi">0</span><span class="p">)</span> <span class="nx">out</span> <span class="nx">vec4</span> <span class="nx">fragColor</span><span class="p">;</span>
+
+<span class="c1">// processed texture coordinate, from the vertex shader</span>
+<span class="k">in</span> <span class="nx">vec2</span> <span class="nx">texCoord</span><span class="p">;</span>
+
+<span class="c1">// texture provided by Friction</span>
+<span class="nx">uniform</span> <span class="nx">sampler2D</span> <span class="nx">texture</span><span class="p">;</span>
+<span class="c1">// the value for the 'red' property</span>
+<span class="nx">uniform</span> <span class="nx">float</span> <span class="nx">red</span><span class="p">;</span>
+
+<span class="k">void</span> <span class="nf">main</span><span class="p">(</span><span class="k">void</span><span class="p">)</span> <span class="p">{</span>
+    <span class="c1">// texture pixel color at the coordinate</span>
+    <span class="nx">vec4</span> <span class="nx">color</span> <span class="o">=</span> <span class="nf">texture2D</span><span class="p">(</span><span class="nx">texture</span><span class="p">,</span> <span class="nx">texCoord</span><span class="p">);</span>
+    <span class="c1">// assign value to the output color,</span>
+    <span class="c1">// multiply red by the 'red' property value</span>
+    <span class="nx">fragColor</span> <span class="o">=</span> <span class="nf">vec4</span><span class="p">(</span><span class="nx">color</span><span class="p">.</span><span class="nx">r</span> <span class="o">*</span> <span class="nx">red</span><span class="p">,</span> <span class="nx">color</span><span class="p">.</span><span class="nx">g</span><span class="p">,</span> <span class="nx">color</span><span class="p">.</span><span class="nx">b</span><span class="p">,</span> <span class="nx">color</span><span class="p">.</span><span class="nx">a</span><span class="p">);</span> 
+<span class="p">}</span>
+</code></pre></div></div>
+
+<p><strong>Result:</strong></p>
+
+<p><img src="assets/documentation/shaders/shaders_3.png" alt="exampleRed" /></p>
+
+<p>If you are familiar with fragment shaders, the example above should be easy to understand.
+<strong>Friction</strong> provides a texture <code class="language-plaintext highlighter-rouge">uniform sampler2D texture;</code>, values for all <strong>Properties</strong> with <code class="language-plaintext highlighter-rouge">glValue="true"</code>, and all <strong>glValues</strong>.
+The type of the value passed to the fragment shader is the same, as the type of the <strong>Property</strong>/<strong>glValue</strong>:</p>
+
+<ul>
+  <li><strong>float</strong> - <code class="language-plaintext highlighter-rouge">uniform float exampleFlotPropVal;</code></li>
+  <li><strong>int</strong> - <code class="language-plaintext highlighter-rouge">uniform int exampleIntPropVal;</code></li>
+  <li><strong>vec2</strong> - <code class="language-plaintext highlighter-rouge">uniform vec2 exampleVec2PropVal;</code></li>
+</ul>
+
+                
+                
+                
+                
+                <div class="nextPrevContainer">
+                    
+                    <a href="effects.html"><span class="nextPrevButton">Previous</span></a>
+                    
+                    <a href="index.html"><span class="nextPrevButton">Index</span></a>
+                    
+                    <a href="learning.html"><span class="nextPrevButton">Next</span></a>
+                    
+                    </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>

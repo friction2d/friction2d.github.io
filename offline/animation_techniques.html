@@ -1,0 +1,195 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <title>Animation techniques</title>
+        <link href="assets/style.css" rel="stylesheet" />
+    </head>
+    <body>
+        <div id="header"><a href="index.html"><img src="assets/logo.svg" height="80px"></a></div>
+        <div id="content">
+            <div id="contentInner">
+                <h1 id="animation-techniques">Animation techniques</h1>
+
+<ul id="markdown-toc">
+  <li><a href="#animation-techniques" id="markdown-toc-animation-techniques">Animation techniques</a>    <ul>
+      <li><a href="#loops" id="markdown-toc-loops">Loops</a></li>
+      <li><a href="#reveal-trim-path-or-sub-path" id="markdown-toc-reveal-trim-path-or-sub-path">Reveal (Trim path or sub-path)</a></li>
+      <li><a href="#trim-path-subpath-offset" id="markdown-toc-trim-path-subpath-offset">Trim path (subpath) offset</a></li>
+      <li><a href="#follow-path" id="markdown-toc-follow-path">Follow path</a></li>
+      <li><a href="#masking" id="markdown-toc-masking">Masking</a></li>
+      <li><a href="#blend-effects" id="markdown-toc-blend-effects">Blend Effects</a></li>
+      <li><a href="#expression-based-transformations" id="markdown-toc-expression-based-transformations">Expression based transformations</a></li>
+      <li><a href="#orbit" id="markdown-toc-orbit">Orbit</a></li>
+      <li><a href="#parenting" id="markdown-toc-parenting">Parenting</a></li>
+      <li><a href="#tracking" id="markdown-toc-tracking">Tracking</a></li>
+      <li><a href="#text-effects" id="markdown-toc-text-effects">Text effects</a></li>
+      <li><a href="#flip-book" id="markdown-toc-flip-book">Flip book</a></li>
+      <li><a href="#morphing" id="markdown-toc-morphing">Morphing</a></li>
+    </ul>
+  </li>
+</ul>
+
+<h2 id="loops">Loops</h2>
+
+<p>It is possible to create <strong>infinite loops</strong> by mixing some Friction features:</p>
+
+<p>1) Create a new scene and set up as desired. It will be a container of just the looped animation.
+2) Add the assets and animate them
+3) Then switch to the main scene, click on the canvas a select <code class="language-plaintext highlighter-rouge">link scene</code> choosing the scene that contains the animation you want to loop.
+4) select the linked scene object, open the contextual menu (clicking the secondary mouse button) and turn on <code class="language-plaintext highlighter-rouge">Frame remapping</code>. It will activate a new parameter inside the linked scene called “<strong>Frame</strong>”.
+5) Click on the <code class="language-plaintext highlighter-rouge">Frame</code> parameter with the secondary button and choose <code class="language-plaintext highlighter-rouge">Set Expression</code>.
+6) Under <strong>Bindings</strong>:
+<code class="language-plaintext highlighter-rouge">frame = $frame</code></p>
+
+<p>7) Under <strong>Calculate</strong>
+<code class="language-plaintext highlighter-rouge">return frame%30</code>
+where “30” is just an example as it is the length of the loop, that is, if your loop is within frame number 0 and frame number 30 then set that number in <strong>Calculate</strong> field.</p>
+
+<h2 id="reveal-trim-path-or-sub-path">Reveal (Trim path or sub-path)</h2>
+<p>It is a technique used to animate the “draw a path”, that is, the stroke reveals or gets drawn. It works with open or closed paths but they <strong>must be paths</strong>, it doesn’t work with circle or rectangle objects; in that case, please, convert them to paths with <code class="language-plaintext highlighter-rouge">Path &gt; Object to path</code>.</p>
+
+<p>Select the path in the <strong>Canvas</strong>, <strong>Properties panel</strong> or <strong>Timeline hierarchy</strong>, click with the secondary button to open the contextual menu and select <code class="language-plaintext highlighter-rouge">Path Effects &gt; Sub-Path</code>. Expand it’s parameters and play with them.</p>
+
+<p>A simple reveal stroke animation could be done by animating the <code class="language-plaintext highlighter-rouge">max-length</code> parameter from <code class="language-plaintext highlighter-rouge">0</code> in one frame to <code class="language-plaintext highlighter-rouge">100</code> in the final frame. The interpolated frames will show the reveal.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_sub-path.svg" alt="Playing with offset" /></p>
+
+<h2 id="trim-path-subpath-offset">Trim path (subpath) offset</h2>
+
+<p>Another technique would be to play with the <code class="language-plaintext highlighter-rouge">offset</code> parameter as if, for instance, you set <code class="language-plaintext highlighter-rouge">min-length</code> to <code class="language-plaintext highlighter-rouge">0</code>and <code class="language-plaintext highlighter-rouge">max-length</code> to <code class="language-plaintext highlighter-rouge">10</code> and animate the <code class="language-plaintext highlighter-rouge">offset</code> from <code class="language-plaintext highlighter-rouge">0</code> to <code class="language-plaintext highlighter-rouge">90</code> in the last frame, the result will show a short piece of stroke moving along the path from start to end.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_sub-path_offset.svg" alt="Playing with offset" /></p>
+
+<h2 id="follow-path">Follow path</h2>
+
+<p>When animating the movement (transform) of an object, sometimes it is easier to build a path where you want the object to move along.</p>
+
+<p>So, apart from the object it will be needed to draw a vector path where the object will move along. Select the object and add in <code class="language-plaintext highlighter-rouge">Transform</code> parameters group enable <code class="language-plaintext highlighter-rouge">Transform Effects</code> and choose <code class="language-plaintext highlighter-rouge">Add Follow Path Effect</code>. Now, set the path to follow to the name of the created path and animate the parameter <code class="language-plaintext highlighter-rouge">complete</code> where <code class="language-plaintext highlighter-rouge">0</code> is the start of the  path and <code class="language-plaintext highlighter-rouge">100</code> is the end  of it. Optionally it is possible to set <code class="language-plaintext highlighter-rouge">rotate</code> on so that it automatically rotates following the path direction.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_follow-path.svg" alt="Playing with offset" /></p>
+
+<h2 id="masking">Masking</h2>
+
+<p>It’s a very used technique to fade or control the opacity of an object based on another. This way, the masking object can have any shape and even grey scale gradient to have extra control on the masking.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_mask.svg" alt="Playing with offset" /></p>
+
+<p>If <strong>Friction</strong> it works as follows:</p>
+<ol>
+  <li>The objects, shapes, etc. to be masked are going to lay at the bottom.</li>
+  <li>On top of them all and at the same level, the masking shape. Its color must be pure white.</li>
+  <li>Group them all</li>
+  <li>Now, important, <strong>promote the group into a layer</strong></li>
+  <li>Finally, set the blending mode of the masking object to <code class="language-plaintext highlighter-rouge">DstIn</code> (or `DstOut to mask the opposite)</li>
+</ol>
+
+<p>So the hierarchy would have to look like the following:</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_mask_layers.png" alt="Hierarchy example" /></p>
+
+<p>In the case of masking for an <strong>animated SVG</strong>, it is possible to use shades of grey in the masking object. <strong>White</strong> color will be considered opaque, <strong>black</strong> color will be transparent and shades of grey a transparency ramp.</p>
+
+<h2 id="blend-effects">Blend Effects</h2>
+
+<p>Please, don’t confuse them with “Layer blending modes” as the name could be similar but the feature is totally different: <strong>Friction</strong> includes a smart way of handling <strong>layer stacking</strong> that simplifies the animation of objects that “change” their layer position with time. It is something that could be done with simpler animation techniques but <code class="language-plaintext highlighter-rouge">Blend Effects</code> really simplifies it.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_blend.svg" alt="Blend Effect example" /></p>
+
+<p>Check the following video for more information: 
+<strong><a href="https://www.youtube.com/watch?v=xvDTJrKWmiE&amp;list=PLb3wVIJ8v7fEx7qs_1lVBu2fsnaz31Iof&amp;index=7">Blend modes</a></strong>
+<em>(<strong>NOTE</strong>: it’s an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)</em></p>
+
+<h2 id="expression-based-transformations">Expression based transformations</h2>
+
+<p>This technique allow users to create dynamic animations by using code (scripts) to control object properties. Instead of relying on manual keyframes, the user can use expressions to automate behaviors, connect parameters, and add randomness or complexity. There is a whole section about <strong><a href="expressions.html">Expressions</a></strong>.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_wiggle.svg" alt="Orbit example" /></p>
+
+<h2 id="orbit">Orbit</h2>
+
+<p>With a smart use of <strong><a href="expressions.html">Expressions</a></strong> and Custom Properties, it is possible to archive circular movements with just <code class="language-plaintext highlighter-rouge">x</code> and <code class="language-plaintext highlighter-rouge">y</code> translations. It may be useful in several scenarios.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_orbit.svg" alt="Orbit example" /></p>
+
+<p>Check the following video for more information: 
+<strong><a href="https://www.youtube.com/watch?v=-m-LoWDy8BE">Orbit and custom properties</a></strong>
+<em>(<strong>NOTE</strong>: it’s an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)</em></p>
+
+<h2 id="parenting">Parenting</h2>
+
+<p><strong>Friction</strong> lacks of and advanced rigging system (bones) but there is a <code class="language-plaintext highlighter-rouge">Transform Effect</code> called <code class="language-plaintext highlighter-rouge">Parent Effect</code> that helps in this regard. Additionally, using <strong><a href="expressions.html">Expressions</a></strong> with simple <code class="language-plaintext highlighter-rouge">Clamp</code> functions that limit the movements, makes parenting even more capable.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_parenting.svg" alt="Parenting example" /></p>
+
+<h2 id="tracking">Tracking</h2>
+
+<p>There is a <code class="language-plaintext highlighter-rouge">Transform Effect</code> called <code class="language-plaintext highlighter-rouge">Track Effect</code> that makes an object “look at a target”, that is, if the target object moves along the canvas, the rotation of the object with the <code class="language-plaintext highlighter-rouge">Track effect</code> will animate to follow that target.</p>
+
+<p>In some scenarios the target is no a visible object, in those cases it is a good idea to use a <code class="language-plaintext highlighter-rouge">Null object</code>, they can be created selecting the <code class="language-plaintext highlighter-rouge">Null object tool</code> at the <strong><a href="userinterface.html#tools">Tools panel</a></strong>.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_tracking.svg" alt="Tracking example" /></p>
+
+<h2 id="text-effects">Text effects</h2>
+
+<p>Text can be animated per <code class="language-plaintext highlighter-rouge">character</code>, <code class="language-plaintext highlighter-rouge">word</code> or <code class="language-plaintext highlighter-rouge">line</code> and the effects are endless as it’s possible to combine any <code class="language-plaintext highlighter-rouge">Transform</code> parameter and apply <code class="language-plaintext highlighter-rouge">path</code>, <code class="language-plaintext highlighter-rouge">base path</code>, <code class="language-plaintext highlighter-rouge">fill</code>, <code class="language-plaintext highlighter-rouge">outline base</code>, <code class="language-plaintext highlighter-rouge">outline</code> and/or <code class="language-plaintext highlighter-rouge">raster</code> effects.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_text_effects.gif" alt="Text effects screenshot" /></p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_text_effects.png" alt="Text effects screenshot" /></p>
+
+<p>Check the following video for more information:
+<strong><a href="https://www.youtube.com/watch?v=pOzta1KkXB0">Text effects</a></strong>
+<em>(<strong>NOTE</strong>: it’s an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)</em></p>
+
+<h2 id="flip-book">Flip book</h2>
+
+<p>This feature allows animators to cycle through a sequence of objects, shapes or images within a single object, enabling the creation of frame-by-frame animations. This is particularly useful for animating complex motions or character expressions that require detailed frame transitions.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_flip-book.png" alt="Flip book" /></p>
+
+<p>This feature can only be assigned to a <strong>Group</strong> or <strong>Layer</strong> objects while all its children will act as frames. <strong>Only one frame will be displayed at a time</strong> and an animatable parameter called <code class="language-plaintext highlighter-rouge">index</code> will determinate which frame will be displayed.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_flip-book.svg" alt="Flip book" /></p>
+
+<p>Check the following video for more information:
+<strong><a href="https://www.youtube.com/watch?v=a3etLEh01GE">Flip book</a></strong>
+<em>(<strong>NOTE</strong>: it’s an old video so it will refer to Enve 2D animation software instead of Friction which is an evolution of the first one)</em></p>
+
+<h2 id="morphing">Morphing</h2>
+
+<p>This technique creates the illusion of one shape turning into a new one but the truth is that it transforms all its nodes into a new and final position but it is performed by just one path.</p>
+
+<p><img src="assets/documentation/animation_techniques/anim_techniques_morphing.svg" alt="Morphing example" /></p>
+
+<p>Every keyframe saves the position of all nodes of a shape. They can be transformed over time, the same that happens with almost any other parameter.</p>
+
+<p>The trick here is the smart way of choosing the initial and final position of the group of nodes (and tangents) that conform the whole shape.</p>
+
+<p>This morphing can be done in two ways:</p>
+<ul>
+  <li><strong>start and end keyframes have the same number of nodes</strong>: this is the simplest and easiest way to understand the animation as all the nodes just move from the start to an end position creating the morphing illusion.</li>
+  <li><strong>start and end keyframes have different number of nodes</strong>: in this case, <strong>Friction</strong> (driven by the animator indeed) decides what nodes are going to be “removed” from start to end as the path can’t really animate this removal. But it will use the <code class="language-plaintext highlighter-rouge">dissolve node</code> feature that makes possible to <code class="language-plaintext highlighter-rouge">deactivate</code>and <code class="language-plaintext highlighter-rouge">activate</code> an animated node. More on this topic at <strong><a href="tips.html#dissolve-nodes">Dissolve nodes feature</a></strong>.</li>
+</ul>
+
+<p>Whether using one or the other way of morphing, <strong>Friction</strong> allows to <code class="language-plaintext highlighter-rouge">copy path</code> and <code class="language-plaintext highlighter-rouge">paste path</code> from one path to another (<strong><a href="tips.html#copy-and-paste-paths">explained here</a></strong>). It will automatically detect if the pasted one has the same or different number of nodes and it will animate the interpolation accordingly.
+By the way, it will probably need some post work on the nodes or a previous work with them as every node has an index and the node animation will be performed matching same start node index with same end node index so it will be crucial to know nodes indexes. <strong>Friction</strong> lets users check the index assigned to every node by pressing <code class="language-plaintext highlighter-rouge">ctrl + shift</code> (or <code class="language-plaintext highlighter-rouge">cmd + shift</code> in macOS) in your keyboard as <strong><a href="tips.html#nodes-sequence">explained here</a></strong>.</p>
+
+                
+                
+                
+                
+                <div class="nextPrevContainer">
+                    
+                    <a href="tips.html"><span class="nextPrevButton">Previous</span></a>
+                    
+                    <a href="index.html"><span class="nextPrevButton">Index</span></a>
+                    
+                    <a href="expressions.html"><span class="nextPrevButton">Next</span></a>
+                    
+                    </div>
+            </div>
+        </div>
+        <div id="footer">
+        </div>
+    </body>
+</html>
