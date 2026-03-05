@@ -20,44 +20,52 @@
       <li><a href="#does-friction-support-scripting" id="markdown-toc-does-friction-support-scripting">Does Friction support scripting?</a></li>
       <li><a href="#how-can-i-report-a-bug-or-request-a-feature" id="markdown-toc-how-can-i-report-a-bug-or-request-a-feature">How can I report a bug or request a feature?</a></li>
       <li><a href="#does-friction-support-gpu-acceleration" id="markdown-toc-does-friction-support-gpu-acceleration">Does Friction support GPU acceleration?</a></li>
-      <li><a href="#is-friction-an-after-effects-copyclone" id="markdown-toc-is-friction-an-after-effects-copyclone">Is Friction an After Effects copy/clone?</a></li>
+      <li><a href="#is-friction-an-after-effects-alternative" id="markdown-toc-is-friction-an-after-effects-alternative">Is Friction an After Effects alternative?</a></li>
       <li><a href="#do-the-expression-editor-has-a-valueattime-function" id="markdown-toc-do-the-expression-editor-has-a-valueattime-function">Do the Expression Editor has a valueAtTime() function?</a></li>
       <li><a href="#does-friction-support-lottie-animations" id="markdown-toc-does-friction-support-lottie-animations">Does Friction support Lottie animations?</a></li>
       <li><a href="#is-friction-a-fork-of-enve" id="markdown-toc-is-friction-a-fork-of-enve">Is Friction a fork of enve?</a></li>
+      <li><a href="#why-is-memory-usage-higher-on-apple-silicon-vs-intel" id="markdown-toc-why-is-memory-usage-higher-on-apple-silicon-vs-intel">Why is memory usage higher on Apple Silicon vs. Intel?</a></li>
     </ul>
   </li>
 </ul>
 
 <h3 id="what-is-friction">What is Friction?</h3>
 
-<p><strong>Friction</strong> is an open-source 2D animation and motion graphics software. It is designed for animators and graphic designers who need a powerful and flexible tool for vector and bitmap animation.</p>
+<p>Friction is an open-source 2D animation and motion graphics software. It is designed for animators and graphic designers who need a powerful and flexible tool for vector and bitmap animation.</p>
 
 <h3 id="is-friction-open-source">Is Friction open source?</h3>
 
-<p>Yes, <strong>Friction</strong> is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL version 3</a>.</p>
+<p>Yes, Friction is licensed under the <a href="https://www.gnu.org/licenses/gpl-3.0.en.html">GPL version 3</a> (<code class="language-plaintext highlighter-rouge">GPL-3.0-only</code>).</p>
 
 <h3 id="can-i-use-friction-for-commercial-projects">Can I use Friction for commercial projects?</h3>
 
-<p>Yes, there are no restrictions, you can use <strong>Friction</strong> for anything you want.</p>
+<p>Yes, there are no restrictions, you can use Friction for anything you want.</p>
 
 <h3 id="what-operating-systems-does-friction-support">What operating systems does Friction support?</h3>
 
-<p><strong>Friction</strong> is currently available for <strong>Linux</strong>, <strong>Windows</strong> and experimentally <strong>macOS</strong>.</p>
+<p>Friction is available for Linux, Windows and macOS.</p>
+
+<ul>
+  <li>x86_64 on Linux and Windows</li>
+  <li>x86_64 and ARM64 on macOS</li>
+</ul>
+
+<p><strong>Note</strong>: macOS support is in beta, expect more issues compared to Linux or Windows.</p>
 
 <p>See <a href="/download.html#requirements">download</a> section for updated information.</p>
 
 <h3 id="can-i-contribute-to-frictions-development">Can I contribute to Friction’s development?</h3>
 
-<p>Absolutely! Contributions are welcome in the form of <strong>code, documentation, bug reports, and feature suggestions</strong>. You can check our repositories at:</p>
+<p>Absolutely! Contributions are welcome in the form of code, documentation, bug reports, and feature suggestions. You can check our repositories at:</p>
+
 <ul>
   <li><a href="https://github.com/friction2d/friction">GitHub</a></li>
-  <li><a href="https://gitlab.com/friction-graphics/friction">GitLab</a></li>
   <li><a href="https://codeberg.org/friction/friction">CodeBerg</a></li>
 </ul>
 
 <h3 id="does-friction-support-scripting">Does Friction support scripting?</h3>
 
-<p>Yes, Friction supports scripting through <strong><a href="https://en.wikipedia.org/wiki/ECMAScript">ECMAScript</a></strong>. You can create custom scripts to automate tasks and control animations dynamically.</p>
+<p>Yes, Friction supports scripting through <a href="https://en.wikipedia.org/wiki/ECMAScript">ECMAScript</a>. You can create custom scripts to automate tasks and control animations dynamically.</p>
 
 <h3 id="how-can-i-report-a-bug-or-request-a-feature">How can I report a bug or request a feature?</h3>
 
@@ -65,11 +73,16 @@
 
 <h3 id="does-friction-support-gpu-acceleration">Does Friction support GPU acceleration?</h3>
 
-<p>Yes, <strong>Friction</strong> uses <strong><a href="https://skia.org/">Skia</a></strong> for rendering, which takes advantage of GPU acceleration when available.</p>
+<p>Yes, Friction uses <a href="https://skia.org/">Skia</a> for rendering, which takes advantage of GPU acceleration when available.</p>
 
-<h3 id="is-friction-an-after-effects-copyclone">Is Friction an After Effects copy/clone?</h3>
+<h3 id="is-friction-an-after-effects-alternative">Is Friction an After Effects alternative?</h3>
 
-<p>No, <strong>Friction</strong> has its own targets, focus users and features. You may find that some tools work similar to it but, please, consider <strong>Friction</strong> a whole different animation package.</p>
+<p>Friction is a specialized vector-based animation tool designed for motion graphics. While it shares some conceptual similarities with tools like Adobe After Effects or Adobe Animate, it is built from the ground up with its own unique workflow.</p>
+
+<ul>
+  <li><strong>For Motion Graphics:</strong> Friction offers a streamlined, vector-first approach that may fit your workflow perfectly.</li>
+  <li><strong>For Visual Effects (VFX):</strong> If your work focuses on compositing and VFX, we recommend exploring Natron and/or Blender.</li>
+</ul>
 
 <h3 id="do-the-expression-editor-has-a-valueattime-function">Do the Expression Editor has a valueAtTime() function?</h3>
 
@@ -84,6 +97,12 @@
 <h3 id="is-friction-a-fork-of-enve">Is Friction a fork of enve?</h3>
 
 <p>Yes, <strong>Friction</strong> forked from <a href="https://maurycyliebner.github.io/">enve</a> in February 2023. Most users of enve should be able to move to <strong>Friction</strong>, note that some features have been removed or changed. enve was a starting point for <strong>Friction</strong>, the codebase will change/differ more and more with each release.</p>
+
+<h3 id="why-is-memory-usage-higher-on-apple-silicon-vs-intel">Why is memory usage higher on Apple Silicon vs. Intel?</h3>
+
+<p>On Apple Silicon, macOS uses a Unified Memory Architecture. In this system, the system RAM is shared dynamically between the CPU and the GPU.</p>
+
+<p>The reported memory usage for Friction includes both the application data (RAM) and the graphical resources (VRAM). On Intel Macs these two values are tracked separately.</p>
 
 <hr />
 

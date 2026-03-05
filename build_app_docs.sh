@@ -72,5 +72,6 @@ bundle exec jekyll build
 
 echo "### Auto generated from build_app_docs.sh" > ${BUILD}/_site/README.md
 
+mv ${CWD}/offline ${CWD}/offline.old
 mv ${BUILD}/_site ${CWD}/offline
 
