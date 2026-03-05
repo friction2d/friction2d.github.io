@@ -2,7 +2,7 @@
 title: "Friction 1.0.0"
 layout: post
 lead: "Introducing Friction 1.0.0."
-image: "/assets/screenshots/100/friction-100rc1-screenshot.png"
+image: "/assets/screenshots/100/friction-100-linux-screenshot.png"
 categories: releases
 release: 1.0.0
 windows_setup: "setup-win64.exe"
@@ -15,9 +15,6 @@ download_active: true
 ---
 
 Lorem ipsum.
-
-* table of contents
-{:toc}
 
 ## Changes since 1.0.0 RC 3
 
@@ -35,7 +32,8 @@ Lorem ipsum.
 * Added a setup wizard
   * Will guide you through setting up Friction for optimal usage
   * Introduces "library path", recommended path is HOME/Documents/Friction
-* Official support for Flatpak on Linux
+* Support for Flatpak on Linux
+  * Introduces experimental aarch64 support
 * Offline documentation
 * Refactored SVG clipboard (paste) support
   * Now supports paste from Inkscape on macOS
