@@ -50,12 +50,16 @@ nav:
   - title: News
     url: /news/
     ext: false
+    icon: assets/rss.svg
   - title: Download
     url: /download.html
+    ext: false
+    icon: assets/downloads/download.svg
   - title: Documentation
     url: /documentation/
     ext: false
-    ext: false
+    icon: assets/icons/book.svg
   - title: Community
     url: /community.html
     ext: false
+    icon: assets/icons/users.svg

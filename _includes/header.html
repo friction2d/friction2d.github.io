@@ -6,7 +6,7 @@
             <div class='menu-button'></div>
         </label>
         <ul class="menu">
-            {% for item in site.nav %}<li><a href="{{ item.url }}" {% if item.ext %}target="_blank"{% endif %}>{{ item.title }}</a></li>{% endfor %}
+            {% for item in site.nav %}<li><a href="{{ item.url }}" {% if item.ext %}target="_blank"{% endif %}><img class="menuIcon" src="{{ site.url }}/{{ item.icon }}"><span>{{ item.title }}</span></a></li>{% endfor %}
         </ul>
     </div>
 </div>
