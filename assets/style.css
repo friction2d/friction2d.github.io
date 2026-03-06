@@ -239,6 +239,11 @@ img.distro {
         margin-bottom: 1em;
         flex-basis: 45%;
     }
+    div.block33 { flex-basis: 33%; }
+}
+
+@media (min-width: 700px) and (max-width: 868px) {
+    div.block33 { flex-basis: 40%; }
 }
 
 #markdown-toc::before {
@@ -747,3 +752,11 @@ img.doc {
     height: 24px;
     margin: .5em;
 }
+
+.img100 {
+    height: 100px;
+    width: auto !important;
+}
+
+a.nodecor, a.nodecor:visited { text-decoration: none; }
+a.nodecor:hover { text-decoration: underline; }

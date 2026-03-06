@@ -1,21 +1,10 @@
 ---
-title: "Community"
-layout: default
+title: "Join our community!"
+layout: community
 permalink: community.html
 ---
 
-# Join our community!
-
-## Official channels
-
-* [Mastodon](https://floss.social/@friction)
-* [Bluesky](https://bsky.app/profile/friction.graphics)
-* [X/Twitter](https://x.com/FrictionGFX)
-* [GitHub Discussions](https://github.com/orgs/friction2d/discussions)
-* [GitHub Issue Tracker](https://github.com/friction2d/friction/issues)
-* [Codeberg Issue Tracker](https://codeberg.org/friction/friction/issues)
-
-## Community maintained
+## Other community maintained
 
 * [Reddit](https://www.reddit.com/r/frictiongraphics)
 * [Discord](https://discord.gg/FkjnM2r2JD)

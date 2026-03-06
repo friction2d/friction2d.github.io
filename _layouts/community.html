@@ -1,0 +1,21 @@
+{% include assign.html %}
+<!DOCTYPE html>
+<html lang="{{ site.lang | default: "en-US" }}">
+    {% include head.html %}
+    <body>
+        <div id="headerDefault">
+            {% include header.html %}
+        </div>
+        <div id="content">
+            <div id="contentInner">
+                <h1>{{ page.title }}</h1>
+                {% include community.html %}
+                <style>.block { background-color: transparent !important; }</style>
+                {{ content }}
+            </div>
+        </div>
+        <div id="footer">
+            {% include footer.html %}
+        </div>
+    </body>
+</html>
