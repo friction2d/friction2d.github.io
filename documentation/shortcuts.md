@@ -75,6 +75,19 @@ Shortcuts for objects are valid on active timeline and viewer.
 | Invert Selection | `Alt` + `A`
 | Pivot local/global | `P`
 
+## Paths
+
+| Action | Shortcut |
+| ------ | -------- |
+| Object to Path | `Shift` + `Ctrl` + `C`
+| Stroke to Path | `Ctrl` + `Alt` + `C`
+| Union | `Ctrl` + `+`
+| Difference | `Ctrl` + `-`
+| Intersection | `Ctrl` + `*`
+| Exclusion | `Ctrl` + `^`
+| Combine | `Ctrl` + `K`
+| Break Apart | `Ctrl` + `Shift` + `K`
+
 ## Timeline
 
 Shortcuts are valid on active timeline.
@@ -95,7 +108,8 @@ Shortcuts are valid on active timeline.
 | Frame In | `I`
 | Frame Out | `O`
 | Add Marker | `M`
-| Add Key(s) | `Insert`
+| Add Key(s) | `Alt` + `K`
+| Split Clip | `K`
 
 ## Viewer/Canvas
 
