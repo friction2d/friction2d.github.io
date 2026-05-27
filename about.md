@@ -18,10 +18,12 @@ You should have received a copy of the GNU General Public License along with thi
 - Pablo Gil 
 - Sanjay 
 - vestineo 
+- Early Ehlinger 
 - irwanto 
 - Luz Paz 
 - Adam Belis 
 - Nic Kraneis 
+- formicant 
 - axiomgraph 
 - Jonathan (Nuxttux Creative)
 - tonton (samytichadou)
