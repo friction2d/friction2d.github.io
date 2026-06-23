@@ -1,0 +1,69 @@
+---
+title: "Friction 1.0.0-rc.4"
+layout: post
+lead: "Introducing the fourth release candidate for Friction 1.0.0."
+image: "/assets/screenshots/100/friction-100-linux-screenshot.png"
+categories: releases
+release: 1.0.0-rc.4
+download_active: true
+---
+
+Introducing Friction 1.0.0-rc4. This release focuses heavily on squashing bugs and refining the core architecture. Given the long gap between releases and the extensive list of improvements, we decided a fourth release candidate was necessary to guarantee a stable final release.
+
+## Changes since 1.0.0 RC 3
+
+### New Features & Enhancements
+
+* Setup Wizard (Quick Setup): Added a setup wizard that will guide you through setting up Friction on first run.
+* Rendering & Export:
+  * Added EXR as a render option and profile preset.
+  * Added WebM render profile preset.
+  * Export to image sequence now features a new, dedicated dialog.
+* SVG Import Improvements:
+  * Refactored SVG gradient support (fixed gradient points and alpha on import).
+  * Refactored text support on SVG import.
+  * Refactored SVG clipboard (paste) support, now supporting paste from Inkscape on macOS.
+* New Expressions Presets: Added "Frame Remap Loop" and "Frame Remap Loop (bounce)".
+* Experimental GLES3: Initial support for OpenGL ES 3.0. This is an experimental feature needed for Flatpak aarch64 and future Android support (will disable external shaders).
+
+Note for existing users: To access the new WebM, EXR, and Expression presets, please use the 'Install Presets' option in the Help menu, or use the new Quick Setup.
+
+### UI & UX Improvements
+
+* Branding: New logo (and splash screen on Windows).
+* Menus & Icons:
+  * Added persistent menu to gizmos/snap/grid buttons.
+  * Added persistent menu to 'View'.
+  * Added layer/box type icon on timeline/properties.
+* Workflow & Canvas:
+  * Support for step rotation via keyboard modifiers (Ctrl = 1 step default, Shift = 15 steps default. Configurable in grid settings).
+  * Converting object to path now removes the original object and adds the suffix "Path" to the new object.
+* Keyboard Shortcuts:
+  * Add Key(s): Alt+K
+  * Object to Path: Shift+Ctrl+C
+  * Stroke to Path: Ctrl+Alt+C
+* Added support for HiDPI rounding in the UI to fix visual artifacts on some font-scaled configurations (Uncheck "HiDPI PassThrough" in settings/wizard to enable).
+* Various small UI/UX tweaks.
+
+### Bug Fixes & Stability
+
+* Core & Animation:
+  * Added fallback behaviors and safety checks to prevent crashes when handling corrupted or incompatible node data.
+  * Fixed regression in color animator button (would not update color if changed).
+  * Fixed a crash if a linked item didn't have a color animator.
+  * Fixed parent effect (Note: Changes to this effect may introduce different output in older projects).
+* Scenes:
+  * Fixed crash when deleting a scene linked in another scene.
+  * Fixed a crash when unselecting (set none) a linked scene target.
+  * Bug fix in renderer for multiple scenes.
+* Rendering & Encoding:
+  * Fixed alpha in WebM video export.
+  * Fixed crash and/or corrupt image in video/image encoder.
+  * Fixed a crash in video/image encoder if image dest is unpremultiply on Windows.
+  * Fixed preview/render cache issues on macOS.
+  * Fixed renderer UI settings bug when using "unsupported" formats/codecs.
+  * Bug fix in output settings widget where available codecs would not refresh.
+  * UI/UX (bug) fixes to the render instance widget.
+* SVG: Bug fixes in SVG Optimizer.
+* Sandboxing: File I/O has been refactored to support sandboxing, ensuring complete support for Flatpak/Portal on Linux.
+* Upgraded to Qt 5.15.19
