@@ -239,6 +239,7 @@ img.distro {
         margin-bottom: 1em;
         flex-basis: 45%;
     }
+    div.block25 { flex-basis: 25%; }
     div.block33 { flex-basis: 33%; }
 }
 
@@ -448,10 +449,10 @@ ul.platform { list-style-type: none; }
     background-color: rgba(33, 33, 38, 0.8) !important;
 }
 
-.blurry {
+/*.blurry {
     -webkit-backdrop-filter: blur(5px);
     backdrop-filter: blur(5px);
-}
+}*/
 
 .noDeco,
 .noDeco a { text-decoration: none; }

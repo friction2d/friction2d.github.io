@@ -46,8 +46,8 @@ download_devel: true
 ## Supported systems
 
 * Microsoft Windows (N) 10/11 (x64)
-* macOS 11/12/13/14/15 universal
-* Red Hat Enterprise Linux 7/8/9/10 (x86_64) and compatible
+* macOS 11-15 universal
+* Red Hat Enterprise Linux 7-10 (x86_64) and compatible
 * Ubuntu Desktop LTS 14.04-26.04 (x86_64) and compatible
 
 ### Notes:
@@ -61,6 +61,5 @@ download_devel: true
 ## Known issues
 
 * **Unsigned Binaries:** The binaries are not signed with a digital certificate, which may cause security warnings or require additional steps to run the application for the first time on macOS and Windows.
-* **macOS Cache Issues:** Changes to animated items may not display or redraw correctly on macOS due to caching problems. To fix this, you can either clear the cache by pressing `Cmd`+`r` or disable the preview cache from the view menu.
 
 See more issues on [GitHub](https://github.com/friction2d/friction/issues).

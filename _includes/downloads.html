@@ -1,8 +1,7 @@
 <div class="blocks">
-    <div class="block center darkAlpha blurry">
+    <div class="block block25 center darkAlpha blurry">
         <img height="100px" src="{{ site.url }}/assets/downloads/windows.svg" />
         <h2>Windows</h2>
-        <p">Windows (N) 10/11 x64.</p>
         <p>
             <a href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ site.github_release_suffix_windows_setup }}" class="btn-download">
                 <img src="{{ site.url }}/assets/downloads/download.svg" alt="Download">
@@ -22,23 +21,13 @@
             {% endif %}
         </p>
     </div>
-    <div class="block center darkAlpha blurry">
+    <div class="block block25 center darkAlpha blurry">
         <img height="100px" src="{{ site.url }}/assets/downloads/linux.svg" />
         <h2>Linux</h2>
-        <p>x86_64, X11/Wayland, glibc 2.17+.</p>
         <p>
             <a href="{{ site.github_download_url }}v{{ page.release }}/Friction-{{ page.release }}-{{ site.github_release_suffix_linux_appimage }}" class="btn-download">
                 <img src="{{ site.url }}/assets/downloads/download.svg" alt="Download">
                 <span>Download</span>
-            </a>
-            <br>
-            <a href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}-{{ site.github_release_suffix_linux_portable }}" class="btn-download-small">
-                <img src="{{ site.url }}/assets/downloads/box.svg" alt="Download">
-                <span>Portable Tarball</span>
-            </a>
-            <a href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release | replace: '-', '.' }}-{{ site.github_release_suffix_linux_rpm }}" class="btn-download-small">
-                <img src="{{ site.url }}/assets/downloads/redhat.svg" alt="Download">
-                <span>RPM Package</span>
             </a>
             {% if page.download_devel %}
             <br>
@@ -49,10 +38,9 @@
             {% endif %}
         </p>
     </div>
-    <div class="block center darkAlpha blurry">
+    <div class="block block25 center darkAlpha blurry">
         <img height="100px" src="{{ site.url }}/assets/downloads/apple.svg" />
         <h2>macOS</h2>
-        <p>Any Mac compatible with Big Sur (11) or later.</p>
         <p>
             <a href="{{ site.github_download_url }}v{{ page.release }}/Friction-{{ page.release }}{{ site.github_release_suffix_mac_uni_dmg }}" class="btn-download">
                 <img src="{{ site.url }}/assets/downloads/download.svg" alt="Download">
@@ -67,15 +55,14 @@
             {% endif %}
         </p>
     </div>
-    <div class="block center darkAlpha blurry">
+    <!-- <div class="block block25 center darkAlpha blurry">
         <img height="100px" src="{{ site.url }}/assets/downloads/code.svg" />
-        <h2>Source</h2>
-        <p>Complete GPL-3.0 source code.</p>
+        <h2>Source Code</h2>
         <p>
             <a href="{{ site.github_download_url }}v{{ page.release }}/friction-{{ page.release }}.tar.xz" class="btn-download">
                 <img src="{{ site.url }}/assets/downloads/download.svg" alt="Download">
                 <span>Download</span>
             </a>
         </p>
-    </div>
+    </div> -->
 </div>
