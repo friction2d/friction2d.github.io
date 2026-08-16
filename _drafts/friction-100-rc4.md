@@ -71,5 +71,3 @@ Note for existing users: To access the new presets, please use the 'Install Pres
 * Sandboxing: File I/O has been refactored to support sandboxing, ensuring complete support for Flatpak/Portal on Linux.
 * Upgraded to Qt 5.15.19
 * GLX support has been removed on Linux, EGL is now mandatory
-  * This is needed to support both X11 and Wayland at the same time
-
