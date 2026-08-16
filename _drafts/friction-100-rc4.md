@@ -8,7 +8,7 @@ release: 1.0.0-rc.4
 download_active: true
 ---
 
-Introducing Friction 1.0.0-rc4. This release focuses heavily on squashing bugs and refining the core architecture. Given the long gap between releases and the extensive list of improvements, we decided a fourth release candidate was necessary to guarantee a stable final release.
+This release focuses heavily on squashing bugs and refining the core architecture. Given the long gap between releases and the extensive list of improvements, we decided a fourth release candidate was necessary.
 
 ## Changes since 1.0.0 RC 3
 
@@ -16,7 +16,6 @@ Introducing Friction 1.0.0-rc4. This release focuses heavily on squashing bugs a
 
 * Setup Wizard (Quick Setup): Added a setup wizard that will guide you through setting up Friction on first run.
 * Rendering & Export:
-  * Added EXR as a render option and profile preset.
   * Added WebM render profile preset.
   * Export to image sequence now features a new, dedicated dialog.
 * SVG Import Improvements:
@@ -25,11 +24,13 @@ Introducing Friction 1.0.0-rc4. This release focuses heavily on squashing bugs a
   * Refactored SVG clipboard (paste) support, now supporting paste from Inkscape on macOS.
 * New Expressions Presets: Added "Frame Remap Loop" and "Frame Remap Loop (bounce)".
 * Experimental GLES3: Initial support for OpenGL ES 3.0. This is an experimental feature needed for Flatpak aarch64 and future Android support (will disable external shaders).
+  * This feature must be built from source and is not available in any binary release
 
-Note for existing users: To access the new WebM, EXR, and Expression presets, please use the 'Install Presets' option in the Help menu, or use the new Quick Setup.
+Note for existing users: To access the new presets, please use the 'Install Presets' option in the Help menu, or use the new Quick Setup.
 
 ### UI & UX Improvements
 
+* Refactored the Duplicate function.
 * Branding: New logo (and splash screen on Windows).
 * Menus & Icons:
   * Added persistent menu to gizmos/snap/grid buttons.
@@ -42,16 +43,18 @@ Note for existing users: To access the new WebM, EXR, and Expression presets, pl
   * Add Key(s): Alt+K
   * Object to Path: Shift+Ctrl+C
   * Stroke to Path: Ctrl+Alt+C
-* Added support for HiDPI rounding in the UI to fix visual artifacts on some font-scaled configurations (Uncheck "HiDPI PassThrough" in settings/wizard to enable).
+* Added support for HiDPI rounding in the UI to fix visual artifacts on some font-scaled configurations (Uncheck "HiDPI PassThrough" in settings to enable).
 * Various small UI/UX tweaks.
+* Fixed some UI issues on macOS.
 
 ### Bug Fixes & Stability
 
 * Core & Animation:
+  * Fixed issues with rotation when using the flip function
   * Added fallback behaviors and safety checks to prevent crashes when handling corrupted or incompatible node data.
   * Fixed regression in color animator button (would not update color if changed).
   * Fixed a crash if a linked item didn't have a color animator.
-  * Fixed parent effect (Note: Changes to this effect may introduce different output in older projects).
+  * Fixed parent effect (**Note:** Changes to this effect **will** introduce different output in older projects).
 * Scenes:
   * Fixed crash when deleting a scene linked in another scene.
   * Fixed a crash when unselecting (set none) a linked scene target.
@@ -67,3 +70,6 @@ Note for existing users: To access the new WebM, EXR, and Expression presets, pl
 * SVG: Bug fixes in SVG Optimizer.
 * Sandboxing: File I/O has been refactored to support sandboxing, ensuring complete support for Flatpak/Portal on Linux.
 * Upgraded to Qt 5.15.19
+* GLX support has been removed on Linux, EGL is now mandatory
+  * This is needed to support both X11 and Wayland at the same time
+
