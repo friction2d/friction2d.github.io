@@ -60,6 +60,7 @@ Note for existing users: To access the new presets, please use the 'Install Pres
   * Fixed a crash when unselecting (set none) a linked scene target.
   * Bug fix in renderer for multiple scenes.
 * Rendering & Encoding:
+  * Fixed crash in box render data.
   * Fixed alpha in WebM video export.
   * Fixed crash and/or corrupt image in video/image encoder.
   * Fixed a crash in video/image encoder if image dest is unpremultiply.
@@ -70,6 +71,13 @@ Note for existing users: To access the new presets, please use the 'Install Pres
 * SVG: Bug fixes in SVG Optimizer.
 * Sandboxing: File I/O has been refactored to support sandboxing, ensuring complete support for Flatpak/Portal on Linux.
 * Upgraded to Qt 5.15.19.
-* EGL is now default on Linux (GLX is deprecated). This enables us to support both X11 and Wayland with the same binary.
-  * Note that NVIDIA on X11 does not work with EGL (black screen), we will provide custom binaries for systems that still need GLX. We know this will be a inconvenience, but we can't let broken drivers stop progress.
-* Fixed a crash in Noise Fade effect when running on CPU.
+* EGL is now default on Linux (GLX is deprecated). This enables us to support both X11 and Wayland.
+  * Note that NVIDIA on X11 does not work with EGL (black screen), we provide custom binaries for systems that still need GLX. We know this might be a inconvenience, but we can't let broken drivers stop progress.
+* Raster Effects:
+  * Fixes for shader effects.
+  * Fixed crash in Noise Fade (CPU/GPU).
+  * Fixed crash in Wipe (CPU/GPU).
+  * Fixed crash in Colorize (CPU).
+  * Fixed crash in BrightnessContrast (CPU).
+  * Fixed crash in Blur (CPU).
+  * Fixed crash in Shadow (CPU).
