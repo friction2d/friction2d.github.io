@@ -46,6 +46,8 @@ Note for existing users: To access the new presets, please use the 'Install Pres
 * Added support for HiDPI rounding in the UI to fix visual artifacts on some font-scaled configurations (Uncheck "HiDPI PassThrough" in settings to enable).
 * Various small UI/UX tweaks.
 * Fixed some UI issues on macOS.
+* Improved scene width/height input in canvas toolbar.
+* UI (HiDPI) fixes for input slider.
 
 ### Bug Fixes & Stability
 
@@ -72,7 +74,7 @@ Note for existing users: To access the new presets, please use the 'Install Pres
 * Sandboxing: File I/O has been refactored to support sandboxing, ensuring complete support for Flatpak/Portal on Linux.
 * Upgraded to Qt 5.15.19.
 * EGL is now default on Linux (GLX is deprecated). This enables us to support both X11 and Wayland.
-  * Note that NVIDIA on X11 does not work with EGL (black screen), we provide custom binaries for systems that still need GLX. We know this might be a inconvenience, but we can't let broken drivers stop progress.
+  * Note that NVIDIA on X11 has issues with EGL (black screen), we provide custom binaries for systems that still need GLX.
 * Raster Effects:
   * Fixes for shader effects.
   * Fixed crash in Noise Fade (CPU/GPU).
@@ -81,3 +83,4 @@ Note for existing users: To access the new presets, please use the 'Install Pres
   * Fixed crash in BrightnessContrast (CPU).
   * Fixed crash in Blur (CPU).
   * Fixed crash in Shadow (CPU).
+* Video: Framerate fixes.
