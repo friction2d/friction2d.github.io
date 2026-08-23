@@ -56,7 +56,8 @@ Note for existing users: To access the new presets, please use the 'Install Pres
   * Added fallback behaviors and safety checks to prevent crashes when handling corrupted or incompatible node data.
   * Fixed regression in color animator button (would not update color if changed).
   * Fixed a crash if a linked item didn't have a color animator.
-  * Fixed parent effect (**Note:** Changes to this effect **will** introduce different output in older projects).
+  * Fixed parent effect
+    * **WARNING**: This **will** introduce different output in older projects.
 * Scenes:
   * Fixed crash when deleting a scene linked in another scene.
   * Fixed a crash when unselecting (set none) a linked scene target.
@@ -84,3 +85,4 @@ Note for existing users: To access the new presets, please use the 'Install Pres
   * Fixed crash in Blur (CPU).
   * Fixed crash in Shadow (CPU).
 * Video: Framerate fixes.
+  * **WARNING**: This fixes wrong framerate for video clips, this might break old projects with video clips with different FPS than project.
