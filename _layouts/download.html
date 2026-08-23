@@ -17,6 +17,9 @@
                 <h2>Friction v{{ page.release }}</h2>
                 <p>Please read the <a href="{{ site.url }}/releases/friction-{{ page.release | remove: '.' }}.html">release notes</a> before usage.</p>
                 {% include downloads.html %}
+                <h2>Development snapshot</h2>
+                <p>Latest snapshot directly from the main development branch.</p>
+                {% include downloads-devel.html %}
                 <style>.block { background-color: transparent !important; }</style>
                 {{ content }}
         </div>
