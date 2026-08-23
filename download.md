@@ -54,7 +54,8 @@ download_devel: true
 
 * Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed on Windows 10
 * macOS binaries support both Apple Silicon and Intel (universal)
-* Linux binaries support both X11 and native Wayland
+* Linux binaries support both X11 and native Wayland (using EGL)
+  * GLX "legacy" binary available for systems (NVIDIA) that does not support EGL
 * Linux binaries are VFX Platform CY2021+ compatible
 * The Nouveau graphics driver is not supported on Linux, use official drivers from NVIDIA
 
