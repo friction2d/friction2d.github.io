@@ -46,7 +46,7 @@ download_devel: true
 ## Supported systems
 
 * Microsoft Windows (N) 10/11 (x64)
-* macOS 11-15 universal
+* macOS 11-26 universal
 * Red Hat Enterprise Linux 7-10 (x86_64) and compatible
 * Ubuntu Desktop LTS 14.04-26.04 (x86_64) and compatible
 
