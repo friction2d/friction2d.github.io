@@ -14,9 +14,9 @@ order: 2
 
 After learning how the [User Interface](userinterface.html) works, it is time to create a project, create or add some assets and start animating them.
 
-It is important to understand that **Friction is not a vector or raster drawing software but an animation one**.
+It is important to understand that **Friction is not a vector or raster drawing software, but an animation one**.
 
-Sure it can create some basic vector based shapes such as rectangles, squares, ellipses, circles, shapes based on nodes and Bezier curves, hand drawn curves or even it's possible to import bitmap images (raster) but there are lot of drawing tools that a regular designer would miss inside Friction if he insists on looking for them. Being that said, it is highly suggested to design the assets out of Friction and then import or link them into the software.
+Sure it can create some basic vector based shapes such as rectangles, squares, ellipses, circles, shapes based on nodes and Bezier curves, hand drawn curves or even import bitmap images (raster) but there are lot of drawing tools that a regular designer would miss inside Friction if they insist on looking for them. That being said, it is highly suggested to design assets outside of Friction and then import or link them into the software.
 
 Some suggested tools for designing assets could be the following:
 
@@ -48,7 +48,7 @@ An unique Friction project is capable to have any number of scenes but the first
 
 It is possible to set the parameters that define a scene (them all could be modified later):
 - dimensions of the canvas: **Width** and **Height** expressed in pixels
-- **Duration** of the scene: setting the first frame (usually 0) and the last one expressed in `frames` or `seconds`. Take into account that Friction internally works if `frames` so if the user selects `seconds` it will use the following parameter, FPS, to make the conversion into `frames`.
+- **Duration** of the scene: setting the first frame (usually 0) and the last one expressed in `frames` or `seconds`. Take into account that Friction internally works in `frames` so if the user selects `seconds` it will use the following parameter, FPS, to make the conversion into `frames`.
 - **FPS** (Frames Per Second): number of frames per second.
 - **Background**: a RGB color that defines the background scene color. Note that it allows setting a "transparent" color by setting the `Alpha color`to 0.
 
@@ -92,7 +92,7 @@ Now, go to the **[Fill and Stroke panel](userinterface.html#fill-and-stroke)** a
 
 ## Importing and linking
 
-As commented previously, Friction is not a vector graphics design software but an animation one so is highly suggested that assets are created externally.
+As commented previously, Friction is not a vector graphics design software, so it is highly suggested that assets are created externally.
 
 There are two ways of importing assets:
 
@@ -113,24 +113,24 @@ Assets can be added by "drag & drop" from any file explorer to Friction canvas a
 
 ### Keyframes
 
-Any object, shape or in general, any parameter of them could be animated using the [keyframes technique](https://en.wikipedia.org/wiki/Key_frame). There is no need to animate each frame but the important positions or values they will take over time, **frames in the middle will be interpolated automatically**.
+Any object, shape, or parameter of them could be animated using the [keyframes technique](https://en.wikipedia.org/wiki/Key_frame). There is no need to animate each frame, only the important positions or values they will take over time. **Frames in the middle will be interpolated automatically**.
 
 For instance, select a shape, object, image, etc. already in the canvas, expand it properties to see `Object > Transform > Translate > x`. If the value is changed the position of all the frames of the scene will be updated unless the "animate value" button is activated:
 
 ![Animate value button](/assets/documentation/usage/usage_animate_value.png)
 
-Once pressed the "dot icon" will turn from white to red color which means that value is animated. An alternative way of activating it is by selecting the parameter, opening the contextual menu with the secondary mouse button and selection the `Add Key(s)` option.
+Once pressed the "dot icon" will turn from white to red color which means that value is animated. An alternative way of activating it is by selecting the parameter, opening the contextual menu with the secondary mouse button and selecting the `Add Key(s)` option.
 At the same moment the animation is activated, a keyframe icon (circle) will appear at the timeline right at the frame the `time line` is placed.
 
-Following the example, if a keyframe for `Object > Transform > Translate > x` parameter is created at, for instance "frame 0", then move the time line to another frame, for instance "frame 30", and there change the value of the parameter, it can be done in different ways:
+Following the example, if a keyframe for `Object > Transform > Translate > x` parameter is created at, for instance "frame 0", the user can move the time line to another frame, for instance "frame 30", and change the value of the parameter. This can be done in different ways:
 - changing the parameter value with the numerical field
 - moving the object to a different place in the canvas, that is, a place in the canvas with different `x` value.
 - if the time line is in a frame with no keyframe but the user wants to add a keyframe with the same value that is taking in that exact frame, open the contextual menu with the secondary mouse button and selection the `Add Key(s)` option
-- finally, the user can use the `Insert` keyboard button
+Finally, the user can use the `Insert` keyboard button
 
 Individual keyframes can be removed by pressing `Delete` or using the contextual menu.
 
-If the  user wants to completely delete all the keyframes of the parameter, just press the red icon again and it will turn back to white meaning the parameter is no longer animated and it will take a single value along time. Note that the value it will "choose" to have will be the one taking and the frame where the time line is placed at the time the red button is pressed.
+If the user wants to completely delete all the keyframes of the parameter, just press the red icon again and it will turn back to white meaning the parameter is no longer animated and it will take a single value along time. Note that the value it will "choose" to have will be the one taking and the frame where the time line is placed at the time the red button is pressed.
 
 ### Timeline
 
@@ -180,7 +180,7 @@ There are some ways to preview the scene animation within Friction:
 
 ## Saving the project
 
-At any time, **Friction** lets users save the project into a file with `.friction` extension. Everything but linked assets will be saved inside the document. The file is binary so it can not be read with text editors but this may change in the future as there are plans to move into a text based project file.
+At any time, **Friction** lets users save the project into a file with `.friction` extension. Everything but linked assets will be saved inside the document. The file is binary so it can not be read with text editors, but this may change in the future as there are plans to move into a text based project file.
 
 ## Export
 
@@ -211,13 +211,13 @@ In order to config the export, users should open the [Queue panel](userinterface
 
 ![Export Queue panel](/assets/documentation/export/export_video-dialog.png)
 
-For more information about all exporting options there is a whole section about **[Export options](export.html#video--audio)**.
+For more information about all exporting options, see the section about **[Export options](export.html#video--audio)**.
 
 ## Advanced
 
 ### Effects and shaders
 
-Using the previously commented features will let animators create pretty rich and complex animations but with the following features the animation process can be simplified in some cases and/or it will be possible to create new animations that could not be done with "traditional" animation. As considered as medium to advanced features, they are hidden by default, the way to show them all or one by one is by opening the contextual menu with the secondary mouse button and activating the needed ones. Once activated, new sections will appear in the object hierarchy, and listed in the natural place:
+The previously commented features will let animators create rich and complex animations, but with the following features the animation process can be simplified in some cases and/or it will be possible to create new animations that could not be done with "traditional" animation. As considered as medium to advanced features, they are hidden by default, the way to show them all or one by one is by opening the contextual menu with the secondary mouse button and activating the needed ones. Once activated, new sections will appear in the object hierarchy, and listed in the natural place:
 
 ![Effects hierarchy](/assets/documentation/usage/usage_effects.png)
 
@@ -264,9 +264,9 @@ This feature lets users create and save different `Canvas` and/or `Timeline`divi
 
 ## Learning resources
 
-This is an always growing chapter and over time new resources could be included.
+This is an always-growing chapter, and over time new resources could be included.
 
-It is interesting know that **Friction** is a fork of **Enve** so if you don't find a tutorial or video explaining a feature, you might find it if you do an Internet search with the `Enve` keyword on it.
+It is good to note that **Friction** is a fork of **Enve** so if you don't find a tutorial or video explaining a feature, you might find it if you do an Internet search with the `Enve` keyword on it.
 
 ### Tutorials
 - **[Enve manual](https://theflydesign.es/manual-enve-2d-animation-english/)**
