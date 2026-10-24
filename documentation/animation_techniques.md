@@ -98,7 +98,7 @@ Check the following video for more information:
 
 ## Parenting
 
-**Friction** lacks of and advanced rigging system (bones) but there is a `Transform Effect` called `Parent Effect` that helps in this regard. Additionally, using **[Expressions](expressions.html)** with simple `Clamp` functions that limit the movements, makes parenting even more capable.
+**Friction** lacks an advanced rigging system (bones), but there is a `Transform Effect` called `Parent Effect` that helps in this regard. Additionally, using **[Expressions](expressions.html)** with simple `Clamp` functions that limit the movements makes parenting even more capable.
 
 ![Parenting example](/assets/documentation/animation_techniques/anim_techniques_parenting.svg)
 
