@@ -47,6 +47,8 @@ Another technique would be to play with the `offset` parameter as if, for instan
 
 When animating the movement (transform) of an object, sometimes it is easier to build a path where you want the object to move along.
 
+![Follow path](/assets/documentation/animation_techniques/followpath.gif)
+
 So, apart from the object it will be needed to draw a vector path where the object will move along. Select the object and add in `Transform` parameters group enable `Transform Effects` and choose `Add Follow Path Effect`. Now, set the path to follow to the name of the created path and animate the parameter `complete` where `0` is the start of the  path and `100` is the end  of it. Optionally it is possible to set `rotate` on so that it automatically rotates following the path direction.
 
 ![Playing with offset](/assets/documentation/animation_techniques/anim_techniques_follow-path.svg)
