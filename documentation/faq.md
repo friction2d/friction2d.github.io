@@ -31,8 +31,6 @@ Friction is available for Linux, Windows and macOS.
 * x86_64 on Linux and Windows
 * x86_64 and ARM64 on macOS
 
-**Note**: macOS support is in beta, expect more issues compared to Linux or Windows.
-
 See [download](/download.html#requirements) section for updated information.
 
 ## Can I contribute to Friction's development?
@@ -52,7 +50,7 @@ You can report bugs or request new features on the [GitHub Issues page](https://
 
 ## Does Friction support GPU acceleration?
 
-Yes, Friction uses [Skia](https://skia.org/) for rendering, which takes advantage of GPU acceleration when available.
+Yes, Friction uses [Skia](https://skia.org/) and OpenGL for rendering, which takes advantage of GPU acceleration when available.
 
 ## Is Friction an After Effects alternative?
 
@@ -69,7 +67,7 @@ At the moment Friction has not option to retrieve information from another frame
 
 No, while Lottie has its great advantages, **Friction** uses SVG animations with [**SMIL**](https://www.w3.org/TR/REC-smil/) *(Synchronized Multimedia Integration Language)* supported by the W3 Consortium.
 
-Currently we have no plans to support Lottie, we only support/promote web standards.
+Currently we have no plans to support Lottie, we only support/promote web standards. A plugin is under development.
 
 ## Is Friction a fork of enve?
 
