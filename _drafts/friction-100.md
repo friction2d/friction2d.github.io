@@ -1,19 +1,20 @@
 ---
-title: "Friction 1.0.0-rc.4"
+title: "Friction 1.0.0"
 layout: post
-lead: "Introducing the fourth release candidate for Friction 1.0.0."
+lead: "Introducing Friction 1.0.0."
 image: "/assets/screenshots/100/friction-100-linux-screenshot.png"
 categories: releases
-release: 1.0.0-rc.4
+release: 1.0.0
 download_active: true
 ---
 
-This release focuses heavily on squashing bugs and refining the core architecture. Given the long gap between releases and the extensive list of changes, we decided a fourth release candidate was necessary.
+This release focuses heavily on squashing bugs and refining the core architecture.
 
 ## Changes since 1.0.0 RC 3
 
 ### New Features & Enhancements
 
+* New Color Wheel and Map (refactored the color settings widget)
 * Setup Wizard (Quick Setup): Added a setup wizard that will guide you through setting up Friction on first run.
 * Rendering & Export:
   * Added WebM render profile preset.
@@ -48,15 +49,20 @@ Note for existing users: To access the new presets, please use the 'Install Pres
 * Fixed some UI issues on macOS.
 * Improved scene width/height input in canvas toolbar.
 * UI (HiDPI) fixes for input slider.
+* Fixed compatibility issues with macOS 26+.
 
 ### Bug Fixes & Stability
 
 * Core & Animation:
+  * Fixed crash on macOS if drag but not drop.
+  * Fixed crash on import file (if file not exist).
+  * Fixed lagging audio on some setups.
   * Fixed issues with rotation when using the flip function.
   * Added fallback behaviors and safety checks to prevent crashes when handling corrupted or incompatible node data.
   * Fixed regression in color animator button (would not update color if changed).
   * Fixed a crash if a linked item didn't have a color animator.
-  * Fixed parent effect
+  * Fixed issues in follow path effect.
+  * Fixed issues in parent effect.
     * **WARNING**: This **will** introduce different output in older projects.
 * Scenes:
   * Fixed crash when deleting a scene linked in another scene.
@@ -72,6 +78,7 @@ Note for existing users: To access the new presets, please use the 'Install Pres
   * Bug fix in output settings widget where available codecs would not refresh.
   * UI/UX (bug) fixes to the render instance widget.
 * SVG: Bug fixes in SVG Optimizer.
+* SVG: Fixed encoding (UTF-8) on Windows.
 * Sandboxing: File I/O has been refactored to support sandboxing, ensuring complete support for Flatpak/Portal on Linux.
 * Upgraded to Qt 5.15.19.
 * EGL is now default on Linux (GLX is deprecated). This enables us to support both X11 and Wayland.
