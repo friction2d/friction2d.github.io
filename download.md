@@ -2,7 +2,7 @@
 title: "Download"
 layout: download
 permalink: download.html
-release: 1.0.0-rc.3
+release: 1.0.0
 download_devel: true
 ---
 
@@ -19,7 +19,7 @@ download_devel: true
   * NVIDIA GeForce 8 series (G8x/Tesla)
   * AMD Radeon HD 2000 series (R600/TeraScale 1)
   * Intel HD Graphics 4000 (Ivy Bridge)
-* Audio device supporting WASAPI on Windows and PulseAudio on Linux
+* Audio device
 * Any Mac compatible with macOS Big Sur (11.0) or later
   * MacBook (2015 or later)
   * MacBook Air (2013 or later)
@@ -52,7 +52,7 @@ download_devel: true
 
 ### Notes:
 
-* Visual C++ [Redistributable](https://aka.ms/vs/17/release/vc_redist.x64.exe) 2017 or higher is needed on Windows 10
+* Visual C++ Redistributable 2022 is needed on Windows
 * macOS binaries support both Apple Silicon and Intel (universal)
 * Linux binaries support both X11 and native Wayland (using EGL)
   * GLX "legacy" binary available for systems (NVIDIA) that does not support EGL

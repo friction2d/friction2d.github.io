@@ -1,9 +1,10 @@
-latest_version: 0.9.6.1
-unstable_version: 1.0.0-rc.3
+latest_version: 1.0.0
+unstable_version: ""
 github_release_suffix_windows_setup: "setup-win64.exe"
 github_release_suffix_windows_portable: "windows-x64.7z"
 github_release_suffix_linux_portable: "linux-x86_64.tar.xz"
 github_release_suffix_linux_appimage: "x86_64.AppImage"
+github_release_suffix_linux_glx_appimage: "x86_64-GLX.AppImage"
 github_release_suffix_linux_rpm: "1.x86_64.rpm"
 github_release_suffix_mac_intel_dmg: "x86_64.dmg"
 github_release_suffix_mac_arm_dmg: "arm64.dmg"
